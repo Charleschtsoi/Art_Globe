@@ -2,19 +2,27 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Globe from 'react-globe.gl'
 import * as THREE from 'three'
 import artPlaceholder from './assets/art-placeholder.svg'
-import renaissanceGlobeTexture from './assets/renaissance-globe-texture.svg'
 import { artworks, easternArtData } from './artData'
 import externalArtData from './data/externalArtData.json'
-import FilterPanel from './components/FilterPanel'
 import ArtworkSidePanel from './components/ArtworkSidePanel'
+import SearchBar from './components/SearchBar'
 import { normalizeArtworks } from './services/normalizeArtwork'
-import { resolveHtmlMarkerData, resolveLodData } from './services/artLod'
+import { getZoomBand, resolveHtmlMarkerData, resolveLodData } from './services/artLod'
+import { readStoredLocale, writeStoredLocale, translate } from './i18n/translations'
+import { localizeArtworkDisplay } from './i18n/localizeArtworkDisplay'
 
-const FAR_TO_MID = 2.15
-const MID_TO_FAR = 2.3
-const MID_TO_NEAR = 1.2
-const NEAR_TO_MID = 1.32
 const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
+
+/** Equirectangular blue marble (react-globe.gl / three-globe); omitting globeImageUrl renders a black sphere per library docs. */
+const EARTH_BLUE_MARBLE_URL = 'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+
+function escapeHtml(s) {
+  return String(s)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+}
 
 const spreadOutArtworks = (data) => {
   const locationCounts = {}
@@ -36,11 +44,10 @@ const spreadOutArtworks = (data) => {
 
 function App() {
   const [activeMarker, setActiveMarker] = useState(null)
-  const [selectedPeriods, setSelectedPeriods] = useState(new Set())
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
-  const [zoomBand, setZoomBand] = useState('far')
   const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight })
+  const [locale, setLocale] = useState(() => readStoredLocale())
   const globeRef = useRef(null)
   const controlsRef = useRef(null)
   const idleTimerRef = useRef(null)
@@ -64,27 +71,61 @@ function App() {
     tierPlaceholder: 0,
     thumbErrors: 0
   })
-  const allArtworks = useMemo(
+  const allArtworksBase = useMemo(
     () => normalizeArtworks([...(artworks || []), ...(easternArtData || []), ...(externalArtData || [])]),
     []
   )
 
-  const filteredArtworks = useMemo(() => {
-    if (selectedPeriods.size === 0) return allArtworks
-    return allArtworks.filter((art) => selectedPeriods.has(art.time_period))
-  }, [allArtworks, selectedPeriods])
-  const jitteredArtworks = useMemo(() => spreadOutArtworks(filteredArtworks), [filteredArtworks])
+  const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
+
+  const markerZoomBand = useMemo(() => getZoomBand(cameraAltitude), [cameraAltitude])
+
+  const allArtworks = useMemo(
+    () => allArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
+    [allArtworksBase, locale]
+  )
+
+  useEffect(() => {
+    writeStoredLocale(locale)
+    document.documentElement.lang = locale === 'zhHant' ? 'zh-Hant' : 'en'
+  }, [locale])
+
+  const clusterI18n = useMemo(
+    () => ({
+      artworksCount: (n) => t('cluster.artworksCount', { count: n }),
+      cityCount: (city, n) => t('cluster.cityCount', { city, count: n }),
+      multipleArtists: t('cluster.multipleArtists'),
+      variousYears: t('cluster.variousYears'),
+      multipleMuseums: t('cluster.multipleMuseums'),
+      zoomExplore: (n) => t('cluster.zoomExplore', { count: n })
+    }),
+    [t]
+  )
+
+  const jitteredArtworks = useMemo(() => spreadOutArtworks(allArtworks), [allArtworks])
   const visibleArtworks = useMemo(
-    () => resolveLodData(jitteredArtworks, cameraAltitude, 80),
-    [jitteredArtworks, cameraAltitude]
+    () => resolveLodData(jitteredArtworks, cameraAltitude, 80, clusterI18n),
+    [jitteredArtworks, cameraAltitude, clusterI18n]
   )
   const htmlMarkerData = useMemo(
-    () => resolveHtmlMarkerData(visibleArtworks, activeMarker, zoomBand),
-    [visibleArtworks, activeMarker, zoomBand]
+    () => resolveHtmlMarkerData(visibleArtworks, activeMarker, markerZoomBand),
+    [visibleArtworks, activeMarker, markerZoomBand]
   )
 
   const selectedItemForPanel = useMemo(() => {
-    if (!activeMarker || activeMarker.isCluster) return null
+    if (!activeMarker) return null
+    if (activeMarker.isCluster) {
+      const items = Array.isArray(activeMarker.clusterItems) ? activeMarker.clusterItems : []
+      const clusterArtworks = items
+        .map((entry) => allArtworks.find((art) => String(art.id) === String(entry.id)) ?? entry)
+        .filter(Boolean)
+      return {
+        isClusterPicker: true,
+        clusterId: activeMarker.id,
+        clusterCount: activeMarker.clusterCount ?? clusterArtworks.length,
+        clusterArtworks
+      }
+    }
     if (activeMarker.isMuseumStack) {
       return {
         ...activeMarker,
@@ -148,14 +189,14 @@ function App() {
     const ctx = canvas.getContext('2d')
     if (!ctx) return null
     ctx.clearRect(0, 0, canvas.width, canvas.height)
-    for (let i = 0; i < 160; i += 1) {
+    for (let i = 0; i < 110; i += 1) {
       const x = Math.random() * canvas.width
       const y = Math.random() * canvas.height
       const radius = 20 + Math.random() * 75
       const gradient = ctx.createRadialGradient(x, y, radius * 0.15, x, y, radius)
-      gradient.addColorStop(0, 'rgba(255, 230, 170, 0.22)')
-      gradient.addColorStop(0.45, 'rgba(255, 230, 170, 0.12)')
-      gradient.addColorStop(1, 'rgba(255, 230, 170, 0)')
+      gradient.addColorStop(0, 'rgba(255, 255, 255, 0.16)')
+      gradient.addColorStop(0.45, 'rgba(240, 240, 240, 0.08)')
+      gradient.addColorStop(1, 'rgba(230, 230, 230, 0)')
       ctx.fillStyle = gradient
       ctx.beginPath()
       ctx.arc(x, y, radius, 0, Math.PI * 2)
@@ -196,7 +237,7 @@ function App() {
     const cloudMaterial = new THREE.MeshPhongMaterial({
       map: buildCloudTexture(),
       transparent: true,
-      opacity: 0.33,
+      opacity: 0.25,
       depthWrite: false,
       side: THREE.DoubleSide
     })
@@ -204,7 +245,7 @@ function App() {
     cloudMesh.renderOrder = 2
     scene.add(cloudMesh)
 
-    const starCount = 2200
+    const starCount = 850
     const positions = new Float32Array(starCount * 3)
     const starRadius = globeRadius * 10
     for (let i = 0; i < starCount; i += 1) {
@@ -222,14 +263,21 @@ function App() {
     const starGeometry = new THREE.BufferGeometry()
     starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     const starMaterial = new THREE.PointsMaterial({
-      color: '#f0e6d0',
-      size: globeRadius * 0.012,
+      color: '#ffffff',
+      size: globeRadius * 0.007,
       transparent: true,
-      opacity: 0.72,
+      opacity: 0.38,
       depthWrite: false
     })
     const starField = new THREE.Points(starGeometry, starMaterial)
     scene.add(starField)
+
+    const neutralAmbient = new THREE.AmbientLight('#ffffff', 0.55)
+    const sunKey = new THREE.DirectionalLight('#fffaf0', 0.85)
+    sunKey.position.set(1.25, 0.85, 0.45)
+    const coolFill = new THREE.DirectionalLight('#e8eeff', 0.3)
+    coolFill.position.set(-0.6, 0.2, -0.85)
+    globe?.lights?.([neutralAmbient, sunKey, coolFill])
 
     const animate = () => {
       cloudMesh.rotation.y += 0.00014
@@ -324,44 +372,36 @@ function App() {
     globeRef.current?.pointOfView({ lat: art.lat, lng: art.lng, altitude: nextAltitude }, 1000)
   }, [])
 
+  const handleGlobalSearchSelect = useCallback(
+    (art) => {
+      if (!art) return
+      pauseAutoRotate()
+      scheduleAutoRotateResume()
+      setClusterHint('')
+      setActiveMarker(art)
+      focusOnArtwork(art, Math.max(0.95, cameraAltitude * 0.85))
+    },
+    [cameraAltitude, focusOnArtwork, pauseAutoRotate, scheduleAutoRotateResume]
+  )
+
   const handlePointClick = useCallback(
     (point) => {
       if (!point) return
       pauseAutoRotate()
       scheduleAutoRotateResume()
       if (point.isCluster) {
-        const clusterItems = Array.isArray(point.clusterItems) ? point.clusterItems : []
-        if (clusterItems.length > 0 && clusterItems.length <= 3) {
-          setClusterHint('')
-          setActiveMarker(clusterItems[0])
-          focusOnArtwork(clusterItems[0], Math.max(0.9, cameraAltitude * 0.82))
-          return
-        }
-        setClusterHint('Zoom in to open artwork details.')
-        if (clusterHintTimerRef.current) window.clearTimeout(clusterHintTimerRef.current)
-        clusterHintTimerRef.current = window.setTimeout(() => setClusterHint(''), 1400)
-        focusOnArtwork(point, Math.max(0.95, cameraAltitude * 0.62))
+        setClusterHint('')
+        setActiveMarker(point)
         return
       }
       setClusterHint('')
       setActiveMarker(point)
     },
-    [cameraAltitude, focusOnArtwork, pauseAutoRotate, scheduleAutoRotateResume]
+    [pauseAutoRotate, scheduleAutoRotateResume]
   )
 
   const handleZoom = useCallback(({ altitude }) => {
     pendingAltitudeRef.current = altitude
-    setZoomBand((previous) => {
-      if (previous === 'far') {
-        return altitude <= FAR_TO_MID ? 'mid' : 'far'
-      }
-      if (previous === 'mid') {
-        if (altitude > MID_TO_FAR) return 'far'
-        if (altitude <= MID_TO_NEAR) return 'near'
-        return 'mid'
-      }
-      return altitude > NEAR_TO_MID ? 'mid' : 'near'
-    })
     if (zoomRafRef.current) return
     zoomRafRef.current = window.requestAnimationFrame(() => {
       setCameraAltitude(pendingAltitudeRef.current)
@@ -371,28 +411,35 @@ function App() {
 
   const createArtworkElement = useCallback(
     (art) => {
+      const artworkTitle = art.displayTitle ?? art.title
+      const cardArtist = art.displayArtist ?? art.artist
+      const cardMuseum = art.displayMuseumName ?? art.museumName ?? ''
+      const cityName = art.isCluster ? '' : (art.displayCity ?? art.current_location?.city ?? '')
+      const cardTitle = art.isCluster ? artworkTitle : (cityName || artworkTitle)
       const rawImageUrl = typeof art?.imageUrl === 'string' ? art.imageUrl.trim() : ''
-      const size = zoomBand === 'far' ? 26 : zoomBand === 'mid' ? 34 : 40
+      const size = markerZoomBand === 'far' ? 26 : markerZoomBand === 'mid' ? 34 : 40
       const wrapper = document.createElement('div')
       wrapper.dataset.artId = String(art.id ?? '')
       wrapper.dataset.isCluster = art.isCluster ? 'true' : 'false'
-      wrapper.style.width = `${size + 150}px`
-      wrapper.style.height = `${size + 74}px`
+      // The wrapper is the "pill pillar" anchor box. Keeping it the same size as the
+      // thumbnail ensures the city's pillar stays visually aligned with the circle.
+      wrapper.style.width = `${size}px`
+      wrapper.style.height = `${size}px`
       wrapper.style.overflow = 'visible'
       wrapper.style.position = 'relative'
       wrapper.style.display = 'flex'
       wrapper.style.alignItems = 'flex-start'
       wrapper.style.justifyContent = 'flex-start'
       wrapper.style.pointerEvents = 'none'
-      wrapper.style.transform = 'translate(-10px, -8px)'
+      wrapper.style.transform = 'translate(0px, 0px)'
 
       const pin = document.createElement('button')
       pin.type = 'button'
       pin.setAttribute(
         'aria-label',
         art.isCluster
-          ? `${art.clusterCount ?? 0} artworks cluster`
-          : `${art.title} by ${art.artist}`
+          ? t('marker.clusterAria', { count: art.clusterCount ?? 0 })
+          : t('marker.artworkAria', { title: artworkTitle, artist: cardArtist })
       )
       pin.style.width = `${size}px`
       pin.style.height = `${size}px`
@@ -406,8 +453,9 @@ function App() {
       pin.style.cursor = 'pointer'
       pin.style.pointerEvents = 'auto'
       pin.style.position = 'absolute'
-      pin.style.top = '8px'
-      pin.style.left = '10px'
+      // Center the circle inside the wrapper anchor box.
+      pin.style.top = '0px'
+      pin.style.left = '0px'
       pin.style.zIndex = '5'
       pin.className = art.isCluster ? 'art-marker-pin art-marker-pin--cluster' : 'art-marker-pin art-marker-pin--artwork'
 
@@ -425,7 +473,7 @@ function App() {
       }
 
       setImageTier('thumb', thumbSrc || artPlaceholder)
-      image.alt = `${art.title} by ${art.artist}`
+      image.alt = t('marker.artworkAria', { title: artworkTitle, artist: cardArtist })
       image.style.width = '100%'
       image.style.height = '100%'
       image.style.objectFit = 'cover'
@@ -443,11 +491,15 @@ function App() {
       miniCard.type = 'button'
       miniCard.style.position = 'absolute'
       miniCard.style.left = `${size + 16}px`
-      miniCard.style.top = '4px'
+      // Vertically center the card relative to the circle thumbnail.
+      miniCard.style.top = `${size / 2}px`
+      miniCard.style.transform = 'translateY(-50%)'
       miniCard.style.width = '132px'
       miniCard.style.maxWidth = '132px'
-      miniCard.style.background = 'rgba(42, 28, 18, 0.92)'
-      miniCard.style.border = '1px solid rgba(212, 168, 83, 0.4)'
+      // Semi-transparent default so the globe remains visible behind the info card.
+      miniCard.style.backgroundColor = 'rgba(42, 28, 18, 0.55)'
+      miniCard.style.border = '1px solid rgba(212, 168, 83, 0.28)'
+      miniCard.style.opacity = '0.80'
       miniCard.style.borderRadius = '8px'
       miniCard.style.padding = '6px 7px'
       miniCard.style.color = '#f5e6c8'
@@ -455,49 +507,39 @@ function App() {
       miniCard.style.pointerEvents = 'auto'
       miniCard.style.cursor = 'pointer'
       miniCard.style.zIndex = '4'
-      miniCard.style.boxShadow = '0 4px 10px rgba(0,0,0,0.28)'
-      miniCard.innerHTML = `<span style="display:block;font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${art.title}</span>
-<span style="display:block;font-size:10px;color:#c4a882;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${art.artist}</span>
-<span style="display:block;font-size:10px;color:#d4a853;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${art.museumName ?? ''}</span>`
+      miniCard.style.boxShadow = '0 4px 10px rgba(0,0,0,0.18)'
+      miniCard.style.transition =
+        'opacity 0.2s ease, background-color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease'
+      miniCard.innerHTML = `<span style="display:block;font-size:11px;font-weight:700;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(cardTitle)}</span>
+<span style="display:block;font-size:10px;color:#c4a882;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(cardArtist)}</span>
+<span style="display:block;font-size:10px;color:#d4a853;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${escapeHtml(cardMuseum)}</span>`
       miniCard.setAttribute(
         'aria-label',
         art.isCluster
-          ? `Open cluster of ${art.clusterCount ?? 0} artworks`
-          : `Open details for ${art.title}`
+          ? t('marker.openClusterAria', { count: art.clusterCount ?? 0 })
+          : t('marker.openArtwork', { title: artworkTitle })
       )
       wrapper.appendChild(miniCard)
-
-      if (art.isCluster) {
-        const badge = document.createElement('span')
-        badge.textContent = String(art.clusterCount ?? 0)
-        badge.style.position = 'absolute'
-        badge.style.right = '-4px'
-        badge.style.bottom = '-4px'
-        badge.style.minWidth = '16px'
-        badge.style.height = '16px'
-        badge.style.padding = '0 4px'
-        badge.style.borderRadius = '999px'
-        badge.style.background = '#3d2a1a'
-        badge.style.color = '#f5e6c8'
-        badge.style.fontSize = '10px'
-        badge.style.fontWeight = '700'
-        badge.style.display = 'flex'
-        badge.style.alignItems = 'center'
-        badge.style.justifyContent = 'center'
-        badge.style.border = '1px solid rgba(212, 168, 83, 0.7)'
-        badge.style.zIndex = '6'
-        wrapper.appendChild(badge)
-      }
 
       const onHoverIn = () => {
         pin.style.transform = 'scale(1.12)'
         pin.style.borderColor = '#d4a853'
         pin.style.boxShadow = '0 0 14px 4px rgba(212, 168, 83, 0.45)'
+
+        miniCard.style.backgroundColor = 'rgba(42, 28, 18, 0.92)'
+        miniCard.style.border = '1px solid rgba(212, 168, 83, 0.4)'
+        miniCard.style.opacity = '1'
+        miniCard.style.boxShadow = '0 4px 10px rgba(0,0,0,0.28)'
       }
       const onHoverOut = () => {
         pin.style.transform = 'scale(1)'
         pin.style.borderColor = 'rgba(212, 168, 83, 0.85)'
         pin.style.boxShadow = ''
+
+        miniCard.style.backgroundColor = 'rgba(42, 28, 18, 0.55)'
+        miniCard.style.border = '1px solid rgba(212, 168, 83, 0.28)'
+        miniCard.style.opacity = '0.80'
+        miniCard.style.boxShadow = '0 4px 10px rgba(0,0,0,0.18)'
       }
       const triggerOpen = (event) => {
         event.stopPropagation()
@@ -511,7 +553,7 @@ function App() {
       miniCard.addEventListener('click', triggerOpen)
       return wrapper
     },
-    [getMarkerImageUrl, handlePointClick, trackMarkerTelemetry, zoomBand]
+    [getMarkerImageUrl, handlePointClick, markerZoomBand, trackMarkerTelemetry, t]
   )
 
   return (
@@ -521,18 +563,80 @@ function App() {
         inset: 0,
         width: '100vw',
         height: '100vh',
-        background: 'radial-gradient(circle at 20% 20%, #4a3728 0%, #2a1c12 68%, #1a120b 100%)',
+        background:
+          'radial-gradient(ellipse 120% 90% at 50% 35%, #0a0a1a 0%, #080818 45%, #060614 78%, #050510 100%)',
         overflow: 'hidden',
-        fontFamily: "'Playfair Display', Georgia, 'Times New Roman', serif"
+        fontFamily:
+          "'Playfair Display', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', Georgia, 'Times New Roman', serif"
       }}
     >
-      <FilterPanel
-        selectedPeriods={selectedPeriods}
-        onTogglePeriod={(period) => setSelectedPeriods(new Set([period]))}
-        onClear={() => setSelectedPeriods(new Set())}
-        totalCount={allArtworks.length}
-        visibleCount={filteredArtworks.length}
-      />
+      <div
+        style={{
+          position: 'fixed',
+          top: 12,
+          left: 12,
+          zIndex: 90,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'stretch',
+          gap: 8,
+          width: 'min(340px, calc(100vw - 24px))',
+          pointerEvents: 'auto'
+        }}
+      >
+        <div
+          style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: 8,
+            background: 'rgba(32, 22, 14, 0.92)',
+            border: '1px solid rgba(212, 168, 83, 0.35)',
+            borderRadius: 10,
+            padding: '6px 10px',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+          }}
+        >
+          <span style={{ fontSize: 12, color: '#a08060' }}>{t('lang.switch')}</span>
+          <button
+            type="button"
+            onClick={() => setLocale('en')}
+            aria-pressed={locale === 'en'}
+            style={{
+              border: locale === 'en' ? '1px solid #d4a853' : '1px solid rgba(212, 168, 83, 0.3)',
+              background: locale === 'en' ? 'rgba(58, 36, 21, 0.9)' : 'rgba(42, 28, 18, 0.75)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '5px 10px',
+              cursor: 'pointer',
+              fontSize: 12
+            }}
+          >
+            {t('lang.en')}
+          </button>
+          <button
+            type="button"
+            onClick={() => setLocale('zhHant')}
+            aria-pressed={locale === 'zhHant'}
+            style={{
+              border: locale === 'zhHant' ? '1px solid #d4a853' : '1px solid rgba(212, 168, 83, 0.3)',
+              background: locale === 'zhHant' ? 'rgba(58, 36, 21, 0.9)' : 'rgba(42, 28, 18, 0.75)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '5px 10px',
+              cursor: 'pointer',
+              fontSize: 12
+            }}
+          >
+            {t('lang.zhHant')}
+          </button>
+        </div>
+        <SearchBar
+          artworks={allArtworks}
+          onSelectArtwork={handleGlobalSearchSelect}
+          getThumbUrl={getMarkerImageUrl}
+          t={t}
+        />
+      </div>
       <div
         onMouseEnter={pauseAutoRotate}
         onMouseLeave={scheduleAutoRotateResume}
@@ -543,11 +647,11 @@ function App() {
           ref={globeRef}
           width={viewport.width}
           height={viewport.height}
-          backgroundColor="#2a1c12"
+          backgroundColor="#000008"
           showAtmosphere={true}
-          atmosphereColor="rgba(195, 155, 80, 0.65)"
+          atmosphereColor="rgba(100, 160, 255, 0.45)"
           atmosphereAltitude={0.18}
-          globeImageUrl={renaissanceGlobeTexture}
+          globeImageUrl={EARTH_BLUE_MARBLE_URL}
           pointsData={visibleArtworks}
           pointLat="lat"
           pointLng="lng"
@@ -561,8 +665,22 @@ function App() {
           onGlobeReady={onGlobeReady}
         />
       </div>
-      {selectedItemForPanel && (
-        <ArtworkSidePanel item={selectedItemForPanel} onClose={() => setActiveMarker(null)} />
+      {selectedItemForPanel && activeMarker && (
+        <ArtworkSidePanel
+          key={
+            activeMarker.isCluster
+              ? `cluster-${activeMarker.id}`
+              : String(activeMarker.id ?? activeMarker.artwork_id ?? 'panel')
+          }
+          item={selectedItemForPanel}
+          onClose={() => setActiveMarker(null)}
+          onSelectArtwork={(art) => {
+            setActiveMarker(art)
+            focusOnArtwork(art, Math.max(0.95, cameraAltitude * 0.85))
+          }}
+          getThumbUrl={getMarkerImageUrl}
+          t={t}
+        />
       )}
       {clusterHint && (
         <div

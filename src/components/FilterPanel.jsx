@@ -1,14 +1,5 @@
 import { useMemo } from 'react'
-
-const PERIODS = [
-  'Antiquity',
-  'Middle Ages',
-  'Renaissance',
-  'Baroque',
-  'Impressionism',
-  'Modern',
-  'Contemporary'
-]
+import { PERIOD_KEYS } from '../constants/periods'
 
 const shellStyle = {
   position: 'fixed',
@@ -22,13 +13,14 @@ const shellStyle = {
 }
 
 const panelStyle = {
-  width: 'min(1080px, calc(100vw - 24px))',
-  background: 'rgba(42, 28, 18, 0.88)',
-  backdropFilter: 'blur(8px)',
-  border: '1px solid rgba(212, 168, 83, 0.3)',
-  borderRadius: 14,
+  width: 'min(560px, calc(100vw - 48px))',
+  background: 'rgba(42, 28, 18, 0.9)',
+  backdropFilter: 'blur(10px)',
+  border: '1px solid rgba(212, 168, 83, 0.35)',
+  borderRadius: 12,
+  boxShadow: '0 10px 32px rgba(0, 0, 0, 0.35)',
   color: '#f5e6c8',
-  padding: '10px 12px',
+  padding: '8px 14px',
   pointerEvents: 'auto'
 }
 
@@ -37,35 +29,37 @@ export default function FilterPanel({
   onTogglePeriod,
   onClear,
   totalCount,
-  visibleCount
+  visibleCount,
+  t
 }) {
   const activeIndex = useMemo(
-    () => PERIODS.findIndex((period) => selectedPeriods.has(period)),
+    () => PERIOD_KEYS.findIndex((period) => selectedPeriods.has(period)),
     [selectedPeriods]
   )
 
   const selectedIndex = activeIndex < 0 ? 0 : activeIndex
-  const selectedLabel = activeIndex < 0 ? 'All Periods' : PERIODS[activeIndex]
+  const selectedLabel =
+    activeIndex < 0 ? t('period.all') : t(`period.${PERIOD_KEYS[activeIndex]}`)
 
   const setPeriodByIndex = (index) => {
-    const clamped = Math.max(0, Math.min(PERIODS.length - 1, index))
-    onTogglePeriod(PERIODS[clamped])
+    const clamped = Math.max(0, Math.min(PERIOD_KEYS.length - 1, index))
+    onTogglePeriod(PERIOD_KEYS[clamped])
   }
 
   return (
     <div style={shellStyle}>
-      <aside style={panelStyle} aria-label="Time period filters">
+      <aside style={panelStyle} aria-label={t('timeline.filtersAria')}>
         <div
           style={{
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'space-between',
             gap: 12,
-            marginBottom: 8
+            marginBottom: 6
           }}
         >
           <p style={{ margin: 0, color: '#a08060', fontSize: 12 }}>
-            Timeline: {selectedLabel} ({visibleCount} / {totalCount})
+            {t('timeline.label')}: {selectedLabel} ({visibleCount} / {totalCount})
           </p>
           <button
             type="button"
@@ -80,50 +74,57 @@ export default function FilterPanel({
               fontSize: 12
             }}
           >
-            Clear
+            {t('timeline.clear')}
           </button>
         </div>
         <div
           style={{
             display: 'grid',
-            gap: 8
+            gap: 6
           }}
         >
-          <input
-            type="range"
-            min={0}
-            max={PERIODS.length - 1}
-            step={1}
-            value={selectedIndex}
-            onChange={(event) => setPeriodByIndex(Number(event.target.value))}
-            onWheel={(event) => {
-              event.preventDefault()
-              const delta = event.deltaY > 0 || event.deltaX > 0 ? 1 : -1
-              setPeriodByIndex(selectedIndex + delta)
-            }}
-            role="slider"
-            aria-label="Time period timeline"
-            aria-valuemin={0}
-            aria-valuemax={PERIODS.length - 1}
-            aria-valuenow={selectedIndex}
-            aria-valuetext={selectedLabel}
+          <div
             style={{
+              maxWidth: 420,
               width: '100%',
-              cursor: 'ew-resize',
-              accentColor: '#d4a853'
+              margin: '0 auto'
             }}
-          />
+          >
+            <input
+              type="range"
+              min={0}
+              max={PERIOD_KEYS.length - 1}
+              step={1}
+              value={selectedIndex}
+              onChange={(event) => setPeriodByIndex(Number(event.target.value))}
+              onWheel={(event) => {
+                event.preventDefault()
+                const delta = event.deltaY > 0 || event.deltaX > 0 ? 1 : -1
+                setPeriodByIndex(selectedIndex + delta)
+              }}
+              aria-label={t('timeline.sliderAria')}
+              aria-valuemin={0}
+              aria-valuemax={PERIOD_KEYS.length - 1}
+              aria-valuenow={selectedIndex}
+              aria-valuetext={selectedLabel}
+              style={{
+                width: '100%',
+                cursor: 'pointer',
+                accentColor: '#d4a853'
+              }}
+            />
+          </div>
           <div
             aria-hidden="true"
             style={{
               display: 'grid',
-              gridTemplateColumns: `repeat(${PERIODS.length}, minmax(0, 1fr))`,
-              gap: 6
+              gridTemplateColumns: `repeat(${PERIOD_KEYS.length}, minmax(0, 1fr))`,
+              gap: 4
             }}
           >
-            {PERIODS.map((period, idx) => (
+            {PERIOD_KEYS.map((periodKey, idx) => (
               <div
-                key={period}
+                key={periodKey}
                 style={{
                   textAlign: 'center',
                   fontSize: 10,
@@ -132,9 +133,9 @@ export default function FilterPanel({
                   overflow: 'hidden',
                   textOverflow: 'ellipsis'
                 }}
-                title={period}
+                title={t(`period.${periodKey}`)}
               >
-                {period}
+                {t(`period.${periodKey}`)}
               </div>
             ))}
           </div>

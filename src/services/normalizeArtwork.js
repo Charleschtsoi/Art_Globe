@@ -1,12 +1,5 @@
-const PERIODS = [
-  'Antiquity',
-  'Middle Ages',
-  'Renaissance',
-  'Baroque',
-  'Impressionism',
-  'Modern',
-  'Contemporary'
-]
+import { deriveTimePeriodKey, toPeriodKey } from '../constants/periods.js'
+import { getCityForMuseum } from '../constants/museumCities.js'
 
 const toNumber = (value) => {
   const num = Number(value)
@@ -19,15 +12,7 @@ const toString = (value, fallback = '') => {
 }
 
 export function deriveTimePeriod(yearLike) {
-  const year = toNumber(yearLike)
-  if (year === null) return 'Modern'
-  if (year < 500) return 'Antiquity'
-  if (year < 1400) return 'Middle Ages'
-  if (year < 1600) return 'Renaissance'
-  if (year < 1750) return 'Baroque'
-  if (year < 1900) return 'Impressionism'
-  if (year < 1970) return 'Modern'
-  return 'Contemporary'
+  return deriveTimePeriodKey(yearLike)
 }
 
 export function normalizeArtwork(raw, index = 0) {
@@ -39,7 +24,10 @@ export function normalizeArtwork(raw, index = 0) {
   const museum = isPrdShape
     ? toString(raw?.current_location?.museum, 'Unknown Museum')
     : toString(raw?.museumName ?? raw?.museum, 'Unknown Museum')
-  const city = isPrdShape ? toString(raw?.current_location?.city) : ''
+  const mappedCityEn = getCityForMuseum(museum, 'en')
+  const city = isPrdShape
+    ? toString(raw?.current_location?.city, mappedCityEn)
+    : mappedCityEn
   const country = isPrdShape ? toString(raw?.current_location?.country) : ''
   const imageUrl = isPrdShape
     ? toString(raw?.assets?.thumbnail_url ?? raw?.assets?.high_res_url)
@@ -56,11 +44,11 @@ export function normalizeArtwork(raw, index = 0) {
   const historicalText = isPrdShape
     ? toString(raw?.historical_text)
     : toString(raw?.description)
-  const timePeriod = PERIODS.includes(raw?.time_period)
-    ? raw.time_period
-    : deriveTimePeriod(creationYear)
+  const timePeriod = toPeriodKey(raw?.time_period) ?? deriveTimePeriodKey(creationYear)
 
   const artworkId = String(raw?.artwork_id ?? raw?.id ?? `${title}-${index}`)
+
+  const fallbackProse = `${title} is a notable work by ${artist}. Historical background will be expanded in future dataset updates.`
 
   return {
     artwork_id: artworkId,
@@ -82,9 +70,7 @@ export function normalizeArtwork(raw, index = 0) {
         ? toString(raw?.assets?.high_res_url || imageUrl)
         : imageUrl
     },
-    historical_text:
-      historicalText ||
-      `${title} is a notable work by ${artist}. Historical background will be expanded in future dataset updates.`,
+    historical_text: historicalText || fallbackProse,
 
     // Backward-compatible fields for existing rendering code
     id: artworkId,
@@ -92,9 +78,7 @@ export function normalizeArtwork(raw, index = 0) {
     lat,
     lng,
     museumName: museum,
-    description:
-      historicalText ||
-      `${title} is a notable work by ${artist}. Historical background will be expanded in future dataset updates.`,
+    description: historicalText || fallbackProse,
     imageUrl,
     canonicalImageUrl,
     source: raw?.source ?? 'local',

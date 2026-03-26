@@ -10,8 +10,12 @@
     "preview": "vite preview",
     "fetch:artworks": "node fetchArtworks.js",
     "localize:asia": "node scripts/localize-asia-thumbnails.mjs",
+    "localize:external": "node scripts/localize-external-thumbnails.mjs",
     "thumb:proxy": "node scripts/thumb-proxy.mjs",
     "fetch:museum": "node fetchMuseumData.js",
+    "fetch:oceania-seasia": "node fetchOceaniaSeAsia.js",
+    "fetch:africa": "node fetchAfrica.js",
+    "fetch:met": "node fetchMetMuseumData.js",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs"
   },

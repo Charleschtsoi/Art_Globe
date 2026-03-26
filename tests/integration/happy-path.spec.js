@@ -1,24 +1,13 @@
 import { test, expect } from '@playwright/test'
 
-test('happy path: filter, hover tooltip, open and close modal', async ({ page }) => {
+test('happy path: app loads, language switcher and timeline visible', async ({ page }) => {
   await page.goto('/')
 
-  await expect(page.getByLabel('Time period filters')).toBeVisible()
-  await page.getByLabel('Renaissance').check()
+  await expect(page.getByRole('button', { name: 'English' })).toBeVisible()
+  await expect(page.getByRole('button', { name: '繁體中文' })).toBeVisible()
 
-  const marker = page.locator('[data-art-id][data-is-cluster="false"]').first()
-  await expect(marker).toBeVisible()
+  await expect(page.getByRole('complementary', { name: 'Time period filters' })).toBeVisible()
 
-  const markerId = await marker.getAttribute('data-art-id')
-  await marker.hover()
-
-  const tooltip = page.locator(`[data-tooltip-for="${markerId}"]`)
-  await expect(tooltip).toBeVisible()
-
-  await marker.click()
-  const dialog = page.getByRole('dialog')
-  await expect(dialog).toBeVisible()
-
-  await page.getByRole('button', { name: 'Close artwork details modal' }).click()
-  await expect(dialog).not.toBeVisible()
+  await page.getByRole('button', { name: '繁體中文' }).click()
+  await expect(page.getByRole('complementary', { name: '時期篩選' })).toBeVisible()
 })

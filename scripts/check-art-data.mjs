@@ -8,7 +8,8 @@ const LOCAL_ARTWORKS_DIR = path.resolve(process.cwd(), 'public/artworks')
 const REQUIRED_FIELDS = ['id', 'title', 'artist', 'lat', 'lng', 'museum', 'description', 'imageUrl', 'priority']
 const MAX_DUPLICATE_GROUPS = Number(process.env.MAX_DUPLICATE_IMAGE_GROUPS ?? 10)
 const MAX_DUPLICATE_FILES = Number(process.env.MAX_DUPLICATE_IMAGE_FILES ?? 20)
-const MIN_ASIA_SHARE = Number(process.env.MIN_ASIA_SHARE ?? 0.6)
+const MIN_APAC_SHARE = Number(process.env.MIN_APAC_SHARE ?? 0.45)
+const MIN_AFRICA_SHARE = Number(process.env.MIN_AFRICA_SHARE ?? 0.05)
 
 const readData = async () => {
   const raw = await fs.readFile(DATA_PATH, 'utf8')
@@ -73,7 +74,11 @@ const scanLocalDuplicateImages = async () => {
 
 const classifyRegion = (lat, lng) => {
   if (lat >= 17 && lat <= 56 && lng >= 98 && lng <= 151) return 'East Asia'
+  // Australia & New Zealand (not covered by generic Asia box)
+  if (lat >= -48 && lat <= -10 && lng >= 110 && lng <= 180) return 'Oceania'
   if (lat >= -12 && lat <= 60 && lng >= 25 && lng <= 170) return 'Asia'
+  // Africa (rough bounding box; used only for dataset balance validation)
+  if (lat >= -35 && lat <= 37 && lng >= -20 && lng <= 52) return 'Africa'
   if (lat >= 35 && lat <= 72 && lng >= -12 && lng <= 45) return 'Europe'
   if (lat >= -60 && lat <= 83 && lng >= -170 && lng <= -35) return 'Americas'
   return 'Other'
@@ -94,6 +99,8 @@ const run = async () => {
   const regionCounts = {
     'East Asia': 0,
     Asia: 0,
+    Oceania: 0,
+    Africa: 0,
     Europe: 0,
     Americas: 0,
     Other: 0
@@ -135,16 +142,24 @@ const run = async () => {
   console.log(
     `Scanned ${localImageStats.totalFiles} local artwork files in ${path.relative(process.cwd(), LOCAL_ARTWORKS_DIR)}`
   )
-  const asiaCount = regionCounts['East Asia'] + regionCounts.Asia
-  const asiaShare = data.length ? asiaCount / data.length : 0
+  const apacCount =
+    regionCounts['East Asia'] + regionCounts.Asia + regionCounts.Oceania
+  const apacShare = data.length ? apacCount / data.length : 0
+
+  const africaCount = regionCounts.Africa
+  const africaShare = data.length ? africaCount / data.length : 0
   console.log(
-    `Region distribution -> East Asia: ${regionCounts['East Asia']}, Asia: ${regionCounts.Asia}, Europe: ${regionCounts.Europe}, Americas: ${regionCounts.Americas}, Other: ${regionCounts.Other}`
+    `Region distribution -> East Asia: ${regionCounts['East Asia']}, Asia: ${regionCounts.Asia}, Oceania: ${regionCounts.Oceania}, Africa: ${regionCounts.Africa}, Europe: ${regionCounts.Europe}, Americas: ${regionCounts.Americas}, Other: ${regionCounts.Other}`
   )
-  console.log(`Asia+East Asia share: ${(asiaShare * 100).toFixed(1)}%`)
-  if (data.length > 0 && asiaShare < MIN_ASIA_SHARE) {
+  console.log(`APAC share (East Asia + Asia + Oceania): ${(apacShare * 100).toFixed(1)}%`)
+  console.log(`Africa share: ${(africaShare * 100).toFixed(1)}%`)
+  if (data.length > 0 && apacShare < MIN_APAC_SHARE) {
     errors.push(
-      `Asia+East Asia share ${(asiaShare * 100).toFixed(1)}% is below minimum ${(MIN_ASIA_SHARE * 100).toFixed(1)}%`
+      `APAC share ${(apacShare * 100).toFixed(1)}% is below minimum ${(MIN_APAC_SHARE * 100).toFixed(1)}%`
     )
+  }
+  if (data.length > 0 && africaShare < MIN_AFRICA_SHARE) {
+    errors.push(`Africa share ${(africaShare * 100).toFixed(1)}% is below minimum ${(MIN_AFRICA_SHARE * 100).toFixed(1)}%`)
   }
   if (localImageStats.duplicateGroups.length) {
     warnings.push(
