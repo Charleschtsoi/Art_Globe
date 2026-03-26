@@ -7,7 +7,7 @@ This repo is MIT-licensed so others can improve it.
 
 ## Live demo
 
-If you have a deployed URL, link it here.
+To be uploaded
 
 ## Tech
 
