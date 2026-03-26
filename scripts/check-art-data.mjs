@@ -1,0 +1,185 @@
+/* global process */
+import fs from 'node:fs/promises'
+import crypto from 'node:crypto'
+import path from 'node:path'
+
+const DATA_PATH = path.resolve(process.cwd(), 'src/data/externalArtData.json')
+const LOCAL_ARTWORKS_DIR = path.resolve(process.cwd(), 'public/artworks')
+const REQUIRED_FIELDS = ['id', 'title', 'artist', 'lat', 'lng', 'museum', 'description', 'imageUrl', 'priority']
+const MAX_DUPLICATE_GROUPS = Number(process.env.MAX_DUPLICATE_IMAGE_GROUPS ?? 10)
+const MAX_DUPLICATE_FILES = Number(process.env.MAX_DUPLICATE_IMAGE_FILES ?? 20)
+const MIN_ASIA_SHARE = Number(process.env.MIN_ASIA_SHARE ?? 0.6)
+
+const readData = async () => {
+  const raw = await fs.readFile(DATA_PATH, 'utf8')
+  return JSON.parse(raw)
+}
+
+const isValidUrl = (value) => {
+  if (typeof value !== 'string' || !value.trim()) return false
+  if (value.startsWith('/')) return true
+  try {
+    const u = new URL(value)
+    return u.protocol === 'http:' || u.protocol === 'https:'
+  } catch {
+    return false
+  }
+}
+
+const hasHighResHint = (url) => {
+  const m = String(url).match(/(\d+)px|width=(\d+)|height=(\d+)|(\d+)x(\d+)/i)
+  if (!m) return true
+  const nums = m.slice(1).filter(Boolean).map(Number)
+  return nums.some((n) => n >= 300)
+}
+
+const hashFile = async (filePath) => {
+  const data = await fs.readFile(filePath)
+  return crypto.createHash('sha1').update(data).digest('hex')
+}
+
+const scanLocalDuplicateImages = async () => {
+  const grouped = new Map()
+  let files = []
+  try {
+    files = await fs.readdir(LOCAL_ARTWORKS_DIR)
+  } catch {
+    return {
+      totalFiles: 0,
+      duplicateGroups: [],
+      duplicateFileCount: 0
+    }
+  }
+
+  const imageFiles = files.filter((name) => /\.(png|jpe?g|webp)$/i.test(name))
+  for (const name of imageFiles) {
+    const fullPath = path.join(LOCAL_ARTWORKS_DIR, name)
+    const hash = await hashFile(fullPath)
+    if (!grouped.has(hash)) grouped.set(hash, [])
+    grouped.get(hash).push(name)
+  }
+
+  const duplicateGroups = [...grouped.values()]
+    .filter((group) => group.length > 1)
+    .sort((a, b) => b.length - a.length)
+
+  const duplicateFileCount = duplicateGroups.reduce((sum, group) => sum + group.length, 0)
+  return {
+    totalFiles: imageFiles.length,
+    duplicateGroups,
+    duplicateFileCount
+  }
+}
+
+const classifyRegion = (lat, lng) => {
+  if (lat >= 17 && lat <= 56 && lng >= 98 && lng <= 151) return 'East Asia'
+  if (lat >= -12 && lat <= 60 && lng >= 25 && lng <= 170) return 'Asia'
+  if (lat >= 35 && lat <= 72 && lng >= -12 && lng <= 45) return 'Europe'
+  if (lat >= -60 && lat <= 83 && lng >= -170 && lng <= -35) return 'Americas'
+  return 'Other'
+}
+
+const run = async () => {
+  const data = await readData()
+  const localImageStats = await scanLocalDuplicateImages()
+  if (!Array.isArray(data)) {
+    console.error('ERROR: externalArtData.json must be an array')
+    process.exit(1)
+  }
+
+  const errors = []
+  const warnings = []
+  const idSet = new Set()
+  const titleMuseumSet = new Set()
+  const regionCounts = {
+    'East Asia': 0,
+    Asia: 0,
+    Europe: 0,
+    Americas: 0,
+    Other: 0
+  }
+
+  data.forEach((item, index) => {
+    for (const field of REQUIRED_FIELDS) {
+      if (item?.[field] === undefined || item?.[field] === null || item?.[field] === '') {
+        errors.push(`row ${index}: missing required field "${field}"`)
+      }
+    }
+
+    const lat = Number(item?.lat)
+    const lng = Number(item?.lng)
+    if (!Number.isFinite(lat) || lat < -90 || lat > 90) errors.push(`row ${index}: invalid lat "${item?.lat}"`)
+    if (!Number.isFinite(lng) || lng < -180 || lng > 180) errors.push(`row ${index}: invalid lng "${item?.lng}"`)
+    if (Number.isFinite(lat) && Number.isFinite(lng)) {
+      const region = classifyRegion(lat, lng)
+      regionCounts[region] = (regionCounts[region] || 0) + 1
+    }
+
+    if (!isValidUrl(item?.imageUrl)) errors.push(`row ${index}: invalid imageUrl "${item?.imageUrl}"`)
+    else if (!hasHighResHint(item?.imageUrl)) warnings.push(`row ${index}: imageUrl may be low-res "${item?.imageUrl}"`)
+
+    if (typeof item?.description === 'string' && item.description.trim().length < 40) {
+      warnings.push(`row ${index}: description is very short`)
+    }
+
+    const idKey = String(item?.id)
+    if (idSet.has(idKey)) errors.push(`row ${index}: duplicate id "${idKey}"`)
+    idSet.add(idKey)
+
+    const tmKey = `${String(item?.title).toLowerCase()}::${String(item?.museum).toLowerCase()}`
+    if (titleMuseumSet.has(tmKey)) warnings.push(`row ${index}: possible duplicate title+museum "${item?.title}"`)
+    titleMuseumSet.add(tmKey)
+  })
+
+  console.log(`Checked ${data.length} records in ${path.relative(process.cwd(), DATA_PATH)}`)
+  console.log(
+    `Scanned ${localImageStats.totalFiles} local artwork files in ${path.relative(process.cwd(), LOCAL_ARTWORKS_DIR)}`
+  )
+  const asiaCount = regionCounts['East Asia'] + regionCounts.Asia
+  const asiaShare = data.length ? asiaCount / data.length : 0
+  console.log(
+    `Region distribution -> East Asia: ${regionCounts['East Asia']}, Asia: ${regionCounts.Asia}, Europe: ${regionCounts.Europe}, Americas: ${regionCounts.Americas}, Other: ${regionCounts.Other}`
+  )
+  console.log(`Asia+East Asia share: ${(asiaShare * 100).toFixed(1)}%`)
+  if (data.length > 0 && asiaShare < MIN_ASIA_SHARE) {
+    errors.push(
+      `Asia+East Asia share ${(asiaShare * 100).toFixed(1)}% is below minimum ${(MIN_ASIA_SHARE * 100).toFixed(1)}%`
+    )
+  }
+  if (localImageStats.duplicateGroups.length) {
+    warnings.push(
+      `local image duplicates found: ${localImageStats.duplicateGroups.length} groups (${localImageStats.duplicateFileCount} files)`
+    )
+    localImageStats.duplicateGroups.slice(0, 10).forEach((group, idx) => {
+      warnings.push(`duplicate group ${idx + 1} (${group.length} files): ${group.slice(0, 6).join(', ')}`)
+    })
+  }
+
+  if (localImageStats.duplicateGroups.length > MAX_DUPLICATE_GROUPS) {
+    errors.push(
+      `duplicate local image groups (${localImageStats.duplicateGroups.length}) exceed threshold ${MAX_DUPLICATE_GROUPS}`
+    )
+  }
+  if (localImageStats.duplicateFileCount > MAX_DUPLICATE_FILES) {
+    errors.push(
+      `duplicate local image files (${localImageStats.duplicateFileCount}) exceed threshold ${MAX_DUPLICATE_FILES}`
+    )
+  }
+  if (warnings.length) {
+    console.log(`Warnings (${warnings.length}):`)
+    warnings.slice(0, 50).forEach((w) => console.log(` - ${w}`))
+    if (warnings.length > 50) console.log(` - ... ${warnings.length - 50} more warnings`)
+  }
+  if (errors.length) {
+    console.error(`Errors (${errors.length}):`)
+    errors.slice(0, 100).forEach((e) => console.error(` - ${e}`))
+    if (errors.length > 100) console.error(` - ... ${errors.length - 100} more errors`)
+    process.exit(1)
+  }
+  console.log('Data quality check passed.')
+}
+
+run().catch((err) => {
+  console.error('Failed to run data quality check:', err)
+  process.exit(1)
+})
