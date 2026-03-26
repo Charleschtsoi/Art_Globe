@@ -110,7 +110,16 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
             {t('panel.close')}
           </button>
         </div>
-        <div style={{ padding: '0 16px 16px 16px', overflow: 'hidden', display: 'grid', gridTemplateRows: 'auto 1fr', minHeight: 0, flex: 1 }}>
+        <div
+          style={{
+            padding: '0 16px 16px 16px',
+            overflow: 'hidden',
+            display: 'grid',
+            gridTemplateRows: 'auto auto 1fr',
+            minHeight: 0,
+            flex: 1
+          }}
+        >
           <p style={{ margin: '0 0 10px 0', color: '#d4a853', fontSize: 13 }}>
             {t('panel.clusterHint', { count })}
           </p>
@@ -139,7 +148,8 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
               gap: 10,
               overflow: 'auto',
               paddingRight: 4,
-              alignContent: 'start'
+              alignContent: 'start',
+              minHeight: 0
             }}
           >
             {filteredClusterArtworks.map((art) => {

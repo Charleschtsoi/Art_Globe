@@ -106,6 +106,9 @@ function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
     onSelectArtwork?.(art)
     setIsOpen(false)
   }
+  const resultCount = results.length
+  const resultsMaxHeight =
+    resultCount <= 1 ? 92 : resultCount <= 4 ? 220 : 280
 
   return (
     <div ref={rootRef} style={panelStyle}>
@@ -147,13 +150,15 @@ function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
           role="listbox"
           aria-label={t('search.resultsAria')}
           style={{
-            position: 'relative',
-            zIndex: 2,
-            marginTop: 8,
+            position: 'absolute',
+            top: 'calc(100% + 8px)',
+            left: 0,
+            right: 0,
+            zIndex: 20,
             background: 'rgba(42, 28, 18, 0.98)',
             border: '1px solid rgba(212, 168, 83, 0.25)',
             borderRadius: 10,
-            maxHeight: 280,
+            maxHeight: resultsMaxHeight,
             overflow: 'auto'
           }}
         >

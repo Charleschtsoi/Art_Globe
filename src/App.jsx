@@ -84,7 +84,7 @@ function App() {
   const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
 
   const markerZoomBand = useMemo(() => getZoomBand(cameraAltitude), [cameraAltitude])
-  const isMobileLayout = viewport.width <= 768
+  const isMobileLayout = viewport.width <= 900
 
   const allArtworks = useMemo(
     () => allArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
@@ -651,15 +651,15 @@ function App() {
         style={{
           position: 'fixed',
           top: isMobileLayout ? 'auto' : 12,
-          left: isMobileLayout ? '50%' : 12,
+          left: 12,
           bottom: isMobileLayout ? 12 : 'auto',
-          transform: isMobileLayout ? 'translateX(-50%)' : 'none',
+          transform: 'none',
           zIndex: 90,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
           gap: 8,
-          width: isMobileLayout ? 'min(560px, calc(100vw - 20px))' : 'min(340px, calc(100vw - 24px))',
+          width: isMobileLayout ? 'min(360px, calc(100vw - 24px))' : 'min(340px, calc(100vw - 24px))',
           pointerEvents: 'auto'
         }}
       >
@@ -748,7 +748,7 @@ function App() {
         style={{
           position: 'fixed',
           right: 14,
-          bottom: isMobileLayout ? 114 : selectedItemForPanel ? 22 : 16,
+          bottom: isMobileLayout ? 156 : selectedItemForPanel ? 22 : 16,
           zIndex: 95,
           display: 'flex',
           flexDirection: 'column',
@@ -822,7 +822,7 @@ function App() {
           style={{
             position: 'fixed',
             left: '50%',
-            bottom: isMobileLayout ? 160 : 86,
+            bottom: isMobileLayout ? 208 : 86,
             transform: 'translateX(-50%)',
             zIndex: 80,
             background: 'rgba(42, 28, 18, 0.92)',
