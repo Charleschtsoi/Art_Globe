@@ -16,6 +16,11 @@
     "fetch:oceania-seasia": "node fetchOceaniaSeAsia.js",
     "fetch:africa": "node fetchAfrica.js",
     "fetch:met": "node fetchMetMuseumData.js",
+    "archive3:import": "node scripts/import-archive3.mjs",
+    "archive3:enrich": "node scripts/enrich-archive3-metadata.mjs",
+    "archive3:validate": "node scripts/validate-archive3-city-consistency.mjs",
+    "archive3:upload": "node scripts/upload-archive3-images.mjs",
+    "archive3:merge": "node scripts/merge-archive3-into-external.mjs",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs"
   },

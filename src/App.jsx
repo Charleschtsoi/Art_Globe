@@ -66,6 +66,7 @@ function App() {
     initialized: false
   })
   const brokenImageUrlsRef = useRef(new Set())
+  const loadedImageUrlsRef = useRef(new Set())
   const markerTelemetryRef = useRef({
     tierThumb: 0,
     tierPlaceholder: 0,
@@ -168,6 +169,11 @@ function App() {
         70% { box-shadow: 0 3px 12px rgba(0, 0, 0, 0.38), 0 0 0 8px rgba(212, 168, 83, 0); }
         100% { box-shadow: 0 2px 9px rgba(0, 0, 0, 0.33), 0 0 0 0 rgba(212, 168, 83, 0); }
       }
+      @keyframes artMarkerImageLoading {
+        0% { filter: brightness(0.95); }
+        50% { filter: brightness(1.08); }
+        100% { filter: brightness(0.95); }
+      }
       .art-marker-pin {
         transform-origin: center;
       }
@@ -176,6 +182,16 @@ function App() {
       }
       .art-marker-pin--cluster {
         animation: artMarkerPulseCluster 2.4s ease-in-out infinite;
+      }
+      .art-marker-pin--loading {
+        animation:
+          artMarkerPulseArtwork 2.7s ease-in-out infinite,
+          artMarkerImageLoading 1.2s ease-in-out infinite;
+      }
+      .art-marker-pin--cluster.art-marker-pin--loading {
+        animation:
+          artMarkerPulseCluster 2.4s ease-in-out infinite,
+          artMarkerImageLoading 1.2s ease-in-out infinite;
       }
     `
     document.head.appendChild(styleTag)
@@ -464,6 +480,14 @@ function App() {
       const canonicalImageUrl = typeof art?.canonicalImageUrl === 'string' ? art.canonicalImageUrl.trim() : ''
       const resolvedSource = canonicalImageUrl || rawImageUrl
       const thumbSrc = getMarkerImageUrl(resolvedSource)
+      const isKnownBroken = Boolean(
+        rawImageUrl && (brokenImageUrlsRef.current.has(rawImageUrl) || brokenImageUrlsRef.current.has(thumbSrc))
+      )
+      const isKnownLoaded = Boolean(thumbSrc && loadedImageUrlsRef.current.has(thumbSrc))
+      const setLoadingState = (state) => {
+        if (state === 'loading') pin.classList.add('art-marker-pin--loading')
+        else pin.classList.remove('art-marker-pin--loading')
+      }
 
       const setImageTier = (tier, nextSrc) => {
         image.dataset.fallbackTier = tier
@@ -471,18 +495,42 @@ function App() {
         if (tier === 'thumb') trackMarkerTelemetry('tierThumb')
         else if (tier === 'placeholder') trackMarkerTelemetry('tierPlaceholder')
       }
-
-      setImageTier('thumb', thumbSrc || artPlaceholder)
       image.alt = t('marker.artworkAria', { title: artworkTitle, artist: cardArtist })
       image.style.width = '100%'
       image.style.height = '100%'
       image.style.objectFit = 'cover'
+      image.style.opacity = '0'
+      image.style.transition = 'opacity 0.18s ease'
 
+      if (isKnownBroken || !thumbSrc) {
+        setLoadingState('failed')
+        setImageTier('placeholder', artPlaceholder)
+        image.style.opacity = '1'
+      } else if (isKnownLoaded) {
+        setLoadingState('loaded')
+        setImageTier('thumb', thumbSrc)
+        image.style.opacity = '1'
+      } else {
+        setLoadingState('loading')
+        setImageTier('thumb', thumbSrc)
+      }
+
+      image.onload = () => {
+        if (image.dataset.fallbackTier === 'thumb') {
+          loadedImageUrlsRef.current.add(thumbSrc)
+          setLoadingState('loaded')
+        }
+        image.style.opacity = '1'
+      }
       image.onerror = () => {
         trackMarkerTelemetry('thumbErrors')
         if (rawImageUrl) brokenImageUrlsRef.current.add(rawImageUrl)
+        if (thumbSrc) brokenImageUrlsRef.current.add(thumbSrc)
         image.onerror = null
+        image.onload = null
+        setLoadingState('failed')
         setImageTier('placeholder', artPlaceholder)
+        image.style.opacity = '1'
       }
       pin.appendChild(image)
       wrapper.appendChild(pin)

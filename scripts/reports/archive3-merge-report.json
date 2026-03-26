@@ -1,0 +1,21 @@
+{
+  "generatedAt": "2026-03-26T11:33:52.444Z",
+  "incomingCount": 1464,
+  "importedCount": 320,
+  "skippedCount": 1144,
+  "maxPerArtist": 8,
+  "maxImportTotal": 320,
+  "selectedRegionCounts": {
+    "East Asia": 0,
+    "Asia": 40,
+    "Oceania": 0,
+    "Africa": 8,
+    "Europe": 232,
+    "Americas": 40,
+    "Other": 0
+  },
+  "skippedReasonCounts": {
+    "artist_cap": 852,
+    "max_import_total": 292
+  }
+}
