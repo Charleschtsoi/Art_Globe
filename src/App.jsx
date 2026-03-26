@@ -15,6 +15,10 @@ const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
 
 /** Equirectangular blue marble (react-globe.gl / three-globe); omitting globeImageUrl renders a black sphere per library docs. */
 const EARTH_BLUE_MARBLE_URL = 'https://unpkg.com/three-globe/example/img/earth-blue-marble.jpg'
+const MIN_CAMERA_ALTITUDE = 0.55
+const MAX_CAMERA_ALTITUDE = 6.2
+const ZOOM_STEP_RATIO = 0.82
+const ZOOM_BUTTON_ANIMATION_MS = 620
 
 function escapeHtml(s) {
   return String(s)
@@ -80,6 +84,7 @@ function App() {
   const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
 
   const markerZoomBand = useMemo(() => getZoomBand(cameraAltitude), [cameraAltitude])
+  const isMobileLayout = viewport.width <= 768
 
   const allArtworks = useMemo(
     () => allArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
@@ -433,6 +438,22 @@ function App() {
     })
   }, [])
 
+  const handleZoomInClick = useCallback(() => {
+    if (!Number.isFinite(cameraAltitude)) return
+    pauseAutoRotate()
+    scheduleAutoRotateResume()
+    const nextAltitude = Math.max(MIN_CAMERA_ALTITUDE, cameraAltitude * ZOOM_STEP_RATIO)
+    globeRef.current?.pointOfView({ altitude: Math.min(cameraAltitude, nextAltitude) }, ZOOM_BUTTON_ANIMATION_MS)
+  }, [cameraAltitude, pauseAutoRotate, scheduleAutoRotateResume])
+
+  const handleZoomOutClick = useCallback(() => {
+    if (!Number.isFinite(cameraAltitude)) return
+    pauseAutoRotate()
+    scheduleAutoRotateResume()
+    const nextAltitude = Math.min(MAX_CAMERA_ALTITUDE, cameraAltitude / ZOOM_STEP_RATIO)
+    globeRef.current?.pointOfView({ altitude: nextAltitude }, ZOOM_BUTTON_ANIMATION_MS)
+  }, [cameraAltitude, pauseAutoRotate, scheduleAutoRotateResume])
+
   const createArtworkElement = useCallback(
     (art) => {
       const artworkTitle = art.displayTitle ?? art.title
@@ -629,14 +650,16 @@ function App() {
       <div
         style={{
           position: 'fixed',
-          top: 12,
-          left: 12,
+          top: isMobileLayout ? 'auto' : 12,
+          left: isMobileLayout ? '50%' : 12,
+          bottom: isMobileLayout ? 12 : 'auto',
+          transform: isMobileLayout ? 'translateX(-50%)' : 'none',
           zIndex: 90,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
           gap: 8,
-          width: 'min(340px, calc(100vw - 24px))',
+          width: isMobileLayout ? 'min(560px, calc(100vw - 20px))' : 'min(340px, calc(100vw - 24px))',
           pointerEvents: 'auto'
         }}
       >
@@ -721,6 +744,59 @@ function App() {
           onGlobeReady={onGlobeReady}
         />
       </div>
+      <div
+        style={{
+          position: 'fixed',
+          right: 14,
+          bottom: isMobileLayout ? 114 : selectedItemForPanel ? 22 : 16,
+          zIndex: 95,
+          display: 'flex',
+          flexDirection: 'column',
+          gap: 8,
+          pointerEvents: 'auto'
+        }}
+      >
+        <button
+          type="button"
+          aria-label="Zoom in"
+          onClick={handleZoomInClick}
+          disabled={!Number.isFinite(cameraAltitude) || cameraAltitude <= MIN_CAMERA_ALTITUDE + 0.01}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: 10,
+            border: '1px solid rgba(212, 168, 83, 0.45)',
+            background: 'rgba(32, 22, 14, 0.92)',
+            color: '#f5e6c8',
+            fontSize: 24,
+            lineHeight: '1',
+            cursor: 'pointer',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+          }}
+        >
+          +
+        </button>
+        <button
+          type="button"
+          aria-label="Zoom out"
+          onClick={handleZoomOutClick}
+          disabled={!Number.isFinite(cameraAltitude) || cameraAltitude >= MAX_CAMERA_ALTITUDE - 0.01}
+          style={{
+            width: 40,
+            height: 40,
+            borderRadius: 10,
+            border: '1px solid rgba(212, 168, 83, 0.45)',
+            background: 'rgba(32, 22, 14, 0.92)',
+            color: '#f5e6c8',
+            fontSize: 24,
+            lineHeight: '1',
+            cursor: 'pointer',
+            boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+          }}
+        >
+          -
+        </button>
+      </div>
       {selectedItemForPanel && activeMarker && (
         <ArtworkSidePanel
           key={
@@ -746,7 +822,7 @@ function App() {
           style={{
             position: 'fixed',
             left: '50%',
-            bottom: 86,
+            bottom: isMobileLayout ? 160 : 86,
             transform: 'translateX(-50%)',
             zIndex: 80,
             background: 'rgba(42, 28, 18, 0.92)',
