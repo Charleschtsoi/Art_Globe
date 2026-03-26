@@ -388,6 +388,14 @@ function App() {
     globeRef.current?.pointOfView({ lat: art.lat, lng: art.lng, altitude: nextAltitude }, 1000)
   }, [])
 
+  const getZoomInAltitude = useCallback((currentAltitude) => {
+    const current = Number(currentAltitude)
+    if (!Number.isFinite(current)) return 1.1
+    // Keep click-focus monotonic: never move to a farther altitude.
+    const target = Math.max(0.6, current * 0.82)
+    return Math.min(current, target)
+  }, [])
+
   const handleGlobalSearchSelect = useCallback(
     (art) => {
       if (!art) return
@@ -395,9 +403,9 @@ function App() {
       scheduleAutoRotateResume()
       setClusterHint('')
       setActiveMarker(art)
-      focusOnArtwork(art, Math.max(0.95, cameraAltitude * 0.85))
+      focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
     },
-    [cameraAltitude, focusOnArtwork, pauseAutoRotate, scheduleAutoRotateResume]
+    [cameraAltitude, focusOnArtwork, getZoomInAltitude, pauseAutoRotate, scheduleAutoRotateResume]
   )
 
   const handlePointClick = useCallback(
@@ -724,7 +732,7 @@ function App() {
           onClose={() => setActiveMarker(null)}
           onSelectArtwork={(art) => {
             setActiveMarker(art)
-            focusOnArtwork(art, Math.max(0.95, cameraAltitude * 0.85))
+            focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
           }}
           getThumbUrl={getMarkerImageUrl}
           t={t}
