@@ -1,0 +1,117 @@
+{
+  "version": 1,
+  "generatedAt": "2026-03-27T03:57:09.827Z",
+  "chunkSize": 300,
+  "totalRecords": 1162,
+  "totalChunks": 6,
+  "chunks": [
+    {
+      "id": "africa-0000",
+      "region": "africa",
+      "path": "/data/chunks/africa-0000.json",
+      "count": 88,
+      "minLat": -33.928984,
+      "maxLat": 36.883977777,
+      "minLng": -4.4166666666667,
+      "maxLng": 28.0471,
+      "sampleCities": [
+        "Cape Town",
+        "Mahikeng",
+        "Algiers",
+        "Johannesburg",
+        "Constantine",
+        "Oran"
+      ]
+    },
+    {
+      "id": "americas-0000",
+      "region": "americas",
+      "path": "/data/chunks/americas-0000.json",
+      "count": 274,
+      "minLat": 18.003888888,
+      "maxLat": 45.429535,
+      "minLng": -122.4162,
+      "maxLng": -64.95,
+      "sampleCities": [
+        "New York",
+        "Chicago",
+        "Philadelphia",
+        "Omaha",
+        "Boston",
+        "Washington, D.C."
+      ]
+    },
+    {
+      "id": "asia-0000",
+      "region": "asia",
+      "path": "/data/chunks/asia-0000.json",
+      "count": 79,
+      "minLat": -7.800227358,
+      "maxLat": 55.75055555555556,
+      "minLng": 25.134444444444444,
+      "maxLng": 121.06279,
+      "sampleCities": [
+        "Moscow",
+        "Saint Catherine",
+        "Cairo",
+        "Luxor",
+        "Addis Ababa",
+        "Grand Principality of Moscow"
+      ]
+    },
+    {
+      "id": "east-asia-0000",
+      "region": "east-asia",
+      "path": "/data/chunks/east-asia-0000.json",
+      "count": 234,
+      "minLat": 21.030556,
+      "maxLat": 39.9163,
+      "minLng": 105.836944,
+      "maxLng": 139.7765,
+      "sampleCities": [
+        "Tokyo",
+        "Kyoto",
+        "Taipei",
+        "Beijing",
+        "Shanghai",
+        "Seoul"
+      ]
+    },
+    {
+      "id": "europe-0000",
+      "region": "europe",
+      "path": "/data/chunks/europe-0000.json",
+      "count": 295,
+      "minLat": 37.38861111111111,
+      "maxLat": 60.79314,
+      "minLng": -6.264722222,
+      "maxLng": 19.923888888,
+      "sampleCities": [
+        "London",
+        "Antwerp",
+        "Toledo",
+        "Paris",
+        "Wuppertal",
+        "Rome"
+      ]
+    },
+    {
+      "id": "oceania-0000",
+      "region": "oceania",
+      "path": "/data/chunks/oceania-0000.json",
+      "count": 192,
+      "minLat": -45.87451,
+      "maxLat": -31.950588341,
+      "minLng": 115.860943334,
+      "maxLng": 174.766237,
+      "sampleCities": [
+        "Sydney",
+        "Melbourne",
+        "Adelaide",
+        "Canberra",
+        "Perth",
+        "Geelong"
+      ]
+    }
+  ]
+}

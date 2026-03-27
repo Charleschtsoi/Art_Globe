@@ -1,0 +1,2646 @@
+{
+  "chunkId": "africa-0000",
+  "region": "africa",
+  "records": [
+    {
+      "artwork_id": "africa-0",
+      "title": "Portrait of Miss Ethel Warwick",
+      "artist": "Philip Wilson Steer",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-027ae74e987c0fdd.jpg",
+        "high_res_url": "/artworks/external/external-027ae74e987c0fdd.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1901.",
+      "id": "africa-0",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1901.",
+      "imageUrl": "/artworks/external/external-027ae74e987c0fdd.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Philip%20Wilson%20Steer%20-%20Portrait%20of%20Miss%20Ethel%20Warwick.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q2046584"
+    },
+    {
+      "artwork_id": "africa-4",
+      "title": "Portrait of a 35-year-old woman",
+      "artist": "Frans Hals",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-6650a83d7f967a30.jpg",
+        "high_res_url": "/artworks/external/external-6650a83d7f967a30.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1644.",
+      "id": "africa-4",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1644.",
+      "imageUrl": "/artworks/external/external-6650a83d7f967a30.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20a%20Woman00.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q18009973"
+    },
+    {
+      "artwork_id": "africa-5",
+      "title": "The Sirens",
+      "artist": "Edward Burne-Jones",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-0650e2233e960511.jpg",
+        "high_res_url": "/artworks/external/external-0650e2233e960511.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1875.",
+      "id": "africa-5",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1875.",
+      "imageUrl": "/artworks/external/external-0650e2233e960511.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Sirens%20-%20Edward%20Burne-Jones%20%281875%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q19826821"
+    },
+    {
+      "artwork_id": "africa-6",
+      "title": "Interior looking out on water",
+      "artist": "Pieter de Hooch",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-9a6074b67a3b9e8e.jpg",
+        "high_res_url": "/artworks/external/external-9a6074b67a3b9e8e.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1668.",
+      "id": "africa-6",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1668.",
+      "imageUrl": "/artworks/external/external-9a6074b67a3b9e8e.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20de%20Hooch%20-%20Interior%20looking%20out%20on%20water%20Michaelis%20Collection.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q20026685"
+    },
+    {
+      "artwork_id": "africa-7",
+      "title": "Mountain Landscape along a River",
+      "artist": "Jacob van Ruisdael",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1670.",
+      "id": "africa-7",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1670.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20van%20Ruisdael%20-%20Mountain%20Landscape%20-%20Michaelis%20collection.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q20859142"
+    },
+    {
+      "artwork_id": "africa-9",
+      "title": "Wagon Crossing a Drift - Natal",
+      "artist": "Thomas Baines",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-3f44f180501f68ef.jpg",
+        "high_res_url": "/artworks/external/external-3f44f180501f68ef.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1874.",
+      "id": "africa-9",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1874.",
+      "imageUrl": "/artworks/external/external-3f44f180501f68ef.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Baines%20-%20Wagon%20Crossing%20a%20Drift%20-%20Natal%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56229961"
+    },
+    {
+      "artwork_id": "africa-10",
+      "title": "Poultry-yard with angered cock",
+      "artist": "Melchior d'Hondecoeter",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-f1cd13078827a023.jpg",
+        "high_res_url": "/artworks/external/external-f1cd13078827a023.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1658.",
+      "id": "africa-10",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1658.",
+      "imageUrl": "/artworks/external/external-f1cd13078827a023.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Melchior%20De%20Hondecoeter%20-%20Poultry-yard%20with%20angered%20cock%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230132"
+    },
+    {
+      "artwork_id": "africa-11",
+      "title": "Table Bay",
+      "artist": "Thomas William Bowler",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-1a6009fbc390cb7c.jpg",
+        "high_res_url": "/artworks/external/external-1a6009fbc390cb7c.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1900.",
+      "id": "africa-11",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1900.",
+      "imageUrl": "/artworks/external/external-1a6009fbc390cb7c.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Thomas%20Bowler%20-%20Table%20Bay%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230201"
+    },
+    {
+      "artwork_id": "africa-12",
+      "title": "The village of Midlum",
+      "artist": "Abraham Beerstraaten",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-5dc04ecdda78b2e0.jpg",
+        "high_res_url": "/artworks/external/external-5dc04ecdda78b2e0.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1900.",
+      "id": "africa-12",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1900.",
+      "imageUrl": "/artworks/external/external-5dc04ecdda78b2e0.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham%20Van%20Beerstraten%20-%20The%20village%20of%20Midlum%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230249"
+    },
+    {
+      "artwork_id": "africa-13",
+      "title": "Still-life",
+      "artist": "Frans Oerder",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-504d2d965e586c86.jpg",
+        "high_res_url": "/artworks/external/external-504d2d965e586c86.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1900.",
+      "id": "africa-13",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1900.",
+      "imageUrl": "/artworks/external/external-504d2d965e586c86.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Frans%20Oerder%20-%20Still-life%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230290"
+    },
+    {
+      "artwork_id": "africa-14",
+      "title": "Firetail with his Trainer by the Rubbing-Down House on Newmarket Heath",
+      "artist": "George Stubbs",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a46b14aaff4f3e09.jpg",
+        "high_res_url": "/artworks/external/external-a46b14aaff4f3e09.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1773.",
+      "id": "africa-14",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1773.",
+      "imageUrl": "/artworks/external/external-a46b14aaff4f3e09.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/George%20Stubbs%20-%20Firetail%20with%20his%20Trainer%20by%20the%20Rubbing-Down%20House%20on%20Newmarket%20Heath%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230353"
+    },
+    {
+      "artwork_id": "africa-15",
+      "title": "Royal Visit 1925",
+      "artist": "Harry Stratford Caldecott",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-784c003536cda3f7.jpg",
+        "high_res_url": "/artworks/external/external-784c003536cda3f7.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1925.",
+      "id": "africa-15",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1925.",
+      "imageUrl": "/artworks/external/external-784c003536cda3f7.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harry%20Caldecott%20-%20Royal%20Visit%201925%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230404"
+    },
+    {
+      "artwork_id": "africa-16",
+      "title": "The Cricket Match (Malay Quarter)",
+      "artist": "Harry Stratford Caldecott",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-ffc66cc1a07aa7a0.jpg",
+        "high_res_url": "/artworks/external/external-ffc66cc1a07aa7a0.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1924.",
+      "id": "africa-16",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1924.",
+      "imageUrl": "/artworks/external/external-ffc66cc1a07aa7a0.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Harry%20Caldecott%20-%20The%20Cricket%20Match%20%28Malay%20Quarter%29%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230417"
+    },
+    {
+      "artwork_id": "africa-17",
+      "title": "Cape Town from the Top of Kloof Street",
+      "artist": "Heinrich Hermann",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-fb23cb329333bf09.jpg",
+        "high_res_url": "/artworks/external/external-fb23cb329333bf09.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1900.",
+      "id": "africa-17",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1900.",
+      "imageUrl": "/artworks/external/external-fb23cb329333bf09.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Heinrich%20Hermann%20-%20Cape%20Town%20from%20the%20Top%20of%20Kloof%20Street%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230473"
+    },
+    {
+      "artwork_id": "africa-18",
+      "title": "Portrait of a four-year old boy with a club and ball",
+      "artist": "Paulus Moreelse",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-1f30637e3e9b2673.jpg",
+        "high_res_url": "/artworks/external/external-1f30637e3e9b2673.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1900.",
+      "id": "africa-18",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1900.",
+      "imageUrl": "/artworks/external/external-1f30637e3e9b2673.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paulus%20Moreelse%20-%20Portrait%20of%20a%20four-year%20old%20boy%20with%20a%20club%20and%20ball%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230573"
+    },
+    {
+      "artwork_id": "africa-19",
+      "title": "Rhodes Memorial",
+      "artist": "Pieter Wenning",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-9d4c15dccfd98910.jpg",
+        "high_res_url": "/artworks/external/external-9d4c15dccfd98910.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1916.",
+      "id": "africa-19",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1916.",
+      "imageUrl": "/artworks/external/external-9d4c15dccfd98910.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pieter%20Wenning%20-%20Rhodes%20Memorial%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56230580"
+    },
+    {
+      "artwork_id": "africa-20",
+      "title": "City Hall, Cape Town 1917",
+      "artist": "Robert Gwelo Goodman",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-7069edeb0647643b.jpg",
+        "high_res_url": "/artworks/external/external-7069edeb0647643b.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1917.",
+      "id": "africa-20",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1917.",
+      "imageUrl": "/artworks/external/external-7069edeb0647643b.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Gwelo%20Goodman%20-%20City%20Hall%2C%20Cape%20Town%201917%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56239412"
+    },
+    {
+      "artwork_id": "africa-21",
+      "title": "Interior",
+      "artist": "Wolf Kibel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-64523d674645a697.jpg",
+        "high_res_url": "/artworks/external/external-64523d674645a697.jpg"
+      },
+      "historical_text": "Located at South African National Gallery.",
+      "id": "africa-21",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery.",
+      "imageUrl": "/artworks/external/external-64523d674645a697.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wolf%20Kibel%20-%20Interior%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q56239431"
+    },
+    {
+      "artwork_id": "africa-22",
+      "title": "Dutch Ship in Foreign Bay",
+      "artist": "Ludolf Bakhuizen",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-e9f9b5b4920a4d32.jpg",
+        "high_res_url": "/artworks/external/external-e9f9b5b4920a4d32.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1690.",
+      "id": "africa-22",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1690.",
+      "imageUrl": "/artworks/external/external-e9f9b5b4920a4d32.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iziko%20sang%20Dutch%20Ship%20in%20Foreign%20Bay.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q66498912"
+    },
+    {
+      "artwork_id": "africa-38",
+      "title": "View of Wageningen",
+      "artist": "Aelbert Cuyp",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-614208c7f8a7e0c0.jpg",
+        "high_res_url": "/artworks/external/external-614208c7f8a7e0c0.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1644.",
+      "id": "africa-38",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1644.",
+      "imageUrl": "/artworks/external/external-614208c7f8a7e0c0.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuyp%20-%20Reiss%2C%20025.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84709385"
+    },
+    {
+      "artwork_id": "africa-39",
+      "title": "Holiday Time in Cape Town in the Twentieth Century, in Honour of the Expected Arrival of a Governor-General of UNITED South Africa",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-4fcba5873acc86a7.jpg",
+        "high_res_url": "/artworks/external/external-4fcba5873acc86a7.jpg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1899.",
+      "id": "africa-39",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1899.",
+      "imageUrl": "/artworks/external/external-4fcba5873acc86a7.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iziko%20sang%20Holiday%20Time%20in%20Cape%20Town.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q106091396"
+    },
+    {
+      "artwork_id": "africa-44",
+      "title": "Piling Wreckage Upon Wreckage",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at South African National Gallery.",
+      "id": "africa-44",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Iziko%20sang%20Piling%20Wreckage%20Upon%20Wreckage.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q115688291"
+    },
+    {
+      "artwork_id": "africa-45",
+      "title": "Announcement of the Peace of Münster at the Grote Markt in Haarlem",
+      "artist": "Gillis Rombouts",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1660.",
+      "id": "africa-45",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1660.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gillis%20Rombouts%20-%20Aankondiging%20Vrede%20van%20M%C3%BCnster%20op%20Grote%20Markt%20Haarlem%2C%20Michaelis%20collection.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q117312795"
+    },
+    {
+      "artwork_id": "africa-46",
+      "title": "Hilly Landscape near Bentheim",
+      "artist": "Jacob van Ruisdael",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1662.",
+      "id": "africa-46",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1662.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20van%20Ruisdael%20-%20Hilly%20Landscape%20near%20Bentheim.jpeg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q117355695"
+    },
+    {
+      "artwork_id": "africa-47",
+      "title": "Q121509191",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "South African National Gallery",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.928984,
+        "lng": 18.417174
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at South African National Gallery. Year: 1524.",
+      "id": "africa-47",
+      "year": "Unknown",
+      "lat": -33.928984,
+      "lng": 18.417174,
+      "museumName": "South African National Gallery",
+      "description": "Located at South African National Gallery. Year: 1524.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/After%20Joos%20van%20Cleve%20-%20De%20H.%20Anna-te-Drie%C3%ABn%2C%20na%201517%2C%2058827.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q121509191"
+    },
+    {
+      "artwork_id": "africa-48",
+      "title": "Portrait of Lady Michaelis",
+      "artist": "Edward Roworth",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-ba35c9bfdebd239e.jpg",
+        "high_res_url": "/artworks/external/external-ba35c9bfdebd239e.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1914.",
+      "id": "africa-48",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1914.",
+      "imageUrl": "/artworks/external/external-ba35c9bfdebd239e.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Lady%20Michaelis01.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q122021751"
+    },
+    {
+      "artwork_id": "africa-50",
+      "title": "Mymering, 1949",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "North-West University",
+        "city": "Mahikeng",
+        "country": "",
+        "lat": -26.693492,
+        "lng": 27.093062
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-03fdcd8cfc1c1afa.jpg",
+        "high_res_url": "/artworks/external/external-03fdcd8cfc1c1afa.jpg"
+      },
+      "historical_text": "Located at North-West University.",
+      "id": "africa-50",
+      "year": "Unknown",
+      "lat": -26.693492,
+      "lng": 27.093062,
+      "museumName": "North-West University",
+      "description": "Located at North-West University.",
+      "imageUrl": "/artworks/external/external-03fdcd8cfc1c1afa.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Bettie%20Cilliers-Barnard%20-%20Mymering%20%281949%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q133256532"
+    },
+    {
+      "artwork_id": "africa-51",
+      "title": "Trompe l'oeil with a bust of Adonis.",
+      "artist": "Caesar van Everdingen",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Michaelis Collection",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.923,
+        "lng": 18.42
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-edeed2586821d9b6.jpg",
+        "high_res_url": "/artworks/external/external-edeed2586821d9b6.jpg"
+      },
+      "historical_text": "Located at Michaelis Collection. Year: 1666.",
+      "id": "africa-51",
+      "year": "Unknown",
+      "lat": -33.923,
+      "lng": 18.42,
+      "museumName": "Michaelis Collection",
+      "description": "Located at Michaelis Collection. Year: 1666.",
+      "imageUrl": "/artworks/external/external-edeed2586821d9b6.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesar%20Boetius%20van%20Everdingen%20003.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q138357523"
+    },
+    {
+      "artwork_id": "africa-52",
+      "title": "Auguste Renoir",
+      "artist": "Frédéric Bazille",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-53cd9bef02aeb0e6.jpg",
+        "high_res_url": "/artworks/external/external-53cd9bef02aeb0e6.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1867.",
+      "id": "africa-52",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1867.",
+      "imageUrl": "/artworks/external/external-53cd9bef02aeb0e6.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fr%C3%A9d%C3%A9ric%20Bazille%20-%20Renoir.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q12142552"
+    },
+    {
+      "artwork_id": "africa-53",
+      "title": "Portrait of Matilde Querini da Ponte",
+      "artist": "Pietro Longhi",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a2dcdb025c5d3256.jpg",
+        "high_res_url": "/artworks/external/external-a2dcdb025c5d3256.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1772.",
+      "id": "africa-53",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1772.",
+      "imageUrl": "/artworks/external/external-a2dcdb025c5d3256.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Querini%20Da%20Ponte-Pietro%20Longhi-Musee%20du%20Louvre.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q18573898"
+    },
+    {
+      "artwork_id": "africa-54",
+      "title": "Study of hands",
+      "artist": "Nicolas de Largillière",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-bad3b75f1295b447.jpg",
+        "high_res_url": "/artworks/external/external-bad3b75f1295b447.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1715.",
+      "id": "africa-54",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1715.",
+      "imageUrl": "/artworks/external/external-bad3b75f1295b447.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89tudes%20de%20mains%20-%20Nicolas%20de%20Largilli%C3%A8re%20-%20Mus%C3%A9e%20des%20Beaux-Arts%20d%27Alger%20-%20d%C3%A9p%C3%B4t%20Mus%C3%A9e%20du%20Louvre%20Peintures%20DL%201970%2011%20-%20photo%202.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q19801910"
+    },
+    {
+      "artwork_id": "africa-55",
+      "title": "Saint Guillaume d'Aquitaine",
+      "artist": "Q317920",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-9a8a10ecb0e746cb.jpg",
+        "high_res_url": "/artworks/external/external-9a8a10ecb0e746cb.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1630.",
+      "id": "africa-55",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1630.",
+      "imageUrl": "/artworks/external/external-9a8a10ecb0e746cb.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Vouet-guillaume-louvre.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q19820117"
+    },
+    {
+      "artwork_id": "africa-56",
+      "title": "The Five Senses and the Four Elements",
+      "artist": "Jacques Linard",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a4feb60c26f56455.jpg",
+        "high_res_url": "/artworks/external/external-a4feb60c26f56455.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1627.",
+      "id": "africa-56",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1627.",
+      "imageUrl": "/artworks/external/external-a4feb60c26f56455.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques%20Linard%20-%20The%20Five%20Senses%20and%20the%20Four%20Elements%20-%20WGA13049.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q19931290"
+    },
+    {
+      "artwork_id": "africa-57",
+      "title": "Regina Cordium",
+      "artist": "Dante Gabriel Rossetti",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a5c8cbd113ff2376.jpg",
+        "high_res_url": "/artworks/external/external-a5c8cbd113ff2376.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1860.",
+      "id": "africa-57",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1860.",
+      "imageUrl": "/artworks/external/external-a5c8cbd113ff2376.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dante%20Gabriel%20Rossetti%20-%20Regina%20Cordium%20%281860%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q27062079"
+    },
+    {
+      "artwork_id": "africa-58",
+      "title": "The Queen Tin Hinan",
+      "artist": "Hocine Ziani",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-6d3658362444727f.jpg",
+        "high_res_url": "/artworks/external/external-6d3658362444727f.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 2007.",
+      "id": "africa-58",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 2007.",
+      "imageUrl": "/artworks/external/external-6d3658362444727f.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hocine%20Ziani%20-%20La%20reine%20Tin%20Hinan.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q28952742"
+    },
+    {
+      "artwork_id": "africa-59",
+      "title": "The Blue Silo",
+      "artist": "Hocine Ziani",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-e1b41dbf143d0a31.jpg",
+        "high_res_url": "/artworks/external/external-e1b41dbf143d0a31.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 2006.",
+      "id": "africa-59",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 2006.",
+      "imageUrl": "/artworks/external/external-e1b41dbf143d0a31.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/5b%20-%20Nature%20morte%20Berb%C3%A8re.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q28952744"
+    },
+    {
+      "artwork_id": "africa-60",
+      "title": "Peaches and prunes on a tin plate",
+      "artist": "Pierre Dupuis",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a8e03592ec81c439.jpg",
+        "high_res_url": "/artworks/external/external-a8e03592ec81c439.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1650.",
+      "id": "africa-60",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1650.",
+      "imageUrl": "/artworks/external/external-a8e03592ec81c439.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/P%C3%AAches%20et%20prunes%20sur%20un%20plat%20d%27%C3%A9tain%20-%20Pierre%20Dupuis%20-%20Mus%C3%A9e%20du%20Louvre%20Peintures%20DL%201970%208.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q29643920"
+    },
+    {
+      "artwork_id": "africa-61",
+      "title": "Q29643924",
+      "artist": "Pierre-Paul Prud'hon",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-80556f987da74c73.jpg",
+        "high_res_url": "/artworks/external/external-80556f987da74c73.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1800.",
+      "id": "africa-61",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1800.",
+      "imageUrl": "/artworks/external/external-80556f987da74c73.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/V%C3%A9nus%2C%20l%27Hymen%20et%20l%27Amour%20-%20Pierre-Paul%20Prud%27hon%20-%20Mus%C3%A9e%20du%20Louvre%20Sculptures%20DL%201970%2018.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q29643924"
+    },
+    {
+      "artwork_id": "africa-62",
+      "title": "Q29644600",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-35e98df835c78b94.jpg",
+        "high_res_url": "/artworks/external/external-35e98df835c78b94.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1815.",
+      "id": "africa-62",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1815.",
+      "imageUrl": "/artworks/external/external-35e98df835c78b94.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ingres%20Portrait%20de%20Jean-Pierre%20Cortot%2C%20sculpteur%20%281787-1843%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q29644600"
+    },
+    {
+      "artwork_id": "africa-63",
+      "title": "Q54669720",
+      "artist": "Corneille de Lyon",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers.",
+      "id": "africa-63",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Corneille%20de%20Lyon%20-%20Portrait%20d%27homme%20-%20MNBA%20Alger.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q54669720"
+    },
+    {
+      "artwork_id": "africa-64",
+      "title": "Q55474456",
+      "artist": "Gustave Achille Guillaumet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Cirta National Museum",
+        "city": "Constantine",
+        "country": "",
+        "lat": 36.362839757,
+        "lng": 6.607079848
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-d27fe4a15193e814.jpg",
+        "high_res_url": "/artworks/external/external-d27fe4a15193e814.jpg"
+      },
+      "historical_text": "Located at Cirta National Museum. Year: 1869.",
+      "id": "africa-64",
+      "year": "Unknown",
+      "lat": 36.362839757,
+      "lng": 6.607079848,
+      "museumName": "Cirta National Museum",
+      "description": "Located at Cirta National Museum. Year: 1869.",
+      "imageUrl": "/artworks/external/external-d27fe4a15193e814.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Famine%20en%20Alg%C3%A9rie%20de%20G.%20Guillaumet%20%28mus%C3%A9e%20La%20Piscine%2C%20Roubaix%29%20%2832454588137%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55474456"
+    },
+    {
+      "artwork_id": "africa-65",
+      "title": "Table Bay",
+      "artist": "Aernout Smit",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-090ac268c228098e.jpg",
+        "high_res_url": "/artworks/external/external-090ac268c228098e.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1683.",
+      "id": "africa-65",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1683.",
+      "imageUrl": "/artworks/external/external-090ac268c228098e.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aernout%20Smit%20Table%20Bay%2C%201683%20William%20Fehr%20Collection%20Cape%20Town.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55907305"
+    },
+    {
+      "artwork_id": "africa-66",
+      "title": "The Noord-Nieuwland in Table Bay, 1762",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-6c773894a1b601e6.jpg",
+        "high_res_url": "/artworks/external/external-6c773894a1b601e6.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1762.",
+      "id": "africa-66",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1762.",
+      "imageUrl": "/artworks/external/external-6c773894a1b601e6.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20The%20Noord-Nieuwland%20in%20Table%20Bay%2C%201762.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55907674"
+    },
+    {
+      "artwork_id": "africa-67",
+      "title": "Long Street",
+      "artist": "Wilhelm Langschmidt",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1850.",
+      "id": "africa-67",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1850.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Long%20Street%20by%20W%20H%20F%20L%20Langschmidt.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55908026"
+    },
+    {
+      "artwork_id": "africa-68",
+      "title": "Portrait of Colonel Robert Jacob Gordon (1743-1795)",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-46508485c2c741cb.jpg",
+        "high_res_url": "/artworks/external/external-46508485c2c741cb.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1780.",
+      "id": "africa-68",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1780.",
+      "imageUrl": "/artworks/external/external-46508485c2c741cb.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Jacob%20Gordon00.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55908198"
+    },
+    {
+      "artwork_id": "africa-69",
+      "title": "Table Bay, c. 1730.",
+      "artist": "Samuel Scott",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-fa6ba71227489627.jpg",
+        "high_res_url": "/artworks/external/external-fa6ba71227489627.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1730.",
+      "id": "africa-69",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1730.",
+      "imageUrl": "/artworks/external/external-fa6ba71227489627.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Samuel%20Scott%20Table%20Bay%2C%20c.%201730%20William%20Fehr%20Collection.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55935695"
+    },
+    {
+      "artwork_id": "africa-70",
+      "title": "Canteen Scene during the Frontier Wars",
+      "artist": "Wilhelm Langschmidt",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-b2c2e71b2fb4d83c.jpg",
+        "high_res_url": "/artworks/external/external-b2c2e71b2fb4d83c.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1850.",
+      "id": "africa-70",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1850.",
+      "imageUrl": "/artworks/external/external-b2c2e71b2fb4d83c.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/W.H.F.L.%20Langschmidt%20001.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55943258"
+    },
+    {
+      "artwork_id": "africa-71",
+      "title": "The greatest hunt in history near Bloemfontein 1860",
+      "artist": "Thomas Baines",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-61b8105cda24a0c3.jpg",
+        "high_res_url": "/artworks/external/external-61b8105cda24a0c3.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1861.",
+      "id": "africa-71",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1861.",
+      "imageUrl": "/artworks/external/external-61b8105cda24a0c3.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20greatest%20hunt%20in%20history%20near%20Bloemfontein%201860.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q55944723"
+    },
+    {
+      "artwork_id": "africa-72",
+      "title": "Springtime",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1873.",
+      "id": "africa-72",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1873.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet%20-%20Springtime%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60606924"
+    },
+    {
+      "artwork_id": "africa-73",
+      "title": "Q60607407",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-d2a6be6a583c300c.jpg",
+        "high_res_url": "/artworks/external/external-d2a6be6a583c300c.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1870.",
+      "id": "africa-73",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1870.",
+      "imageUrl": "/artworks/external/external-d2a6be6a583c300c.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Camille%20Pissarro%20-%20The%20Forest%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607407"
+    },
+    {
+      "artwork_id": "africa-74",
+      "title": "La Rochelle, Leaving the harbourg",
+      "artist": "Paul Signac",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-89cebb556d812044.jpg",
+        "high_res_url": "/artworks/external/external-89cebb556d812044.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1912.",
+      "id": "africa-74",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1912.",
+      "imageUrl": "/artworks/external/external-89cebb556d812044.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paul%20Signac%20-%20La%20Rochelle%2C%20Leaving%20the%20harbourg%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607689"
+    },
+    {
+      "artwork_id": "africa-75",
+      "title": "River Banks at Veneux",
+      "artist": "Alfred Sisley",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-3466f75a5e51f412.jpg",
+        "high_res_url": "/artworks/external/external-3466f75a5e51f412.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1880.",
+      "id": "africa-75",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1880.",
+      "imageUrl": "/artworks/external/external-3466f75a5e51f412.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfred%20Sisley%20-%20River%20Banks%20at%20Veneux%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607747"
+    },
+    {
+      "artwork_id": "africa-76",
+      "title": "Trouville harbor",
+      "artist": "Eugène Louis Boudin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-8c2d150bfa1f45c7.jpg",
+        "high_res_url": "/artworks/external/external-8c2d150bfa1f45c7.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1893.",
+      "id": "africa-76",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1893.",
+      "imageUrl": "/artworks/external/external-8c2d150bfa1f45c7.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Boudin%20-%20Trouville%20harbor%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607840"
+    },
+    {
+      "artwork_id": "africa-77",
+      "title": "Trouville Pier",
+      "artist": "Eugène Louis Boudin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-23ba81e79fcf6643.jpg",
+        "high_res_url": "/artworks/external/external-23ba81e79fcf6643.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1893.",
+      "id": "africa-77",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1893.",
+      "imageUrl": "/artworks/external/external-23ba81e79fcf6643.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Boudin%20-%20Trouville%20Pier%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607854"
+    },
+    {
+      "artwork_id": "africa-78",
+      "title": "Regatta at Argenteuil",
+      "artist": "Eugène Louis Boudin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-c0c08a5bc8d5b600.jpg",
+        "high_res_url": "/artworks/external/external-c0c08a5bc8d5b600.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1866.",
+      "id": "africa-78",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1866.",
+      "imageUrl": "/artworks/external/external-c0c08a5bc8d5b600.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Boudin%20-%20Regatta%20at%20Argenteuil%20-%20Johannesburg%20Art%20Gallery.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q60607881"
+    },
+    {
+      "artwork_id": "africa-79",
+      "title": "The wreck of the 'Grosvenor'",
+      "artist": "Robert Smirke",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-7021acba016212cb.jpg",
+        "high_res_url": "/artworks/external/external-7021acba016212cb.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1792.",
+      "id": "africa-79",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1792.",
+      "imageUrl": "/artworks/external/external-7021acba016212cb.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Smirke-The%20wreck%20of%20the%20%27Grosvenor%27-0713.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q63438210"
+    },
+    {
+      "artwork_id": "africa-80",
+      "title": "Q83647655",
+      "artist": "Jean-Baptiste-Siméon Chardin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-b0cd990aeeafa7ae.jpg",
+        "high_res_url": "/artworks/external/external-b0cd990aeeafa7ae.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1750.",
+      "id": "africa-80",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1750.",
+      "imageUrl": "/artworks/external/external-b0cd990aeeafa7ae.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Chardin%20-%20La%20thei%C3%A8re%20blanche%2C%20IG.3147.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647655"
+    },
+    {
+      "artwork_id": "africa-81",
+      "title": "Portrait of an Unknown man",
+      "artist": "Gustave Caillebotte",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1880.",
+      "id": "africa-81",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1880.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Caillebotte%20-%20Berhaut%201994%2C%20137.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647652"
+    },
+    {
+      "artwork_id": "africa-82",
+      "title": "Portrait of Marie-Francoise Buron",
+      "artist": "Jacques-Louis David",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1769.",
+      "id": "africa-82",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1769.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacques-Louis%20David%20-%20Portrait%20of%20Marie-Fran%C3%A7oise%20Buron%20-%20WGA06039.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647672"
+    },
+    {
+      "artwork_id": "africa-83",
+      "title": "Q83647679",
+      "artist": "Eugène Delacroix",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers.",
+      "id": "africa-83",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Delacroix%20-%20Giaour%20traversant%20un%20gu%C3%A9%20-%20MBA%20Alger.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647679"
+    },
+    {
+      "artwork_id": "africa-84",
+      "title": "Haymaking near Dieppe",
+      "artist": "Paul Gauguin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1885.",
+      "id": "africa-84",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1885.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gauguin%201885%20La%20Fenaison%20aux%20environs%20de%20Dieppe.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647689"
+    },
+    {
+      "artwork_id": "africa-85",
+      "title": "Q83647705",
+      "artist": "Henri Matisse",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1926.",
+      "id": "africa-85",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1926.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Matisse%20-%20Carra%2C%20443.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647705"
+    },
+    {
+      "artwork_id": "africa-86",
+      "title": "Q83647708",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-2abe0fb78bd6b920.jpg",
+        "high_res_url": "/artworks/external/external-2abe0fb78bd6b920.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1886.",
+      "id": "africa-86",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1886.",
+      "imageUrl": "/artworks/external/external-2abe0fb78bd6b920.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w1118.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647708"
+    },
+    {
+      "artwork_id": "africa-87",
+      "title": "Q83647718",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1892.",
+      "id": "africa-87",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1892.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%20931.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647718"
+    },
+    {
+      "artwork_id": "africa-88",
+      "title": "The Canal du Loing in Winter",
+      "artist": "Alfred Sisley",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1891.",
+      "id": "africa-88",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1891.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Canal%20du%20Loing%20en%20hiver.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q83647730"
+    },
+    {
+      "artwork_id": "africa-89",
+      "title": "Q96242278",
+      "artist": "Fernand Léger",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-2c6dd431dff993c2.jpg",
+        "high_res_url": "/artworks/external/external-2c6dd431dff993c2.jpg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1947.",
+      "id": "africa-89",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1947.",
+      "imageUrl": "/artworks/external/external-2c6dd431dff993c2.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Composition%20aux%20Deux%20Oiseaux%20-%20Fernand%20Leger.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q96242278"
+    },
+    {
+      "artwork_id": "africa-90",
+      "title": "English ships in Table Bay, 1787",
+      "artist": "Robert Dodd",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-e6dfb6b5659f396e.jpg",
+        "high_res_url": "/artworks/external/external-e6dfb6b5659f396e.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1787.",
+      "id": "africa-90",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1787.",
+      "imageUrl": "/artworks/external/external-e6dfb6b5659f396e.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert%20Dodd%20English%20ships%20in%20Table%20Bay%201787.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q112039965"
+    },
+    {
+      "artwork_id": "africa-91",
+      "title": "Portrait of Jan Adriaensz. Leeghwater",
+      "artist": "Paulus Moreelse",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1625.",
+      "id": "africa-91",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1625.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Paulus%20Moreelse%20-%20Portrait%20of%20Jan%20Adriaensz.%20Leeghwater.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q112240874"
+    },
+    {
+      "artwork_id": "africa-92",
+      "title": "Man shooting a duiker",
+      "artist": "Wilhelm Langschmidt",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-1eb7bbbe49549d2e.jpg",
+        "high_res_url": "/artworks/external/external-1eb7bbbe49549d2e.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1840.",
+      "id": "africa-92",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1840.",
+      "imageUrl": "/artworks/external/external-1eb7bbbe49549d2e.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Wilhelm%20Langschmidt-Man%20shooting%20a%20duiker-0631.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q113862148"
+    },
+    {
+      "artwork_id": "africa-93",
+      "title": "Q114155653",
+      "artist": "Eugène Fromentin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Ahmed Zabana National Museum",
+        "city": "Oran",
+        "country": "",
+        "lat": 35.69583333,
+        "lng": -0.64527778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Ahmed Zabana National Museum. Year: 1853.",
+      "id": "africa-93",
+      "year": "Unknown",
+      "lat": 35.69583333,
+      "lng": -0.64527778,
+      "museumName": "Ahmed Zabana National Museum",
+      "description": "Located at Ahmed Zabana National Museum. Year: 1853.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Eug%C3%A8ne%20Fromentin%20-%20Vue%20de%20Laghouat%20-%20mus%C3%A9e%20Zabana%20d%27Oran.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q114155653"
+    },
+    {
+      "artwork_id": "africa-94",
+      "title": "The planting of cross by Bartholomew Dias in 1488",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-4bdb19f486645f75.jpg",
+        "high_res_url": "/artworks/external/external-4bdb19f486645f75.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1750.",
+      "id": "africa-94",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1750.",
+      "imageUrl": "/artworks/external/external-4bdb19f486645f75.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/F.%20Benda-The%20planting%20of%20cross%20by%20Bartholomew%20Dias%20in%201488-0681.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q114346062"
+    },
+    {
+      "artwork_id": "africa-95",
+      "title": "Q115796861",
+      "artist": "Nasreddine Dinet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1901.",
+      "id": "africa-95",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1901.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Etienne%20Dinet%20Raoucha.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q115796861"
+    },
+    {
+      "artwork_id": "africa-96",
+      "title": "Portrait of Laurens Joosten Baeck (died 1642), dated 1629",
+      "artist": "Nicolaes Eliaszoon Pickenoy",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Johannesburg Art Gallery",
+        "city": "Johannesburg",
+        "country": "",
+        "lat": -26.197,
+        "lng": 28.0471
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Johannesburg Art Gallery. Year: 1629.",
+      "id": "africa-96",
+      "year": "Unknown",
+      "lat": -26.197,
+      "lng": 28.0471,
+      "museumName": "Johannesburg Art Gallery",
+      "description": "Located at Johannesburg Art Gallery. Year: 1629.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicolaes%20Eliasz%20Pickenoy%20-%20Portrait%20of%20Laurens%20Joosten%20Baeck%20%28died%201642%29%2C%20dated%201629.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q123533613"
+    },
+    {
+      "artwork_id": "africa-97",
+      "title": "Q124305470",
+      "artist": "Adolphe Joseph Thomas Monticelli",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum of Fine Arts of Algiers",
+        "city": "Algiers",
+        "country": "",
+        "lat": 36.746111111,
+        "lng": 3.072222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a0ae16dbfffea118.jpg",
+        "high_res_url": "/artworks/external/external-a0ae16dbfffea118.jpg"
+      },
+      "historical_text": "Located at National Museum of Fine Arts of Algiers. Year: 1876.",
+      "id": "africa-97",
+      "year": "Unknown",
+      "lat": 36.746111111,
+      "lng": 3.072222222,
+      "museumName": "National Museum of Fine Arts of Algiers",
+      "description": "Located at National Museum of Fine Arts of Algiers. Year: 1876.",
+      "imageUrl": "/artworks/external/external-a0ae16dbfffea118.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Adolphe%20Joseph%20Thomas%20Monticelli%20002.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q124305470"
+    },
+    {
+      "artwork_id": "africa-98",
+      "title": "The old Cape Town fish market at Rogge Bay (Roggebaai), 1898",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-b4baa7c009017e56.jpg",
+        "high_res_url": "/artworks/external/external-b4baa7c009017e56.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope).",
+      "id": "africa-98",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope).",
+      "imageUrl": "/artworks/external/external-b4baa7c009017e56.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Cecil%20Schott-The%20old%20Cape%20Town%20fish%20market%20at%20Rogge%20Bay%20%28Roggebaai%29%2C%201898-0635.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q138325399"
+    },
+    {
+      "artwork_id": "africa-99",
+      "title": "The outspan camp fire",
+      "artist": "Charles Davidson Bell",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-fe67aa3cae592f04.jpg",
+        "high_res_url": "/artworks/external/external-fe67aa3cae592f04.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1839.",
+      "id": "africa-99",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1839.",
+      "imageUrl": "/artworks/external/external-fe67aa3cae592f04.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Davidson%20Bell-The%20outspan%20camp%20fire-0692.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q138480236"
+    },
+    {
+      "artwork_id": "africa-100",
+      "title": "Hunting a White rhinoceros on the Crocodile River in 1835",
+      "artist": "Charles Davidson Bell",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-eebee2fc1c97a22b.jpg",
+        "high_res_url": "/artworks/external/external-eebee2fc1c97a22b.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1835.",
+      "id": "africa-100",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1835.",
+      "imageUrl": "/artworks/external/external-eebee2fc1c97a22b.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Davidson%20Bell-Hunting%20a%20White%20rhinoceros%20on%20the%20Crocodile%20River%20%28CG%206%29-0625%20%28cropped%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q138480319"
+    },
+    {
+      "artwork_id": "africa-101",
+      "title": "Hunting a White rhinoceros on the Crocodile River",
+      "artist": "Charles Davidson Bell",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Iziko William Fehr Collection (Castle of Good Hope)",
+        "city": "Cape Town",
+        "country": "",
+        "lat": -33.925833333,
+        "lng": 18.427777777
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a1a86300e07ddc0b.jpg",
+        "high_res_url": "/artworks/external/external-a1a86300e07ddc0b.jpg"
+      },
+      "historical_text": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1839.",
+      "id": "africa-101",
+      "year": "Unknown",
+      "lat": -33.925833333,
+      "lng": 18.427777777,
+      "museumName": "Iziko William Fehr Collection (Castle of Good Hope)",
+      "description": "Located at Iziko William Fehr Collection (Castle of Good Hope). Year: 1839.",
+      "imageUrl": "/artworks/external/external-a1a86300e07ddc0b.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Davidson%20Bell-Hunting%20a%20White%20rhinoceros%20on%20the%20Crocodile%20River%20%28CG%205%29-0629.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q138480460"
+    },
+    {
+      "artwork_id": "africa-102",
+      "title": "Q17493449",
+      "artist": "Jean-François Raffaëlli",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Q107145446",
+        "city": "",
+        "country": "",
+        "lat": 36.883977777,
+        "lng": 6.905272222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Q107145446.",
+      "id": "africa-102",
+      "year": "Unknown",
+      "lat": 36.883977777,
+      "lng": 6.905272222,
+      "museumName": "Q107145446",
+      "description": "Located at Q107145446.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Fran%C3%A7ois%20Raffaelli%20-%20Le%20veuf%20-%20Skikda.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q17493449"
+    },
+    {
+      "artwork_id": "africa-103",
+      "title": "Self Portrait by Nasreddine Dinet",
+      "artist": "Nasreddine Dinet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Q116984506",
+        "city": "",
+        "country": "",
+        "lat": 35.21654,
+        "lng": 4.18121
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Q116984506. Year: 1891.",
+      "id": "africa-103",
+      "year": "Unknown",
+      "lat": 35.21654,
+      "lng": 4.18121,
+      "museumName": "Q116984506",
+      "description": "Located at Q116984506. Year: 1891.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dinet%20Autoportrait.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q19985494"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-1",
+      "title": "Pablo Picasso work #1",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-ede78ac5848d8af43f5f.jpg",
+        "high_res_url": "/artworks/archive3/archive3-ede78ac5848d8af43f5f.jpg"
+      },
+      "historical_text": "Pablo Picasso work #1 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-1",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #1 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-ede78ac5848d8af43f5f.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-ede78ac5848d8af43f5f.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-2",
+      "title": "Pablo Picasso work #2",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-d20e419d6c989917e068.jpg",
+        "high_res_url": "/artworks/archive3/archive3-d20e419d6c989917e068.jpg"
+      },
+      "historical_text": "Pablo Picasso work #2 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-2",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #2 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-d20e419d6c989917e068.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-d20e419d6c989917e068.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-3",
+      "title": "Pablo Picasso work #3",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-7a579c3c9cf5482f6314.jpg",
+        "high_res_url": "/artworks/archive3/archive3-7a579c3c9cf5482f6314.jpg"
+      },
+      "historical_text": "Pablo Picasso work #3 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-3",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #3 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-7a579c3c9cf5482f6314.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-7a579c3c9cf5482f6314.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-4",
+      "title": "Pablo Picasso work #4",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-8698af21088fc9623c6f.jpg",
+        "high_res_url": "/artworks/archive3/archive3-8698af21088fc9623c6f.jpg"
+      },
+      "historical_text": "Pablo Picasso work #4 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-4",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #4 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-8698af21088fc9623c6f.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-8698af21088fc9623c6f.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-5",
+      "title": "Pablo Picasso work #5",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-e31b8b09ab5563f70ce1.jpg",
+        "high_res_url": "/artworks/archive3/archive3-e31b8b09ab5563f70ce1.jpg"
+      },
+      "historical_text": "Pablo Picasso work #5 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-5",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #5 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-e31b8b09ab5563f70ce1.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-e31b8b09ab5563f70ce1.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-6",
+      "title": "Pablo Picasso work #6",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-45bd9cb6ba216579e477.jpg",
+        "high_res_url": "/artworks/archive3/archive3-45bd9cb6ba216579e477.jpg"
+      },
+      "historical_text": "Pablo Picasso work #6 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-6",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #6 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-45bd9cb6ba216579e477.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-45bd9cb6ba216579e477.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-7",
+      "title": "Pablo Picasso work #7",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-f1ff4c8e7be514629efa.jpg",
+        "high_res_url": "/artworks/archive3/archive3-f1ff4c8e7be514629efa.jpg"
+      },
+      "historical_text": "Pablo Picasso work #7 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-7",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #7 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-f1ff4c8e7be514629efa.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-f1ff4c8e7be514629efa.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    },
+    {
+      "artwork_id": "archive3-pablo-picasso-8",
+      "title": "Pablo Picasso work #8",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pablo Picasso Birthplace Collection",
+        "city": "Málaga",
+        "country": "Spain",
+        "lat": 36.716666666667,
+        "lng": -4.4166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-a817195ddaa743c34565.jpg",
+        "high_res_url": "/artworks/archive3/archive3-a817195ddaa743c34565.jpg"
+      },
+      "historical_text": "Pablo Picasso work #8 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-pablo-picasso-8",
+      "year": "Unknown",
+      "lat": 36.716666666667,
+      "lng": -4.4166666666667,
+      "museumName": "Pablo Picasso Birthplace Collection",
+      "description": "Pablo Picasso work #8 is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-a817195ddaa743c34565.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-a817195ddaa743c34565.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Pablo_Picasso"
+    }
+  ]
+}

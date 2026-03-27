@@ -1,0 +1,2376 @@
+{
+  "chunkId": "asia-0000",
+  "region": "asia",
+  "records": [
+    {
+      "artwork_id": "69",
+      "title": "The Night Café in Arles",
+      "artist": "Paul Gauguin",
+      "creation_year": "1888",
+      "time_period": "impressionism",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Pushkin Museum of Fine Arts",
+        "city": "Moscow",
+        "country": "",
+        "lat": 55.74702868,
+        "lng": 37.60602901
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/art-69.jpg",
+        "high_res_url": "/artworks/art-69.jpg"
+      },
+      "historical_text": "Located at Pushkin Museum of Fine Arts.",
+      "id": "69",
+      "year": "1888",
+      "lat": 55.74702868,
+      "lng": 37.60602901,
+      "museumName": "Pushkin Museum of Fine Arts",
+      "description": "Located at Pushkin Museum of Fine Arts.",
+      "imageUrl": "/artworks/art-69.jpg",
+      "canonicalImageUrl": "/artworks/art-69.jpg",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q780986"
+    },
+    {
+      "artwork_id": "africa-1",
+      "title": "Saint Peter",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Saint Catherine Monastery",
+        "city": "Saint Catherine",
+        "country": "",
+        "lat": 28.555830555,
+        "lng": 33.975561111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-defa1642c42b61a0.jpg",
+        "high_res_url": "/artworks/external/external-defa1642c42b61a0.jpg"
+      },
+      "historical_text": "Located at Saint Catherine Monastery. Year: 700.",
+      "id": "africa-1",
+      "year": "Unknown",
+      "lat": 28.555830555,
+      "lng": 33.975561111,
+      "museumName": "Saint Catherine Monastery",
+      "description": "Located at Saint Catherine Monastery. Year: 700.",
+      "imageUrl": "/artworks/external/external-defa1642c42b61a0.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Peter-Sinai%20%286th%20Century%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q4068102"
+    },
+    {
+      "artwork_id": "africa-2",
+      "title": "Poppy Flowers",
+      "artist": "Vincent van Gogh",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-1960eb7e173b1083.jpg",
+        "high_res_url": "/artworks/external/external-1960eb7e173b1083.jpg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1887.",
+      "id": "africa-2",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1887.",
+      "imageUrl": "/artworks/external/external-1960eb7e173b1083.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Van%20Gogh%20-%20Vase%20mit%20Pechnelken.jpeg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q4118041"
+    },
+    {
+      "artwork_id": "africa-3",
+      "title": "Ladder of Divine Ascent",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Saint Catherine Monastery",
+        "city": "Saint Catherine",
+        "country": "",
+        "lat": 28.555830555,
+        "lng": 33.975561111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-7f3bf4d5e8a9c706.jpg",
+        "high_res_url": "/artworks/external/external-7f3bf4d5e8a9c706.jpg"
+      },
+      "historical_text": "Located at Saint Catherine Monastery. Year: 1200.",
+      "id": "africa-3",
+      "year": "Unknown",
+      "lat": 28.555830555,
+      "lng": 33.975561111,
+      "museumName": "Saint Catherine Monastery",
+      "description": "Located at Saint Catherine Monastery. Year: 1200.",
+      "imageUrl": "/artworks/external/external-7f3bf4d5e8a9c706.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Ladder%20of%20Divine%20Ascent%20Monastery%20of%20St%20Catherine%20Sinai%2012th%20century.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q6469320"
+    },
+    {
+      "artwork_id": "africa-8",
+      "title": "Annunciation, Icon of  St. Catherine's Monastery",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Saint Catherine Monastery",
+        "city": "Saint Catherine",
+        "country": "",
+        "lat": 28.555830555,
+        "lng": 33.975561111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-4cbcca77d93daa8b.jpg",
+        "high_res_url": "/artworks/external/external-4cbcca77d93daa8b.jpg"
+      },
+      "historical_text": "Located at Saint Catherine Monastery. Year: 1190.",
+      "id": "africa-8",
+      "year": "Unknown",
+      "lat": 28.555830555,
+      "lng": 33.975561111,
+      "museumName": "Saint Catherine Monastery",
+      "description": "Located at Saint Catherine Monastery. Year: 1190.",
+      "imageUrl": "/artworks/external/external-4cbcca77d93daa8b.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Annunciation%20Icon%20Sinai%2012th%20century.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q23808625"
+    },
+    {
+      "artwork_id": "africa-23",
+      "title": "Life and Death",
+      "artist": "Paul Gauguin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-4469bbbc7d97f368.jpg",
+        "high_res_url": "/artworks/external/external-4469bbbc7d97f368.jpg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1889.",
+      "id": "africa-23",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1889.",
+      "imageUrl": "/artworks/external/external-4469bbbc7d97f368.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gauguin%201889%20La%20Vie%20et%20la%20Mort.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q66821137"
+    },
+    {
+      "artwork_id": "africa-24",
+      "title": "Q66821254",
+      "artist": "Jean-Auguste-Dominique Ingres",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1826.",
+      "id": "africa-24",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1826.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/JAD%20Ingres%20-%20Fatima%20en%20Odalisque%20-%20Mahmoud%20Khalil%20Museum%20Cairo.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q66821254"
+    },
+    {
+      "artwork_id": "africa-25",
+      "title": "Q84056391",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1880.",
+      "id": "africa-25",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1880.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w585.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056391"
+    },
+    {
+      "artwork_id": "africa-26",
+      "title": "Q84056388",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-53f6221992168193.jpg",
+        "high_res_url": "/artworks/external/external-53f6221992168193.jpg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1872.",
+      "id": "africa-26",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1872.",
+      "imageUrl": "/artworks/external/external-53f6221992168193.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w226.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056388"
+    },
+    {
+      "artwork_id": "africa-27",
+      "title": "Q84056410",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1874.",
+      "id": "africa-27",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1874.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%20345.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056410"
+    },
+    {
+      "artwork_id": "africa-28",
+      "title": "Shepherd and Washerwomen at Montfoucault",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1881.",
+      "id": "africa-28",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1881.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%20665.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056413"
+    },
+    {
+      "artwork_id": "africa-29",
+      "title": "Q84056440",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1897.",
+      "id": "africa-29",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1897.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%201190.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056440"
+    },
+    {
+      "artwork_id": "africa-30",
+      "title": "Père Jean's Path",
+      "artist": "Paul Gauguin",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1885.",
+      "id": "africa-30",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1885.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gauguin%201885%20La%20Sente%20du%20p%C3%A8re%20Jean.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056448"
+    },
+    {
+      "artwork_id": "africa-31",
+      "title": "Q84056465",
+      "artist": "Gustave Courbet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1860.",
+      "id": "africa-31",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1860.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Le%20Chasseur%20Mar%C3%A9chal%20by%20Gustave%20Courbet.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056465"
+    },
+    {
+      "artwork_id": "africa-32",
+      "title": "A tiger near his den",
+      "artist": "Eugène Delacroix",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum.",
+      "id": "africa-32",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ugin%20Dela%20Croix%20A%20tiger%20near%20his%20den%20oil%20painting%20on%20toile%2027x55cm.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056469"
+    },
+    {
+      "artwork_id": "africa-33",
+      "title": "Q84056527",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-fef1b9f57ff4d46d.jpg",
+        "high_res_url": "/artworks/external/external-fef1b9f57ff4d46d.jpg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1907.",
+      "id": "africa-33",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1907.",
+      "imageUrl": "/artworks/external/external-fef1b9f57ff4d46d.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20w1695.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056527"
+    },
+    {
+      "artwork_id": "africa-34",
+      "title": "The Big Walnut Tree, Hoar-Frost in Sunlight, Eragny",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1894.",
+      "id": "africa-34",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1894.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%201022.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056584"
+    },
+    {
+      "artwork_id": "africa-35",
+      "title": "Q84056635",
+      "artist": "Camille Pissarro",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1897.",
+      "id": "africa-35",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1897.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Pissarro%20-%20Pissarro%20and%20Durand-Ruel%20Snollaerts%2C%201177.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056635"
+    },
+    {
+      "artwork_id": "africa-36",
+      "title": "Charing-cross-bridge and Kleopatra's needle",
+      "artist": "Claude Monet",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1900.",
+      "id": "africa-36",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1900.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monet%20-%20charing-cross-bridge-cleopatra-s-needle-1901.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84056666"
+    },
+    {
+      "artwork_id": "africa-37",
+      "title": "Roses in a vase",
+      "artist": "Adolphe Joseph Thomas Monticelli",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mohamed Mahmoud Khalil Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.0356,
+        "lng": 31.2197
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Mohamed Mahmoud Khalil Museum. Year: 1850.",
+      "id": "africa-37",
+      "year": "Unknown",
+      "lat": 30.0356,
+      "lng": 31.2197,
+      "museumName": "Mohamed Mahmoud Khalil Museum",
+      "description": "Located at Mohamed Mahmoud Khalil Museum. Year: 1850.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Monticelli%20-%20Some%20Roses%20in%20a%20Filed.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q84177894"
+    },
+    {
+      "artwork_id": "africa-40",
+      "title": "Saint Catherine of Alexandria",
+      "artist": "Ieremias Palladas",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Saint Catherine Monastery",
+        "city": "Saint Catherine",
+        "country": "",
+        "lat": 28.555830555,
+        "lng": 33.975561111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Saint Catherine Monastery. Year: 1612.",
+      "id": "africa-40",
+      "year": "Unknown",
+      "lat": 28.555830555,
+      "lng": 33.975561111,
+      "museumName": "Saint Catherine Monastery",
+      "description": "Located at Saint Catherine Monastery. Year: 1612.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ieremias%20Palladas%20Catherine%20of%20Alexandria.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q109718365"
+    },
+    {
+      "artwork_id": "africa-41",
+      "title": "Transfiguration and Monastic Scenes (Klontzas)",
+      "artist": "Georgios Klontzas",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Saint Catherine Monastery",
+        "city": "Saint Catherine",
+        "country": "",
+        "lat": 28.555830555,
+        "lng": 33.975561111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-a7bc1ddaddb0ab2e.png",
+        "high_res_url": "/artworks/external/external-a7bc1ddaddb0ab2e.png"
+      },
+      "historical_text": "Located at Saint Catherine Monastery. Year: 1603.",
+      "id": "africa-41",
+      "year": "Unknown",
+      "lat": 28.555830555,
+      "lng": 33.975561111,
+      "museumName": "Saint Catherine Monastery",
+      "description": "Located at Saint Catherine Monastery. Year: 1603.",
+      "imageUrl": "/artworks/external/external-a7bc1ddaddb0ab2e.png",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Transfiguration%20and%20Monastic%20Scenes%20Georgios%20Klontzas.png?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q110118859"
+    },
+    {
+      "artwork_id": "africa-42",
+      "title": "Stern-mounted steering oar of an Egyptian riverboat",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Theban Tomb 69",
+        "city": "Luxor",
+        "country": "",
+        "lat": 25.7333,
+        "lng": 32.6
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-486d22dabe35ae5b.jpg",
+        "high_res_url": "/artworks/external/external-486d22dabe35ae5b.jpg"
+      },
+      "historical_text": "Located at Theban Tomb 69.",
+      "id": "africa-42",
+      "year": "Unknown",
+      "lat": 25.7333,
+      "lng": 32.6,
+      "museumName": "Theban Tomb 69",
+      "description": "Located at Theban Tomb 69.",
+      "imageUrl": "/artworks/external/external-486d22dabe35ae5b.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Aviron%20de%20direction.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q110551333"
+    },
+    {
+      "artwork_id": "africa-43",
+      "title": "Fayum portrait of two brothers",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Egyptian Museum",
+        "city": "Cairo",
+        "country": "",
+        "lat": 30.047778,
+        "lng": 31.233333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Egyptian Museum. Year: 150.",
+      "id": "africa-43",
+      "year": "Unknown",
+      "lat": 30.047778,
+      "lng": 31.233333,
+      "museumName": "Egyptian Museum",
+      "description": "Located at Egyptian Museum. Year: 150.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Fayum--52.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q112161472"
+    },
+    {
+      "artwork_id": "africa-49",
+      "title": "Q126415001",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Ethnological Museum of Addis Ababa",
+        "city": "Addis Ababa",
+        "country": "",
+        "lat": 9.046619,
+        "lng": 38.757624
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-c5fa71c1c81dff10.jpg",
+        "high_res_url": "/artworks/external/external-c5fa71c1c81dff10.jpg"
+      },
+      "historical_text": "Located at Ethnological Museum of Addis Ababa. Year: 1950.",
+      "id": "africa-49",
+      "year": "Unknown",
+      "lat": 9.046619,
+      "lng": 38.757624,
+      "museumName": "Ethnological Museum of Addis Ababa",
+      "description": "Located at Ethnological Museum of Addis Ababa. Year: 1950.",
+      "imageUrl": "/artworks/external/external-c5fa71c1c81dff10.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonimo%2C%20l%27imperatore%20tewodros%20dispensa%20la%20giustizia%2C%20xx%20secolo.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q126415001"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-1",
+      "title": "Andrei Rublev work #1",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-288ed59ea2d907607191.jpg",
+        "high_res_url": "/artworks/archive3/archive3-288ed59ea2d907607191.jpg"
+      },
+      "historical_text": "Andrei Rublev work #1 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-1",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #1 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-288ed59ea2d907607191.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-288ed59ea2d907607191.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-2",
+      "title": "Andrei Rublev work #2",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-a41756a9296389deac20.jpg",
+        "high_res_url": "/artworks/archive3/archive3-a41756a9296389deac20.jpg"
+      },
+      "historical_text": "Andrei Rublev work #2 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-2",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #2 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-a41756a9296389deac20.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-a41756a9296389deac20.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-3",
+      "title": "Andrei Rublev work #3",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-202ffc15258366380059.jpg",
+        "high_res_url": "/artworks/archive3/archive3-202ffc15258366380059.jpg"
+      },
+      "historical_text": "Andrei Rublev work #3 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-3",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #3 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-202ffc15258366380059.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-202ffc15258366380059.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-4",
+      "title": "Andrei Rublev work #4",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-f47e06eeb1822ca8faaa.jpg",
+        "high_res_url": "/artworks/archive3/archive3-f47e06eeb1822ca8faaa.jpg"
+      },
+      "historical_text": "Andrei Rublev work #4 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-4",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #4 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-f47e06eeb1822ca8faaa.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-f47e06eeb1822ca8faaa.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-5",
+      "title": "Andrei Rublev work #5",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-e290c0682496996225aa.jpg",
+        "high_res_url": "/artworks/archive3/archive3-e290c0682496996225aa.jpg"
+      },
+      "historical_text": "Andrei Rublev work #5 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-5",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #5 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-e290c0682496996225aa.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-e290c0682496996225aa.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-6",
+      "title": "Andrei Rublev work #6",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-651b7fbaf0431b4d9dde.jpg",
+        "high_res_url": "/artworks/archive3/archive3-651b7fbaf0431b4d9dde.jpg"
+      },
+      "historical_text": "Andrei Rublev work #6 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-6",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #6 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-651b7fbaf0431b4d9dde.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-651b7fbaf0431b4d9dde.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-7",
+      "title": "Andrei Rublev work #7",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-9b22e9f02f08332e4674.jpg",
+        "high_res_url": "/artworks/archive3/archive3-9b22e9f02f08332e4674.jpg"
+      },
+      "historical_text": "Andrei Rublev work #7 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-7",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #7 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-9b22e9f02f08332e4674.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-9b22e9f02f08332e4674.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-andrei-rublev-8",
+      "title": "Andrei Rublev work #8",
+      "artist": "Andrei Rublev",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Andrei Rublev Birthplace Collection",
+        "city": "Grand Principality of Moscow",
+        "country": "Grand Principality of Moscow",
+        "lat": 55.75055555555556,
+        "lng": 37.6175
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-c9d8a7529262a02aec33.jpg",
+        "high_res_url": "/artworks/archive3/archive3-c9d8a7529262a02aec33.jpg"
+      },
+      "historical_text": "Andrei Rublev work #8 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-andrei-rublev-8",
+      "year": "Unknown",
+      "lat": 55.75055555555556,
+      "lng": 37.6175,
+      "museumName": "Andrei Rublev Birthplace Collection",
+      "description": "Andrei Rublev work #8 is a notable work by Andrei Rublev. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-c9d8a7529262a02aec33.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-c9d8a7529262a02aec33.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Andrei_Rublev"
+    },
+    {
+      "artwork_id": "archive3-el-greco-1",
+      "title": "El Greco work #1",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-e98ca9808a348f0f2135.jpg",
+        "high_res_url": "/artworks/archive3/archive3-e98ca9808a348f0f2135.jpg"
+      },
+      "historical_text": "El Greco work #1 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-1",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #1 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-e98ca9808a348f0f2135.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-e98ca9808a348f0f2135.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-2",
+      "title": "El Greco work #2",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-ad986e5838eb3819e519.jpg",
+        "high_res_url": "/artworks/archive3/archive3-ad986e5838eb3819e519.jpg"
+      },
+      "historical_text": "El Greco work #2 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-2",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #2 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-ad986e5838eb3819e519.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-ad986e5838eb3819e519.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-3",
+      "title": "El Greco work #3",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-ec63912ba3689335dc25.jpg",
+        "high_res_url": "/artworks/archive3/archive3-ec63912ba3689335dc25.jpg"
+      },
+      "historical_text": "El Greco work #3 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-3",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #3 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-ec63912ba3689335dc25.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-ec63912ba3689335dc25.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-4",
+      "title": "El Greco work #4",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-de2f13a340d8bf1ba79f.jpg",
+        "high_res_url": "/artworks/archive3/archive3-de2f13a340d8bf1ba79f.jpg"
+      },
+      "historical_text": "El Greco work #4 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-4",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #4 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-de2f13a340d8bf1ba79f.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-de2f13a340d8bf1ba79f.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-5",
+      "title": "El Greco work #5",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-4f4c09bfda071f6736fb.jpg",
+        "high_res_url": "/artworks/archive3/archive3-4f4c09bfda071f6736fb.jpg"
+      },
+      "historical_text": "El Greco work #5 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-5",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #5 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-4f4c09bfda071f6736fb.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-4f4c09bfda071f6736fb.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-6",
+      "title": "El Greco work #6",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-e0c7f6fb87be5ebf00b6.jpg",
+        "high_res_url": "/artworks/archive3/archive3-e0c7f6fb87be5ebf00b6.jpg"
+      },
+      "historical_text": "El Greco work #6 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-6",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #6 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-e0c7f6fb87be5ebf00b6.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-e0c7f6fb87be5ebf00b6.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-7",
+      "title": "El Greco work #7",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-72e845aab19f6b392190.jpg",
+        "high_res_url": "/artworks/archive3/archive3-72e845aab19f6b392190.jpg"
+      },
+      "historical_text": "El Greco work #7 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-7",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #7 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-72e845aab19f6b392190.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-72e845aab19f6b392190.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-el-greco-8",
+      "title": "El Greco work #8",
+      "artist": "El Greco",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "El Greco Birthplace Collection",
+        "city": "Heraklion",
+        "country": "Crown of Castile",
+        "lat": 35.34027777777778,
+        "lng": 25.134444444444444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-d000f3847bfc817074f6.jpg",
+        "high_res_url": "/artworks/archive3/archive3-d000f3847bfc817074f6.jpg"
+      },
+      "historical_text": "El Greco work #8 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-el-greco-8",
+      "year": "Unknown",
+      "lat": 35.34027777777778,
+      "lng": 25.134444444444444,
+      "museumName": "El Greco Birthplace Collection",
+      "description": "El Greco work #8 is a notable work by El Greco. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-d000f3847bfc817074f6.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-d000f3847bfc817074f6.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/El_Greco"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-1",
+      "title": "Kazimir Malevich work #1",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-f4a94cb68dd67650bbe1.jpg",
+        "high_res_url": "/artworks/archive3/archive3-f4a94cb68dd67650bbe1.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #1 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-1",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #1 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-f4a94cb68dd67650bbe1.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-f4a94cb68dd67650bbe1.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-2",
+      "title": "Kazimir Malevich work #2",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-2ceaf21c672ff2493b5e.jpg",
+        "high_res_url": "/artworks/archive3/archive3-2ceaf21c672ff2493b5e.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #2 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-2",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #2 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-2ceaf21c672ff2493b5e.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-2ceaf21c672ff2493b5e.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-3",
+      "title": "Kazimir Malevich work #3",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-e64ac2d4b48cee6fd682.jpg",
+        "high_res_url": "/artworks/archive3/archive3-e64ac2d4b48cee6fd682.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #3 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-3",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #3 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-e64ac2d4b48cee6fd682.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-e64ac2d4b48cee6fd682.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-4",
+      "title": "Kazimir Malevich work #4",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-425c64c2d91db5d31945.jpg",
+        "high_res_url": "/artworks/archive3/archive3-425c64c2d91db5d31945.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #4 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-4",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #4 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-425c64c2d91db5d31945.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-425c64c2d91db5d31945.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-5",
+      "title": "Kazimir Malevich work #5",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-ade5933b3ec973b76738.jpg",
+        "high_res_url": "/artworks/archive3/archive3-ade5933b3ec973b76738.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #5 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-5",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #5 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-ade5933b3ec973b76738.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-ade5933b3ec973b76738.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-6",
+      "title": "Kazimir Malevich work #6",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-4f3814a3133e4a7166b4.jpg",
+        "high_res_url": "/artworks/archive3/archive3-4f3814a3133e4a7166b4.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #6 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-6",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #6 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-4f3814a3133e4a7166b4.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-4f3814a3133e4a7166b4.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-7",
+      "title": "Kazimir Malevich work #7",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-4e917c495487a068e01e.jpg",
+        "high_res_url": "/artworks/archive3/archive3-4e917c495487a068e01e.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #7 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-7",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #7 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-4e917c495487a068e01e.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-4e917c495487a068e01e.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-kazimir-malevich-8",
+      "title": "Kazimir Malevich work #8",
+      "artist": "Kazimir Malevich",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Kazimir Malevich Birthplace Collection",
+        "city": "Kyiv",
+        "country": "Russian Empire",
+        "lat": 50.45,
+        "lng": 30.523611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-1c01f17464181066100a.jpg",
+        "high_res_url": "/artworks/archive3/archive3-1c01f17464181066100a.jpg"
+      },
+      "historical_text": "Kazimir Malevich work #8 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-kazimir-malevich-8",
+      "year": "Unknown",
+      "lat": 50.45,
+      "lng": 30.523611111111,
+      "museumName": "Kazimir Malevich Birthplace Collection",
+      "description": "Kazimir Malevich work #8 is a notable work by Kazimir Malevich. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-1c01f17464181066100a.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-1c01f17464181066100a.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Kazimir_Malevich"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-1",
+      "title": "Marc Chagall work #1",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-60e8f7cc66165ef41044.jpg",
+        "high_res_url": "/artworks/archive3/archive3-60e8f7cc66165ef41044.jpg"
+      },
+      "historical_text": "Marc Chagall work #1 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-1",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #1 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-60e8f7cc66165ef41044.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-60e8f7cc66165ef41044.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-2",
+      "title": "Marc Chagall work #2",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-08e89dc386227758f93b.jpg",
+        "high_res_url": "/artworks/archive3/archive3-08e89dc386227758f93b.jpg"
+      },
+      "historical_text": "Marc Chagall work #2 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-2",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #2 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-08e89dc386227758f93b.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-08e89dc386227758f93b.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-3",
+      "title": "Marc Chagall work #3",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-236e85a9eccf7b8e7166.jpg",
+        "high_res_url": "/artworks/archive3/archive3-236e85a9eccf7b8e7166.jpg"
+      },
+      "historical_text": "Marc Chagall work #3 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-3",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #3 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-236e85a9eccf7b8e7166.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-236e85a9eccf7b8e7166.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-4",
+      "title": "Marc Chagall work #4",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-da4dee5c51feab52f1ba.jpg",
+        "high_res_url": "/artworks/archive3/archive3-da4dee5c51feab52f1ba.jpg"
+      },
+      "historical_text": "Marc Chagall work #4 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-4",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #4 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-da4dee5c51feab52f1ba.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-da4dee5c51feab52f1ba.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-5",
+      "title": "Marc Chagall work #5",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-757a4f2cacecf818de3c.jpg",
+        "high_res_url": "/artworks/archive3/archive3-757a4f2cacecf818de3c.jpg"
+      },
+      "historical_text": "Marc Chagall work #5 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-5",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #5 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-757a4f2cacecf818de3c.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-757a4f2cacecf818de3c.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-6",
+      "title": "Marc Chagall work #6",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-b9fe220adfdfa82d4eb6.jpg",
+        "high_res_url": "/artworks/archive3/archive3-b9fe220adfdfa82d4eb6.jpg"
+      },
+      "historical_text": "Marc Chagall work #6 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-6",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #6 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-b9fe220adfdfa82d4eb6.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-b9fe220adfdfa82d4eb6.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-7",
+      "title": "Marc Chagall work #7",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-5aa5629b6c9cee5de05c.jpg",
+        "high_res_url": "/artworks/archive3/archive3-5aa5629b6c9cee5de05c.jpg"
+      },
+      "historical_text": "Marc Chagall work #7 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-7",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #7 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-5aa5629b6c9cee5de05c.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-5aa5629b6c9cee5de05c.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-marc-chagall-8",
+      "title": "Marc Chagall work #8",
+      "artist": "Marc Chagall",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Marc Chagall Birthplace Collection",
+        "city": "Vitebsk",
+        "country": "France",
+        "lat": 55.183333333333,
+        "lng": 30.166666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-db13f489e3365a0467a6.jpg",
+        "high_res_url": "/artworks/archive3/archive3-db13f489e3365a0467a6.jpg"
+      },
+      "historical_text": "Marc Chagall work #8 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-marc-chagall-8",
+      "year": "Unknown",
+      "lat": 55.183333333333,
+      "lng": 30.166666666667,
+      "museumName": "Marc Chagall Birthplace Collection",
+      "description": "Marc Chagall work #8 is a notable work by Marc Chagall. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-db13f489e3365a0467a6.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-db13f489e3365a0467a6.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Marc_Chagall"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-1",
+      "title": "Mikhail Vrubel work #1",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-067aca3568acdd4205cb.jpg",
+        "high_res_url": "/artworks/archive3/archive3-067aca3568acdd4205cb.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #1 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-1",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #1 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-067aca3568acdd4205cb.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-067aca3568acdd4205cb.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-2",
+      "title": "Mikhail Vrubel work #2",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-0b91949a1fada56174d8.jpg",
+        "high_res_url": "/artworks/archive3/archive3-0b91949a1fada56174d8.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #2 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-2",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #2 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-0b91949a1fada56174d8.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-0b91949a1fada56174d8.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-3",
+      "title": "Mikhail Vrubel work #3",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-b6dfb82fe5d97cce90c3.jpg",
+        "high_res_url": "/artworks/archive3/archive3-b6dfb82fe5d97cce90c3.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #3 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-3",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #3 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-b6dfb82fe5d97cce90c3.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-b6dfb82fe5d97cce90c3.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-4",
+      "title": "Mikhail Vrubel work #4",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-92b18e0f41b65aebbf02.jpg",
+        "high_res_url": "/artworks/archive3/archive3-92b18e0f41b65aebbf02.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #4 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-4",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #4 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-92b18e0f41b65aebbf02.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-92b18e0f41b65aebbf02.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-5",
+      "title": "Mikhail Vrubel work #5",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-36d5a6dadf592353ca51.jpg",
+        "high_res_url": "/artworks/archive3/archive3-36d5a6dadf592353ca51.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #5 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-5",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #5 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-36d5a6dadf592353ca51.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-36d5a6dadf592353ca51.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-6",
+      "title": "Mikhail Vrubel work #6",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-ffc91cd73ee78e852c01.jpg",
+        "high_res_url": "/artworks/archive3/archive3-ffc91cd73ee78e852c01.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #6 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-6",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #6 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-ffc91cd73ee78e852c01.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-ffc91cd73ee78e852c01.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-7",
+      "title": "Mikhail Vrubel work #7",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-9152961000345b0ea502.jpg",
+        "high_res_url": "/artworks/archive3/archive3-9152961000345b0ea502.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #7 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-7",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #7 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-9152961000345b0ea502.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-9152961000345b0ea502.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "archive3-mikhail-vrubel-8",
+      "title": "Mikhail Vrubel work #8",
+      "artist": "Mikhail Vrubel",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Mikhail Vrubel Birthplace Collection",
+        "city": "Omsk",
+        "country": "Russian Empire",
+        "lat": 54.966666666667,
+        "lng": 73.383333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/archive3/archive3-24702f670b2c23f252a2.jpg",
+        "high_res_url": "/artworks/archive3/archive3-24702f670b2c23f252a2.jpg"
+      },
+      "historical_text": "Mikhail Vrubel work #8 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "id": "archive3-mikhail-vrubel-8",
+      "year": "Unknown",
+      "lat": 54.966666666667,
+      "lng": 73.383333333333,
+      "museumName": "Mikhail Vrubel Birthplace Collection",
+      "description": "Mikhail Vrubel work #8 is a notable work by Mikhail Vrubel. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/archive3/archive3-24702f670b2c23f252a2.jpg",
+      "canonicalImageUrl": "/artworks/archive3/archive3-24702f670b2c23f252a2.jpg",
+      "source": "archive3",
+      "sourceUrl": "http://en.wikipedia.org/wiki/Mikhail_Vrubel"
+    },
+    {
+      "artwork_id": "e13",
+      "title": "Dancing Girl of Mohenjo-Daro",
+      "artist": "Unknown (Indus Valley Civilization)",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum, New Delhi",
+        "city": "New Delhi",
+        "country": "",
+        "lat": 28.6119,
+        "lng": 77.2193
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/asia/asia-3b1b22b86ce70dc7.jpg",
+        "high_res_url": "/artworks/asia/asia-3b1b22b86ce70dc7.jpg"
+      },
+      "historical_text": "A prehistoric bronze statuette dating back to 2300 BC, showing remarkable metallurgical skill.",
+      "id": "e13",
+      "year": "Unknown",
+      "lat": 28.6119,
+      "lng": 77.2193,
+      "museumName": "National Museum, New Delhi",
+      "description": "A prehistoric bronze statuette dating back to 2300 BC, showing remarkable metallurgical skill.",
+      "imageUrl": "/artworks/asia/asia-3b1b22b86ce70dc7.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Dancing_girl_of_Mohenjo-daro.jpg?width=640",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e14",
+      "title": "Nataraja (Lord of the Dance)",
+      "artist": "Unknown (Chola Dynasty)",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum, New Delhi",
+        "city": "New Delhi",
+        "country": "",
+        "lat": 28.6119,
+        "lng": 77.2193
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/asia/asia-038a6ff3611a04fd.jpg",
+        "high_res_url": "/artworks/asia/asia-038a6ff3611a04fd.jpg"
+      },
+      "historical_text": "A stunning bronze sculpture of the Hindu god Shiva performing the cosmic dance.",
+      "id": "e14",
+      "year": "Unknown",
+      "lat": 28.6119,
+      "lng": 77.2193,
+      "museumName": "National Museum, New Delhi",
+      "description": "A stunning bronze sculpture of the Hindu god Shiva performing the cosmic dance.",
+      "imageUrl": "/artworks/asia/asia-038a6ff3611a04fd.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Shiva_as_Lord_of_the_Dance_(Nataraja).jpg?width=640",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e15",
+      "title": "Emperor Jahangir Weighing Prince Khurram",
+      "artist": "Manohar",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Museum, New Delhi",
+        "city": "New Delhi",
+        "country": "",
+        "lat": 28.6119,
+        "lng": 77.2193
+      },
+      "assets": {
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jahangir_weighing_prince_Khurram_(later_Shah_Jahan)_against_gold_and_silver_in_the_presence_of_Mahabat_Khan_and_Khan_Jahan..jpg?width=800",
+        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jahangir_weighing_prince_Khurram_(later_Shah_Jahan)_against_gold_and_silver_in_the_presence_of_Mahabat_Khan_and_Khan_Jahan..jpg?width=800"
+      },
+      "historical_text": "A highly detailed Mughal miniature painting depicting a royal weighing ceremony.",
+      "id": "e15",
+      "year": "Unknown",
+      "lat": 28.6119,
+      "lng": 77.2193,
+      "museumName": "National Museum, New Delhi",
+      "description": "A highly detailed Mughal miniature painting depicting a royal weighing ceremony.",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jahangir_weighing_prince_Khurram_(later_Shah_Jahan)_against_gold_and_silver_in_the_presence_of_Mahabat_Khan_and_Khan_Jahan..jpg?width=800",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jahangir_weighing_prince_Khurram_(later_Shah_Jahan)_against_gold_and_silver_in_the_presence_of_Mahabat_Khan_and_Khan_Jahan..jpg?width=800",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e16",
+      "title": "The Shahnameh of Shah Tahmasp (Folio)",
+      "artist": "Various Royal Ateliers",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Museum of Islamic Art, Doha",
+        "city": "Doha",
+        "country": "",
+        "lat": 25.2955,
+        "lng": 51.5395
+      },
+      "assets": {
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folio_153v_from_the_Shahnama_of_Shah_Tahmasp_TMoCA.jpg?width=800",
+        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Folio_153v_from_the_Shahnama_of_Shah_Tahmasp_TMoCA.jpg?width=800"
+      },
+      "historical_text": "An incredibly intricate illuminated manuscript page from the Persian epic, the Book of Kings.",
+      "id": "e16",
+      "year": "Unknown",
+      "lat": 25.2955,
+      "lng": 51.5395,
+      "museumName": "Museum of Islamic Art, Doha",
+      "description": "An incredibly intricate illuminated manuscript page from the Persian epic, the Book of Kings.",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Folio_153v_from_the_Shahnama_of_Shah_Tahmasp_TMoCA.jpg?width=800",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Folio_153v_from_the_Shahnama_of_Shah_Tahmasp_TMoCA.jpg?width=800",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e17",
+      "title": "Planispheric Astrolabe",
+      "artist": "Hamid ibn Mahmud al-Isfahani",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Museum of Islamic Art, Doha",
+        "city": "Doha",
+        "country": "",
+        "lat": 25.2955,
+        "lng": 51.5395
+      },
+      "assets": {
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MIA_-_Planispheric_Astrolabe,_Iran,_984_AD.jpg?width=800",
+        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/MIA_-_Planispheric_Astrolabe,_Iran,_984_AD.jpg?width=800"
+      },
+      "historical_text": "A beautifully crafted brass astronomical instrument used in the medieval Islamic world.",
+      "id": "e17",
+      "year": "Unknown",
+      "lat": 25.2955,
+      "lng": 51.5395,
+      "museumName": "Museum of Islamic Art, Doha",
+      "description": "A beautifully crafted brass astronomical instrument used in the medieval Islamic world.",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MIA_-_Planispheric_Astrolabe,_Iran,_984_AD.jpg?width=800",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/MIA_-_Planispheric_Astrolabe,_Iran,_984_AD.jpg?width=800",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e18",
+      "title": "Topkapi Dagger",
+      "artist": "Ottoman Court Jewelers",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Topkapi Palace Museum",
+        "city": "Istanbul",
+        "country": "",
+        "lat": 41.0115,
+        "lng": 28.9833
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/asia/asia-9a73ec089f7f80f1.jpg",
+        "high_res_url": "/artworks/asia/asia-9a73ec089f7f80f1.jpg"
+      },
+      "historical_text": "A magnificent dagger featuring three massive emeralds on the hilt and a watch hidden in the pommel.",
+      "id": "e18",
+      "year": "Unknown",
+      "lat": 41.0115,
+      "lng": 28.9833,
+      "museumName": "Topkapi Palace Museum",
+      "description": "A magnificent dagger featuring three massive emeralds on the hilt and a watch hidden in the pommel.",
+      "imageUrl": "/artworks/asia/asia-9a73ec089f7f80f1.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Topkapi_Knife_04_1993.jpg?width=640",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "e19",
+      "title": "Spoonmaker's Diamond",
+      "artist": "Unknown",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Topkapi Palace Museum",
+        "city": "Istanbul",
+        "country": "",
+        "lat": 41.0115,
+        "lng": 28.9833
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/asia/asia-7b6ca2629bf51ef0.jpg",
+        "high_res_url": "/artworks/asia/asia-7b6ca2629bf51ef0.jpg"
+      },
+      "historical_text": "An 86-carat pear-shaped diamond, one of the most famous jewels of the Ottoman Empire.",
+      "id": "e19",
+      "year": "Unknown",
+      "lat": 41.0115,
+      "lng": 28.9833,
+      "museumName": "Topkapi Palace Museum",
+      "description": "An 86-carat pear-shaped diamond, one of the most famous jewels of the Ottoman Empire.",
+      "imageUrl": "/artworks/asia/asia-7b6ca2629bf51ef0.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Spoonmaker%27s_Diamond.jpg?width=640",
+      "source": "local",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "oceania-seasia-13",
+      "title": "Ensueños de Amor",
+      "artist": "Juan Luna",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Lopez Museum",
+        "city": "Manila",
+        "country": "",
+        "lat": 14.58243,
+        "lng": 121.06279
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-75b1c20fb73d2577.jpg",
+        "high_res_url": "/artworks/external/external-75b1c20fb73d2577.jpg"
+      },
+      "historical_text": "Located at Lopez Museum.",
+      "id": "oceania-seasia-13",
+      "year": "Unknown",
+      "lat": 14.58243,
+      "lng": 121.06279,
+      "museumName": "Lopez Museum",
+      "description": "Located at Lopez Museum.",
+      "imageUrl": "/artworks/external/external-75b1c20fb73d2577.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Ensuenos%20de%20Amor%20by%20Juan%20Luna.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q5380064"
+    },
+    {
+      "artwork_id": "oceania-seasia-15",
+      "title": "Hymen, oh Hyménée!",
+      "artist": "Juan Luna",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Ayala Museum",
+        "city": "Makati",
+        "country": "",
+        "lat": 14.5536,
+        "lng": 121.023
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-cde751fd7c6d7f85.jpg",
+        "high_res_url": "/artworks/external/external-cde751fd7c6d7f85.jpg"
+      },
+      "historical_text": "Located at Ayala Museum.",
+      "id": "oceania-seasia-15",
+      "year": "Unknown",
+      "lat": 14.5536,
+      "lng": 121.023,
+      "museumName": "Ayala Museum",
+      "description": "Located at Ayala Museum.",
+      "imageUrl": "/artworks/external/external-cde751fd7c6d7f85.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Hymen%2C%20oh%20Hym%C3%A9n%C3%A9e%21%20-%20Juan%20Luna%20-%20Ayala%20Museum.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q5956406"
+    },
+    {
+      "artwork_id": "oceania-seasia-16",
+      "title": "La barca de Aqueronte",
+      "artist": "Félix Resurrección Hidalgo",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Lopez Museum",
+        "city": "Manila",
+        "country": "",
+        "lat": 14.58243,
+        "lng": 121.06279
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Located at Lopez Museum.",
+      "id": "oceania-seasia-16",
+      "year": "Unknown",
+      "lat": 14.58243,
+      "lng": 121.06279,
+      "museumName": "Lopez Museum",
+      "description": "Located at Lopez Museum.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Barca%20de%20Aqueronte%20by%20Felix%20Resurreccion%20Hidalgo%201887.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q6465971"
+    },
+    {
+      "artwork_id": "oceania-seasia-17",
+      "title": "Las Virgenes Cristianas Expuestas al Populacho",
+      "artist": "Félix Resurrección Hidalgo",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Metropolitan Museum of Manila",
+        "city": "Manila",
+        "country": "",
+        "lat": 14.562406,
+        "lng": 120.986477
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-330ff47aeeee6ec9.jpg",
+        "high_res_url": "/artworks/external/external-330ff47aeeee6ec9.jpg"
+      },
+      "historical_text": "Located at Metropolitan Museum of Manila.",
+      "id": "oceania-seasia-17",
+      "year": "Unknown",
+      "lat": 14.562406,
+      "lng": 120.986477,
+      "museumName": "Metropolitan Museum of Manila",
+      "description": "Located at Metropolitan Museum of Manila.",
+      "imageUrl": "/artworks/external/external-330ff47aeeee6ec9.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Virgenes%20Cristianas%20Expuestas%20Al%20Populacho%20%28The%20Christian%20Virgins%20Being%20Exposed%20to%20the%20Populace%29%20by%20Felix%20Ressureccion%20Hidalgo%201884.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q6492696"
+    },
+    {
+      "artwork_id": "oceania-seasia-24",
+      "title": "The Blood Compact",
+      "artist": "Juan Luna",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Malacañang Palace",
+        "city": "Manila",
+        "country": "",
+        "lat": 14.593857,
+        "lng": 120.994524
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-7003fb3635cc2f19.jpg",
+        "high_res_url": "/artworks/external/external-7003fb3635cc2f19.jpg"
+      },
+      "historical_text": "Located at Malacañang Palace.",
+      "id": "oceania-seasia-24",
+      "year": "Unknown",
+      "lat": 14.593857,
+      "lng": 120.994524,
+      "museumName": "Malacañang Palace",
+      "description": "Located at Malacañang Palace.",
+      "imageUrl": "/artworks/external/external-7003fb3635cc2f19.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Blood%20Compact%20by%20Juan%20Luna.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q7718659"
+    },
+    {
+      "artwork_id": "oceania-seasia-36",
+      "title": "España y Filipinas",
+      "artist": "Juan Luna",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Lopez Museum",
+        "city": "Manila",
+        "country": "",
+        "lat": 14.58243,
+        "lng": 121.06279
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-1bf45270718c8f06.jpg",
+        "high_res_url": "/artworks/external/external-1bf45270718c8f06.jpg"
+      },
+      "historical_text": "Located at Lopez Museum.",
+      "id": "oceania-seasia-36",
+      "year": "Unknown",
+      "lat": 14.58243,
+      "lng": 121.06279,
+      "museumName": "Lopez Museum",
+      "description": "Located at Lopez Museum.",
+      "imageUrl": "/artworks/external/external-1bf45270718c8f06.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Espana%20y%20Filpinas%20Juan%20Luna%20y%20Novicio%20Lopez%20Museum%20and%20Library.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q16835669"
+    },
+    {
+      "artwork_id": "oceania-seasia-47",
+      "title": "The Arrest of Pangeran Diponegoro",
+      "artist": "Raden Saleh",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Gedung Agung",
+        "city": "Yogyakarta",
+        "country": "",
+        "lat": -7.800227358,
+        "lng": 110.364540172
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-12ecd75bf16923a4.jpg",
+        "high_res_url": "/artworks/external/external-12ecd75bf16923a4.jpg"
+      },
+      "historical_text": "Located at Gedung Agung.",
+      "id": "oceania-seasia-47",
+      "year": "Unknown",
+      "lat": -7.800227358,
+      "lng": 110.364540172,
+      "museumName": "Gedung Agung",
+      "description": "Located at Gedung Agung.",
+      "imageUrl": "/artworks/external/external-12ecd75bf16923a4.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Raden%20Saleh%20-%20Diponegoro%20arrest.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q18177323"
+    }
+  ]
+}

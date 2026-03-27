@@ -35,6 +35,21 @@ Useful scripts:
 - `npm run localize:asia` (download/rewrite East Asia thumbnails locally)
 - `npm run check:data` (content-quality checker)
 
+## WikiArt (Kaggle) pipeline
+
+The [WikiArt dataset on Kaggle](https://www.kaggle.com/datasets/steubk/wikiart) is large (~34GB unpacked). Do **not** commit the raw archive. See [docs/wikiart-ingestion.md](docs/wikiart-ingestion.md) for layout, disk space, and license notes.
+
+After downloading and setting `WIKIART_ROOT`:
+
+1. `npm run wikiart:import` → `tmp/wikiart-candidates.json`
+2. `npm run wikiart:enrich` → `tmp/wikiart-enriched.json` (Wikipedia/Wikidata; rate-limited)
+3. `npm run wikiart:validate` → `tmp/wikiart-validated.json`
+4. `npm run wikiart:upload` → `tmp/wikiart-uploaded.json` (local `public/artworks/wikiart/` or Cloudinary if configured)
+5. `npm run wikiart:merge` → appends to `src/data/externalArtData.json`
+6. `npm run data:runtime` → refreshes `public/data/chunks` and search index
+
+WikiArt-derived data is often **non-commercial**; verify the dataset and [WikiArt](https://www.wikiart.org/) terms for your project before publishing.
+
 ## License
 
 MIT. See `LICENSE`.

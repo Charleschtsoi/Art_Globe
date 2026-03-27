@@ -21,8 +21,15 @@
     "archive3:validate": "node scripts/validate-archive3-city-consistency.mjs",
     "archive3:upload": "node scripts/upload-archive3-images.mjs",
     "archive3:merge": "node scripts/merge-archive3-into-external.mjs",
+    "wikiart:import": "node scripts/import-wikiart.mjs",
+    "wikiart:enrich": "node scripts/enrich-wikiart-metadata.mjs",
+    "wikiart:validate": "node scripts/validate-wikiart.mjs",
+    "wikiart:upload": "node scripts/upload-wikiart-images.mjs",
+    "wikiart:merge": "node scripts/merge-wikiart-into-external.mjs",
+    "data:runtime": "node scripts/build-runtime-data.mjs",
     "test:integration": "playwright test",
-    "check:data": "node scripts/check-art-data.mjs"
+    "check:data": "node scripts/check-art-data.mjs",
+    "benchmark:data": "node scripts/benchmark-runtime-data.mjs"
   },
   "dependencies": {
     "react": "^19.2.4",

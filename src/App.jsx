@@ -2,14 +2,18 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import Globe from 'react-globe.gl'
 import * as THREE from 'three'
 import artPlaceholder from './assets/art-placeholder.svg'
-import { artworks, easternArtData } from './artData'
-import externalArtData from './data/externalArtData.json'
 import ArtworkSidePanel from './components/ArtworkSidePanel'
 import SearchBar from './components/SearchBar'
-import { normalizeArtworks } from './services/normalizeArtwork'
 import { getZoomBand, resolveHtmlMarkerData, resolveLodData } from './services/artLod'
 import { readStoredLocale, writeStoredLocale, translate } from './i18n/translations'
 import { localizeArtworkDisplay } from './i18n/localizeArtworkDisplay'
+import {
+  classifyRegionForCoords,
+  fetchChunkManifest,
+  fetchChunkRecords,
+  fetchSearchIndex,
+  getChunkIdsForRegion
+} from './services/runtimeDataLoader'
 
 const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
 
@@ -19,6 +23,8 @@ const MIN_CAMERA_ALTITUDE = 0.55
 const MAX_CAMERA_ALTITUDE = 6.2
 const ZOOM_STEP_RATIO = 0.82
 const ZOOM_BUTTON_ANIMATION_MS = 620
+const HYDRATION_BATCH_SIZE = Number(import.meta.env.VITE_HYDRATION_BATCH_SIZE ?? 1)
+const HYDRATION_BATCH_DELAY_MS = Number(import.meta.env.VITE_HYDRATION_BATCH_DELAY_MS ?? 220)
 
 function escapeHtml(s) {
   return String(s)
@@ -47,6 +53,8 @@ const spreadOutArtworks = (data) => {
 }
 
 function App() {
+  const [allArtworksBase, setAllArtworksBase] = useState([])
+  const [searchRecords, setSearchRecords] = useState([])
   const [activeMarker, setActiveMarker] = useState(null)
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
@@ -76,10 +84,11 @@ function App() {
     tierPlaceholder: 0,
     thumbErrors: 0
   })
-  const allArtworksBase = useMemo(
-    () => normalizeArtworks([...(artworks || []), ...(easternArtData || []), ...(externalArtData || [])]),
-    []
-  )
+  const dataManifestRef = useRef(null)
+  const loadedChunkIdsRef = useRef(new Set())
+  const loadingChunkIdsRef = useRef(new Set())
+  const currentPovRegionRef = useRef('asia')
+  const hydrationTimerRef = useRef(null)
 
   const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
 
@@ -89,6 +98,109 @@ function App() {
   const allArtworks = useMemo(
     () => allArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
     [allArtworksBase, locale]
+  )
+
+  const artworkById = useMemo(() => new Map(allArtworks.map((art) => [String(art.id), art])), [allArtworks])
+
+  const loadChunksById = useCallback(async (chunkIds = []) => {
+    const manifest = dataManifestRef.current
+    if (!manifest?.chunks || chunkIds.length === 0) return []
+    const pendingIds = chunkIds.filter(
+      (id) => !loadedChunkIdsRef.current.has(id) && !loadingChunkIdsRef.current.has(id)
+    )
+    if (pendingIds.length === 0) return []
+    for (const chunkId of pendingIds) loadingChunkIdsRef.current.add(chunkId)
+    const chunkById = new Map(manifest.chunks.map((chunk) => [chunk.id, chunk]))
+    const loaded = await Promise.all(
+      pendingIds.map(async (chunkId) => {
+        try {
+          const chunk = chunkById.get(chunkId)
+          if (!chunk?.path) return []
+          const records = await fetchChunkRecords(chunk.path)
+          loadedChunkIdsRef.current.add(chunkId)
+          return records
+        } finally {
+          loadingChunkIdsRef.current.delete(chunkId)
+        }
+      })
+    )
+    const flat = loaded.flat()
+    if (flat.length > 0) {
+      setAllArtworksBase((prev) => {
+        const next = [...prev]
+        const known = new Set(prev.map((row) => String(row.id)))
+        for (const row of flat) {
+          const id = String(row.id ?? row.artwork_id ?? '')
+          if (!id || known.has(id)) continue
+          known.add(id)
+          next.push(row)
+        }
+        return next
+      })
+    }
+    return flat
+  }, [])
+
+  const startProgressiveGlobalHydration = useCallback(() => {
+    const manifest = dataManifestRef.current
+    if (!manifest?.chunks?.length) return
+    const currentRegion = currentPovRegionRef.current
+    const chunks = manifest.chunks
+    const prioritized = [
+      ...chunks.filter((chunk) => chunk.region === currentRegion),
+      ...chunks.filter((chunk) => chunk.region !== currentRegion)
+    ].map((chunk) => chunk.id)
+    let cursor = 0
+
+    const tick = async () => {
+      if (cursor >= prioritized.length) return
+      const nextIds = prioritized.slice(cursor, cursor + HYDRATION_BATCH_SIZE)
+      cursor += HYDRATION_BATCH_SIZE
+      try {
+        await loadChunksById(nextIds)
+      } catch (error) {
+        console.warn('Global hydration batch failed:', error)
+      }
+      hydrationTimerRef.current = window.setTimeout(tick, HYDRATION_BATCH_DELAY_MS)
+    }
+    hydrationTimerRef.current = window.setTimeout(tick, HYDRATION_BATCH_DELAY_MS)
+  }, [loadChunksById])
+
+  useEffect(() => {
+    let disposed = false
+    const bootstrapData = async () => {
+      try {
+        const [manifest, search] = await Promise.all([fetchChunkManifest(), fetchSearchIndex()])
+        if (disposed) return
+        dataManifestRef.current = manifest
+        setSearchRecords(Array.isArray(search?.records) ? search.records : [])
+        const initialChunkIds = getChunkIdsForRegion(manifest, currentPovRegionRef.current, 3)
+        await loadChunksById(initialChunkIds)
+        startProgressiveGlobalHydration()
+      } catch (error) {
+        console.error('Runtime data bootstrap failed:', error)
+      }
+    }
+    bootstrapData()
+    return () => {
+      disposed = true
+      if (hydrationTimerRef.current) window.clearTimeout(hydrationTimerRef.current)
+    }
+  }, [loadChunksById, startProgressiveGlobalHydration])
+
+  const maybePreloadRegion = useCallback(
+    (lat, lng, altitude) => {
+      const manifest = dataManifestRef.current
+      if (!manifest) return
+      const region = classifyRegionForCoords(lat, lng)
+      currentPovRegionRef.current = region
+      const count = altitude > 1.5 ? 2 : 4
+      const candidateChunkIds = getChunkIdsForRegion(manifest, region, count)
+      loadChunksById(candidateChunkIds).catch((error) => {
+        console.warn('Chunk preload failed:', error)
+      })
+    },
+    [loadChunksById]
   )
 
   useEffect(() => {
@@ -123,7 +235,7 @@ function App() {
     if (activeMarker.isCluster) {
       const items = Array.isArray(activeMarker.clusterItems) ? activeMarker.clusterItems : []
       const clusterArtworks = items
-        .map((entry) => allArtworks.find((art) => String(art.id) === String(entry.id)) ?? entry)
+        .map((entry) => artworkById.get(String(entry.id)) ?? entry)
         .filter(Boolean)
       return {
         isClusterPicker: true,
@@ -136,12 +248,12 @@ function App() {
       return {
         ...activeMarker,
         artworks: activeMarker.artworks
-          ?.map((item) => allArtworks.find((art) => String(art.id) === String(item.id)) ?? item)
+          ?.map((item) => artworkById.get(String(item.id)) ?? item)
           .filter(Boolean)
       }
     }
-    return allArtworks.find((art) => String(art.id) === String(activeMarker.id)) ?? activeMarker
-  }, [activeMarker, allArtworks])
+    return artworkById.get(String(activeMarker.id)) ?? activeMarker
+  }, [activeMarker, artworkById])
 
   const scheduleAutoRotateResume = useCallback(() => {
     const controls = controlsRef.current
@@ -243,9 +355,11 @@ function App() {
 
     const globe = globeRef.current
     globe?.pointOfView({ lat: 24, lng: 90, altitude: 6 }, 0)
+    maybePreloadRegion(24, 90, 6)
     if (visualFxRef.current.flyInTimer) window.clearTimeout(visualFxRef.current.flyInTimer)
     visualFxRef.current.flyInTimer = window.setTimeout(() => {
       globe?.pointOfView({ lat: 24, lng: 90, altitude: 2.4 }, 2500)
+      maybePreloadRegion(24, 90, 2.4)
     }, 140)
 
     if (visualFxRef.current.initialized) return
@@ -312,7 +426,7 @@ function App() {
     visualFxRef.current.starGeometry = starGeometry
     visualFxRef.current.starMaterial = starMaterial
     visualFxRef.current.animationFrame = window.requestAnimationFrame(animate)
-  }, [buildCloudTexture, scheduleAutoRotateResume])
+  }, [buildCloudTexture, maybePreloadRegion, scheduleAutoRotateResume])
 
   useEffect(() => {
     const controls = controlsRef.current
@@ -336,6 +450,7 @@ function App() {
       }
       if (idleTimerRef.current) window.clearTimeout(idleTimerRef.current)
       if (clusterHintTimerRef.current) window.clearTimeout(clusterHintTimerRef.current)
+      if (hydrationTimerRef.current) window.clearTimeout(hydrationTimerRef.current)
       const visualFx = visualFxRef.current
       if (visualFx.flyInTimer) window.clearTimeout(visualFx.flyInTimer)
       if (visualFx.animationFrame) window.cancelAnimationFrame(visualFx.animationFrame)
@@ -402,15 +517,24 @@ function App() {
   }, [])
 
   const handleGlobalSearchSelect = useCallback(
-    (art) => {
+    async (art) => {
       if (!art) return
+      const chunkId = typeof art.chunkId === 'string' ? art.chunkId : null
+      if (chunkId) {
+        try {
+          await loadChunksById([chunkId])
+        } catch (error) {
+          console.warn('Search chunk lazy-load failed:', error)
+        }
+      }
+      const resolved = artworkById.get(String(art.id)) ?? art
       pauseAutoRotate()
       scheduleAutoRotateResume()
       setClusterHint('')
-      setActiveMarker(art)
-      focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
+      setActiveMarker(resolved)
+      focusOnArtwork(resolved, getZoomInAltitude(cameraAltitude))
     },
-    [cameraAltitude, focusOnArtwork, getZoomInAltitude, pauseAutoRotate, scheduleAutoRotateResume]
+    [artworkById, cameraAltitude, focusOnArtwork, getZoomInAltitude, loadChunksById, pauseAutoRotate, scheduleAutoRotateResume]
   )
 
   const handlePointClick = useCallback(
@@ -434,9 +558,11 @@ function App() {
     if (zoomRafRef.current) return
     zoomRafRef.current = window.requestAnimationFrame(() => {
       setCameraAltitude(pendingAltitudeRef.current)
+      const pov = globeRef.current?.pointOfView?.()
+      if (pov) maybePreloadRegion(pov.lat, pov.lng, pendingAltitudeRef.current)
       zoomRafRef.current = null
     })
-  }, [])
+  }, [maybePreloadRegion])
 
   const handleZoomInClick = useCallback(() => {
     if (!Number.isFinite(cameraAltitude)) return
@@ -711,6 +837,7 @@ function App() {
         </div>
         <SearchBar
           artworks={allArtworks}
+          searchRecords={searchRecords}
           onSelectArtwork={handleGlobalSearchSelect}
           getThumbUrl={getMarkerImageUrl}
           t={t}

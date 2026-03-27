@@ -2,14 +2,14 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 
-const INPUT_PATH = path.resolve(process.cwd(), 'tmp/archive3-uploaded.json')
+const INPUT_PATH = path.resolve(process.cwd(), 'tmp/wikiart-uploaded.json')
 const EXTERNAL_PATH = path.resolve(process.cwd(), 'src/data/externalArtData.json')
-const REPORT_PATH = path.resolve(process.cwd(), 'scripts/reports/archive3-merge-report.json')
+const REPORT_PATH = path.resolve(process.cwd(), 'scripts/reports/wikiart-merge-report.json')
+const QUALITY_REPORT_PATH = path.resolve(process.cwd(), 'scripts/reports/wikiart-quality-report.json')
 const MIN_APAC_SHARE = Number(process.env.MIN_APAC_SHARE ?? 0.45)
 const MIN_AFRICA_SHARE = Number(process.env.MIN_AFRICA_SHARE ?? 0.05)
-const MAX_PER_ARTIST = Number(process.env.ARCHIVE3_MAX_PER_ARTIST_MERGE ?? 8)
-const MAX_IMPORT_TOTAL = Number(process.env.ARCHIVE3_MAX_IMPORT_TOTAL ?? 320)
-const QUALITY_REPORT_PATH = path.resolve(process.cwd(), 'scripts/reports/archive3-quality-report.json')
+const MAX_PER_ARTIST = Number(process.env.WIKIART_MAX_PER_ARTIST_MERGE ?? 10)
+const MAX_IMPORT_TOTAL = Number(process.env.WIKIART_MAX_IMPORT_TOTAL ?? 800)
 
 const safeText = (value, fallback = '') => {
   const text = String(value ?? '').trim()
@@ -174,10 +174,10 @@ async function main() {
       museumName: item.museum,
       description: item.description,
       imageUrl: item.imageUrl,
-      canonicalImageUrl: item.canonicalImageUrl,
+      canonicalImageUrl: item.canonicalImageUrl ?? item.imageUrl,
       year: item.year,
       priority: item.priority ?? 4,
-      source: 'archive3',
+      source: 'wikiart',
       sourceUrl: item.metadata?.artistWikipedia ?? '',
       current_location: {
         museum: item.museum,
@@ -239,7 +239,7 @@ async function main() {
     'utf8'
   )
 
-  console.log(`Archive-3 merge complete. Imported: ${selected.length}, skipped: ${skipped.length}`)
+  console.log(`WikiArt merge complete. Imported: ${selected.length}, skipped: ${skipped.length}`)
   console.log(`Updated: ${path.relative(process.cwd(), EXTERNAL_PATH)}`)
   console.log(`Quality report: ${path.relative(process.cwd(), QUALITY_REPORT_PATH)}`)
   console.log(`Report: ${path.relative(process.cwd(), REPORT_PATH)}`)

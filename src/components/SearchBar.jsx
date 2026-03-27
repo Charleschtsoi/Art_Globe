@@ -21,7 +21,7 @@ const inputStyle = {
   fontSize: 13
 }
 
-function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
+function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, getThumbUrl, t }) {
   const rootRef = useRef(null)
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
@@ -39,6 +39,7 @@ function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
   }, [query])
 
   const results = useMemo(() => {
+    const source = Array.isArray(searchRecords) && searchRecords.length > 0 ? searchRecords : artworks
     const q = debouncedQuery.trim().toLowerCase()
     if (!q) return []
 
@@ -56,8 +57,8 @@ function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
       return fields.some((f) => f.includes(q))
     }
 
-    return artworks.filter(matches).slice(0, 8)
-  }, [artworks, debouncedQuery])
+    return source.filter(matches).slice(0, 8)
+  }, [artworks, debouncedQuery, searchRecords])
 
   useEffect(() => {
     const onDocMouseDown = (e) => {
@@ -170,7 +171,7 @@ function SearchBar({ artworks = [], onSelectArtwork, getThumbUrl, t }) {
             results.map((art, idx) => {
               const title = art?.displayTitle ?? art?.title ?? ''
               const artist = art?.displayArtist ?? art?.artist ?? ''
-              const museum = art?.displayMuseumName ?? art?.museumName ?? ''
+              const museum = art?.displayMuseumName ?? art?.museumName ?? art?.museum ?? ''
               const city = art?.displayCity ?? art?.current_location?.city ?? ''
               const thumbSrc = resolvedThumbUrl(
                 art?.canonicalImageUrl ?? art?.imageUrl ?? ''
