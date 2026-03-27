@@ -67,6 +67,16 @@ const EN = {
   'search.ariaLabel': 'Search artworks',
   'search.noResults': 'No artworks match your search.',
   'search.resultsAria': 'Search results',
+  'stats.title': 'Dataset Stats',
+  'stats.periodFilterTitle': 'Filter by Period',
+  'stats.visible': 'Visible',
+  'stats.loaded': 'Loaded',
+  'stats.total': 'Total',
+  'stats.bySource': 'By source',
+  'stats.byPeriod': 'By period',
+  'stats.clear': 'Clear',
+  'stats.results': 'Matching artworks',
+  'stats.empty': 'No artworks in this category.',
   'controls.zoomInAria': 'Zoom in',
   'controls.zoomOutAria': 'Zoom out'
 }
@@ -140,6 +150,16 @@ const ZH_HANT = {
   'search.ariaLabel': '搜尋藝術品',
   'search.noResults': '沒有符合搜尋條件的藝術品。',
   'search.resultsAria': '搜尋結果',
+  'stats.title': '資料統計',
+  'stats.periodFilterTitle': '依時期篩選',
+  'stats.visible': '目前顯示',
+  'stats.loaded': '已載入',
+  'stats.total': '總數',
+  'stats.bySource': '依來源',
+  'stats.byPeriod': '依時期',
+  'stats.clear': '清除',
+  'stats.results': '符合的藝術品',
+  'stats.empty': '此分類沒有藝術品。',
   'controls.zoomInAria': '放大地球',
   'controls.zoomOutAria': '縮小地球'
 }

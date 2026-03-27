@@ -56,6 +56,7 @@ function App() {
   const [allArtworksBase, setAllArtworksBase] = useState([])
   const [searchRecords, setSearchRecords] = useState([])
   const [activeMarker, setActiveMarker] = useState(null)
+  const [selectedPeriods, setSelectedPeriods] = useState([])
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
   const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight })
@@ -97,10 +98,17 @@ function App() {
 
   const markerZoomBand = useMemo(() => getZoomBand(cameraAltitude), [cameraAltitude])
   const isMobileLayout = viewport.width <= 900
+  const totalRecords = dataManifestRef.current?.totalRecords ?? allArtworksBase.length
+
+  const periodFilteredArtworksBase = useMemo(() => {
+    if (!selectedPeriods.length) return allArtworksBase
+    const selected = new Set(selectedPeriods)
+    return allArtworksBase.filter((art) => selected.has(String(art.time_period || art.timePeriod || 'unknown')))
+  }, [allArtworksBase, selectedPeriods])
 
   const allArtworks = useMemo(
-    () => allArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
-    [allArtworksBase, locale]
+    () => periodFilteredArtworksBase.map((a) => localizeArtworkDisplay(a, locale)),
+    [periodFilteredArtworksBase, locale]
   )
 
   const artworkById = useMemo(() => new Map(allArtworks.map((art) => [String(art.id), art])), [allArtworks])
@@ -232,6 +240,23 @@ function App() {
     () => resolveHtmlMarkerData(visibleArtworks, activeMarker, markerZoomBand),
     [visibleArtworks, activeMarker, markerZoomBand]
   )
+  const datasetStats = useMemo(() => {
+    const periodCounts = new Map()
+    for (const art of allArtworksBase) {
+      const period = String(art.time_period || art.timePeriod || 'unknown')
+      periodCounts.set(period, (periodCounts.get(period) || 0) + 1)
+    }
+    const sortedEntries = (map, limit = 4) =>
+      [...map.entries()]
+        .sort((a, b) => b[1] - a[1])
+        .slice(0, limit)
+    return {
+      loadedTotal: allArtworksBase.length,
+      visible: periodFilteredArtworksBase.length,
+      total: totalRecords,
+      periods: sortedEntries(periodCounts, 12)
+    }
+  }, [allArtworksBase, periodFilteredArtworksBase.length, totalRecords])
 
   const selectedItemForPanel = useMemo(() => {
     if (!activeMarker) return null
@@ -567,13 +592,26 @@ function App() {
         }
       }
       const resolved = artworkById.get(String(art.id)) ?? art
+      const period = String(resolved.time_period || resolved.timePeriod || 'unknown')
+      if (selectedPeriods.length > 0 && !selectedPeriods.includes(period)) {
+        setSelectedPeriods((prev) => [...new Set([...prev, period])])
+      }
       pauseAutoRotate()
       scheduleAutoRotateResume()
       setClusterHint('')
       setActiveMarker(resolved)
       focusOnArtwork(resolved, getZoomInAltitude(cameraAltitude))
     },
-    [artworkById, cameraAltitude, focusOnArtwork, getZoomInAltitude, loadChunksById, pauseAutoRotate, scheduleAutoRotateResume]
+    [
+      artworkById,
+      cameraAltitude,
+      focusOnArtwork,
+      getZoomInAltitude,
+      loadChunksById,
+      pauseAutoRotate,
+      scheduleAutoRotateResume,
+      selectedPeriods
+    ]
   )
 
   const handlePointClick = useCallback(
@@ -627,6 +665,17 @@ function App() {
     const pov = globeRef.current?.pointOfView?.()
     if (pov) maybePreloadRegion(pov.lat, pov.lng, nextAltitude)
   }, [cameraAltitude, maybePreloadRegion, pauseAutoRotate, scheduleAutoRotateResume])
+
+  useEffect(() => {
+    if (!activeMarker) return
+    if (activeMarker.isCluster || activeMarker.isMuseumStack) {
+      setActiveMarker(null)
+      return
+    }
+    const id = String(activeMarker.id ?? '')
+    if (!id) return
+    if (!artworkById.has(id)) setActiveMarker(null)
+  }, [activeMarker, artworkById])
 
   const createArtworkElement = useCallback(
     (art) => {
@@ -885,7 +934,7 @@ function App() {
         </div>
         <SearchBar
           artworks={allArtworks}
-          searchRecords={searchRecords}
+          searchRecords={selectedPeriods.length ? null : searchRecords}
           onSelectArtwork={handleGlobalSearchSelect}
           getThumbUrl={getMarkerImageUrl}
           t={t}
@@ -971,6 +1020,111 @@ function App() {
         >
           -
         </button>
+      </div>
+      <div
+        style={{
+          position: 'fixed',
+          left: 12,
+          bottom: isMobileLayout ? 86 : 12,
+          zIndex: 94,
+          width: isMobileLayout ? 'min(220px, calc(100vw - 24px))' : 250,
+          background: 'rgba(32, 22, 14, 0.88)',
+          border: '1px solid rgba(212, 168, 83, 0.3)',
+          borderRadius: 10,
+          color: '#f5e6c8',
+          padding: '8px 9px',
+          boxShadow: '0 8px 22px rgba(0,0,0,0.28)',
+          pointerEvents: 'auto'
+        }}
+      >
+        <div style={{ fontSize: 12, fontWeight: 700, marginBottom: 5 }}>{t('stats.periodFilterTitle')}</div>
+        <div style={{ fontSize: 10, color: '#d9c4a1', marginBottom: 6 }}>
+          {t('stats.visible')}: {datasetStats.visible.toLocaleString()} / {datasetStats.total.toLocaleString()}
+        </div>
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
+          <div style={{ fontSize: 10, color: '#e7d9c4' }}>
+            {t('stats.byPeriod')} ({selectedPeriods.length})
+          </div>
+          <button
+            type="button"
+            onClick={() => setSelectedPeriods([])}
+            disabled={selectedPeriods.length === 0}
+            style={{
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              background: 'rgba(42, 28, 18, 0.72)',
+              color: '#f5e6c8',
+              opacity: selectedPeriods.length === 0 ? 0.45 : 1,
+              borderRadius: 7,
+              padding: '2px 6px',
+              fontSize: 10,
+              cursor: selectedPeriods.length === 0 ? 'not-allowed' : 'pointer'
+            }}
+          >
+            {t('stats.clear')}
+          </button>
+        </div>
+        <div
+          style={{
+            maxHeight: isMobileLayout ? 98 : 116,
+            overflowY: 'auto',
+            border: '1px solid rgba(212, 168, 83, 0.18)',
+            borderRadius: 8,
+            background: 'rgba(18, 12, 8, 0.52)',
+            padding: 3
+          }}
+        >
+          {datasetStats.periods.map(([name, count]) => (
+            <button
+              key={`period-${name}`}
+              type="button"
+              onClick={() =>
+                setSelectedPeriods((prev) =>
+                  prev.includes(name) ? prev.filter((item) => item !== name) : [...prev, name]
+                )
+              }
+              style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                width: '100%',
+                fontSize: 10,
+                color: '#c8aa80',
+                background: selectedPeriods.includes(name) ? 'rgba(212, 168, 83, 0.2)' : 'transparent',
+                border: 'none',
+                borderRadius: 6,
+                cursor: 'pointer',
+                padding: '5px'
+              }}
+            >
+              <span style={{ display: 'inline-flex', alignItems: 'center', gap: 6 }}>
+                <span
+                  aria-hidden="true"
+                  style={{
+                    width: 12,
+                    height: 12,
+                    borderRadius: 3,
+                    border: '1px solid rgba(212, 168, 83, 0.55)',
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    fontSize: 9,
+                    color: '#f5e6c8',
+                    background: selectedPeriods.includes(name) ? 'rgba(212, 168, 83, 0.28)' : 'transparent'
+                  }}
+                >
+                  {selectedPeriods.includes(name) ? '✓' : ''}
+                </span>
+                <span style={{ textTransform: 'capitalize' }}>
+                  {t(`period.${name}`) === `period.${name}` ? name.replaceAll('_', ' ') : t(`period.${name}`)}
+                </span>
+              </span>
+              <span>{count.toLocaleString()}</span>
+            </button>
+          ))}
+        </div>
+        {selectedPeriods.length > 0 && datasetStats.visible === 0 && (
+          <div style={{ fontSize: 10, color: '#b79d78', marginTop: 6 }}>{t('stats.empty')}</div>
+        )}
       </div>
       {selectedItemForPanel && activeMarker && (
         <ArtworkSidePanel
