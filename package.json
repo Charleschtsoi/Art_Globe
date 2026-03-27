@@ -26,6 +26,7 @@
     "wikiart:validate": "node scripts/validate-wikiart.mjs",
     "wikiart:upload": "node scripts/upload-wikiart-images.mjs",
     "wikiart:merge": "node scripts/merge-wikiart-into-external.mjs",
+    "i18n:generate-zh-overlays": "node scripts/generate-content-zh-overlays.mjs",
     "data:runtime": "node scripts/build-runtime-data.mjs",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs",

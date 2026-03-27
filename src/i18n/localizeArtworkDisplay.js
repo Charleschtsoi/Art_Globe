@@ -1,6 +1,7 @@
 import { translate } from './translations.js'
 import { museumNameToZhHant } from './museumNamesZhHant.js'
 import { CONTENT_ZH_HANT_BY_ID } from './contentZhHant.js'
+import { CONTENT_ZH_HANT_GENERATED_BY_ID } from './contentZhHantGenerated.js'
 import { getCityForMuseum } from '../constants/museumCities.js'
 
 const AUTO_PROSE_EN = 'Historical background will be expanded in future dataset updates'
@@ -17,6 +18,68 @@ function translateLocatedLine(text, tLocated) {
   return tLocated(name)
 }
 
+const COUNTRY_ZH_HANT = new Map([
+  ['china', '中國'],
+  ['japan', '日本'],
+  ['korea', '韓國'],
+  ['south korea', '韓國'],
+  ['taiwan', '台灣'],
+  ['france', '法國'],
+  ['italy', '義大利'],
+  ['spain', '西班牙'],
+  ['netherlands', '荷蘭'],
+  ['germany', '德國'],
+  ['united kingdom', '英國'],
+  ['uk', '英國'],
+  ['united states', '美國'],
+  ['usa', '美國'],
+  ['canada', '加拿大'],
+  ['australia', '澳洲'],
+  ['new zealand', '紐西蘭'],
+  ['india', '印度'],
+  ['egypt', '埃及'],
+  ['south africa', '南非'],
+  ['russia', '俄羅斯'],
+  ['philippines', '菲律賓'],
+  ['singapore', '新加坡'],
+  ['thailand', '泰國'],
+  ['vietnam', '越南'],
+  ['indonesia', '印尼'],
+  ['malaysia', '馬來西亞']
+])
+
+const ARTIST_ZH_HANT = new Map([
+  ['unknown artist', '未知藝術家'],
+  ['johannes vermeer', '約翰尼斯・維梅爾'],
+  ['pieter bruegel', '彼得・布勒哲爾'],
+  ['francisco goya', '法蘭西斯科・哥雅'],
+  ['pablo picasso', '巴勃羅・畢卡索'],
+  ['andrei rublev', '安德烈・魯布列夫'],
+  ['marc chagall', '馬克・夏卡爾'],
+  ['mikhail vrubel', '米哈伊爾・弗魯貝爾'],
+  ['eugène louis boudin', '歐仁・路易・布丹']
+])
+
+function mapCountryToZhHant(rawCountry) {
+  const key = String(rawCountry ?? '').trim().toLowerCase()
+  if (!key) return ''
+  return COUNTRY_ZH_HANT.get(key) || rawCountry
+}
+
+function mapArtistToZhHant(rawArtist, unknownArtist) {
+  const key = String(rawArtist ?? '').trim().toLowerCase()
+  if (!key || key === 'unknown artist') return unknownArtist
+  return ARTIST_ZH_HANT.get(key) || rawArtist
+}
+
+function localizeTitle(rawTitle, unknownTitle) {
+  const title = String(rawTitle ?? '').trim()
+  if (!title || title.toLowerCase() === 'untitled') return unknownTitle
+  // Keep existing CJK as-is; otherwise wrap with Chinese book-title marks.
+  if (/[\u3400-\u9FFF]/u.test(title)) return title
+  return `《${title}》`
+}
+
 function localizeBody(raw, overlay, key, displayTitle, displayArtist, t) {
   if (overlay[key]) return overlay[key]
   const text = String(raw ?? '')
@@ -25,7 +88,10 @@ function localizeBody(raw, overlay, key, displayTitle, displayArtist, t) {
   }
   const tLocated = (name) => translate('zhHant', 'locatedAt', { name })
   const line = translateLocatedLine(text, tLocated)
-  return line ?? text
+  if (line) return line
+  if (!text) return t('fallback.prose', { title: displayTitle, artist: displayArtist })
+  if (/[\u3400-\u9FFF]/u.test(text)) return text
+  return `（原文）${text}`
 }
 
 /**
@@ -48,7 +114,9 @@ export function localizeArtworkDisplay(art, locale) {
   }
 
   const t = (key, vars) => translate('zhHant', key, vars)
-  const overlay = CONTENT_ZH_HANT_BY_ID[String(art.id)] ?? {}
+  const generated = CONTENT_ZH_HANT_GENERATED_BY_ID[String(art.id)] ?? {}
+  const curated = CONTENT_ZH_HANT_BY_ID[String(art.id)] ?? {}
+  const overlay = { ...generated, ...curated }
   const museumEn = art.museumName ?? art.current_location?.museum ?? ''
   const museumZh = museumNameToZhHant(museumEn) || museumEn
   const cityZh = getCityForMuseum(museumEn, 'zhHant')
@@ -58,11 +126,9 @@ export function localizeArtworkDisplay(art, locale) {
   const unknownYear = t('unknown.year')
   const unknownTitle = t('unknown.title')
 
-  const displayTitle =
-    overlay.title ?? (art.title === 'Untitled' ? unknownTitle : art.title)
+  const displayTitle = overlay.title ?? localizeTitle(art.title, unknownTitle)
 
-  const displayArtist =
-    overlay.artist ?? (art.artist === 'Unknown Artist' ? unknownArtist : art.artist)
+  const displayArtist = overlay.artist ?? mapArtistToZhHant(art.artist, unknownArtist)
 
   const displayMedium =
     overlay.medium ?? (art.medium === 'Unknown medium' ? unknownMedium : art.medium)
@@ -94,7 +160,7 @@ export function localizeArtworkDisplay(art, locale) {
     displayArtist,
     displayMuseumName: museumZh,
     displayCity: cityZh || (art.current_location?.city ?? ''),
-    displayCountry: art.current_location?.country ?? '',
+    displayCountry: mapCountryToZhHant(art.current_location?.country ?? ''),
     displayMedium,
     displayYear,
     displayDescription: displayHistorical || displayDescription,

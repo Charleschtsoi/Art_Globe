@@ -2,7 +2,9 @@ const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
 export function getZoomBand(altitude) {
   if (altitude > 2.2) return 'far'
-  if (altitude > 1.25) return 'mid'
+  // Enter near mode slightly earlier so users can see city-level detail
+  // without having to hit an exact deep zoom boundary.
+  if (altitude > 1.45) return 'mid'
   return 'near'
 }
 
@@ -177,7 +179,8 @@ export function resolveLodData(artworks, altitude, farCount = 80, clusterI18n) {
 
   const band = getZoomBand(altitude)
   if (band === 'far') return buildClusters(artworks, 20, farLimit, clusterI18n)
-  if (band === 'mid') return buildClusters(artworks, 10, midLimit, clusterI18n)
+  // Slightly finer buckets in mid zoom to avoid over-merging dense Europe cities.
+  if (band === 'mid') return buildClusters(artworks, 8, midLimit, clusterI18n)
   // `near`: avoid returning the entire dataset to prevent DOM/WebGL overload.
   // Preserve detail when the dataset is already small.
   const nearMaxArtifacts = clamp(Math.round(farCount * 2.6), 160, 320)

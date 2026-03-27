@@ -73,6 +73,9 @@ function App() {
     starField: null,
     starGeometry: null,
     starMaterial: null,
+    starFieldFar: null,
+    starGeometryFar: null,
+    starMaterialFar: null,
     animationFrame: null,
     flyInTimer: null,
     initialized: false
@@ -380,9 +383,9 @@ function App() {
     cloudMesh.renderOrder = 2
     scene.add(cloudMesh)
 
-    const starCount = 850
+    const starCount = 1300
     const positions = new Float32Array(starCount * 3)
-    const starRadius = globeRadius * 10
+    const starRadius = globeRadius * 10.5
     for (let i = 0; i < starCount; i += 1) {
       const theta = Math.random() * Math.PI * 2
       const phi = Math.acos(2 * Math.random() - 1)
@@ -398,14 +401,40 @@ function App() {
     const starGeometry = new THREE.BufferGeometry()
     starGeometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
     const starMaterial = new THREE.PointsMaterial({
-      color: '#ffffff',
-      size: globeRadius * 0.007,
+      color: '#eaf2ff',
+      size: globeRadius * 0.0085,
       transparent: true,
-      opacity: 0.38,
+      opacity: 0.55,
       depthWrite: false
     })
     const starField = new THREE.Points(starGeometry, starMaterial)
     scene.add(starField)
+
+    const farStarCount = 700
+    const farPositions = new Float32Array(farStarCount * 3)
+    const farStarRadius = globeRadius * 13.5
+    for (let i = 0; i < farStarCount; i += 1) {
+      const theta = Math.random() * Math.PI * 2
+      const phi = Math.acos(2 * Math.random() - 1)
+      const x = farStarRadius * Math.sin(phi) * Math.cos(theta)
+      const y = farStarRadius * Math.sin(phi) * Math.sin(theta)
+      const z = farStarRadius * Math.cos(phi)
+      const offset = i * 3
+      farPositions[offset] = x
+      farPositions[offset + 1] = y
+      farPositions[offset + 2] = z
+    }
+    const starGeometryFar = new THREE.BufferGeometry()
+    starGeometryFar.setAttribute('position', new THREE.BufferAttribute(farPositions, 3))
+    const starMaterialFar = new THREE.PointsMaterial({
+      color: '#c6dbff',
+      size: globeRadius * 0.0058,
+      transparent: true,
+      opacity: 0.33,
+      depthWrite: false
+    })
+    const starFieldFar = new THREE.Points(starGeometryFar, starMaterialFar)
+    scene.add(starFieldFar)
 
     const neutralAmbient = new THREE.AmbientLight('#ffffff', 0.55)
     const sunKey = new THREE.DirectionalLight('#fffaf0', 0.85)
@@ -416,7 +445,8 @@ function App() {
 
     const animate = () => {
       cloudMesh.rotation.y += 0.00014
-      starField.rotation.y += 0.00003
+      starField.rotation.y += 0.00005
+      starFieldFar.rotation.y += 0.000018
       visualFxRef.current.animationFrame = window.requestAnimationFrame(animate)
     }
     visualFxRef.current.cloudMesh = cloudMesh
@@ -425,6 +455,9 @@ function App() {
     visualFxRef.current.starField = starField
     visualFxRef.current.starGeometry = starGeometry
     visualFxRef.current.starMaterial = starMaterial
+    visualFxRef.current.starFieldFar = starFieldFar
+    visualFxRef.current.starGeometryFar = starGeometryFar
+    visualFxRef.current.starMaterialFar = starMaterialFar
     visualFxRef.current.animationFrame = window.requestAnimationFrame(animate)
   }, [buildCloudTexture, maybePreloadRegion, scheduleAutoRotateResume])
 
@@ -457,10 +490,13 @@ function App() {
       const scene = globeRef.current?.scene?.()
       if (scene && visualFx.cloudMesh) scene.remove(visualFx.cloudMesh)
       if (scene && visualFx.starField) scene.remove(visualFx.starField)
+      if (scene && visualFx.starFieldFar) scene.remove(visualFx.starFieldFar)
       visualFx.cloudGeometry?.dispose()
       visualFx.cloudMaterial?.dispose()
       visualFx.starGeometry?.dispose()
       visualFx.starMaterial?.dispose()
+      visualFx.starGeometryFar?.dispose()
+      visualFx.starMaterialFar?.dispose()
       visualFxRef.current = {
         cloudMesh: null,
         cloudGeometry: null,
@@ -468,6 +504,9 @@ function App() {
         starField: null,
         starGeometry: null,
         starMaterial: null,
+        starFieldFar: null,
+        starGeometryFar: null,
+        starMaterialFar: null,
         animationFrame: null,
         flyInTimer: null,
         initialized: false
@@ -569,8 +608,13 @@ function App() {
     pauseAutoRotate()
     scheduleAutoRotateResume()
     const nextAltitude = Math.max(MIN_CAMERA_ALTITUDE, cameraAltitude * ZOOM_STEP_RATIO)
-    globeRef.current?.pointOfView({ altitude: Math.min(cameraAltitude, nextAltitude) }, ZOOM_BUTTON_ANIMATION_MS)
-  }, [cameraAltitude, pauseAutoRotate, scheduleAutoRotateResume])
+    const targetAltitude = Math.min(cameraAltitude, nextAltitude)
+    globeRef.current?.pointOfView({ altitude: targetAltitude }, ZOOM_BUTTON_ANIMATION_MS)
+    // Keep LOD state in sync even if onZoom callbacks are throttled/late.
+    setCameraAltitude(targetAltitude)
+    const pov = globeRef.current?.pointOfView?.()
+    if (pov) maybePreloadRegion(pov.lat, pov.lng, targetAltitude)
+  }, [cameraAltitude, maybePreloadRegion, pauseAutoRotate, scheduleAutoRotateResume])
 
   const handleZoomOutClick = useCallback(() => {
     if (!Number.isFinite(cameraAltitude)) return
@@ -578,7 +622,11 @@ function App() {
     scheduleAutoRotateResume()
     const nextAltitude = Math.min(MAX_CAMERA_ALTITUDE, cameraAltitude / ZOOM_STEP_RATIO)
     globeRef.current?.pointOfView({ altitude: nextAltitude }, ZOOM_BUTTON_ANIMATION_MS)
-  }, [cameraAltitude, pauseAutoRotate, scheduleAutoRotateResume])
+    // Keep LOD state in sync even if onZoom callbacks are throttled/late.
+    setCameraAltitude(nextAltitude)
+    const pov = globeRef.current?.pointOfView?.()
+    if (pov) maybePreloadRegion(pov.lat, pov.lng, nextAltitude)
+  }, [cameraAltitude, maybePreloadRegion, pauseAutoRotate, scheduleAutoRotateResume])
 
   const createArtworkElement = useCallback(
     (art) => {
@@ -767,7 +815,7 @@ function App() {
         width: '100vw',
         height: '100vh',
         background:
-          'radial-gradient(ellipse 120% 90% at 50% 35%, #0a0a1a 0%, #080818 45%, #060614 78%, #050510 100%)',
+          'radial-gradient(ellipse 125% 95% at 50% 32%, #101a3b 0%, #0a1230 26%, #090f24 52%, #060916 76%, #04050f 100%)',
         overflow: 'hidden',
         fontFamily:
           "'Playfair Display', 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', Georgia, 'Times New Roman', serif"
@@ -885,7 +933,7 @@ function App() {
       >
         <button
           type="button"
-          aria-label="Zoom in"
+          aria-label={t('controls.zoomInAria')}
           onClick={handleZoomInClick}
           disabled={!Number.isFinite(cameraAltitude) || cameraAltitude <= MIN_CAMERA_ALTITUDE + 0.01}
           style={{
@@ -905,7 +953,7 @@ function App() {
         </button>
         <button
           type="button"
-          aria-label="Zoom out"
+          aria-label={t('controls.zoomOutAria')}
           onClick={handleZoomOutClick}
           disabled={!Number.isFinite(cameraAltitude) || cameraAltitude >= MAX_CAMERA_ALTITUDE - 0.01}
           style={{

@@ -110,21 +110,21 @@ export const MUSEUM_TO_CITY = {
 
   // Africa (Wikidata + externalArtData)
   // City labels are based on representative artwork coordinates from `externalArtData.json`.
-  // Traditional Chinese is temporarily set to English for best-effort UX.
+  // Traditional Chinese labels for Africa coverage.
   ,
-  'National Museum of Fine Arts of Algiers': { en: 'Algiers', zhHant: 'Algiers' },
-  'South African National Gallery': { en: 'Cape Town', zhHant: 'Cape Town' },
-  'Mohamed Mahmoud Khalil Museum': { en: 'Cairo', zhHant: 'Cairo' },
-  'Iziko William Fehr Collection (Castle of Good Hope)': { en: 'Cape Town', zhHant: 'Cape Town' },
-  'Johannesburg Art Gallery': { en: 'Johannesburg', zhHant: 'Johannesburg' },
-  'Michaelis Collection': { en: 'Cape Town', zhHant: 'Cape Town' },
-  'Saint Catherine Monastery': { en: 'Saint Catherine', zhHant: 'Saint Catherine' },
-  'Theban Tomb 69': { en: 'Luxor', zhHant: 'Luxor' },
-  'Egyptian Museum': { en: 'Cairo', zhHant: 'Cairo' },
-  'Ethnological Museum of Addis Ababa': { en: 'Addis Ababa', zhHant: 'Addis Ababa' },
-  'North-West University': { en: 'Mahikeng', zhHant: 'Mahikeng' },
-  'Cirta National Museum': { en: 'Constantine', zhHant: 'Constantine' },
-  'Ahmed Zabana National Museum': { en: 'Oran', zhHant: 'Oran' }
+  'National Museum of Fine Arts of Algiers': { en: 'Algiers', zhHant: '阿爾及爾' },
+  'South African National Gallery': { en: 'Cape Town', zhHant: '開普敦' },
+  'Mohamed Mahmoud Khalil Museum': { en: 'Cairo', zhHant: '開羅' },
+  'Iziko William Fehr Collection (Castle of Good Hope)': { en: 'Cape Town', zhHant: '開普敦' },
+  'Johannesburg Art Gallery': { en: 'Johannesburg', zhHant: '約翰尼斯堡' },
+  'Michaelis Collection': { en: 'Cape Town', zhHant: '開普敦' },
+  'Saint Catherine Monastery': { en: 'Saint Catherine', zhHant: '聖凱瑟琳' },
+  'Theban Tomb 69': { en: 'Luxor', zhHant: '盧克索' },
+  'Egyptian Museum': { en: 'Cairo', zhHant: '開羅' },
+  'Ethnological Museum of Addis Ababa': { en: 'Addis Ababa', zhHant: '阿迪斯阿貝巴' },
+  'North-West University': { en: 'Mahikeng', zhHant: '馬菲肯' },
+  'Cirta National Museum': { en: 'Constantine', zhHant: '君士坦丁' },
+  'Ahmed Zabana National Museum': { en: 'Oran', zhHant: '奧蘭' }
 }
 
 export function getCityForMuseum(museumName, locale = 'en') {

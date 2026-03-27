@@ -44,12 +44,22 @@ function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, getTh
     if (!q) return []
 
     const matches = (art) => {
+      // Search both localized display fields and canonical/raw fields so
+      // English queries still work when locale is Traditional Chinese.
       const fields = [
         art?.displayTitle ?? art?.title,
         art?.displayArtist ?? art?.artist,
         art?.displayMuseumName ?? art?.museumName,
         art?.displayCity ?? art?.current_location?.city,
-        art?.displayCountry ?? art?.current_location?.country
+        art?.displayCountry ?? art?.current_location?.country,
+        art?.title,
+        art?.artist,
+        art?.museumName ?? art?.museum,
+        art?.museum,
+        art?.city,
+        art?.country,
+        art?.current_location?.city,
+        art?.current_location?.country
       ]
         .map((x) => String(x ?? '').toLowerCase())
         .filter(Boolean)

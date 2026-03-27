@@ -66,7 +66,9 @@ const EN = {
   'search.placeholder': 'Search by title, artist, museum, or city',
   'search.ariaLabel': 'Search artworks',
   'search.noResults': 'No artworks match your search.',
-  'search.resultsAria': 'Search results'
+  'search.resultsAria': 'Search results',
+  'controls.zoomInAria': 'Zoom in',
+  'controls.zoomOutAria': 'Zoom out'
 }
 
 const ZH_HANT = {
@@ -137,7 +139,9 @@ const ZH_HANT = {
   'search.placeholder': '以標題、藝術家、博物館或城市搜尋',
   'search.ariaLabel': '搜尋藝術品',
   'search.noResults': '沒有符合搜尋條件的藝術品。',
-  'search.resultsAria': '搜尋結果'
+  'search.resultsAria': '搜尋結果',
+  'controls.zoomInAria': '放大地球',
+  'controls.zoomOutAria': '縮小地球'
 }
 
 const TABLES = { en: EN, zhHant: ZH_HANT }
