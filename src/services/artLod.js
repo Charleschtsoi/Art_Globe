@@ -192,9 +192,11 @@ export function resolveLodData(artworks, altitude, farCount = 80, clusterI18n) {
 
 export function resolveHtmlMarkerData(visibleItems, selectedItem, zoomBand) {
   const maxByBand = {
-    far: 80,
-    mid: 180,
-    near: 360
+    // Increase HTML marker budget so more cities remain directly clickable/visible.
+    // (City clickability is also restored via point-level clicks in App.jsx.)
+    far: 100,
+    mid: 240,
+    near: 420
   }
   const maxItems = maxByBand[zoomBand] ?? 100
   const items = visibleItems ?? []

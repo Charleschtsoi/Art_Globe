@@ -961,9 +961,12 @@ function App() {
           pointColor={(item) => (item.isCluster ? '#d4a853' : '#f5e6c8')}
           pointAltitude={(item) => (item.isCluster ? 0.016 : 0.006)}
           pointRadius={(item) => (item.isCluster ? 0.2 : 0.1)}
-          pointsMerge={true}
+          // Use point clicks (even when HTML markers are capped) to restore city clickability.
+          // react-globe.gl notes that `onPointClick` only works reliably when `pointsMerge` is disabled.
+          pointsMerge={false}
           htmlElementsData={htmlMarkerData}
           htmlElement={createArtworkElement}
+          onPointClick={handlePointClick}
           onZoom={handleZoom}
           onGlobeReady={onGlobeReady}
         />
@@ -1041,6 +1044,11 @@ function App() {
         <div style={{ fontSize: 10, color: '#d9c4a1', marginBottom: 6 }}>
           {t('stats.visible')}: {datasetStats.visible.toLocaleString()} / {datasetStats.total.toLocaleString()}
         </div>
+        {selectedPeriods.length > 0 && (
+          <div style={{ fontSize: 9, color: '#b79d78', marginTop: -3, marginBottom: 6 }}>
+            {t('stats.filtersActive')}
+          </div>
+        )}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
           <div style={{ fontSize: 10, color: '#e7d9c4' }}>
             {t('stats.byPeriod')} ({selectedPeriods.length})

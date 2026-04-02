@@ -77,6 +77,7 @@ const EN = {
   'stats.clear': 'Clear',
   'stats.results': 'Matching artworks',
   'stats.empty': 'No artworks in this category.',
+  'stats.filtersActive': 'Filters active',
   'controls.zoomInAria': 'Zoom in',
   'controls.zoomOutAria': 'Zoom out'
 }
@@ -160,6 +161,7 @@ const ZH_HANT = {
   'stats.clear': '清除',
   'stats.results': '符合的藝術品',
   'stats.empty': '此分類沒有藝術品。',
+  'stats.filtersActive': '已啟用篩選',
   'controls.zoomInAria': '放大地球',
   'controls.zoomOutAria': '縮小地球'
 }
