@@ -185,6 +185,8 @@ Use this when **`public/data/chunks`** or **`public/artworks`** become too large
 
 Full `npm run build` copies **`public/artworks/**`** into **`dist/`** (~1 GB+ with Kaggle thumbnails). Vercel’s deploy and git are not suited to hosting hundreds of MB of raster images. **Host images on Cloudflare R2** (or any S3-compatible CDN) and store **absolute `https://...` URLs** in data.
 
+**Important:** Raster files are **gitignored**, and **`build:production`** removes them from `dist/` after the Vite build. Until you run **`upload:artworks:r2`** and **`data:rewrite-cdn-urls`** (then **`data:runtime`**), production will reference **`/artworks/...`** paths that are **not** on the CDN — thumbnails will **404**. Complete steps 1–4 below before expecting images on [the live site](https://art-globe-l1nm.vercel.app/).
+
 1. **R2 bucket + public URL:** follow **[docs/r2-production-setup.md](docs/r2-production-setup.md)** (`R2_ACCOUNT_ID`, keys, `R2_BUCKET_NAME`, **`R2_PUBLIC_BASE_URL`**).
 2. **Upload binaries** from `art-globe/` (requires network; long runs: `./scripts/run-without-sleep.sh`):
 
