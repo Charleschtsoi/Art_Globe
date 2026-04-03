@@ -55,6 +55,7 @@ const EN = {
   'panel.medium': 'Medium',
   'panel.location': 'Current Location',
   'panel.openArtworkAria': 'Open {{title}} by {{artist}}',
+  'panel.unavailable': 'Details for this selection could not be loaded. Close and try again.',
 
   'marker.clusterAria': '{{count}} artworks cluster',
   'marker.artworkAria': '{{title}} by {{artist}}',
@@ -139,6 +140,7 @@ const ZH_HANT = {
   'panel.medium': '媒材',
   'panel.location': '目前地點',
   'panel.openArtworkAria': '開啟 {{title}}，{{artist}}',
+  'panel.unavailable': '無法載入此選項的詳情，請關閉後再試。',
 
   'marker.clusterAria': '{{count}} 件藝術品叢集',
   'marker.artworkAria': '{{title}}，{{artist}}',

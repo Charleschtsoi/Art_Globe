@@ -14,6 +14,7 @@ import {
   fetchSearchIndex,
   getChunkIdsForRegion
 } from './services/runtimeDataLoader'
+import { fetchSupabaseInitialArtworks, fetchSupabaseSearchRecords } from './services/supabaseLoader'
 
 const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
 
@@ -25,6 +26,12 @@ const ZOOM_STEP_RATIO = 0.82
 const ZOOM_BUTTON_ANIMATION_MS = 620
 const HYDRATION_BATCH_SIZE = Number(import.meta.env.VITE_HYDRATION_BATCH_SIZE ?? 1)
 const HYDRATION_BATCH_DELAY_MS = Number(import.meta.env.VITE_HYDRATION_BATCH_DELAY_MS ?? 220)
+const DATA_SOURCE = String(import.meta.env.VITE_DATA_SOURCE ?? 'static').toLowerCase()
+
+/** Stacking: globe 0, panel backdrop 140, side panel 150, global chrome 200+ */
+const Z_PANEL_BACKDROP = 140
+const Z_UI_CHROME = 200
+const Z_CLUSTER_HINT = 201
 
 function escapeHtml(s) {
   return String(s)
@@ -181,6 +188,13 @@ function App() {
     let disposed = false
     const bootstrapData = async () => {
       try {
+        if (DATA_SOURCE === 'supabase') {
+          const [records, search] = await Promise.all([fetchSupabaseInitialArtworks(), fetchSupabaseSearchRecords()])
+          if (disposed) return
+          setAllArtworksBase(Array.isArray(records) ? records : [])
+          setSearchRecords(Array.isArray(search) ? search : [])
+          return
+        }
         const [manifest, search] = await Promise.all([fetchChunkManifest(), fetchSearchIndex()])
         if (disposed) return
         dataManifestRef.current = manifest
@@ -233,7 +247,7 @@ function App() {
 
   const jitteredArtworks = useMemo(() => spreadOutArtworks(allArtworks), [allArtworks])
   const visibleArtworks = useMemo(
-    () => resolveLodData(jitteredArtworks, cameraAltitude, 80, clusterI18n),
+    () => resolveLodData(jitteredArtworks, cameraAltitude, 100, clusterI18n),
     [jitteredArtworks, cameraAltitude, clusterI18n]
   )
   const htmlMarkerData = useMemo(
@@ -388,6 +402,10 @@ function App() {
     visualFxRef.current.flyInTimer = window.setTimeout(() => {
       globe?.pointOfView({ lat: 24, lng: 90, altitude: 2.4 }, 2500)
       maybePreloadRegion(24, 90, 2.4)
+      window.setTimeout(() => {
+        const pov = globeRef.current?.pointOfView?.()
+        if (pov && Number.isFinite(pov.altitude)) setCameraAltitude(pov.altitude)
+      }, 2600)
     }, 140)
 
     if (visualFxRef.current.initialized) return
@@ -484,7 +502,7 @@ function App() {
     visualFxRef.current.starGeometryFar = starGeometryFar
     visualFxRef.current.starMaterialFar = starMaterialFar
     visualFxRef.current.animationFrame = window.requestAnimationFrame(animate)
-  }, [buildCloudTexture, maybePreloadRegion, scheduleAutoRotateResume])
+  }, [buildCloudTexture, maybePreloadRegion, scheduleAutoRotateResume, setCameraAltitude])
 
   useEffect(() => {
     const controls = controlsRef.current
@@ -666,12 +684,11 @@ function App() {
     if (pov) maybePreloadRegion(pov.lat, pov.lng, nextAltitude)
   }, [cameraAltitude, maybePreloadRegion, pauseAutoRotate, scheduleAutoRotateResume])
 
+  // Drop selection only when a single-artwork id disappears from the loaded map (e.g. chunk unload).
+  // Do not clear cluster / museum-stack picks — those ids are not in artworkById and clusters were wrongly cleared here before.
   useEffect(() => {
     if (!activeMarker) return
-    if (activeMarker.isCluster || activeMarker.isMuseumStack) {
-      setActiveMarker(null)
-      return
-    }
+    if (activeMarker.isCluster || activeMarker.isMuseumStack) return
     const id = String(activeMarker.id ?? '')
     if (!id) return
     if (!artworkById.has(id)) setActiveMarker(null)
@@ -861,8 +878,8 @@ function App() {
       style={{
         position: 'fixed',
         inset: 0,
-        width: '100vw',
-        height: '100vh',
+        width: '100%',
+        minHeight: '100dvh',
         background:
           'radial-gradient(ellipse 125% 95% at 50% 32%, #101a3b 0%, #0a1230 26%, #090f24 52%, #060916 76%, #04050f 100%)',
         overflow: 'hidden',
@@ -877,7 +894,7 @@ function App() {
           left: 12,
           bottom: isMobileLayout ? 12 : 'auto',
           transform: 'none',
-          zIndex: 90,
+          zIndex: Z_UI_CHROME,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
@@ -941,6 +958,16 @@ function App() {
         />
       </div>
       <div
+        style={{
+          position: 'fixed',
+          inset: 0,
+          zIndex: 0,
+          width: '100%',
+          height: '100%',
+          minWidth: '100%',
+          minHeight: '100%',
+          pointerEvents: 'auto'
+        }}
         onMouseEnter={pauseAutoRotate}
         onMouseLeave={scheduleAutoRotateResume}
         onMouseDown={pauseAutoRotate}
@@ -971,15 +998,30 @@ function App() {
           onGlobeReady={onGlobeReady}
         />
       </div>
+      {selectedItemForPanel && activeMarker && (
+        <div
+          role="presentation"
+          aria-hidden="true"
+          onClick={() => setActiveMarker(null)}
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: Z_PANEL_BACKDROP,
+            background: 'rgba(4, 8, 20, 0.45)',
+            pointerEvents: 'auto'
+          }}
+        />
+      )}
       <div
         style={{
           position: 'fixed',
-          right: 14,
-          bottom: isMobileLayout ? 156 : selectedItemForPanel ? 22 : 16,
-          zIndex: 95,
+          right: 'max(14px, env(safe-area-inset-right, 0px))',
+          bottom: `max(${isMobileLayout ? 156 : selectedItemForPanel ? 22 : 16}px, env(safe-area-inset-bottom, 0px))`,
+          zIndex: Z_UI_CHROME,
           display: 'flex',
           flexDirection: 'column',
           gap: 8,
+          flexShrink: 0,
           pointerEvents: 'auto'
         }}
       >
@@ -998,7 +1040,10 @@ function App() {
             fontSize: 24,
             lineHeight: '1',
             cursor: 'pointer',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+            boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
+            flexShrink: 0,
+            opacity:
+              !Number.isFinite(cameraAltitude) || cameraAltitude <= MIN_CAMERA_ALTITUDE + 0.01 ? 0.45 : 1
           }}
         >
           +
@@ -1018,7 +1063,10 @@ function App() {
             fontSize: 24,
             lineHeight: '1',
             cursor: 'pointer',
-            boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+            boxShadow: '0 8px 24px rgba(0,0,0,0.35)',
+            flexShrink: 0,
+            opacity:
+              !Number.isFinite(cameraAltitude) || cameraAltitude >= MAX_CAMERA_ALTITUDE - 0.01 ? 0.45 : 1
           }}
         >
           -
@@ -1027,9 +1075,9 @@ function App() {
       <div
         style={{
           position: 'fixed',
-          left: 12,
-          bottom: isMobileLayout ? 86 : 12,
-          zIndex: 94,
+          left: 'max(12px, env(safe-area-inset-left, 0px))',
+          bottom: `max(${isMobileLayout ? 86 : 12}px, env(safe-area-inset-bottom, 0px))`,
+          zIndex: Z_UI_CHROME,
           width: isMobileLayout ? 'min(220px, calc(100vw - 24px))' : 250,
           background: 'rgba(32, 22, 14, 0.88)',
           border: '1px solid rgba(212, 168, 83, 0.3)',
@@ -1161,7 +1209,7 @@ function App() {
             left: '50%',
             bottom: isMobileLayout ? 208 : 86,
             transform: 'translateX(-50%)',
-            zIndex: 80,
+            zIndex: Z_CLUSTER_HINT,
             background: 'rgba(42, 28, 18, 0.92)',
             border: '1px solid rgba(212, 168, 83, 0.35)',
             color: '#f5e6c8',

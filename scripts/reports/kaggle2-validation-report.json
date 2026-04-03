@@ -1,0 +1,202 @@
+{
+  "generatedAt": "2026-04-03T15:59:39.690Z",
+  "inputCount": 10000,
+  "acceptedCount": 7703,
+  "rejectedCount": 2297,
+  "reasonCounts": {
+    "duplicate_fingerprint": 491,
+    "missing_city": 1707,
+    "city_cap_exceeded": 99
+  },
+  "regionCounts": {
+    "Europe": 4577,
+    "Americas": 2188,
+    "East Asia": 237,
+    "Asia": 594,
+    "Africa": 69,
+    "Oceania": 35,
+    "Other": 3
+  },
+  "sampleRejected": [
+    {
+      "candidateId": "kaggle2-35cbeaddb2f6d5ec",
+      "artist": "Otto Wagner",
+      "title": "Ferdinandsbrücke Project, Vienna, Austria, Elevation, preliminary version",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-36574cf8e2c307d6",
+      "artist": "Christian de Portzamparc",
+      "title": "City of Music, National Superior Conservatory of Music and Dance, Paris, France, View from interior courtyard",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-315c8ad70d028224",
+      "artist": "Emil Hoppe",
+      "title": "Villa near Vienna Project, Outside Vienna, Austria, Elevation",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-a7df734ac3f73625",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-947dbb9d2cabccaa",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-be5d67b90d94a422",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-412ec8577d099789",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-f24c1faa4af58132",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-4deb0cdc500d89cd",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-0cf47a5d7790d3a6",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-c3252de2be3b0a77",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-2fb83b2606d3d95c",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-68eaeac528e23d49",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-b5b1605333afe6cd",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-ace8dac54eceb674",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-80316ad44f3f03fc",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-76cd28032171f2d7",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-a01f41043740e6c1",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-c931c33270d406be",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-11afbe7ab2a2f08d",
+      "artist": "Bernard Tschumi",
+      "title": "The Manhattan Transcripts Project, New York, New York, Episode 1: The Park",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-082c4c254d925426",
+      "artist": "Louis I. Kahn",
+      "title": "Memorial to the Six Million Jewish Martyrs, project, New York City, New York, Perspective of central pier",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-140febd0a7715aec",
+      "artist": "Marcel Kammerer",
+      "title": "Royal Hunting Tent, project, Exterior perspective",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle2-73c31f8964cb15f7",
+      "artist": "Hans Poelzig",
+      "title": "Concert Hall Project, Dresden, Germany (Interior perspective of preliminary scheme)",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-a5cf033b3aa51e3c",
+      "artist": "Peter Eisenman, Robert Cole",
+      "title": "House IV Transformation Study, project, Falls Village, Connecticut, Multiple axonometrics",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-3d75e0e618ef1cb5",
+      "artist": "Roger C. Ferri",
+      "title": "Pedestrian City, Hypostyle Courtyard Project, Structural details",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-89ef53d2cf84238c",
+      "artist": "Michael Graves",
+      "title": "Fargo-Moorhead Cultural Center Bridge, project, Fargo, North Dakota and Moorhead, Minnesota, South elevation",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-cbf5f1f8d450fe73",
+      "artist": "Aldo Rossi, Gianni Braghieri, M. Bosshard",
+      "title": "Regional Administrative Center, project \"Trieste e una Donna.\" , Trieste, Italy, Competition design: Elevation and section",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle2-a2ce3bafee2339f9",
+      "artist": "Erik Gunnar Asplund",
+      "title": "Villa Snellman, Djursholm, Sweden, Exterior elevation",
+      "reason": "duplicate_fingerprint"
+    },
+    {
+      "candidateId": "kaggle2-927f5dc23fa3b737",
+      "artist": "Paul Nelson, Frantz Jourdain, Oscar Nitzchke",
+      "title": "Palais de la Découverte Project, Paris, France, Elevation",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle2-fcdd818095c2c709",
+      "artist": "Paul Nelson, Frantz Jourdain, Oscar Nitzchke",
+      "title": "Palais de la Découverte Project, Paris, France, Longitudinal section",
+      "reason": "missing_city"
+    }
+  ]
+}

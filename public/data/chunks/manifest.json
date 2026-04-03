@@ -1,19 +1,19 @@
 {
   "version": 1,
-  "generatedAt": "2026-03-27T03:57:09.827Z",
+  "generatedAt": "2026-04-03T16:00:49.782Z",
   "chunkSize": 300,
-  "totalRecords": 1162,
-  "totalChunks": 6,
+  "totalRecords": 17589,
+  "totalChunks": 62,
   "chunks": [
     {
       "id": "africa-0000",
       "region": "africa",
       "path": "/data/chunks/africa-0000.json",
-      "count": 88,
-      "minLat": -33.928984,
+      "count": 289,
+      "minLat": -33.958055555556,
       "maxLat": 36.883977777,
-      "minLng": -4.4166666666667,
-      "maxLng": 28.0471,
+      "minLng": -16.916666666667,
+      "maxLng": 32.576388888889,
       "sampleCities": [
         "Cape Town",
         "Mahikeng",
@@ -27,11 +27,11 @@
       "id": "americas-0000",
       "region": "americas",
       "path": "/data/chunks/americas-0000.json",
-      "count": 274,
-      "minLat": 18.003888888,
-      "maxLat": 45.429535,
-      "minLng": -122.4162,
-      "maxLng": -64.95,
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 51.05,
+      "minLng": -123.1138888888889,
+      "maxLng": -52.71194444444444,
       "sampleCities": [
         "New York",
         "Chicago",
@@ -42,14 +42,261 @@
       ]
     },
     {
+      "id": "americas-0001",
+      "region": "americas",
+      "path": "/data/chunks/americas-0001.json",
+      "count": 300,
+      "minLat": -37.846412222222,
+      "maxLat": 49.6208,
+      "minLng": -123.32833333333,
+      "maxLng": -43.205555555555556,
+      "sampleCities": [
+        "Pittsburgh",
+        "New York City",
+        "Statesboro",
+        "São Paulo",
+        "Bulloch County",
+        "Quakertown"
+      ]
+    },
+    {
+      "id": "americas-0002",
+      "region": "americas",
+      "path": "/data/chunks/americas-0002.json",
+      "count": 300,
+      "minLat": -34.90591666666667,
+      "maxLat": 49.6208,
+      "minLng": -123.1138888888889,
+      "maxLng": -43.205555555555556,
+      "sampleCities": [
+        "Newark",
+        "Rio de Janeiro",
+        "New York City",
+        "Toronto",
+        "Vancouver",
+        "Brooklyn"
+      ]
+    },
+    {
+      "id": "americas-0003",
+      "region": "americas",
+      "path": "/data/chunks/americas-0003.json",
+      "count": 300,
+      "minLat": -34.90591666666667,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.32833333333,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Kansas City",
+        "Cook County",
+        "Brooklyn",
+        "Fort Worth",
+        "New York",
+        "Waterford"
+      ]
+    },
+    {
+      "id": "americas-0004",
+      "region": "americas",
+      "path": "/data/chunks/americas-0004.json",
+      "count": 300,
+      "minLat": -23.550394444444,
+      "maxLat": 49.26083333333333,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Cortland",
+        "Syracuse",
+        "New York City",
+        "Manhattan",
+        "Salt Lake City",
+        "Seattle"
+      ]
+    },
+    {
+      "id": "americas-0005",
+      "region": "americas",
+      "path": "/data/chunks/americas-0005.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Norfolk County",
+        "Syracuse",
+        "Centerville",
+        "Capivari",
+        "Claremont",
+        "Guthrie"
+      ]
+    },
+    {
+      "id": "americas-0006",
+      "region": "americas",
+      "path": "/data/chunks/americas-0006.json",
+      "count": 300,
+      "minLat": -23.550394444444,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "New Haven",
+        "Charlotte Amalie",
+        "Harvey",
+        "Cherokee",
+        "Montreal",
+        "St. John's"
+      ]
+    },
+    {
+      "id": "americas-0007",
+      "region": "americas",
+      "path": "/data/chunks/americas-0007.json",
+      "count": 300,
+      "minLat": -23.550394444444,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Macklin",
+        "Newburgh",
+        "Oklahoma City",
+        "Eugene",
+        "Centerville",
+        "Washington, D.C."
+      ]
+    },
+    {
+      "id": "americas-0008",
+      "region": "americas",
+      "path": "/data/chunks/americas-0008.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Des Moines",
+        "Baltimore",
+        "Cincinnati",
+        "New Jersey",
+        "Muncie",
+        "New York City"
+      ]
+    },
+    {
+      "id": "americas-0009",
+      "region": "americas",
+      "path": "/data/chunks/americas-0009.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -43.941944444444445,
+      "sampleCities": [
+        "Buenos Aires",
+        "Malden",
+        "Cody",
+        "Sturgis",
+        "Bay City",
+        "Newburgh"
+      ]
+    },
+    {
+      "id": "americas-0010",
+      "region": "americas",
+      "path": "/data/chunks/americas-0010.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Boston",
+        "Lawton",
+        "Dorchester",
+        "Pittsburgh",
+        "Canandaigua",
+        "Buenos Aires"
+      ]
+    },
+    {
+      "id": "americas-0011",
+      "region": "americas",
+      "path": "/data/chunks/americas-0011.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "San Antonio",
+        "Centerville",
+        "Tupelo",
+        "Saint Paul",
+        "Hamilton",
+        "São Paulo"
+      ]
+    },
+    {
+      "id": "americas-0012",
+      "region": "americas",
+      "path": "/data/chunks/americas-0012.json",
+      "count": 300,
+      "minLat": -23.550394444444,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Fayette",
+        "Millville",
+        "Mamou",
+        "Nineveh",
+        "Wilkes-Barre",
+        "Syracuse"
+      ]
+    },
+    {
+      "id": "americas-0013",
+      "region": "americas",
+      "path": "/data/chunks/americas-0013.json",
+      "count": 300,
+      "minLat": -34.599722222222,
+      "maxLat": 52.33611111111111,
+      "minLng": -123.3657,
+      "maxLng": -38.967777777778,
+      "sampleCities": [
+        "Bartica",
+        "Philadelphia",
+        "Saint Paul",
+        "Brodowski",
+        "Mamou",
+        "Des Moines"
+      ]
+    },
+    {
+      "id": "americas-0014",
+      "region": "americas",
+      "path": "/data/chunks/americas-0014.json",
+      "count": 181,
+      "minLat": 40.779444444,
+      "maxLat": 40.779444444,
+      "minLng": -73.963333333,
+      "maxLng": -73.963333333,
+      "sampleCities": [
+        "New York"
+      ]
+    },
+    {
       "id": "asia-0000",
       "region": "asia",
       "path": "/data/chunks/asia-0000.json",
-      "count": 79,
-      "minLat": -7.800227358,
-      "maxLat": 55.75055555555556,
-      "minLng": 25.134444444444444,
-      "maxLng": 121.06279,
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.124938,
+      "maxLng": 123.902,
       "sampleCities": [
         "Moscow",
         "Saint Catherine",
@@ -60,14 +307,140 @@
       ]
     },
     {
+      "id": "asia-0001",
+      "region": "asia",
+      "path": "/data/chunks/asia-0001.json",
+      "count": 300,
+      "minLat": -7.5666666666667,
+      "maxLat": 59.95,
+      "minLng": 25.05,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Constantinople",
+        "Kadıköy",
+        "Râmnicu Sărat",
+        "Heraklion",
+        "Malolos",
+        "Tecuci"
+      ]
+    },
+    {
+      "id": "asia-0002",
+      "region": "asia",
+      "path": "/data/chunks/asia-0002.json",
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.124938,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Voronezh",
+        "Istanbul",
+        "Bratslav",
+        "Alexandria",
+        "Omsk",
+        "Moscow"
+      ]
+    },
+    {
+      "id": "asia-0003",
+      "region": "asia",
+      "path": "/data/chunks/asia-0003.json",
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.124938,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Medgidia",
+        "Batumi",
+        "Saint Petersburg",
+        "Bucharest",
+        "Tikrit",
+        "Constantinople"
+      ]
+    },
+    {
+      "id": "asia-0004",
+      "region": "asia",
+      "path": "/data/chunks/asia-0004.json",
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.05,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Bucharest",
+        "Khvalynsk",
+        "Saint Petersburg",
+        "Novoselytsia",
+        "Moscow",
+        "Van"
+      ]
+    },
+    {
+      "id": "asia-0005",
+      "region": "asia",
+      "path": "/data/chunks/asia-0005.json",
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.05,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Bucharest",
+        "Moscow",
+        "Chuhuiv",
+        "Poltava",
+        "Aleppo",
+        "Saint Petersburg"
+      ]
+    },
+    {
+      "id": "asia-0006",
+      "region": "asia",
+      "path": "/data/chunks/asia-0006.json",
+      "count": 300,
+      "minLat": -7.7166666666667,
+      "maxLat": 59.95,
+      "minLng": 25.05,
+      "maxLng": 120.81138888888889,
+      "sampleCities": [
+        "Cheboksary",
+        "Moscow",
+        "Bucharest",
+        "Bahdanava",
+        "Voronezh",
+        "Kyiv"
+      ]
+    },
+    {
+      "id": "asia-0007",
+      "region": "asia",
+      "path": "/data/chunks/asia-0007.json",
+      "count": 286,
+      "minLat": -7.800227358,
+      "maxLat": 59.95,
+      "minLng": 25.124938,
+      "maxLng": 121.06279,
+      "sampleCities": [
+        "Saint Petersburg",
+        "Nakhichevan-on-Don",
+        "Vitebsk",
+        "Surakarta",
+        "Mirzaani",
+        "Kazanlak"
+      ]
+    },
+    {
       "id": "east-asia-0000",
       "region": "east-asia",
       "path": "/data/chunks/east-asia-0000.json",
-      "count": 234,
-      "minLat": 21.030556,
-      "maxLat": 39.9163,
-      "minLng": 105.836944,
-      "maxLng": 139.7765,
+      "count": 300,
+      "minLat": 22.58333,
+      "maxLat": 43.06194444444444,
+      "minLng": 113.08333,
+      "maxLng": 144.3817222222222,
       "sampleCities": [
         "Tokyo",
         "Kyoto",
@@ -78,14 +451,47 @@
       ]
     },
     {
+      "id": "east-asia-0001",
+      "region": "east-asia",
+      "path": "/data/chunks/east-asia-0001.json",
+      "count": 300,
+      "minLat": 20.97148,
+      "maxLat": 43.533333333333,
+      "minLng": 105.776421,
+      "maxLng": 141.35444444444445,
+      "sampleCities": [
+        "Nishiwaki",
+        "Oita",
+        "Seoul",
+        "Japan",
+        "Tokyo",
+        "Nara"
+      ]
+    },
+    {
+      "id": "east-asia-0002",
+      "region": "east-asia",
+      "path": "/data/chunks/east-asia-0002.json",
+      "count": 3,
+      "minLat": 21.030556,
+      "maxLat": 35.01161111111111,
+      "minLng": 105.836944,
+      "maxLng": 135.76811111111112,
+      "sampleCities": [
+        "Kyoto",
+        "Wuxi",
+        "Hanoi"
+      ]
+    },
+    {
       "id": "europe-0000",
       "region": "europe",
       "path": "/data/chunks/europe-0000.json",
-      "count": 295,
+      "count": 300,
       "minLat": 37.38861111111111,
       "maxLat": 60.79314,
       "minLng": -6.264722222,
-      "maxLng": 19.923888888,
+      "maxLng": 20.509305555555557,
       "sampleCities": [
         "London",
         "Antwerp",
@@ -96,21 +502,609 @@
       ]
     },
     {
+      "id": "europe-0001",
+      "region": "europe",
+      "path": "/data/chunks/europe-0001.json",
+      "count": 300,
+      "minLat": 37.1,
+      "maxLat": 62.9833,
+      "minLng": -8.6666666666667,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "London",
+        "5th arrondissement of Paris",
+        "Copenhagen",
+        "Prague",
+        "Vienna",
+        "Milan"
+      ]
+    },
+    {
+      "id": "europe-0002",
+      "region": "europe",
+      "path": "/data/chunks/europe-0002.json",
+      "count": 300,
+      "minLat": 37.96739633629691,
+      "maxLat": 62.9833,
+      "minLng": -8.32870852409,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "South Woodford tube station",
+        "Duisburg",
+        "Milan",
+        "Bratislava",
+        "Stockholm",
+        "Nuremberg"
+      ]
+    },
+    {
+      "id": "europe-0003",
+      "region": "europe",
+      "path": "/data/chunks/europe-0003.json",
+      "count": 300,
+      "minLat": 39.5,
+      "maxLat": 63.828453583518,
+      "minLng": -8.32870852409,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "Malmedy",
+        "Lublin",
+        "Olecko",
+        "Whitechapel",
+        "Vienna",
+        "Milan"
+      ]
+    },
+    {
+      "id": "europe-0004",
+      "region": "europe",
+      "path": "/data/chunks/europe-0004.json",
+      "count": 300,
+      "minLat": 37.96739633629691,
+      "maxLat": 63.828453583518,
+      "minLng": -9.75,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "Brtnice",
+        "Helsinki",
+        "Olecko",
+        "Dijon",
+        "Nottingham",
+        "Cologne"
+      ]
+    },
+    {
+      "id": "europe-0005",
+      "region": "europe",
+      "path": "/data/chunks/europe-0005.json",
+      "count": 300,
+      "minLat": 37.1,
+      "maxLat": 62.9833,
+      "minLng": -8.6666666666667,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "Amsterdam",
+        "Gamtofte",
+        "Hove",
+        "Vienna",
+        "Brtnice",
+        "Kuortane"
+      ]
+    },
+    {
+      "id": "europe-0006",
+      "region": "europe",
+      "path": "/data/chunks/europe-0006.json",
+      "count": 300,
+      "minLat": 37.44119,
+      "maxLat": 62.9833,
+      "minLng": -8.32870852409,
+      "maxLng": 28.74972222222222,
+      "sampleCities": [
+        "Auxerre",
+        "3rd arrondissement of Lyon",
+        "Wiesbaden",
+        "Helsinki",
+        "Kaunas",
+        "Udine"
+      ]
+    },
+    {
+      "id": "europe-0007",
+      "region": "europe",
+      "path": "/data/chunks/europe-0007.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 60.170833333333334,
+      "minLng": -9.183333333333334,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Le Havre",
+        "Lisbon",
+        "Dessau",
+        "Montpellier",
+        "Seville",
+        "York"
+      ]
+    },
+    {
+      "id": "europe-0008",
+      "region": "europe",
+      "path": "/data/chunks/europe-0008.json",
+      "count": 300,
+      "minLat": 37.38861111111111,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.183333333333334,
+      "maxLng": 24.9375,
+      "sampleCities": [
+        "Douai",
+        "10ᵗʰ arrondissement of Paris",
+        "Copenhagen",
+        "Ghent",
+        "Bologna",
+        "Haarlem"
+      ]
+    },
+    {
+      "id": "europe-0009",
+      "region": "europe",
+      "path": "/data/chunks/europe-0009.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.183333333333334,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Granville",
+        "Antwerp",
+        "Kybartai",
+        "Brühl",
+        "Cologne",
+        "Verona"
+      ]
+    },
+    {
+      "id": "europe-0010",
+      "region": "europe",
+      "path": "/data/chunks/europe-0010.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.2292722222222,
+      "maxLng": 27.198055555556,
+      "sampleCities": [
+        "Schaerbeek",
+        "Regensburg",
+        "Kybartai",
+        "Bologna",
+        "Dresden",
+        "Quiévy"
+      ]
+    },
+    {
+      "id": "europe-0011",
+      "region": "europe",
+      "path": "/data/chunks/europe-0011.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 60.170833333333334,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Derby",
+        "Cortona",
+        "Haverfordwest",
+        "Turin",
+        "10ᵗʰ arrondissement of Paris",
+        "Weißenburg in Bayern"
+      ]
+    },
+    {
+      "id": "europe-0012",
+      "region": "europe",
+      "path": "/data/chunks/europe-0012.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Desfina",
+        "Utrecht",
+        "Boulogne-Billancourt",
+        "Paris",
+        "Florence",
+        "Zurich"
+      ]
+    },
+    {
+      "id": "europe-0013",
+      "region": "europe",
+      "path": "/data/chunks/europe-0013.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.183333333333334,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Hafeld",
+        "Rome",
+        "London",
+        "Argenteuil",
+        "Tenby",
+        "Birmingham"
+      ]
+    },
+    {
+      "id": "europe-0014",
+      "region": "europe",
+      "path": "/data/chunks/europe-0014.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 59.329444444444,
+      "minLng": -9.183333333333334,
+      "maxLng": 24.883333333333,
+      "sampleCities": [
+        "Montpellier",
+        "Boulogne-Billancourt",
+        "Antwerp",
+        "Paisley",
+        "Haarlem",
+        "Landunvez"
+      ]
+    },
+    {
+      "id": "europe-0015",
+      "region": "europe",
+      "path": "/data/chunks/europe-0015.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Giffoni Valle Piana",
+        "Conegliano",
+        "Aix-en-Provence",
+        "Laval",
+        "Rome",
+        "6th arrondissement of Paris"
+      ]
+    },
+    {
+      "id": "europe-0016",
+      "region": "europe",
+      "path": "/data/chunks/europe-0016.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.2292722222222,
+      "maxLng": 23.816666666667,
+      "sampleCities": [
+        "Hammersmith",
+        "Bordeaux",
+        "Ivančice",
+        "London",
+        "Vienna",
+        "Leiden"
+      ]
+    },
+    {
+      "id": "europe-0017",
+      "region": "europe",
+      "path": "/data/chunks/europe-0017.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.2292722222222,
+      "maxLng": 27.198055555556,
+      "sampleCities": [
+        "Bologna",
+        "Barcelona",
+        "Milan",
+        "Brussels",
+        "Argentan",
+        "Ferrara"
+      ]
+    },
+    {
+      "id": "europe-0018",
+      "region": "europe",
+      "path": "/data/chunks/europe-0018.json",
+      "count": 300,
+      "minLat": 37.335,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 24.9375,
+      "sampleCities": [
+        "Munich",
+        "Stuttgart",
+        "Woerden",
+        "London",
+        "Venice",
+        "8th arrondissement of Paris"
+      ]
+    },
+    {
+      "id": "europe-0019",
+      "region": "europe",
+      "path": "/data/chunks/europe-0019.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.2292722222222,
+      "maxLng": 24.883333333333,
+      "sampleCities": [
+        "Albi",
+        "Amarante",
+        "Fontenay-aux-Roses",
+        "Barcelona",
+        "Zwolle",
+        "Athens"
+      ]
+    },
+    {
+      "id": "europe-0020",
+      "region": "europe",
+      "path": "/data/chunks/europe-0020.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 24.9375,
+      "sampleCities": [
+        "Pöchlarn",
+        "Lisbon",
+        "Malmedy",
+        "Sansepolcro",
+        "Seville",
+        "Zurich"
+      ]
+    },
+    {
+      "id": "europe-0021",
+      "region": "europe",
+      "path": "/data/chunks/europe-0021.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.2292722222222,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Oudewater",
+        "Ariniș",
+        "Berlin",
+        "Paris",
+        "Sheffield",
+        "Ghent"
+      ]
+    },
+    {
+      "id": "europe-0022",
+      "region": "europe",
+      "path": "/data/chunks/europe-0022.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 60.569722222222,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Haarlem",
+        "Paris",
+        "Toulouse",
+        "Lisbon",
+        "16th arrondissement of Paris",
+        "Xàtiva"
+      ]
+    },
+    {
+      "id": "europe-0023",
+      "region": "europe",
+      "path": "/data/chunks/europe-0023.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.2292722222222,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Berlin",
+        "Sidcup",
+        "Parma",
+        "Rome",
+        "Toulouse",
+        "Lisbon"
+      ]
+    },
+    {
+      "id": "europe-0024",
+      "region": "europe",
+      "path": "/data/chunks/europe-0024.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 58.97,
+      "minLng": -9.139016,
+      "maxLng": 24.883333333333,
+      "sampleCities": [
+        "Râmnicu Vâlcea",
+        "Białystok",
+        "Trbovlje",
+        "Sèvres",
+        "Lausanne",
+        "Parma"
+      ]
+    },
+    {
+      "id": "europe-0025",
+      "region": "europe",
+      "path": "/data/chunks/europe-0025.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.2292722222222,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Verona",
+        "Paris",
+        "Valenciennes",
+        "Rome",
+        "Opočno",
+        "Fuente de Cantos"
+      ]
+    },
+    {
+      "id": "europe-0026",
+      "region": "europe",
+      "path": "/data/chunks/europe-0026.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.139016,
+      "maxLng": 24.9375,
+      "sampleCities": [
+        "Le Havre",
+        "Maubeuge",
+        "Tulln an der Donau",
+        "Baia Mare",
+        "Le Cateau-Cambrésis",
+        "Milan"
+      ]
+    },
+    {
+      "id": "europe-0027",
+      "region": "europe",
+      "path": "/data/chunks/europe-0027.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.2292722222222,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Sabinov",
+        "Lisbon",
+        "Cremona",
+        "Baarle",
+        "Münchenbuchsee",
+        "Hamburg"
+      ]
+    },
+    {
+      "id": "europe-0028",
+      "region": "europe",
+      "path": "/data/chunks/europe-0028.json",
+      "count": 300,
+      "minLat": 37.335,
+      "maxLat": 60.170833333333334,
+      "minLng": -9.183333333333334,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Ferrara",
+        "Montpellier",
+        "Sansepolcro",
+        "London",
+        "The Hague",
+        "Budapest"
+      ]
+    },
+    {
+      "id": "europe-0029",
+      "region": "europe",
+      "path": "/data/chunks/europe-0029.json",
+      "count": 300,
+      "minLat": 37.335,
+      "maxLat": 61.486666666666665,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Seville",
+        "Aschaffenburg",
+        "Saint-Julien-Chapteuil",
+        "Venice",
+        "Hódmezővásárhely",
+        "Bordeaux"
+      ]
+    },
+    {
+      "id": "europe-0030",
+      "region": "europe",
+      "path": "/data/chunks/europe-0030.json",
+      "count": 300,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 29.974444444444,
+      "sampleCities": [
+        "Paris",
+        "Isola Mantegna",
+        "Florence",
+        "London",
+        "Nantes",
+        "Bern"
+      ]
+    },
+    {
+      "id": "europe-0031",
+      "region": "europe",
+      "path": "/data/chunks/europe-0031.json",
+      "count": 267,
+      "minLat": 37.175,
+      "maxLat": 61.007222222222,
+      "minLng": -9.139016,
+      "maxLng": 24.9375,
+      "sampleCities": [
+        "Lagny-sur-Marne",
+        "Bologna",
+        "Železniki Municipality",
+        "Cologne",
+        "Douai",
+        "Birkenhead"
+      ]
+    },
+    {
       "id": "oceania-0000",
       "region": "oceania",
       "path": "/data/chunks/oceania-0000.json",
-      "count": 192,
+      "count": 300,
       "minLat": -45.87451,
       "maxLat": -31.950588341,
-      "minLng": 115.860943334,
+      "minLng": 115.85972222222222,
       "maxLng": 174.766237,
       "sampleCities": [
-        "Sydney",
-        "Melbourne",
-        "Adelaide",
-        "Canberra",
+        "Hornsby",
+        "Wellington",
+        "Auckland",
         "Perth",
-        "Geelong"
+        "Sydney",
+        "Gawler"
+      ]
+    },
+    {
+      "id": "oceania-0001",
+      "region": "oceania",
+      "path": "/data/chunks/oceania-0001.json",
+      "count": 2,
+      "minLat": -37.8225,
+      "maxLat": -33.868611111,
+      "minLng": 144.968888888,
+      "maxLng": 151.217222222,
+      "sampleCities": [
+        "Melbourne",
+        "Sydney"
+      ]
+    },
+    {
+      "id": "other-0000",
+      "region": "other",
+      "path": "/data/chunks/other-0000.json",
+      "count": 61,
+      "minLat": 38.655833333333,
+      "maxLat": 65.26008,
+      "minLng": -27.215277777778,
+      "maxLng": -14.00577,
+      "sampleCities": [
+        "Seyðisfjörður",
+        "Iceland",
+        "Ólafsvík",
+        "Angra do Heroísmo"
       ]
     }
   ]

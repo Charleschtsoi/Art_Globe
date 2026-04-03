@@ -6,6 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:production": "vite build && node scripts/strip-artwork-binaries-from-dist.mjs",
+    "upload:artworks:r2": "node scripts/upload-all-images-to-r2.mjs",
+    "data:rewrite-cdn-urls": "node scripts/rewrite-image-urls-for-cdn.mjs",
     "lint": "eslint .",
     "preview": "vite preview",
     "fetch:artworks": "node fetchArtworks.js",
@@ -26,13 +29,29 @@
     "wikiart:validate": "node scripts/validate-wikiart.mjs",
     "wikiart:upload": "node scripts/upload-wikiart-images.mjs",
     "wikiart:merge": "node scripts/merge-wikiart-into-external.mjs",
+    "kaggle6:import": "node scripts/import-kaggle6.mjs",
+    "kaggle6:import:smoke": "KAGGLE6_SMOKE=1 node scripts/import-kaggle6.mjs",
+    "kaggle6:enrich": "node scripts/enrich-kaggle6-metadata.mjs",
+    "kaggle6:validate": "node scripts/validate-kaggle6.mjs",
+    "kaggle6:upload": "node scripts/upload-kaggle6-images.mjs",
+    "kaggle6:local-images": "node scripts/kaggle6-copy-images-local.mjs",
+    "kaggle6:merge": "node scripts/merge-kaggle6-into-external.mjs",
+    "kaggle6:upsert": "node scripts/upsert-to-supabase.mjs tmp/kaggle6-uploaded.json",
+    "kaggle2:import": "node scripts/import-kaggle2.mjs",
+    "kaggle2:enrich": "node scripts/enrich-kaggle2-metadata.mjs",
+    "kaggle2:validate": "node scripts/validate-kaggle2.mjs",
+    "kaggle2:merge": "node scripts/merge-kaggle2-into-external.mjs",
+    "kaggle2:upsert": "node scripts/upsert-to-supabase.mjs tmp/kaggle2-validated.json accepted",
     "i18n:generate-zh-overlays": "node scripts/generate-content-zh-overlays.mjs",
     "data:runtime": "node scripts/build-runtime-data.mjs",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs",
-    "benchmark:data": "node scripts/benchmark-runtime-data.mjs"
+    "benchmark:data": "node scripts/benchmark-runtime-data.mjs",
+    "pipeline:counts": "node scripts/report-pipeline-counts.mjs"
   },
   "dependencies": {
+    "@aws-sdk/client-s3": "^3.1023.0",
+    "@supabase/supabase-js": "^2.56.1",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-globe.gl": "^2.37.0"
@@ -43,10 +62,12 @@
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "@vitejs/plugin-react": "^6.0.1",
+    "dotenv": "^16.4.7",
     "eslint": "^9.39.4",
     "eslint-plugin-react-hooks": "^7.0.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.4.0",
+    "sharp": "^0.34.5",
     "vite": "^8.0.1"
   }
 }

@@ -8,6 +8,9 @@ pnpm-debug.log*
 lerna-debug.log*
 
 node_modules
+
+# Local secrets (copy from .env.example)
+.env
 dist
 dist-ssr
 *.local
@@ -32,3 +35,7 @@ public/artworks/**/*.jpeg
 public/artworks/**/*.png
 public/artworks/**/*.webp
 public/artworks/**/*.gif
+
+# Local raw datasets and pipeline temp files
+kaggle sources/
+tmp/

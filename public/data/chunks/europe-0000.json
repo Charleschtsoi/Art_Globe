@@ -8851,6 +8851,156 @@
       "canonicalImageUrl": "/artworks/archive3/archive3-85b90f6244b77412a977.jpg",
       "source": "archive3",
       "sourceUrl": "http://en.wikipedia.org/wiki/Pieter_Bruegel_the_Elder"
+    },
+    {
+      "artwork_id": "kaggle2-0a2df11502b65ae1",
+      "title": "Exposition Vallauris",
+      "artist": "Pablo Picasso",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Linoleum cut",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Boulogne-Billancourt",
+        "country": "France",
+        "lat": 48.835277777778,
+        "lng": 2.2413888888889
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Exposition Vallauris is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0a2df11502b65ae1",
+      "year": "Unknown",
+      "lat": 48.835277777778,
+      "lng": 2.2413888888889,
+      "museumName": "Museum of Modern Art",
+      "description": "Exposition Vallauris is a notable work by Pablo Picasso. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0a5276ed3b06bbaf",
+      "title": "Elements of the Vertical City, project, Rome, Italy, Axonometric of base",
+      "artist": "Friedrich St. Florian",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Ink, graphite, and gouache on board",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Cologne",
+        "country": "Germany",
+        "lat": 50.942222222222,
+        "lng": 6.9577777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Elements of the Vertical City, project, Rome, Italy, Axonometric of base is a notable work by Friedrich St. Florian. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0a5276ed3b06bbaf",
+      "year": "Unknown",
+      "lat": 50.942222222222,
+      "lng": 6.9577777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Elements of the Vertical City, project, Rome, Italy, Axonometric of base is a notable work by Friedrich St. Florian. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-00a838547b4c3997",
+      "title": "Pew for Cornerstone Church",
+      "artist": "Gerrit Rietveld",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Parana pine and painted steel",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Utrecht",
+        "country": "Kingdom of the Netherlands",
+        "lat": 52.090833333333336,
+        "lng": 5.121666666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Pew for Cornerstone Church is a notable work by Gerrit Rietveld. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-00a838547b4c3997",
+      "year": "Unknown",
+      "lat": 52.090833333333336,
+      "lng": 5.121666666666667,
+      "museumName": "Museum of Modern Art",
+      "description": "Pew for Cornerstone Church is a notable work by Gerrit Rietveld. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0ac711a1f73ff66c",
+      "title": "Bitter Campari",
+      "artist": "Fortunato Depero",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Photostat",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Fondo",
+        "country": "Kingdom of Italy",
+        "lat": 46.4388,
+        "lng": 11.13723
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Bitter Campari is a notable work by Fortunato Depero. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0ac711a1f73ff66c",
+      "year": "Unknown",
+      "lat": 46.4388,
+      "lng": 11.13723,
+      "museumName": "Museum of Modern Art",
+      "description": "Bitter Campari is a notable work by Fortunato Depero. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0ace9624f6e275b2",
+      "title": "Kunstgewerbemuseum Zürich, Schuelerarbeiten aus der Baugewerblichen und der Mechanisch-Technischen Abteilung der Gewerbeschule",
+      "artist": "Ernst Keller",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Letterpress and line block",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Königsberg",
+        "country": "Kingdom of Prussia",
+        "lat": 54.71147222222222,
+        "lng": 20.509305555555557
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Kunstgewerbemuseum Zürich, Schuelerarbeiten aus der Baugewerblichen und der Mechanisch-Technischen Abteilung der Gewerbeschule is a notable work by Ernst Keller. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0ace9624f6e275b2",
+      "year": "Unknown",
+      "lat": 54.71147222222222,
+      "lng": 20.509305555555557,
+      "museumName": "Museum of Modern Art",
+      "description": "Kunstgewerbemuseum Zürich, Schuelerarbeiten aus der Baugewerblichen und der Mechanisch-Technischen Abteilung der Gewerbeschule is a notable work by Ernst Keller. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
     }
   ]
 }

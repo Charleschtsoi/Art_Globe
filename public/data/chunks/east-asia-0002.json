@@ -1,0 +1,96 @@
+{
+  "chunkId": "east-asia-0002",
+  "region": "east-asia",
+  "records": [
+    {
+      "artwork_id": "kaggle6-ff9b65ca948283bc",
+      "title": "Night 2011",
+      "artist": "Aki Kuroda",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Aki Kuroda Birthplace Collection",
+        "city": "Kyoto",
+        "country": "Japan",
+        "lat": 35.01161111111111,
+        "lng": 135.76811111111112
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp"
+      },
+      "historical_text": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle6-ff9b65ca948283bc",
+      "year": "Unknown",
+      "lat": 35.01161111111111,
+      "lng": 135.76811111111112,
+      "museumName": "Aki Kuroda Birthplace Collection",
+      "description": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+      "source": "kaggle6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Aki_Kuroda"
+    },
+    {
+      "artwork_id": "kaggle6-ff97f2fd852c74c7",
+      "title": "Sweet Milky Way 1969",
+      "artist": "Walasse Ting",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Walasse Ting Birthplace Collection",
+        "city": "Wuxi",
+        "country": "Taiwan",
+        "lat": 31.566667,
+        "lng": 120.283333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp"
+      },
+      "historical_text": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle6-ff97f2fd852c74c7",
+      "year": "Unknown",
+      "lat": 31.566667,
+      "lng": 120.283333,
+      "museumName": "Walasse Ting Birthplace Collection",
+      "description": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+      "source": "kaggle6",
+      "sourceUrl": "https://en.wikipedia.org/wiki/Walasse_Ting"
+    },
+    {
+      "artwork_id": "oceania-seasia-32",
+      "title": "Standing Screen",
+      "artist": "Nguyễn Gia Trí",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Vietnam National Museum of Fine Arts",
+        "city": "Hanoi",
+        "country": "",
+        "lat": 21.030556,
+        "lng": 105.836944
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
+        "high_res_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg"
+      },
+      "historical_text": "Located at Vietnam National Museum of Fine Arts.",
+      "id": "oceania-seasia-32",
+      "year": "Unknown",
+      "lat": 21.030556,
+      "lng": 105.836944,
+      "museumName": "Vietnam National Museum of Fine Arts",
+      "description": "Located at Vietnam National Museum of Fine Arts.",
+      "imageUrl": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q10757704"
+    }
+  ]
+}

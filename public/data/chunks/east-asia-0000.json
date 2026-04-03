@@ -6993,34 +6993,2014 @@
       "sourceUrl": ""
     },
     {
-      "artwork_id": "oceania-seasia-32",
-      "title": "Standing Screen",
-      "artist": "Nguyễn Gia Trí",
+      "artwork_id": "kaggle2-0acf6134831585ec",
+      "title": "Nara Convention Hall, Nara, Japan, Perspective sketches for plaza and entrance lobby",
+      "artist": "Arata Isozaki",
       "creation_year": "Unknown",
-      "time_period": "antiquity",
-      "medium": "Unknown medium",
+      "time_period": "modern",
+      "medium": "Color ink on tracing paper",
       "current_location": {
-        "museum": "Vietnam National Museum of Fine Arts",
-        "city": "Hanoi",
-        "country": "",
-        "lat": 21.030556,
-        "lng": 105.836944
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
       },
       "assets": {
-        "thumbnail_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
-        "high_res_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg"
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
       },
-      "historical_text": "Located at Vietnam National Museum of Fine Arts.",
-      "id": "oceania-seasia-32",
+      "historical_text": "Nara Convention Hall, Nara, Japan, Perspective sketches for plaza and entrance lobby is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0acf6134831585ec",
       "year": "Unknown",
-      "lat": 21.030556,
-      "lng": 105.836944,
-      "museumName": "Vietnam National Museum of Fine Arts",
-      "description": "Located at Vietnam National Museum of Fine Arts.",
-      "imageUrl": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
-      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640",
-      "source": "wikidata",
-      "sourceUrl": "http://www.wikidata.org/entity/Q10757704"
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Perspective sketches for plaza and entrance lobby is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0c02329eefbac84e",
+      "title": "Nara Convention Hall, Nara, Japan, Interior perpsective of lobby",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Computer-generated print",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Interior perpsective of lobby is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0c02329eefbac84e",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Interior perpsective of lobby is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0df2ddab6a69aed3",
+      "title": "Helix City Project, Tokyo, Japan, Plan",
+      "artist": "Kisho Kurokawa",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Cut-and-pasted gelatin silver photographs and ink on cut-and-pasted tracing paper on paper",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kanie",
+        "country": "Empire of Japan",
+        "lat": 35.13225,
+        "lng": 136.78680555555556
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Helix City Project, Tokyo, Japan, Plan is a notable work by Kisho Kurokawa. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0df2ddab6a69aed3",
+      "year": "Unknown",
+      "lat": 35.13225,
+      "lng": 136.78680555555556,
+      "museumName": "Museum of Modern Art",
+      "description": "Helix City Project, Tokyo, Japan, Plan is a notable work by Kisho Kurokawa. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0e8c87128edb7a54",
+      "title": "Slow House Project, North Haven, Long Island, New York, Perspective and plans of TV in Picture Window Apparatus",
+      "artist": "Diller + Scofidio, Elizabeth Diller, Ricardo Scofidio",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Cut-and-pasted color electrostatic prints and graphite on frosted polymer sheet taped to board with cut-and-pasted color photograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Sapporo",
+        "country": "Japan",
+        "lat": 43.06194444444444,
+        "lng": 141.35444444444445
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Slow House Project, North Haven, Long Island, New York, Perspective and plans of TV in Picture Window Apparatus is a notable work by Diller + Scofidio, Elizabeth Diller, Ricardo Scofidio. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0e8c87128edb7a54",
+      "year": "Unknown",
+      "lat": 43.06194444444444,
+      "lng": 141.35444444444445,
+      "museumName": "Museum of Modern Art",
+      "description": "Slow House Project, North Haven, Long Island, New York, Perspective and plans of TV in Picture Window Apparatus is a notable work by Diller + Scofidio, Elizabeth Diller, Ricardo Scofidio. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0f06a7a773ec5987",
+      "title": "Ninth Contemporary Japanese Sculpture Exhibition",
+      "artist": "Kiyoshi Awazu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Meguro",
+        "country": "Japan",
+        "lat": 35.6415,
+        "lng": 139.69827777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Ninth Contemporary Japanese Sculpture Exhibition is a notable work by Kiyoshi Awazu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0f06a7a773ec5987",
+      "year": "Unknown",
+      "lat": 35.6415,
+      "lng": 139.69827777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Ninth Contemporary Japanese Sculpture Exhibition is a notable work by Kiyoshi Awazu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-0f72d6d1cc355108",
+      "title": "Nara Convention Hall, Nara, Japan, Exterior perspective",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Computer-generated print",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Exterior perspective is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-0f72d6d1cc355108",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Exterior perspective is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-1a5766afdee21bf2",
+      "title": "Hiroshima Appeals",
+      "artist": "Yusaku Kamekura",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tsubame",
+        "country": "Japan",
+        "lat": 37.67308333333333,
+        "lng": 138.88222222222223
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Hiroshima Appeals is a notable work by Yusaku Kamekura. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-1a5766afdee21bf2",
+      "year": "Unknown",
+      "lat": 37.67308333333333,
+      "lng": 138.88222222222223,
+      "museumName": "Museum of Modern Art",
+      "description": "Hiroshima Appeals is a notable work by Yusaku Kamekura. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-1cb96f86ec17d974",
+      "title": "Poster celebrating 10th Anniversaty of \"Tategumi Yokogumi\" Magazine",
+      "artist": "Akio Okumura",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kushiro",
+        "country": "Japan",
+        "lat": 42.98488888888889,
+        "lng": 144.3817222222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster celebrating 10th Anniversaty of \"Tategumi Yokogumi\" Magazine is a notable work by Akio Okumura. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-1cb96f86ec17d974",
+      "year": "Unknown",
+      "lat": 42.98488888888889,
+      "lng": 144.3817222222222,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster celebrating 10th Anniversaty of \"Tategumi Yokogumi\" Magazine is a notable work by Akio Okumura. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-01e5c862d82e1448",
+      "title": "Morisawa Photosetting Co.",
+      "artist": "Ikko Tanaka",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nara",
+        "country": "Japan",
+        "lat": 34.685,
+        "lng": 135.8047777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Morisawa Photosetting Co. is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-01e5c862d82e1448",
+      "year": "Unknown",
+      "lat": 34.685,
+      "lng": 135.8047777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Morisawa Photosetting Co. is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-2d8df8191660030d",
+      "title": "Stool (model S-302)",
+      "artist": "Isamu Kenmochi",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Rattan and fabric upholstered cushion",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Stool (model S-302) is a notable work by Isamu Kenmochi. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-2d8df8191660030d",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Stool (model S-302) is a notable work by Isamu Kenmochi. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-2d8964097a587dd3",
+      "title": "Exhibition of the Work of Ekin",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Exhibition of the Work of Ekin is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-2d8964097a587dd3",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Exhibition of the Work of Ekin is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-3b72ba26dc1a78b8",
+      "title": "Charrette Submission for The Museum of Modern Art Expansion 1997, New York (Manhattan), New York, First Phase",
+      "artist": "Toyo Ito",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Paper",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Seoul",
+        "country": "Japan",
+        "lat": 37.56,
+        "lng": 126.99
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Charrette Submission for The Museum of Modern Art Expansion 1997, New York (Manhattan), New York, First Phase is a notable work by Toyo Ito. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-3b72ba26dc1a78b8",
+      "year": "Unknown",
+      "lat": 37.56,
+      "lng": 126.99,
+      "museumName": "Museum of Modern Art",
+      "description": "Charrette Submission for The Museum of Modern Art Expansion 1997, New York (Manhattan), New York, First Phase is a notable work by Toyo Ito. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-3cd4fd3ea0bd2693",
+      "title": "The Women's Memorial Service",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "The Women's Memorial Service is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-3cd4fd3ea0bd2693",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "The Women's Memorial Service is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-3e9a3aad7d690e1c",
+      "title": "Chisetsu Yumiharizuki",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Chisetsu Yumiharizuki is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-3e9a3aad7d690e1c",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Chisetsu Yumiharizuki is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-3f41e43679423949",
+      "title": "Re-ruined Hiroshima, project, Hiroshima, Japan (Perspective)",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Ink and gouache with cut-and-pasted gelatin silver print on gelatin silver print",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Re-ruined Hiroshima, project, Hiroshima, Japan (Perspective) is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-3f41e43679423949",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Re-ruined Hiroshima, project, Hiroshima, Japan (Perspective) is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-4a5e76f0bfe38493",
+      "title": "Nara Convention Hall, Nara, Japan, Sketches for main hall",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Felt-tipped pen on tracing paper",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Sketches for main hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-4a5e76f0bfe38493",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Sketches for main hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-4d95126c4fc5d0f3",
+      "title": "Crinkle Vase (KNS-2)",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Cast porcelain",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Vase (KNS-2) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-4d95126c4fc5d0f3",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Vase (KNS-2) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-5bf18ba7162edd55",
+      "title": "Butterfly Stools",
+      "artist": "Sori Yanagi",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Molded plywood and metal",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Butterfly Stools is a notable work by Sori Yanagi. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-5bf18ba7162edd55",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Butterfly Stools is a notable work by Sori Yanagi. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-6a6f5643a75ebf66",
+      "title": "Nara Convention Hall, Nara, Japan, Interior perspective of main hall",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Computer-generated print",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Interior perspective of main hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-6a6f5643a75ebf66",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Interior perspective of main hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-07a4f2ad6c536ede",
+      "title": "Super School",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Super School is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-07a4f2ad6c536ede",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Super School is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7a5b95fe4e7badf3",
+      "title": "Poster For National Bunraku Theatre",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster For National Bunraku Theatre is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7a5b95fe4e7badf3",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster For National Bunraku Theatre is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7b8af5799cba770d",
+      "title": "Miho",
+      "artist": "James Miho",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Miho is a notable work by James Miho. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7b8af5799cba770d",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Miho is a notable work by James Miho. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7b9c68a345e2eb84",
+      "title": "Fresh Paint",
+      "artist": "Nathan I. Felde",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Jiangmen",
+        "country": "People's Republic of China",
+        "lat": 22.58333,
+        "lng": 113.08333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Fresh Paint is a notable work by Nathan I. Felde. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7b9c68a345e2eb84",
+      "year": "Unknown",
+      "lat": 22.58333,
+      "lng": 113.08333,
+      "museumName": "Museum of Modern Art",
+      "description": "Fresh Paint is a notable work by Nathan I. Felde. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-07b3840e61ad7da1",
+      "title": "The Silly Generation",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "The Silly Generation is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-07b3840e61ad7da1",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "The Silly Generation is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7b8799376870a521",
+      "title": "Crinkle Tumbler CR-J5",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Magnesia porcelain",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Tumbler CR-J5 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7b8799376870a521",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Tumbler CR-J5 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7c0fd16a64d98329",
+      "title": "Urban Design Seminar, Twenty-first Century Urban Design",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Urban Design Seminar, Twenty-first Century Urban Design is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7c0fd16a64d98329",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Urban Design Seminar, Twenty-first Century Urban Design is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7d04b2a1e99df61f",
+      "title": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7d04b2a1e99df61f",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-7fa9c3d4621ab55d",
+      "title": "Crinkle Fukuro Pitcher",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Blown 10 percent PbO glass",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Fukuro Pitcher is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-7fa9c3d4621ab55d",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Fukuro Pitcher is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-8caa59fbfa54ab70",
+      "title": "\"Art Now\"",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "\"Art Now\" is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-8caa59fbfa54ab70",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "\"Art Now\" is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-8f574a582ec5c4d5",
+      "title": "Iridescent Satin",
+      "artist": "Koichi Yoshimura",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Polyester monofilament and cotton",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Shiogama",
+        "country": "Japan",
+        "lat": 38.31436111111111,
+        "lng": 141.02197222222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Iridescent Satin is a notable work by Koichi Yoshimura. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-8f574a582ec5c4d5",
+      "year": "Unknown",
+      "lat": 38.31436111111111,
+      "lng": 141.02197222222222,
+      "museumName": "Museum of Modern Art",
+      "description": "Iridescent Satin is a notable work by Koichi Yoshimura. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-9e94a70e7080a1aa",
+      "title": "Zen",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Zen is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-9e94a70e7080a1aa",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Zen is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-9eae36eed93c3759",
+      "title": "Carna Folding Wheelchair",
+      "artist": "Kazuo Kawasaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Titanium, rubber, and aluminum honeycomb",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Fukui",
+        "country": "Japan",
+        "lat": 36.064055555555555,
+        "lng": 136.21958333333333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Carna Folding Wheelchair is a notable work by Kazuo Kawasaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-9eae36eed93c3759",
+      "year": "Unknown",
+      "lat": 36.064055555555555,
+      "lng": 136.21958333333333,
+      "museumName": "Museum of Modern Art",
+      "description": "Carna Folding Wheelchair is a notable work by Kazuo Kawasaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-10a3822cf931c186",
+      "title": "Washi & Wool",
+      "artist": "Osamu Mita",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Wool and washi paper",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Naka-ku",
+        "country": "Japan",
+        "lat": 34.385277777778,
+        "lng": 132.45527777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Washi & Wool is a notable work by Osamu Mita. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-10a3822cf931c186",
+      "year": "Unknown",
+      "lat": 34.385277777778,
+      "lng": 132.45527777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Washi & Wool is a notable work by Osamu Mita. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-10a68607bff60e2c",
+      "title": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine",
+      "artist": "Shinro Otake",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph with varnish overlay",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Meguro",
+        "country": "Japan",
+        "lat": 35.6415,
+        "lng": 139.69827777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Shinro Otake. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-10a68607bff60e2c",
+      "year": "Unknown",
+      "lat": 35.6415,
+      "lng": 139.69827777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Shinro Otake. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-12f448daebd672fa",
+      "title": "Huston",
+      "artist": "Nathan I. Felde",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Jiangmen",
+        "country": "People's Republic of China",
+        "lat": 22.58333,
+        "lng": 113.08333
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Huston is a notable work by Nathan I. Felde. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-12f448daebd672fa",
+      "year": "Unknown",
+      "lat": 22.58333,
+      "lng": 113.08333,
+      "museumName": "Museum of Modern Art",
+      "description": "Huston is a notable work by Nathan I. Felde. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-14b569fca6e6b8f4",
+      "title": "World Commercial Design Exhibition",
+      "artist": "Ikko Tanaka",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nara",
+        "country": "Japan",
+        "lat": 34.685,
+        "lng": 135.8047777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "World Commercial Design Exhibition is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-14b569fca6e6b8f4",
+      "year": "Unknown",
+      "lat": 34.685,
+      "lng": 135.8047777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "World Commercial Design Exhibition is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-20b53eca134190fc",
+      "title": "Floating City, project, Kasumigaura, Japan, Plan",
+      "artist": "Kisho Kurokawa",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Ink and graphite on printed map",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kanie",
+        "country": "Empire of Japan",
+        "lat": 35.13225,
+        "lng": 136.78680555555556
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Floating City, project, Kasumigaura, Japan, Plan is a notable work by Kisho Kurokawa. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-20b53eca134190fc",
+      "year": "Unknown",
+      "lat": 35.13225,
+      "lng": 136.78680555555556,
+      "museumName": "Museum of Modern Art",
+      "description": "Floating City, project, Kasumigaura, Japan, Plan is a notable work by Kisho Kurokawa. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-023a5bb04ab67c34",
+      "title": "Art Today in Kyoto",
+      "artist": "Kiyoshi Awazu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Meguro",
+        "country": "Japan",
+        "lat": 35.6415,
+        "lng": 139.69827777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Art Today in Kyoto is a notable work by Kiyoshi Awazu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-023a5bb04ab67c34",
+      "year": "Unknown",
+      "lat": 35.6415,
+      "lng": 139.69827777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Art Today in Kyoto is a notable work by Kiyoshi Awazu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-29a41c561cc18e20",
+      "title": "Poster Nippon 55-72",
+      "artist": "Ikko Tanaka",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nara",
+        "country": "Japan",
+        "lat": 34.685,
+        "lng": 135.8047777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster Nippon 55-72 is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-29a41c561cc18e20",
+      "year": "Unknown",
+      "lat": 34.685,
+      "lng": 135.8047777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster Nippon 55-72 is a notable work by Ikko Tanaka. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-30b7b05bee43cb12",
+      "title": "Crinkle Tea Cup and Saucer (model CR-102)",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Bone china",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Tea Cup and Saucer (model CR-102) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-30b7b05bee43cb12",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Tea Cup and Saucer (model CR-102) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-34aba8d7e5658966",
+      "title": "Already Buried Characters, Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine",
+      "artist": "Akio Okumura",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph with varnish overlay",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kushiro",
+        "country": "Japan",
+        "lat": 42.98488888888889,
+        "lng": 144.3817222222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Already Buried Characters, Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Akio Okumura. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-34aba8d7e5658966",
+      "year": "Unknown",
+      "lat": 42.98488888888889,
+      "lng": 144.3817222222222,
+      "museumName": "Museum of Modern Art",
+      "description": "Already Buried Characters, Poster Celebrating 10th Anniversary of \"Tategumi Yokogumi\" Magazine is a notable work by Akio Okumura. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-37aabad08d376605",
+      "title": "Poster for Ikebana (flower arrangement) exhibition",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Poster for Ikebana (flower arrangement) exhibition is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-37aabad08d376605",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Poster for Ikebana (flower arrangement) exhibition is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-39d963cc685b8493",
+      "title": "Promotional Poster for a Group of Flower Arrangers",
+      "artist": "Koichi Sato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.68944444444445,
+        "lng": 139.69166666666666
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Promotional Poster for a Group of Flower Arrangers is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-39d963cc685b8493",
+      "year": "Unknown",
+      "lat": 35.68944444444445,
+      "lng": 139.69166666666666,
+      "museumName": "Museum of Modern Art",
+      "description": "Promotional Poster for a Group of Flower Arrangers is a notable work by Koichi Sato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-42fa7ddb954da5a6",
+      "title": "Shimosuwa Municipal Museum, Shimosuwa-machi, Nagano Prefecture, Japan (Scale model 1:150)",
+      "artist": "Toyo Ito & Associates, Architects",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Plexiglass and aluminum",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Seoul",
+        "country": "Japan",
+        "lat": 37.56,
+        "lng": 126.99
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Shimosuwa Municipal Museum, Shimosuwa-machi, Nagano Prefecture, Japan (Scale model 1:150) is a notable work by Toyo Ito & Associates, Architects. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-42fa7ddb954da5a6",
+      "year": "Unknown",
+      "lat": 37.56,
+      "lng": 126.99,
+      "museumName": "Museum of Modern Art",
+      "description": "Shimosuwa Municipal Museum, Shimosuwa-machi, Nagano Prefecture, Japan (Scale model 1:150) is a notable work by Toyo Ito & Associates, Architects. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-45bedf2c1362cca1",
+      "title": "49 Drawers",
+      "artist": "Shiro Kuramata",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Lacquered plywood, steel, and aluminum",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo City",
+        "country": "Japan",
+        "lat": 35.67666667,
+        "lng": 139.76472222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "49 Drawers is a notable work by Shiro Kuramata. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-45bedf2c1362cca1",
+      "year": "Unknown",
+      "lat": 35.67666667,
+      "lng": 139.76472222,
+      "museumName": "Museum of Modern Art",
+      "description": "49 Drawers is a notable work by Shiro Kuramata. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-51e60953f59f20f6",
+      "title": "Nara Convention Hall, Nara, Japan, Preliminary sketches",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Ink on tracing paper",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Preliminary sketches is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-51e60953f59f20f6",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Preliminary sketches is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-062e54fbaa46cc25",
+      "title": "Nara Convention Hall, Nara, Japan, Interior perspective of concert hall",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Computer-generated print. print",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Nara Convention Hall, Nara, Japan, Interior perspective of concert hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-062e54fbaa46cc25",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Nara Convention Hall, Nara, Japan, Interior perspective of concert hall is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-63d0d17746cf379c",
+      "title": "The Drama of A Woman Begins at the Fingertips, Shiseido Nail Enamel",
+      "artist": "Makoto Nakamura",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Meguro",
+        "country": "Japan",
+        "lat": 35.6415,
+        "lng": 139.69827777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "The Drama of A Woman Begins at the Fingertips, Shiseido Nail Enamel is a notable work by Makoto Nakamura. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-63d0d17746cf379c",
+      "year": "Unknown",
+      "lat": 35.6415,
+      "lng": 139.69827777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "The Drama of A Woman Begins at the Fingertips, Shiseido Nail Enamel is a notable work by Makoto Nakamura. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-65f1dcfea7a473c7",
+      "title": "Scarf",
+      "artist": "Eiji Miyamoto",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silk",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Harima Province",
+        "country": "Japan",
+        "lat": 34.97138889,
+        "lng": 134.66972222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Scarf is a notable work by Eiji Miyamoto. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-65f1dcfea7a473c7",
+      "year": "Unknown",
+      "lat": 34.97138889,
+      "lng": 134.66972222,
+      "museumName": "Museum of Modern Art",
+      "description": "Scarf is a notable work by Eiji Miyamoto. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-067a37cc94e009c3",
+      "title": "Golgi Structures, project",
+      "artist": "Fumihiko Maki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Plexiglass and acrylic",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.683889,
+        "lng": 139.774444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Golgi Structures, project is a notable work by Fumihiko Maki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-067a37cc94e009c3",
+      "year": "Unknown",
+      "lat": 35.683889,
+      "lng": 139.774444,
+      "museumName": "Museum of Modern Art",
+      "description": "Golgi Structures, project is a notable work by Fumihiko Maki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-69bd3515f8c60c03",
+      "title": "Miss Blanche Chair",
+      "artist": "Shiro Kuramata",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Paper flowers, acrylic resin, and aluminum",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo City",
+        "country": "Japan",
+        "lat": 35.67666667,
+        "lng": 139.76472222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Miss Blanche Chair is a notable work by Shiro Kuramata. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-69bd3515f8c60c03",
+      "year": "Unknown",
+      "lat": 35.67666667,
+      "lng": 139.76472222,
+      "museumName": "Museum of Modern Art",
+      "description": "Miss Blanche Chair is a notable work by Shiro Kuramata. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-70a0e130224ec044",
+      "title": "Vive L'amour",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Vive L'amour is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-70a0e130224ec044",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Vive L'amour is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-75eca1e8049c9463",
+      "title": "Platter",
+      "artist": "Asao Sakamoto",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Melamine and urethane resin",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Tokyo",
+        "country": "Japan",
+        "lat": 35.683889,
+        "lng": 139.774444
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Platter is a notable work by Asao Sakamoto. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-75eca1e8049c9463",
+      "year": "Unknown",
+      "lat": 35.683889,
+      "lng": 139.774444,
+      "museumName": "Museum of Modern Art",
+      "description": "Platter is a notable work by Asao Sakamoto. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-77cfe714bea1dd71",
+      "title": "Stranger From The Wilderness",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Stranger From The Wilderness is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-77cfe714bea1dd71",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Stranger From The Wilderness is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-78a965bd34fa9826",
+      "title": "Mino Shigyo Co., Ltd. Silkscreen Printing",
+      "artist": "Koji Kato",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Isahaya",
+        "country": "Japan",
+        "lat": 32.84338888888889,
+        "lng": 130.0531388888889
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Mino Shigyo Co., Ltd. Silkscreen Printing is a notable work by Koji Kato. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-78a965bd34fa9826",
+      "year": "Unknown",
+      "lat": 32.84338888888889,
+      "lng": 130.0531388888889,
+      "museumName": "Museum of Modern Art",
+      "description": "Mino Shigyo Co., Ltd. Silkscreen Printing is a notable work by Koji Kato. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-78d96305ef3a10e3",
+      "title": "Crinkle Shiwa Old-Fashioned  (OF) K101",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Blown 10 percent PbO glass",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Shiwa Old-Fashioned  (OF) K101 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-78d96305ef3a10e3",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Shiwa Old-Fashioned  (OF) K101 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-83fe98c8fa09058f",
+      "title": "Crinkle Tumbler CR-S5",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Magnesia porcelain",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Tumbler CR-S5 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-83fe98c8fa09058f",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Tumbler CR-S5 is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-093fec9ac43c5397",
+      "title": "Re-ruined Hiroshima, Hiroshima, Japan (Perspective)",
+      "artist": "Arata Isozaki",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen after a photo collage original",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Oita",
+        "country": "Japan",
+        "lat": 33.239555555555555,
+        "lng": 131.6093611111111
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Re-ruined Hiroshima, Hiroshima, Japan (Perspective) is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-093fec9ac43c5397",
+      "year": "Unknown",
+      "lat": 33.239555555555555,
+      "lng": 131.6093611111111,
+      "museumName": "Museum of Modern Art",
+      "description": "Re-ruined Hiroshima, Hiroshima, Japan (Perspective) is a notable work by Arata Isozaki. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-95adbb702857682a",
+      "title": "Koshimake Osen 2, Fire in a Long-sleeved Kimono",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Koshimake Osen 2, Fire in a Long-sleeved Kimono is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-95adbb702857682a",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Koshimake Osen 2, Fire in a Long-sleeved Kimono is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-96c9b281262e9dfa",
+      "title": "Tadanori Yokoo: Total Graph-ty",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Silkscreen",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Tadanori Yokoo: Total Graph-ty is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-96c9b281262e9dfa",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "Tadanori Yokoo: Total Graph-ty is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-124abfaf883d5f51",
+      "title": "Shiseido Bronzer",
+      "artist": "Shin Matsunaga",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Gunma Prefecture",
+        "country": "Japan",
+        "lat": 36.39,
+        "lng": 139.06
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Shiseido Bronzer is a notable work by Shin Matsunaga. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-124abfaf883d5f51",
+      "year": "Unknown",
+      "lat": 36.39,
+      "lng": 139.06,
+      "museumName": "Museum of Modern Art",
+      "description": "Shiseido Bronzer is a notable work by Shin Matsunaga. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-235ade148bb8e040",
+      "title": "Shiseido Sun Oil",
+      "artist": "Shin Matsunaga",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Gunma Prefecture",
+        "country": "Japan",
+        "lat": 36.39,
+        "lng": 139.06
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Shiseido Sun Oil is a notable work by Shin Matsunaga. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-235ade148bb8e040",
+      "year": "Unknown",
+      "lat": 36.39,
+      "lng": 139.06,
+      "museumName": "Museum of Modern Art",
+      "description": "Shiseido Sun Oil is a notable work by Shin Matsunaga. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-259d042d4eaed129",
+      "title": "Plate",
+      "artist": "Kitaoji Rosanjin",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Unglazed bizen-ware",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kyoto",
+        "country": "Japan",
+        "lat": 35.01161111111111,
+        "lng": 135.76811111111112
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Plate is a notable work by Kitaoji Rosanjin. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-259d042d4eaed129",
+      "year": "Unknown",
+      "lat": 35.01161111111111,
+      "lng": 135.76811111111112,
+      "museumName": "Museum of Modern Art",
+      "description": "Plate is a notable work by Kitaoji Rosanjin. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-311a5c16b5fca65d",
+      "title": "Crinkle Futuro Old-Fashioned (OF) Tumbler",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Glass",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Futuro Old-Fashioned (OF) Tumbler is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-311a5c16b5fca65d",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Futuro Old-Fashioned (OF) Tumbler is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-462a8b032f89a2a5",
+      "title": "3 Illustrations for \"Killed By Roses\" (A Book Of Portraits Of Yukio Mishima)",
+      "artist": "Tadanori Yokoo",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Offset lithograph",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Nishiwaki",
+        "country": "Japan",
+        "lat": 34.98291666666667,
+        "lng": 134.97952777777778
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "3 Illustrations for \"Killed By Roses\" (A Book Of Portraits Of Yukio Mishima) is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-462a8b032f89a2a5",
+      "year": "Unknown",
+      "lat": 34.98291666666667,
+      "lng": 134.97952777777778,
+      "museumName": "Museum of Modern Art",
+      "description": "3 Illustrations for \"Killed By Roses\" (A Book Of Portraits Of Yukio Mishima) is a notable work by Tadanori Yokoo. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-515e729404cc18ee",
+      "title": "Crinkle Vase (KNS-3)",
+      "artist": "Makoto Komatsu",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Cast porcelain",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Kuwana",
+        "country": "Japan",
+        "lat": 35.062194444444444,
+        "lng": 136.68366666666665
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Crinkle Vase (KNS-3) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-515e729404cc18ee",
+      "year": "Unknown",
+      "lat": 35.062194444444444,
+      "lng": 136.68366666666665,
+      "museumName": "Museum of Modern Art",
+      "description": "Crinkle Vase (KNS-3) is a notable work by Makoto Komatsu. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
+    },
+    {
+      "artwork_id": "kaggle2-686b232324dd3191",
+      "title": "Pitcher",
+      "artist": "Koen De Winter",
+      "creation_year": "Unknown",
+      "time_period": "modern",
+      "medium": "Polypropylene and SAN plastic",
+      "current_location": {
+        "museum": "Museum of Modern Art",
+        "city": "Sendai",
+        "country": "Japan",
+        "lat": 38.26822222222222,
+        "lng": 140.86941666666667
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-unavailable.svg",
+        "high_res_url": "/artworks/external/external-unavailable.svg"
+      },
+      "historical_text": "Pitcher is a notable work by Koen De Winter. Historical background will be expanded in future dataset updates.",
+      "id": "kaggle2-686b232324dd3191",
+      "year": "Unknown",
+      "lat": 38.26822222222222,
+      "lng": 140.86941666666667,
+      "museumName": "Museum of Modern Art",
+      "description": "Pitcher is a notable work by Koen De Winter. Historical background will be expanded in future dataset updates.",
+      "imageUrl": "/artworks/external/external-unavailable.svg",
+      "canonicalImageUrl": "/artworks/external/external-unavailable.svg",
+      "source": "kaggle2",
+      "sourceUrl": ""
     }
   ]
 }

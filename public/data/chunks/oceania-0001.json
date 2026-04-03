@@ -1,0 +1,66 @@
+{
+  "chunkId": "oceania-0001",
+  "region": "oceania",
+  "records": [
+    {
+      "artwork_id": "oceania-seasia-198",
+      "title": "The Town Hall, Amsterdam",
+      "artist": "Gerrit Adriaenszoon Berckheyde",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "National Gallery of Victoria",
+        "city": "Melbourne",
+        "country": "",
+        "lat": -37.8225,
+        "lng": 144.968888888
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-7b02d51bd62e41d6.jpg",
+        "high_res_url": "/artworks/external/external-7b02d51bd62e41d6.jpg"
+      },
+      "historical_text": "Located at National Gallery of Victoria.",
+      "id": "oceania-seasia-198",
+      "year": "Unknown",
+      "lat": -37.8225,
+      "lng": 144.968888888,
+      "museumName": "National Gallery of Victoria",
+      "description": "Located at National Gallery of Victoria.",
+      "imageUrl": "/artworks/external/external-7b02d51bd62e41d6.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerrit%20Berckheyde%20-%20The%20Town%20Hall%2C%20Amsterdam%2C%201690%20Fd101354.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q20424518"
+    },
+    {
+      "artwork_id": "oceania-seasia-199",
+      "title": "Bacchus and Ariadne",
+      "artist": "Jacopo Amigoni",
+      "creation_year": "Unknown",
+      "time_period": "antiquity",
+      "medium": "Unknown medium",
+      "current_location": {
+        "museum": "Art Gallery of New South Wales",
+        "city": "Sydney",
+        "country": "",
+        "lat": -33.868611111,
+        "lng": 151.217222222
+      },
+      "assets": {
+        "thumbnail_url": "/artworks/external/external-22968be9b63e8cde.jpg",
+        "high_res_url": "/artworks/external/external-22968be9b63e8cde.jpg"
+      },
+      "historical_text": "Located at Art Gallery of New South Wales.",
+      "id": "oceania-seasia-199",
+      "year": "Unknown",
+      "lat": -33.868611111,
+      "lng": 151.217222222,
+      "museumName": "Art Gallery of New South Wales",
+      "description": "Located at Art Gallery of New South Wales.",
+      "imageUrl": "/artworks/external/external-22968be9b63e8cde.jpg",
+      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Amigoni%20-%20Bacchus%20and%20Ariadne%20-%20Google%20Art%20Project.jpg?width=640",
+      "source": "wikidata",
+      "sourceUrl": "http://www.wikidata.org/entity/Q20424543"
+    }
+  ]
+}

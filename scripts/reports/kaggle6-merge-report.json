@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-04-03T15:59:22.599Z",
+  "inputFile": "tmp/kaggle6-local-for-merge.json",
+  "incomingCount": 13418,
+  "qualityAccepted": 13418,
+  "qualityRejected": 0,
+  "importedCount": 13402,
+  "skippedCount": 16,
+  "maxMergeTotal": 15000,
+  "maxPerArtist": 20,
+  "skippedReasonCounts": {
+    "duplicate_fingerprint": 16
+  }
+}

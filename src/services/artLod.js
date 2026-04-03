@@ -40,7 +40,34 @@ const rankByPriority = (a, b, focusPoint) => {
   return stableIdScore(a) - stableIdScore(b)
 }
 
-const pickRepresentative = (items) => items.find((item) => item.imageUrl) ?? items[0]
+/** Local / dataset placeholders — skip when another artwork in the cluster has a real thumbnail. */
+const isUsableMarkerThumbnailUrl = (url) => {
+  if (typeof url !== 'string') return false
+  const s = url.trim()
+  if (!s) return false
+  const low = s.toLowerCase()
+  if (low.includes('external-unavailable')) return false
+  if (low.includes('art-placeholder')) return false
+  return true
+}
+
+const pickRepresentative = (items) => {
+  const withRenderableThumb = items.find((item) => {
+    const direct = item?.imageUrl
+    const assetThumb = item?.assets?.thumbnail_url
+    return isUsableMarkerThumbnailUrl(direct) || isUsableMarkerThumbnailUrl(assetThumb)
+  })
+  return withRenderableThumb ?? items[0]
+}
+
+/** Prefer first usable URL on the representative row (imageUrl, assets, then canonical). */
+const resolveClusterThumbnailUrl = (item) => {
+  if (!item) return ''
+  if (isUsableMarkerThumbnailUrl(item.imageUrl)) return String(item.imageUrl).trim()
+  if (isUsableMarkerThumbnailUrl(item?.assets?.thumbnail_url)) return String(item.assets.thumbnail_url).trim()
+  if (isUsableMarkerThumbnailUrl(item?.canonicalImageUrl)) return String(item.canonicalImageUrl).trim()
+  return typeof item.imageUrl === 'string' ? item.imageUrl.trim() : ''
+}
 
 const defaultClusterI18n = {
   artworksCount: (n) => `${n} artworks`,
@@ -157,7 +184,7 @@ function buildClusters(artworks, cellSize, limit, clusterI18n = defaultClusterI1
       year: i18n.variousYears,
       lat,
       lng,
-      imageUrl: representative?.imageUrl ?? '',
+      imageUrl: resolveClusterThumbnailUrl(representative),
       description: i18n.zoomExplore(items.length),
       museumName: museumLabel,
       source: 'cluster',

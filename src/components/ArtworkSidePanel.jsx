@@ -6,13 +6,26 @@ const panelStyle = {
   top: 0,
   right: 0,
   width: 'min(420px, 92vw)',
-  height: '100vh',
-  zIndex: 70,
+  height: '100dvh',
+  zIndex: 150,
   background: 'rgba(32, 22, 14, 0.97)',
   borderLeft: '1px solid rgba(212, 168, 83, 0.25)',
   boxShadow: '0 0 40px rgba(20, 10, 5, 0.55)',
   display: 'grid',
-  gridTemplateRows: 'auto auto 1fr'
+  gridTemplateRows: 'auto 1fr',
+  overflow: 'hidden',
+  minHeight: 0,
+  isolation: 'isolate'
+}
+
+const headerBarStyle = {
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  padding: '14px 16px',
+  flexShrink: 0,
+  position: 'relative',
+  zIndex: 1
 }
 
 export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getThumbUrl, t }) {
@@ -90,7 +103,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
         aria-labelledby={titleId}
         style={{ ...panelStyle, gridTemplateRows: 'auto 1fr', overflow: 'hidden' }}
       >
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 16px' }}>
+        <div style={headerBarStyle}>
           <h2 id={titleId} style={{ margin: 0, fontSize: 18, color: '#f5e6c8' }}>
             {t('panel.clusterTitle')}
           </h2>
@@ -229,7 +242,42 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
     )
   }
 
-  if (!selectedArtwork) return null
+  if (!selectedArtwork) {
+    return (
+      <aside
+        key={itemKey}
+        ref={panelRef}
+        tabIndex={-1}
+        role="complementary"
+        aria-labelledby={titleId}
+        style={panelStyle}
+      >
+        <div style={headerBarStyle}>
+          <h2 id={titleId} style={{ margin: 0, fontSize: 18, color: '#f5e6c8' }}>
+            {t('panel.detailsTitle')}
+          </h2>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('panel.closeAria')}
+            style={{
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              background: 'rgba(42, 28, 18, 0.9)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '6px 10px',
+              cursor: 'pointer'
+            }}
+          >
+            {t('panel.close')}
+          </button>
+        </div>
+        <div style={{ padding: '12px 16px 20px', color: '#c4a882', fontSize: 13, lineHeight: 1.5, minHeight: 0 }}>
+          {t('panel.unavailable')}
+        </div>
+      </aside>
+    )
+  }
 
   return (
     <aside
@@ -241,7 +289,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
       aria-describedby={descId}
       style={panelStyle}
     >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '14px 16px' }}>
+      <div style={headerBarStyle}>
         <h2 id={titleId} style={{ margin: 0, fontSize: 18, color: '#f5e6c8' }}>
           {isMuseumStack
             ? `${item.museumName}${t('panel.collectionSuffix')}`
@@ -264,8 +312,16 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
         </button>
       </div>
 
+      <div
+        style={{
+          minHeight: 0,
+          display: 'flex',
+          flexDirection: 'column',
+          overflow: 'hidden'
+        }}
+      >
       {isMuseumStack && (
-        <div style={{ padding: '0 16px 8px 16px' }}>
+        <div style={{ padding: '0 16px 8px 16px', flexShrink: 0 }}>
           <div
             style={{
               marginBottom: 8,
@@ -304,7 +360,15 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
           <div
             role="listbox"
             aria-label={t('panel.museumListAria')}
-            style={{ display: 'grid', gap: 6, maxHeight: 132, overflow: 'auto', paddingRight: 2 }}
+            style={{
+              display: 'grid',
+              gap: 6,
+              maxHeight: 132,
+              overflow: 'auto',
+              paddingRight: 2,
+              minHeight: 0,
+              WebkitOverflowScrolling: 'touch'
+            }}
           >
             {filteredMuseumArtworks.map((art) => {
               const isActive = String(art.id) === String(selectedArtwork.id)
@@ -343,7 +407,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
         </div>
       )}
 
-      <div style={{ padding: '0 16px 10px 16px' }}>
+      <div style={{ padding: '0 16px 10px 16px', flexShrink: 0 }}>
         <div style={{ display: 'flex', gap: 8, marginBottom: 8 }}>
           <button
             type="button"
@@ -417,7 +481,16 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
         </div>
       </div>
 
-      <div style={{ padding: '0 16px 20px 16px', overflow: 'auto', color: '#c4a882' }}>
+      <div
+        style={{
+          flex: 1,
+          minHeight: 0,
+          overflow: 'auto',
+          WebkitOverflowScrolling: 'touch',
+          padding: '0 16px 20px 16px',
+          color: '#c4a882'
+        }}
+      >
         <h3 style={{ marginTop: 0, marginBottom: 8, color: '#f5e6c8' }}>
           {selectedArtwork.displayTitle ?? selectedArtwork.title}
         </h3>
@@ -450,6 +523,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
             selectedArtwork.historical_text ??
             selectedArtwork.description}
         </p>
+      </div>
       </div>
     </aside>
   )
