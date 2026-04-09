@@ -7,7 +7,7 @@ const panelStyle = {
   right: 0,
   width: 'min(420px, 92vw)',
   height: '100dvh',
-  zIndex: 150,
+  zIndex: 10040,
   background: 'rgba(32, 22, 14, 0.97)',
   borderLeft: '1px solid rgba(212, 168, 83, 0.25)',
   boxShadow: '0 0 40px rgba(20, 10, 5, 0.55)',

@@ -1,3 +1,5 @@
+import { createClient } from '@supabase/supabase-js'
+
 const SUPABASE_URL = String(import.meta.env.VITE_SUPABASE_URL ?? '').replace(/\/$/, '')
 const SUPABASE_ANON_KEY = import.meta.env.VITE_SUPABASE_ANON_KEY ?? ''
 const SUPABASE_TABLE = import.meta.env.VITE_SUPABASE_TABLE ?? 'artworks'
@@ -9,16 +11,9 @@ function assertConfigured() {
   }
 }
 
-async function fetchRest(pathWithQuery) {
+function getClient() {
   assertConfigured()
-  const response = await fetch(`${SUPABASE_URL}/rest/v1/${pathWithQuery}`, {
-    headers: {
-      apikey: SUPABASE_ANON_KEY,
-      Authorization: `Bearer ${SUPABASE_ANON_KEY}`
-    }
-  })
-  if (!response.ok) throw new Error(`Supabase request failed: ${response.status}`)
-  return response.json()
+  return createClient(SUPABASE_URL, SUPABASE_ANON_KEY)
 }
 
 function toArtworkRow(row) {
@@ -36,22 +31,37 @@ function toArtworkRow(row) {
     year: row.year_text || 'Unknown',
     imageUrl: row.image_url || '',
     canonicalImageUrl: row.image_url || '',
-    description: '',
+    description: row.description ?? '',
     confidence: row.confidence
   }
 }
 
+const ARTWORK_SELECT =
+  'source_id,title,artist,museum_name,city,country,lat,lng,time_period,source,year_text,image_url,confidence,description'
+
 export async function fetchSupabaseInitialArtworks(limit = DEFAULT_LIMIT) {
-  const query = `${SUPABASE_TABLE}?select=source_id,title,artist,museum_name,city,country,lat,lng,time_period,source,year_text,image_url,confidence&limit=${encodeURIComponent(limit)}`
-  const rows = await fetchRest(query)
-  return Array.isArray(rows) ? rows.map(toArtworkRow) : []
+  const supabase = getClient()
+  const { data, error } = await supabase
+    .from(SUPABASE_TABLE)
+    .select(ARTWORK_SELECT)
+    .eq('status', 'approved')
+    .limit(limit)
+  if (error) throw new Error(`Supabase request failed: ${error.message}`)
+  return Array.isArray(data) ? data.map(toArtworkRow) : []
 }
 
 export async function fetchSupabaseSearchRecords(limit = DEFAULT_LIMIT) {
-  const query = `${SUPABASE_TABLE}?select=source_id,title,artist,museum_name,city,country,lat,lng,time_period,source,image_url&limit=${encodeURIComponent(limit)}`
-  const rows = await fetchRest(query)
-  if (!Array.isArray(rows)) return []
-  return rows.map((row) => ({
+  const supabase = getClient()
+  const { data, error } = await supabase
+    .from(SUPABASE_TABLE)
+    .select(
+      'source_id,title,artist,museum_name,city,country,lat,lng,time_period,source,image_url,description'
+    )
+    .eq('status', 'approved')
+    .limit(limit)
+  if (error) throw new Error(`Supabase request failed: ${error.message}`)
+  if (!Array.isArray(data)) return []
+  return data.map((row) => ({
     id: row.source_id || row.id,
     title: row.title,
     artist: row.artist,
@@ -69,9 +79,16 @@ export async function fetchSupabaseSearchRecords(limit = DEFAULT_LIMIT) {
 
 export async function fetchSupabaseArtworksByPeriod(periods, limit = DEFAULT_LIMIT) {
   if (!Array.isArray(periods) || periods.length === 0) return fetchSupabaseInitialArtworks(limit)
-  const inClause = periods.map((p) => `"${String(p).replace(/"/g, '')}"`).join(',')
-  const query = `${SUPABASE_TABLE}?select=source_id,title,artist,museum_name,city,country,lat,lng,time_period,source,year_text,image_url,confidence&time_period=in.(${encodeURIComponent(inClause)})&limit=${encodeURIComponent(limit)}`
-  const rows = await fetchRest(query)
-  return Array.isArray(rows) ? rows.map(toArtworkRow) : []
+  const supabase = getClient()
+  const { data, error } = await supabase
+    .from(SUPABASE_TABLE)
+    .select(ARTWORK_SELECT)
+    .eq('status', 'approved')
+    .in(
+      'time_period',
+      periods.map((p) => String(p).replace(/"/g, ''))
+    )
+    .limit(limit)
+  if (error) throw new Error(`Supabase request failed: ${error.message}`)
+  return Array.isArray(data) ? data.map(toArtworkRow) : []
 }
-

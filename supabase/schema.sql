@@ -24,6 +24,7 @@ create table if not exists public.artworks (
   image_url text default '',
   canonical_fingerprint text unique not null,
   confidence double precision,
+  status text not null default 'approved' check (status in ('pending', 'approved', 'rejected')),
   created_at timestamptz not null default now(),
   updated_at timestamptz not null default now()
 );
@@ -31,6 +32,7 @@ create table if not exists public.artworks (
 create index if not exists idx_artworks_lat_lng on public.artworks (lat, lng);
 create index if not exists idx_artworks_time_period on public.artworks (time_period);
 create index if not exists idx_artworks_source on public.artworks (source);
+create index if not exists idx_artworks_status on public.artworks (status);
 
 create or replace function public.set_updated_at()
 returns trigger

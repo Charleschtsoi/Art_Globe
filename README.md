@@ -210,6 +210,16 @@ Full `npm run build` copies **`public/artworks/**`** into **`dist/`** (~1 GB+ wi
 
 Local dev with **relative** `/artworks/` paths: do not run **`data:rewrite-cdn-urls`** on your main branch if you need offline images; use a **`production`** git branch or re-clone after rewrite, or restore from git.
 
-## License
+## License & Usage
 
-MIT. See `LICENSE`.
+This project is open-source and available under the **MIT License**.
+
+You are completely free to share, fork, modify, and use this code for your own projects. My only request is that you please provide attribution by keeping my name/credit in the project if you use it.
+
+### Note on monetization
+
+This project is built out of passion and is strictly non-profit (at least for now!). The goal is to build a cool, community-driven 3D art globe, not to make money. If you decide to fork this and use it, I’d love to see what you build!
+
+---
+
+Full license text: [`LICENSE`](LICENSE) (replace the copyright placeholder in that file with your name if you maintain a fork).

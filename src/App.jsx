@@ -1,9 +1,12 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import Globe from 'react-globe.gl'
 import * as THREE from 'three'
 import artPlaceholder from './assets/art-placeholder.svg'
 import ArtworkSidePanel from './components/ArtworkSidePanel'
 import SearchBar from './components/SearchBar'
+import { useAuth } from './context/AuthContext.jsx'
+import { isSupabaseConfigured } from './lib/supabaseClient.js'
 import { getZoomBand, resolveHtmlMarkerData, resolveLodData } from './services/artLod'
 import { readStoredLocale, writeStoredLocale, translate } from './i18n/translations'
 import { localizeArtworkDisplay } from './i18n/localizeArtworkDisplay'
@@ -28,10 +31,12 @@ const HYDRATION_BATCH_SIZE = Number(import.meta.env.VITE_HYDRATION_BATCH_SIZE ??
 const HYDRATION_BATCH_DELAY_MS = Number(import.meta.env.VITE_HYDRATION_BATCH_DELAY_MS ?? 220)
 const DATA_SOURCE = String(import.meta.env.VITE_DATA_SOURCE ?? 'static').toLowerCase()
 
-/** Stacking: globe 0, panel backdrop 140, side panel 150, global chrome 200+ */
-const Z_PANEL_BACKDROP = 140
-const Z_UI_CHROME = 200
-const Z_CLUSTER_HINT = 201
+/** Globe CSS2D labels get z-index up to ~number of markers; keep all fixed UI above that band. */
+const Z_PANEL_BACKDROP = 10030
+const Z_STATS_PERIOD = 10010
+const Z_ZOOM_CONTROLS = 10015
+const Z_LEFT_NAV = 10020
+const Z_CLUSTER_HINT = 10025
 
 function escapeHtml(s) {
   return String(s)
@@ -60,6 +65,8 @@ const spreadOutArtworks = (data) => {
 }
 
 function App() {
+  const navigate = useNavigate()
+  const { isAdmin } = useAuth()
   const [allArtworksBase, setAllArtworksBase] = useState([])
   const [searchRecords, setSearchRecords] = useState([])
   const [activeMarker, setActiveMarker] = useState(null)
@@ -894,13 +901,14 @@ function App() {
           left: 12,
           bottom: isMobileLayout ? 12 : 'auto',
           transform: 'none',
-          zIndex: Z_UI_CHROME,
+          zIndex: Z_LEFT_NAV,
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'stretch',
           gap: 8,
           width: isMobileLayout ? 'min(360px, calc(100vw - 24px))' : 'min(340px, calc(100vw - 24px))',
-          pointerEvents: 'auto'
+          pointerEvents: 'auto',
+          isolation: 'isolate'
         }}
       >
         <div
@@ -956,6 +964,40 @@ function App() {
           getThumbUrl={getMarkerImageUrl}
           t={t}
         />
+        {isSupabaseConfigured() ? (
+          <div
+            style={{
+              display: 'flex',
+              flexWrap: 'wrap',
+              gap: 8,
+              alignItems: 'flex-start',
+              background: 'rgba(32, 22, 14, 0.92)',
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              borderRadius: 10,
+              padding: '8px 10px',
+              boxShadow: '0 8px 24px rgba(0,0,0,0.35)'
+            }}
+          >
+            <div className="flex min-w-0 flex-1 flex-col gap-1">
+              <button
+                type="button"
+                onClick={() => navigate('/submit')}
+                className="block w-full cursor-pointer rounded-lg border border-amber-600/50 bg-[rgba(32,22,14,0.92)] px-3 py-2.5 text-center text-sm font-medium text-amber-500 shadow-[0_8px_24px_rgba(0,0,0,0.35)] transition-all hover:border-amber-500 hover:bg-amber-900/20"
+              >
+                {t('submit.cta')}
+              </button>
+              <p className="text-center text-[11px] leading-tight text-amber-600/80">{t('submit.ctaSub')}</p>
+            </div>
+            {isAdmin ? (
+              <Link
+                to="/moderate"
+                style={{ color: '#f5e6c8', fontSize: 13, textDecoration: 'none', borderBottom: '1px solid #d4a853' }}
+              >
+                {t('moderate.link')}
+              </Link>
+            ) : null}
+          </div>
+        ) : null}
       </div>
       <div
         style={{
@@ -1017,7 +1059,7 @@ function App() {
           position: 'fixed',
           right: 'max(14px, env(safe-area-inset-right, 0px))',
           bottom: `max(${isMobileLayout ? 156 : selectedItemForPanel ? 22 : 16}px, env(safe-area-inset-bottom, 0px))`,
-          zIndex: Z_UI_CHROME,
+          zIndex: Z_ZOOM_CONTROLS,
           display: 'flex',
           flexDirection: 'column',
           gap: 8,
@@ -1077,7 +1119,7 @@ function App() {
           position: 'fixed',
           left: 'max(12px, env(safe-area-inset-left, 0px))',
           bottom: `max(${isMobileLayout ? 86 : 12}px, env(safe-area-inset-bottom, 0px))`,
-          zIndex: Z_UI_CHROME,
+          zIndex: Z_STATS_PERIOD,
           width: isMobileLayout ? 'min(220px, calc(100vw - 24px))' : 250,
           background: 'rgba(32, 22, 14, 0.88)',
           border: '1px solid rgba(212, 168, 83, 0.3)',
