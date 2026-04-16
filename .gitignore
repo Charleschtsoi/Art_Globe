@@ -29,33 +29,12 @@ test-results/
 *.sln
 *.sw?
 
-# Artwork images — bulk pipeline output (tracked exceptions below)
-# Root-level art-*.jpg dumps on developer machines (OSS bundle is public/artworks/_oss/)
-public/artworks/art-*.jpg
-public/artworks/art-*.jpeg
-public/artworks/art-*.png
-public/artworks/art-*.webp
-public/artworks/art-*.gif
-
-public/artworks/asia/**/*.jpg
-public/artworks/asia/**/*.jpeg
-public/artworks/asia/**/*.png
-public/artworks/asia/**/*.webp
-!public/artworks/asia/asia-8c1227960ebcc041.jpg
-!public/artworks/asia/asia-f368f398996a2706.jpg
-!public/artworks/asia/asia-d96cf268653bf98a.png
-!public/artworks/asia/asia-28b7d1e36965c79e.jpg
-!public/artworks/asia/asia-cd39821edcda768d.jpg
-!public/artworks/asia/asia-3b1b22b86ce70dc7.jpg
-!public/artworks/asia/asia-038a6ff3611a04fd.jpg
-!public/artworks/asia/asia-9a73ec089f7f80f1.jpg
-!public/artworks/asia/asia-7b6ca2629bf51ef0.jpg
-
-public/artworks/kaggle6/**/*
-public/artworks/external/**/*
-!public/artworks/external/external-unavailable.svg
-public/artworks/archive3/**/*
-public/artworks/wikiart/**/*
+# Artwork images (can be very large)
+public/artworks/**/*.jpg
+public/artworks/**/*.jpeg
+public/artworks/**/*.png
+public/artworks/**/*.webp
+public/artworks/**/*.gif
 
 # Local raw datasets and pipeline temp files
 kaggle sources/

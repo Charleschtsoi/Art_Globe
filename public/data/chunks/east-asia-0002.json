@@ -17,8 +17,8 @@
         "lng": 135.76811111111112
       },
       "assets": {
-        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg?width=400",
-        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg?width=400"
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp"
       },
       "historical_text": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-ff9b65ca948283bc",
@@ -27,8 +27,8 @@
       "lng": 135.76811111111112,
       "museumName": "Aki Kuroda Birthplace Collection",
       "description": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg?width=400",
-      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jean-Honor%C3%A9_Fragonard_-_The_Swing_-_Google_Art_Project.jpg?width=400",
+      "imageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Aki_Kuroda"
     },
@@ -47,8 +47,8 @@
         "lng": 120.283333
       },
       "assets": {
-        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_Gris_-_Still_Life_with_Fruit_Dish_and_Mandolin_-_Google_Art_Project.jpg?width=400",
-        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_Gris_-_Still_Life_with_Fruit_Dish_and_Mandolin_-_Google_Art_Project.jpg?width=400"
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp"
       },
       "historical_text": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-ff97f2fd852c74c7",
@@ -57,8 +57,8 @@
       "lng": 120.283333,
       "museumName": "Walasse Ting Birthplace Collection",
       "description": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_Gris_-_Still_Life_with_Fruit_Dish_and_Mandolin_-_Google_Art_Project.jpg?width=400",
-      "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Juan_Gris_-_Still_Life_with_Fruit_Dish_and_Mandolin_-_Google_Art_Project.jpg?width=400",
+      "imageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Walasse_Ting"
     },
@@ -77,8 +77,8 @@
         "lng": 105.836944
       },
       "assets": {
-        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640",
-        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640"
+        "thumbnail_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
+        "high_res_url": "/artworks/external/external-2ef6afc9991a2f1a.jpg"
       },
       "historical_text": "Located at Vietnam National Museum of Fine Arts.",
       "id": "oceania-seasia-32",
@@ -87,7 +87,7 @@
       "lng": 105.836944,
       "museumName": "Vietnam National Museum of Fine Arts",
       "description": "Located at Vietnam National Museum of Fine Arts.",
-      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640",
+      "imageUrl": "/artworks/external/external-2ef6afc9991a2f1a.jpg",
       "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Painting%20Thieu%20nu%20va%20phong%20canh%20of%20Nguyen%20Gia%20Tri%20%28front%20side%29.jpg?width=640",
       "source": "wikidata",
       "sourceUrl": "http://www.wikidata.org/entity/Q10757704"
