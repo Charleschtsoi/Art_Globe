@@ -72,6 +72,8 @@ npm run dev
 
 Head to [http://localhost:5173](http://localhost:5173) and you're in! The app comes with sample data already included — no accounts or API keys needed.
 
+**Thumbnails in this repo:** The builtin Western artworks ship as small files under `public/artworks/_oss/`. The large merged dataset in `public/data/chunks/` points at **Wikimedia Commons** URLs for most rows (a deterministic painting per city for open-source demos — not always the exact work). If you regenerate data with `npm run data:runtime`, run `npm run data:oss-showcase` afterward to restore that behavior, or run pipelines + local images for full accuracy.
+
 ### Want to add more artwork?
 
 ```bash
@@ -81,7 +83,7 @@ npm run check:data           # Make sure everything looks good
 npm run pipeline:counts      # See how much data you have
 ```
 
-Downloaded images are kept out of the git repo to keep things lightweight. If an image is missing, you'll see a friendly placeholder instead.
+Heavy pipeline output (Kaggle, WikiArt, etc.) stays out of git by default. The `_oss` bundle and Commons URLs cover the default clone; missing files fall back to a simple placeholder where needed.
 
 ### A heads-up for Mac users
 

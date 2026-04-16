@@ -17,8 +17,8 @@
         "lng": 144.968888888
       },
       "assets": {
-        "thumbnail_url": "/artworks/external/external-7b02d51bd62e41d6.jpg",
-        "high_res_url": "/artworks/external/external-7b02d51bd62e41d6.jpg"
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerrit%20Berckheyde%20-%20The%20Town%20Hall%2C%20Amsterdam%2C%201690%20Fd101354.jpg?width=640",
+        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerrit%20Berckheyde%20-%20The%20Town%20Hall%2C%20Amsterdam%2C%201690%20Fd101354.jpg?width=640"
       },
       "historical_text": "Located at National Gallery of Victoria.",
       "id": "oceania-seasia-198",
@@ -27,7 +27,7 @@
       "lng": 144.968888888,
       "museumName": "National Gallery of Victoria",
       "description": "Located at National Gallery of Victoria.",
-      "imageUrl": "/artworks/external/external-7b02d51bd62e41d6.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerrit%20Berckheyde%20-%20The%20Town%20Hall%2C%20Amsterdam%2C%201690%20Fd101354.jpg?width=640",
       "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerrit%20Berckheyde%20-%20The%20Town%20Hall%2C%20Amsterdam%2C%201690%20Fd101354.jpg?width=640",
       "source": "wikidata",
       "sourceUrl": "http://www.wikidata.org/entity/Q20424518"
@@ -47,8 +47,8 @@
         "lng": 151.217222222
       },
       "assets": {
-        "thumbnail_url": "/artworks/external/external-22968be9b63e8cde.jpg",
-        "high_res_url": "/artworks/external/external-22968be9b63e8cde.jpg"
+        "thumbnail_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Amigoni%20-%20Bacchus%20and%20Ariadne%20-%20Google%20Art%20Project.jpg?width=640",
+        "high_res_url": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Amigoni%20-%20Bacchus%20and%20Ariadne%20-%20Google%20Art%20Project.jpg?width=640"
       },
       "historical_text": "Located at Art Gallery of New South Wales.",
       "id": "oceania-seasia-199",
@@ -57,7 +57,7 @@
       "lng": 151.217222222,
       "museumName": "Art Gallery of New South Wales",
       "description": "Located at Art Gallery of New South Wales.",
-      "imageUrl": "/artworks/external/external-22968be9b63e8cde.jpg",
+      "imageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Amigoni%20-%20Bacchus%20and%20Ariadne%20-%20Google%20Art%20Project.jpg?width=640",
       "canonicalImageUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo%20Amigoni%20-%20Bacchus%20and%20Ariadne%20-%20Google%20Art%20Project.jpg?width=640",
       "source": "wikidata",
       "sourceUrl": "http://www.wikidata.org/entity/Q20424543"

@@ -44,6 +44,8 @@
     "kaggle2:upsert": "node scripts/upsert-to-supabase.mjs tmp/kaggle2-validated.json accepted",
     "i18n:generate-zh-overlays": "node scripts/generate-content-zh-overlays.mjs",
     "data:runtime": "node scripts/build-runtime-data.mjs",
+    "data:oss-showcase": "node scripts/rewrite-chunks-oss-showcase.mjs",
+    "fetch:oss-builtin-images": "node scripts/download-oss-builtin-images.mjs",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs",
     "benchmark:data": "node scripts/benchmark-runtime-data.mjs",
