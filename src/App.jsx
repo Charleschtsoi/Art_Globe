@@ -71,6 +71,7 @@ function App() {
   const [presentArtwork, setPresentArtwork] = useState(null)
   const [presentQueueIndex, setPresentQueueIndex] = useState(0)
   const [thumbnailEpoch, setThumbnailEpoch] = useState(0)
+  const [selectedPeriods, setSelectedPeriods] = useState([])
   const [showAllArtworks, setShowAllArtworks] = useState(false)
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
