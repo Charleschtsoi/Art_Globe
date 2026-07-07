@@ -66,6 +66,13 @@ export function resizeImageUrl(url, size = 'thumb') {
   return httpsUrl.replace(/\/(\d+)px-/i, `/${width}px-`)
 }
 
+export function canonicalizeRemoteImageUrl(url, size = 'thumb') {
+  if (!url || typeof url !== 'string') return ''
+  const httpsUrl = url.trim().replace(/^http:\/\//i, 'https://')
+  if (!httpsUrl) return ''
+  return resizeImageUrl(httpsUrl, size)
+}
+
 export function collectImageCandidates(art) {
   const seen = new Set()
   const out = []
@@ -120,17 +127,17 @@ export function resolveArtworkImageUrl(art, options = {}) {
       ? assets.high_res_url.trim()
       : ''
 
-  if (size === 'detail' && probedHigh) return resizeImageUrl(probedHigh, 'detail')
-  if (size === 'thumb' && probedThumb) return resizeImageUrl(probedThumb, 'thumb')
+  if (size === 'detail' && probedHigh) return canonicalizeRemoteImageUrl(probedHigh, 'detail')
+  if (size === 'thumb' && probedThumb) return canonicalizeRemoteImageUrl(probedThumb, 'thumb')
 
   const primary =
     typeof art.imageUrl === 'string' && isHttpsImageUrl(art.imageUrl) ? art.imageUrl.trim() : ''
   if (primary && !isPlaceholderImageUrl(primary)) {
-    return resizeImageUrl(primary, size)
+    return canonicalizeRemoteImageUrl(primary, size)
   }
 
   const candidates = collectImageCandidates(art)
-  if (candidates.length > 0) return resizeImageUrl(candidates[0], size)
+  if (candidates.length > 0) return canonicalizeRemoteImageUrl(candidates[0], size)
 
   const local =
     typeof art.imageUrl === 'string' && isLocalArtworkPath(art.imageUrl) ? art.imageUrl.trim() : ''

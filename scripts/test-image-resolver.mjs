@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import {
+  canonicalizeRemoteImageUrl,
   collectImageCandidates,
   detectImageProvider,
   resizeImageUrl,
@@ -10,6 +11,14 @@ const wiki =
   'https://commons.wikimedia.org/wiki/Special:FilePath/Example.jpg?width=640'
 assert.equal(detectImageProvider(wiki), 'wikimedia')
 assert.equal(resizeImageUrl(wiki, 'thumb'), wiki.replace('width=640', 'width=256'))
+assert.equal(canonicalizeRemoteImageUrl(wiki, 'thumb'), wiki.replace('width=640', 'width=256'))
+
+const uploadWiki =
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Example.jpg/800px-Example.jpg'
+assert.equal(
+  canonicalizeRemoteImageUrl(uploadWiki, 'thumb'),
+  'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Example.jpg/256px-Example.jpg'
+)
 
 const iiif =
   'https://example.org/iiif/2/abc/full/800,/0/default.jpg'

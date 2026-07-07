@@ -805,6 +805,7 @@ function App() {
           }
           item={selectedItemForPanel}
           onClose={() => setActiveMarker(null)}
+          dataReady={!dataLoading && allArtworksBase.length > 0}
           onSelectArtwork={(art) => {
             setActiveMarker(art)
             focusOnArtwork(art, getZoomInAltitude(cameraAltitude))

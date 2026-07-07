@@ -28,7 +28,7 @@ const headerBarStyle = {
   zIndex: 1
 }
 
-export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, t }) {
+export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataReady = true, t }) {
   const panelRef = useRef(null)
   const [scale, setScale] = useState(1)
   const [selectedId, setSelectedId] = useState(null)
@@ -89,8 +89,9 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, t }) 
   useEffect(() => {
     setScale(1)
     setSelectedId(null)
-    setImageEnabled(!item?.isMuseumStack && !item?.isClusterPicker)
-  }, [itemKey, item?.isClusterPicker, item?.isMuseumStack])
+    const canLoadImage = dataReady && !item?.isMuseumStack && !item?.isClusterPicker
+    setImageEnabled(canLoadImage)
+  }, [itemKey, item?.isClusterPicker, item?.isMuseumStack, dataReady])
 
   if (!item) return null
 
@@ -277,7 +278,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, t }) 
                 role="option"
                 onClick={() => {
                   setSelectedId(art.id)
-                  setImageEnabled(true)
+                  setImageEnabled(dataReady)
                 }}
                 style={{
                   textAlign: 'left',
@@ -444,7 +445,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, t }) 
                   aria-selected={isActive}
                   onClick={() => {
                     setSelectedId(art.id)
-                    setImageEnabled(true)
+                    setImageEnabled(dataReady)
                   }}
                   style={{
                     textAlign: 'left',

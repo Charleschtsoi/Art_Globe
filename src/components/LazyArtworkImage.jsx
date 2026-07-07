@@ -1,7 +1,7 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useRef, useState } from 'react'
 import artPlaceholder from '../assets/art-placeholder.svg'
-import { preloadImageUrl } from '../lib/imageRequestQueue.js'
-import { resolveArtworkImageUrl, shouldUseCrossOrigin } from '../lib/imageResolver.js'
+import { getCachedImageResult, preloadImageUrl } from '../lib/imageRequestQueue.js'
+import { resolveArtworkImageUrl } from '../lib/imageResolver.js'
 
 /**
  * Loads a remote artwork image only when enabled (e.g. after user selects an artwork).
@@ -15,55 +15,77 @@ export default function LazyArtworkImage({
   objectFit = 'contain',
   onLoadStateChange
 }) {
+  const onLoadStateChangeRef = useRef(onLoadStateChange)
+  onLoadStateChangeRef.current = onLoadStateChange
+
+  const artworkId = artwork ? String(artwork.id ?? artwork.artwork_id ?? '') : ''
+  const remoteUrl = useMemo(() => {
+    if (!enabled || !artwork) return ''
+    return resolveArtworkImageUrl(artwork, { size })
+  }, [
+    artworkId,
+    enabled,
+    size,
+    artwork?.imageUrl,
+    artwork?.canonicalImageUrl,
+    artwork?.assets?.thumbnail_url,
+    artwork?.assets?.high_res_url
+  ])
+
   const [src, setSrc] = useState(artPlaceholder)
   const [loading, setLoading] = useState(false)
 
   useEffect(() => {
-    if (!enabled || !artwork) {
+    const notify = (state) => onLoadStateChangeRef.current?.(state)
+
+    if (!enabled || !artworkId || !remoteUrl || remoteUrl.startsWith('/artworks/')) {
       setSrc(artPlaceholder)
       setLoading(false)
-      onLoadStateChange?.('idle')
+      notify(enabled && remoteUrl.startsWith('/artworks/') ? 'unavailable' : 'idle')
       return undefined
     }
 
-    const remoteUrl = resolveArtworkImageUrl(artwork, { size })
-    if (!remoteUrl || remoteUrl.startsWith('/artworks/')) {
+    const cached = getCachedImageResult(remoteUrl)
+    if (cached === 'ok') {
+      setSrc(remoteUrl)
+      setLoading(false)
+      notify('loaded')
+      return undefined
+    }
+    if (cached === 'error') {
       setSrc(artPlaceholder)
       setLoading(false)
-      onLoadStateChange?.('unavailable')
+      notify('error')
       return undefined
     }
 
     let cancelled = false
     setLoading(true)
     setSrc(artPlaceholder)
-    onLoadStateChange?.('loading')
+    notify('loading')
 
     preloadImageUrl(remoteUrl).then((ok) => {
       if (cancelled) return
       setLoading(false)
       if (ok) {
         setSrc(remoteUrl)
-        onLoadStateChange?.('loaded')
+        notify('loaded')
       } else {
         setSrc(artPlaceholder)
-        onLoadStateChange?.('error')
+        notify('error')
       }
     })
 
     return () => {
       cancelled = true
     }
-  }, [artwork, enabled, onLoadStateChange, size])
-
-  const crossOrigin = shouldUseCrossOrigin(src) ? 'anonymous' : undefined
+  }, [artworkId, remoteUrl, enabled])
 
   return (
     <img
       data-testid="lazy-artwork-image"
       src={src}
       alt={alt}
-      crossOrigin={crossOrigin}
       data-loading={loading ? 'true' : 'false'}
       style={{
         width: '100%',
@@ -75,7 +97,7 @@ export default function LazyArtworkImage({
       }}
       onError={(e) => {
         e.currentTarget.src = artPlaceholder
-        onLoadStateChange?.('error')
+        onLoadStateChangeRef.current?.('error')
       }}
     />
   )

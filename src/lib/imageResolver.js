@@ -53,6 +53,28 @@ export function detectImageProvider(url) {
 }
 
 /**
+ * Normalize a remote image URL for browser display (HTTPS, sized, Wikimedia-friendly).
+ * @param {string | null | undefined} url
+ * @param {ImageSize} [size='thumb']
+ * @returns {string}
+ */
+export function canonicalizeRemoteImageUrl(url, size = 'thumb') {
+  if (!url || typeof url !== 'string') return ''
+  const httpsUrl = url.trim().replace(/^http:\/\//i, 'https://')
+  if (!httpsUrl) return ''
+
+  if (httpsUrl.includes('upload.wikimedia.org')) {
+    return resizeImageUrl(httpsUrl, size)
+  }
+
+  if (httpsUrl.includes('commons.wikimedia.org/wiki/Special:FilePath/')) {
+    return resizeImageUrl(httpsUrl, size)
+  }
+
+  return resizeImageUrl(httpsUrl, size)
+}
+
+/**
  * Resize a remote image URL for the requested display size.
  * @param {string | null | undefined} url
  * @param {ImageSize} [size='thumb']
@@ -146,30 +168,21 @@ export function resolveArtworkImageUrl(art, options = {}) {
       ? assets.high_res_url.trim()
       : ''
 
-  if (size === 'detail' && probedHigh) return resizeImageUrl(probedHigh, 'detail')
-  if (size === 'thumb' && probedThumb) return resizeImageUrl(probedThumb, 'thumb')
+  if (size === 'detail' && probedHigh) return canonicalizeRemoteImageUrl(probedHigh, 'detail')
+  if (size === 'thumb' && probedThumb) return canonicalizeRemoteImageUrl(probedThumb, 'thumb')
 
   const primary =
     typeof art.imageUrl === 'string' && isHttpsImageUrl(art.imageUrl) ? art.imageUrl.trim() : ''
   if (primary && !isPlaceholderImageUrl(primary)) {
-    return resizeImageUrl(primary, size)
+    return canonicalizeRemoteImageUrl(primary, size)
   }
 
   const candidates = collectImageCandidates(art)
-  if (candidates.length > 0) return resizeImageUrl(candidates[0], size)
+  if (candidates.length > 0) return canonicalizeRemoteImageUrl(candidates[0], size)
 
   const local =
     typeof art.imageUrl === 'string' && isLocalArtworkPath(art.imageUrl) ? art.imageUrl.trim() : ''
   return local
-}
-
-/**
- * @param {string | null | undefined} url
- */
-export function shouldUseCrossOrigin(url) {
-  if (!isHttpsImageUrl(url)) return false
-  const provider = detectImageProvider(String(url))
-  return provider === 'iiif' || provider === 'wikimedia'
 }
 
 /**
@@ -179,5 +192,5 @@ export function shouldUseCrossOrigin(url) {
  */
 export function getMarkerImageUrl(url, size = 'thumb') {
   if (!url) return ''
-  return resizeImageUrl(url, size)
+  return canonicalizeRemoteImageUrl(url, size)
 }

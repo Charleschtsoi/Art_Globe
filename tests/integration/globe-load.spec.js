@@ -5,6 +5,9 @@ test('globe loads artworks on /explore', async ({ page }) => {
 
   await expect(page.getByRole('button', { name: 'English' })).toBeVisible({ timeout: 15000 })
 
+  // Wait until initial data bootstrap finishes (loading banner disappears)
+  await expect(page.getByText('Loading artworks…')).toBeHidden({ timeout: 60000 })
+
   // Wait until at least one artwork is loaded (stats show visible > 0)
   await expect(page.getByText(/Visible: [1-9]/)).toBeVisible({ timeout: 30000 })
 
@@ -30,4 +33,13 @@ test('globe loads artworks on /explore', async ({ page }) => {
       { timeout: 45000 }
     )
     .toBe(true)
+
+  const loadedSrc = await panelImg.getAttribute('src')
+  expect(loadedSrc).toMatch(/^https:\/\//)
+
+  // Image should stay loaded (no revert to placeholder during hydration)
+  await page.waitForTimeout(2000)
+  const srcAfterWait = await panelImg.getAttribute('src')
+  expect(srcAfterWait).toMatch(/^https:\/\//)
+  await expect(panelImg).toHaveAttribute('data-loading', 'false')
 })
