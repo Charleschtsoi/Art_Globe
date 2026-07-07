@@ -762,7 +762,9 @@ function App() {
           flexDirection: 'column',
           alignItems: 'stretch',
           gap: 8,
-          width: isMobileLayout ? 'min(360px, calc(100vw - 24px))' : 'min(340px, calc(100vw - 24px))',
+          width: isMobileLayout ? 'min(320px, calc(100vw - 24px))' : 'min(280px, calc(100vw - 24px))',
+          maxHeight: isMobileLayout ? 'calc(100dvh - 24px)' : 'calc(100dvh - 24px)',
+          overflowY: 'auto',
           pointerEvents: 'auto',
           isolation: 'isolate'
         }}
