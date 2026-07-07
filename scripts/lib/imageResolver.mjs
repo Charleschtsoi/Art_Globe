@@ -27,6 +27,31 @@ export function isPlaceholderImageUrl(url) {
   return PLACEHOLDER_PATTERNS.some((p) => low.includes(p))
 }
 
+export function isLikelyImageUrl(url) {
+  if (!isHttpsImageUrl(url)) return false
+  const low = String(url).trim().toLowerCase()
+  if (isPlaceholderImageUrl(low)) return false
+  if (low.includes('wikipedia.org/wiki/') && !low.includes('special:filepath')) return false
+  if (low.includes('wikidata.org/wiki/')) return false
+  if (low.includes('wikidata.org/entity/')) return false
+  if (low.includes('commons.wikimedia.org/wiki/') && !low.includes('special:filepath')) return false
+  if (low.endsWith('.pdf') || low.includes('.pdf?')) return false
+  return true
+}
+
+function isImageContentType(type) {
+  const low = String(type ?? '').toLowerCase()
+  if (!low) return true
+  if (low.startsWith('image/')) return true
+  if (low.includes('octet-stream')) return true
+  return false
+}
+
+function isHtmlContentType(type) {
+  const low = String(type ?? '').toLowerCase()
+  return low.includes('text/html') || low.includes('application/xhtml')
+}
+
 export function detectImageProvider(url) {
   const s = String(url ?? '').toLowerCase()
   if (s.includes('commons.wikimedia.org/wiki/special:filepath/')) return 'wikimedia'
@@ -82,7 +107,7 @@ export function collectImageCandidates(art) {
     const s = value.trim()
     if (!s || isPlaceholderImageUrl(s)) return
     if (isLocalArtworkPath(s)) return
-    if (!isHttpsImageUrl(s)) return
+    if (!isHttpsImageUrl(s) || !isLikelyImageUrl(s)) return
     const key = s.replace(/^http:\/\//i, 'https://')
     if (seen.has(key)) return
     seen.add(key)

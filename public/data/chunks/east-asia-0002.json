@@ -17,11 +17,11 @@
         "lng": 135.76811111111112
       },
       "assets": {
-        "thumbnail_url": "",
-        "high_res_url": "",
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
         "sources": [],
-        "availability": "broken",
-        "checkedAt": "2026-07-07T06:11:06.552Z"
+        "availability": "none",
+        "checkedAt": "2026-07-07T06:34:33.386Z"
       },
       "historical_text": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-ff9b65ca948283bc",
@@ -30,8 +30,8 @@
       "lng": 135.76811111111112,
       "museumName": "Aki Kuroda Birthplace Collection",
       "description": "Night 2011 is a notable work by Aki Kuroda. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "",
-      "canonicalImageUrl": "",
+      "imageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-f8d14a9f2fbe42bf.webp",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Aki_Kuroda"
     },
@@ -50,11 +50,11 @@
         "lng": 120.283333
       },
       "assets": {
-        "thumbnail_url": "",
-        "high_res_url": "",
+        "thumbnail_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+        "high_res_url": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
         "sources": [],
-        "availability": "broken",
-        "checkedAt": "2026-07-07T06:04:56.456Z"
+        "availability": "none",
+        "checkedAt": "2026-07-07T06:34:33.214Z"
       },
       "historical_text": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-ff97f2fd852c74c7",
@@ -63,8 +63,8 @@
       "lng": 120.283333,
       "museumName": "Walasse Ting Birthplace Collection",
       "description": "Sweet Milky Way 1969 is a notable work by Walasse Ting. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "",
-      "canonicalImageUrl": "",
+      "imageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
+      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-4d26c51d897eb730.webp",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Walasse_Ting"
     },
@@ -93,7 +93,7 @@
           }
         ],
         "availability": "broken",
-        "checkedAt": "2026-07-07T03:14:55.150Z"
+        "checkedAt": "2026-07-07T06:34:03.491Z"
       },
       "historical_text": "Located at Vietnam National Museum of Fine Arts.",
       "id": "oceania-seasia-32",

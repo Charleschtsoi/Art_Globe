@@ -1,4 +1,4 @@
-import { isHttpsImageUrl, isLocalArtworkPath, isPlaceholderImageUrl, resolveArtworkImageCandidates, resolveArtworkImageUrl } from '../lib/imageResolver.js'
+import { isHttpsImageUrl, isLocalArtworkPath, isPlaceholderImageUrl, resolveArtworkImageCandidates, artworkHasGlobeImage } from '../lib/imageResolver.js'
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
@@ -214,22 +214,26 @@ function buildClusters(artworks, cellSize, limit, clusterI18n = defaultClusterI1
   return clusters.slice(0, limit)
 }
 
-export function resolveLodData(artworks, altitude, farCount = 80, clusterI18n) {
+export function resolveLodData(artworks, altitude, farCount = 80, clusterI18n, options = {}) {
   if (!Array.isArray(artworks) || artworks.length === 0) return []
+  const { showAllArtworks = false } = options
   const farLimit = clamp(farCount, 30, 180)
   const midLimit = clamp(Math.round(farCount * 1.8), 80, 260)
 
   const band = getZoomBand(altitude)
-  if (band === 'far') return buildClusters(artworks, 20, farLimit, clusterI18n)
-  // Slightly finer buckets in mid zoom to avoid over-merging dense Europe cities.
-  if (band === 'mid') return buildClusters(artworks, 8, midLimit, clusterI18n)
+  const shouldFilterImages = !showAllArtworks && (band === 'far' || band === 'mid')
+  const pool = shouldFilterImages ? artworks.filter((art) => artworkHasGlobeImage(art)) : artworks
+  const source = pool.length > 0 ? pool : artworks
+
+  if (band === 'far') return buildClusters(source, 20, farLimit, clusterI18n)
+  if (band === 'mid') return buildClusters(source, 8, midLimit, clusterI18n)
   // `near`: avoid returning the entire dataset to prevent DOM/WebGL overload.
   // Preserve detail when the dataset is already small.
   const nearMaxArtifacts = clamp(Math.round(farCount * 2.6), 160, 320)
-  if (artworks.length <= nearMaxArtifacts) return artworks
+  if (artworks.length <= nearMaxArtifacts) return source
   const nearLimit = clamp(Math.round(farCount * 3.0), 180, 420)
   // Finer clustering than `mid`, but still bounded.
-  return buildClusters(artworks, 6, nearLimit, clusterI18n)
+  return buildClusters(source, 6, nearLimit, clusterI18n)
 }
 
 export function resolveHtmlMarkerData(visibleItems, selectedItem, zoomBand) {

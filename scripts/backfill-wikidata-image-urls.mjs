@@ -26,10 +26,7 @@ function wikidataIdFromUrl(sourceUrl) {
   return m ? m[1] : ''
 }
 
-function commonsFilePathUrl(fileName) {
-  const encoded = encodeURIComponent(String(fileName).replace(/ /g, '_'))
-  return `https://commons.wikimedia.org/wiki/Special:FilePath/${encoded}?width=640`
-}
+import { resolveCommonsImageUrl } from './lib/commonsImageUrl.mjs'
 
 async function fetchWikidataImageUrl(qid) {
   const url = `https://www.wikidata.org/wiki/Special:EntityData/${qid}.json`
@@ -44,7 +41,7 @@ async function fetchWikidataImageUrl(qid) {
 
   const fileName = claims[0]?.mainsnak?.datavalue?.value
   if (typeof fileName !== 'string' || !fileName.trim()) return ''
-  return commonsFilePathUrl(fileName.trim())
+  return resolveCommonsImageUrl(fileName.trim(), 640)
 }
 
 async function loadExistingOverrides() {

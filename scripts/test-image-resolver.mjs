@@ -5,7 +5,9 @@ import {
   detectImageProvider,
   resizeImageUrl,
   resolveArtworkImageCandidates,
-  resolveArtworkImageUrl
+  resolveArtworkImageUrl,
+  isLikelyImageUrl,
+  artworkHasGlobeImage
 } from '../src/lib/imageResolver.js'
 
 const wiki =
@@ -55,6 +57,15 @@ assert.equal(brokenCandidates.length, 1)
 assert.ok(brokenCandidates[0].includes('upload.wikimedia.org'))
 assert.ok(!brokenCandidates[0].includes('Broken.jpg'))
 
+assert.equal(isLikelyImageUrl('https://en.wikipedia.org/wiki/Pablo_Picasso'), false)
+assert.equal(isLikelyImageUrl('https://upload.wikimedia.org/wikipedia/commons/a/a1/x.jpg'), true)
+assert.equal(
+  isLikelyImageUrl(
+    'https://commons.wikimedia.org/wiki/Special:FilePath/Example.jpg?width=640'
+  ),
+  true
+)
+
 const preferUpload = {
   assets: {
     thumbnail_url: wiki,
@@ -63,5 +74,11 @@ const preferUpload = {
 }
 const uploadFirst = resolveArtworkImageCandidates(preferUpload, 'thumb')
 assert.ok(uploadFirst[0].includes('upload.wikimedia.org'))
+
+assert.equal(artworkHasGlobeImage({ assets: { availability: 'ok' } }), true)
+assert.equal(
+  artworkHasGlobeImage({ canonicalImageUrl: 'https://en.wikipedia.org/wiki/Test' }),
+  false
+)
 
 console.log('imageResolver tests passed')

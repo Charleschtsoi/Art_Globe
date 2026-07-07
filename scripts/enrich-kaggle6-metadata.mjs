@@ -222,7 +222,7 @@ async function main() {
       lat: Number.isFinite(lat) ? lat : null,
       lng: Number.isFinite(lng) ? lng : null,
       localImagePath: candidate.localImagePath,
-      canonicalImageUrl: wikiUrl,
+      canonicalImageUrl: '',
       priority: 4,
       confidence,
       metadata: {

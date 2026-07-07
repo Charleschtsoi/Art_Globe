@@ -39,7 +39,22 @@ export function isPlaceholderImageUrl(url) {
 }
 
 /**
- * @param {string} provider
+ * Reject encyclopedia / entity pages and other non-image HTTPS URLs.
+ * @param {string | null | undefined} url
+ */
+export function isLikelyImageUrl(url) {
+  if (!isHttpsImageUrl(url)) return false
+  const low = String(url).trim().toLowerCase()
+  if (isPlaceholderImageUrl(low)) return false
+  if (low.includes('wikipedia.org/wiki/') && !low.includes('special:filepath')) return false
+  if (low.includes('wikidata.org/wiki/')) return false
+  if (low.includes('wikidata.org/entity/')) return false
+  if (low.includes('commons.wikimedia.org/wiki/') && !low.includes('special:filepath')) return false
+  if (low.endsWith('.pdf') || low.includes('.pdf?')) return false
+  return true
+}
+
+/**
  * @param {string} url
  */
 export function detectImageProvider(url) {
@@ -51,6 +66,7 @@ export function detectImageProvider(url) {
   if (s.includes('colbase.nich.go.jp')) return 'museum'
   return 'direct'
 }
+
 
 /**
  * Normalize a remote image URL for browser display (HTTPS, sized, Wikimedia-friendly).
@@ -124,7 +140,7 @@ export function collectImageCandidates(art) {
     const s = value.trim()
     if (!s || isPlaceholderImageUrl(s)) return
     if (isLocalArtworkPath(s)) return
-    if (!isHttpsImageUrl(s)) return
+    if (!isHttpsImageUrl(s) || !isLikelyImageUrl(s)) return
     const key = s.replace(/^http:\/\//i, 'https://')
     if (seen.has(key)) return
     seen.add(key)
@@ -214,6 +230,21 @@ export function resolveArtworkImageUrl(art, options = {}) {
   const local =
     typeof art.imageUrl === 'string' && isLocalArtworkPath(art.imageUrl) ? art.imageUrl.trim() : ''
   return local
+}
+
+/**
+ * Whether an artwork is worth showing as a photographic globe marker by default.
+ * @param {Record<string, unknown> | null | undefined} art
+ */
+export function artworkHasGlobeImage(art) {
+  if (!art || typeof art !== 'object') return false
+  const availability = String(art?.assets?.availability ?? '')
+  if (availability === 'ok') return true
+  if (resolveArtworkImageCandidates(art, 'thumb').length > 0) return true
+  if (isLocalArtworkPath(art?.imageUrl)) return true
+  const thumb = art?.assets?.thumbnail_url
+  if (typeof thumb === 'string' && isLocalArtworkPath(thumb)) return true
+  return false
 }
 
 /**

@@ -71,7 +71,7 @@ function App() {
   const [presentArtwork, setPresentArtwork] = useState(null)
   const [presentQueueIndex, setPresentQueueIndex] = useState(0)
   const [thumbnailEpoch, setThumbnailEpoch] = useState(0)
-  const [selectedPeriods, setSelectedPeriods] = useState([])
+  const [showAllArtworks, setShowAllArtworks] = useState(false)
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
   const [viewport, setViewport] = useState({ width: window.innerWidth, height: window.innerHeight })
@@ -150,8 +150,8 @@ function App() {
 
   const jitteredArtworks = useMemo(() => spreadOutArtworks(allArtworks), [allArtworks])
   const visibleArtworks = useMemo(
-    () => resolveLodData(jitteredArtworks, cameraAltitude, 100, clusterI18n),
-    [jitteredArtworks, cameraAltitude, clusterI18n]
+    () => resolveLodData(jitteredArtworks, cameraAltitude, 100, clusterI18n, { showAllArtworks }),
+    [jitteredArtworks, cameraAltitude, clusterI18n, showAllArtworks]
   )
   const htmlMarkerData = useMemo(
     () => resolveHtmlMarkerData(visibleArtworks, activeMarker, markerZoomBand),
@@ -977,6 +977,8 @@ function App() {
         datasetStats={datasetStats}
         selectedPeriods={selectedPeriods}
         setSelectedPeriods={setSelectedPeriods}
+        showAllArtworks={showAllArtworks}
+        setShowAllArtworks={setShowAllArtworks}
         isMobileLayout={isMobileLayout}
         zIndex={Z_STATS_PERIOD}
         bottomOffset={periodFilterBottom}

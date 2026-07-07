@@ -4,6 +4,7 @@ import {
   collectImageCandidates,
   detectImageProvider,
   isHttpsImageUrl,
+  isLikelyImageUrl,
   isLocalArtworkPath,
   isPlaceholderImageUrl,
   resizeImageUrl
@@ -27,7 +28,7 @@ function buildSourcesFromRaw(raw, candidates) {
   const existing = Array.isArray(raw?.assets?.sources) ? raw.assets.sources : []
   if (existing.length > 0) {
     return existing
-      .filter((s) => s && typeof s.url === 'string' && isHttpsImageUrl(s.url))
+      .filter((s) => s && typeof s.url === 'string' && isLikelyImageUrl(s.url))
       .map((s, idx) => ({
         provider: s.provider || detectImageProvider(s.url),
         url: s.url.trim().replace(/^http:\/\//i, 'https://'),
@@ -44,7 +45,7 @@ function buildSourcesFromRaw(raw, candidates) {
 
 function pickPrimaryExternalUrl(raw, candidates) {
   const canonical = toString(raw?.canonicalImageUrl)
-  if (isHttpsImageUrl(canonical) && !isPlaceholderImageUrl(canonical)) {
+  if (isLikelyImageUrl(canonical)) {
     return canonical.replace(/^http:\/\//i, 'https://')
   }
   if (candidates.length > 0) return candidates[0]
@@ -144,9 +145,9 @@ export function normalizeArtwork(raw, index = 0) {
   } else if (localFallback) {
     imageUrl = localFallback
     canonicalImageUrl = toString(raw?.canonicalImageUrl) || localFallback
-  } else if (isHttpsImageUrl(draft.imageUrl)) {
+  } else if (isLikelyImageUrl(draft.imageUrl)) {
     imageUrl = resizeImageUrl(draft.imageUrl, 'thumb')
-    canonicalImageUrl = draft.canonicalImageUrl || draft.imageUrl
+    canonicalImageUrl = isLikelyImageUrl(draft.canonicalImageUrl) ? draft.canonicalImageUrl : draft.imageUrl
   } else {
     imageUrl = toString(draft.imageUrl)
     canonicalImageUrl = toString(draft.canonicalImageUrl)

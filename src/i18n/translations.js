@@ -102,6 +102,7 @@ const EN = {
   'stats.results': 'Matching artworks',
   'stats.empty': 'No artworks in this category.',
   'stats.filtersActive': 'Filters active',
+  'stats.showAllArtworks': 'Show all artworks (incl. no image)',
   'controls.zoomInAria': 'Zoom in',
   'controls.zoomOutAria': 'Zoom out',
 
@@ -351,6 +352,7 @@ const ZH_HANT = {
   'stats.results': '符合的藝術品',
   'stats.empty': '此分類沒有藝術品。',
   'stats.filtersActive': '已啟用篩選',
+  'stats.showAllArtworks': '顯示全部藝術品（含無圖片）',
   'controls.zoomInAria': '放大地球',
   'controls.zoomOutAria': '縮小地球',
 

@@ -3,6 +3,8 @@ export function PeriodFilterPanel({
   datasetStats,
   selectedPeriods,
   setSelectedPeriods,
+  showAllArtworks = false,
+  setShowAllArtworks,
   isMobileLayout,
   zIndex,
   bottomOffset = 12
@@ -35,6 +37,25 @@ export function PeriodFilterPanel({
           {t('stats.filtersActive')}
         </div>
       )}
+      <label
+        style={{
+          display: 'flex',
+          alignItems: 'center',
+          gap: 6,
+          fontSize: 10,
+          color: '#e7d9c4',
+          marginBottom: 8,
+          cursor: 'pointer'
+        }}
+      >
+        <input
+          type="checkbox"
+          checked={showAllArtworks}
+          onChange={(event) => setShowAllArtworks?.(event.target.checked)}
+          data-testid="show-all-artworks-toggle"
+        />
+        {t('stats.showAllArtworks')}
+      </label>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 4 }}>
         <div style={{ fontSize: 10, color: '#e7d9c4' }}>
           {t('stats.byPeriod')} ({selectedPeriods.length})

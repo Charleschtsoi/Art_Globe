@@ -16,6 +16,7 @@ import { normalizeArtworks } from '../src/services/normalizeArtwork.js'
 import { artworks, easternArtData } from '../src/artData.js'
 import {
   collectImageCandidates,
+  isLikelyImageUrl,
   resizeImageUrl
 } from './lib/imageResolver.mjs'
 
@@ -50,7 +51,24 @@ async function throttleHost(host) {
   }
 }
 
+function isImageContentType(type) {
+  const low = String(type ?? '').toLowerCase()
+  if (!low) return true
+  if (low.startsWith('image/')) return true
+  if (low.includes('octet-stream')) return true
+  return false
+}
+
+function isHtmlContentType(type) {
+  const low = String(type ?? '').toLowerCase()
+  return low.includes('text/html') || low.includes('application/xhtml')
+}
+
 async function probeUrl(url) {
+  if (!isLikelyImageUrl(url)) {
+    return { ok: false, status: 0, method: 'rejected' }
+  }
+
   const sized = resizeImageUrl(url, 'thumb')
   let host = 'unknown'
   try {
@@ -68,7 +86,7 @@ async function probeUrl(url) {
     })
     if (head.ok) {
       const type = head.headers.get('content-type') || ''
-      if (type.startsWith('image/') || type === '' || type.includes('octet-stream')) {
+      if (!isHtmlContentType(type) && isImageContentType(type)) {
         return { ok: true, status: head.status, method: 'HEAD' }
       }
     }
@@ -78,13 +96,13 @@ async function probeUrl(url) {
       redirect: 'follow',
       headers: {
         'User-Agent': USER_AGENT,
-        Range: 'bytes=0-0'
+        Range: 'bytes=0-511'
       }
     })
     const type = get.headers.get('content-type') || ''
     const ok = get.ok || get.status === 206
     return {
-      ok: ok && (type.startsWith('image/') || type === '' || type.includes('octet-stream')),
+      ok: ok && !isHtmlContentType(type) && isImageContentType(type),
       status: get.status,
       method: 'GET'
     }
