@@ -1,4 +1,4 @@
-export function DataLoadingBanner({ t, loaded, total, error, isLoading }) {
+export function DataLoadingBanner({ t, phase, loaded, total, error }) {
   if (error) {
     return (
       <div
@@ -24,13 +24,16 @@ export function DataLoadingBanner({ t, loaded, total, error, isLoading }) {
     )
   }
 
-  if (!isLoading && loaded > 0) return null
-  if (!isLoading && total === 0 && !error) return null
+  if (!phase) return null
+
+  const title = phase === 'thumbs' ? t('loading.thumbsTitle') : t('loading.title')
+  const progressKey = phase === 'thumbs' ? 'loading.thumbsProgress' : 'loading.progress'
 
   return (
     <div
       role="status"
       aria-live="polite"
+      data-testid={phase === 'thumbs' ? 'loading-banner-thumbs' : 'loading-banner-data'}
       style={{
         position: 'fixed',
         top: '50%',
@@ -46,9 +49,9 @@ export function DataLoadingBanner({ t, loaded, total, error, isLoading }) {
         boxShadow: '0 12px 40px rgba(0,0,0,0.45)'
       }}
     >
-      <p style={{ margin: 0, fontSize: 15, fontWeight: 700 }}>{t('loading.title')}</p>
+      <p style={{ margin: 0, fontSize: 15, fontWeight: 700 }}>{title}</p>
       <p style={{ margin: '10px 0 0', fontSize: 13, color: '#d4a882' }}>
-        {t('loading.progress', { loaded: loaded.toLocaleString(), total: total.toLocaleString() })}
+        {t(progressKey, { loaded: loaded.toLocaleString(), total: total.toLocaleString() })}
       </p>
       {total > 0 && (
         <div

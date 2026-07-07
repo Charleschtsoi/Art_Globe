@@ -1,5 +1,13 @@
 import { useCallback } from 'react'
-import artPlaceholder from '../assets/art-placeholder.svg'
+import artLoading from '../assets/art-loading.svg'
+import artUnavailable from '../assets/art-unavailable.svg'
+import { getCachedImageResult, preloadImageUrl } from '../lib/imageRequestQueue.js'
+import {
+  isHttpsImageUrl,
+  isLocalArtworkPath,
+  isPlaceholderImageUrl,
+  resolveArtworkImageUrl
+} from '../lib/imageResolver.js'
 
 function escapeHtml(s) {
   return String(s)
@@ -9,11 +17,19 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;')
 }
 
+function resolveMarkerThumbUrl(art) {
+  const url = resolveArtworkImageUrl(art, { size: 'thumb' })
+  if (!url || isPlaceholderImageUrl(url) || isLocalArtworkPath(url)) return ''
+  if (isHttpsImageUrl(url)) return url
+  return ''
+}
+
 export function useMarkerFactory({
   t,
   markerZoomBand,
   handlePointClick,
-  trackMarkerTelemetry
+  trackMarkerTelemetry,
+  thumbnailEpoch = 0
 }) {
   const createArtworkElement = useCallback(
     (art) => {
@@ -62,9 +78,39 @@ export function useMarkerFactory({
       pin.className = art.isCluster ? 'art-marker-pin art-marker-pin--cluster' : 'art-marker-pin art-marker-pin--artwork'
 
       const image = document.createElement('img')
-      image.dataset.fallbackTier = 'placeholder'
-      image.src = artPlaceholder
-      trackMarkerTelemetry('tierPlaceholder')
+      const thumbUrl = resolveMarkerThumbUrl(art)
+      const cached = thumbUrl ? getCachedImageResult(thumbUrl) : undefined
+
+      if (cached === 'ok' && thumbUrl) {
+        image.src = thumbUrl
+        image.dataset.fallbackTier = 'thumb'
+        trackMarkerTelemetry('tierThumb')
+      } else if (cached === 'error') {
+        image.src = artUnavailable
+        image.dataset.fallbackTier = 'error'
+        trackMarkerTelemetry('tierPlaceholder')
+      } else {
+        image.src = artLoading
+        image.dataset.fallbackTier = 'loading'
+        trackMarkerTelemetry('tierPlaceholder')
+        if (thumbUrl) {
+          pin.classList.add('art-marker-pin--loading')
+          preloadImageUrl(thumbUrl).then((ok) => {
+            if (ok) {
+              image.src = thumbUrl
+              image.dataset.fallbackTier = 'thumb'
+              pin.classList.remove('art-marker-pin--loading')
+              trackMarkerTelemetry('tierThumb')
+            } else {
+              image.src = artUnavailable
+              image.dataset.fallbackTier = 'error'
+              pin.classList.remove('art-marker-pin--loading')
+              trackMarkerTelemetry('thumbErrors')
+            }
+          })
+        }
+      }
+
       image.alt = t('marker.artworkAria', { title: artworkTitle, artist: cardArtist })
       image.style.width = '100%'
       image.style.height = '100%'
@@ -135,7 +181,7 @@ export function useMarkerFactory({
       miniCard.addEventListener('click', triggerOpen)
       return wrapper
     },
-    [handlePointClick, markerZoomBand, trackMarkerTelemetry, t]
+    [handlePointClick, markerZoomBand, thumbnailEpoch, trackMarkerTelemetry, t]
   )
 
   return { createArtworkElement }

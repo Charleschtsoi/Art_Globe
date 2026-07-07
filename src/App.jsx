@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import Globe from 'react-globe.gl'
 import * as THREE from 'three'
 import ArtworkSidePanel from './components/ArtworkSidePanel'
+import PresentModeOverlay from './components/PresentModeOverlay'
 import SearchBar from './components/SearchBar'
 import { DataLoadingBanner } from './components/globe/DataLoadingBanner'
 import { GlobeZoomControls } from './components/globe/GlobeZoomControls'
@@ -11,11 +12,13 @@ import { PeriodFilterPanel } from './components/globe/PeriodFilterPanel'
 import { useAuth } from './context/AuthContext.jsx'
 import { useGlobeData } from './hooks/useGlobeData'
 import { useMarkerFactory } from './hooks/useMarkerFactory'
+import { useMarkerThumbnailBootstrap } from './hooks/useMarkerThumbnailBootstrap'
 import { isSupabaseConfigured } from './lib/supabaseClient.js'
 import { trackPageView } from './lib/analytics'
 import { getZoomBand, resolveHtmlMarkerData, resolveLodData } from './services/artLod'
 import { readStoredLocale, writeStoredLocale, translate } from './i18n/translations'
 import { localizeArtworkDisplay } from './i18n/localizeArtworkDisplay'
+import { buildPresentationQueue, indexInPresentationQueue } from './lib/presentationQueue.js'
 
 const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
 
@@ -26,6 +29,7 @@ const MAX_CAMERA_ALTITUDE = 6.2
 const ZOOM_STEP_RATIO = 0.82
 const ZOOM_BUTTON_ANIMATION_MS = 620
 /** Globe CSS2D labels get z-index up to ~number of markers; keep all fixed UI above that band. */
+const Z_BOOTSTRAP_SCRIM = 10045
 const Z_PANEL_BACKDROP = 10030
 const Z_STATS_PERIOD = 10010
 const Z_ZOOM_CONTROLS = 10015
@@ -64,6 +68,9 @@ function App() {
     maybePreloadRegion
   } = useGlobeData()
   const [activeMarker, setActiveMarker] = useState(null)
+  const [presentArtwork, setPresentArtwork] = useState(null)
+  const [presentQueueIndex, setPresentQueueIndex] = useState(0)
+  const [thumbnailEpoch, setThumbnailEpoch] = useState(0)
   const [selectedPeriods, setSelectedPeriods] = useState([])
   const [clusterHint, setClusterHint] = useState('')
   const [cameraAltitude, setCameraAltitude] = useState(2.4)
@@ -94,6 +101,8 @@ function App() {
     tierPlaceholder: 0,
     thumbErrors: 0
   })
+  const deepLinkHandledRef = useRef(false)
+  const deepLinkLoadStartedRef = useRef(false)
 
   const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
 
@@ -143,6 +152,17 @@ function App() {
     () => resolveHtmlMarkerData(visibleArtworks, activeMarker, markerZoomBand),
     [visibleArtworks, activeMarker, markerZoomBand]
   )
+  const dataReady = !dataLoading && allArtworksBase.length > 0
+  const { isBootstrapping, thumbReady, thumbProgress } = useMarkerThumbnailBootstrap(
+    htmlMarkerData,
+    dataReady
+  )
+
+  useEffect(() => {
+    if (thumbReady && thumbnailEpoch === 0) {
+      setThumbnailEpoch((n) => n + 1)
+    }
+  }, [thumbReady, thumbnailEpoch])
   const datasetStats = useMemo(() => {
     const periodCounts = new Map()
     for (const art of allArtworksBase) {
@@ -500,6 +520,99 @@ function App() {
     ]
   )
 
+  const presentationQueue = useMemo(() => {
+    if (!presentArtwork) return []
+    return buildPresentationQueue(
+      activeMarker,
+      selectedItemForPanel,
+      artworkById,
+      visibleArtworks,
+      presentArtwork
+    )
+  }, [presentArtwork, activeMarker, selectedItemForPanel, artworkById, visibleArtworks])
+
+  const syncArtUrlParam = useCallback((artId) => {
+    const url = new URL(window.location.href)
+    if (artId) url.searchParams.set('art', artId)
+    else url.searchParams.delete('art')
+    const next = url.pathname + url.search
+    window.history.replaceState(null, '', next)
+  }, [])
+
+  const openPresent = useCallback(
+    (art) => {
+      if (!art || art.isCluster || art.isClusterPicker) return
+      const resolved = artworkById.get(String(art.id ?? art.artwork_id ?? '')) ?? art
+      const queue = buildPresentationQueue(
+        activeMarker,
+        selectedItemForPanel,
+        artworkById,
+        visibleArtworks,
+        resolved
+      )
+      setPresentArtwork(resolved)
+      setPresentQueueIndex(indexInPresentationQueue(queue, resolved))
+      syncArtUrlParam(String(resolved.id ?? resolved.artwork_id ?? ''))
+      pauseAutoRotate()
+    },
+    [activeMarker, artworkById, pauseAutoRotate, selectedItemForPanel, syncArtUrlParam, visibleArtworks]
+  )
+
+  const closePresent = useCallback(() => {
+    setPresentArtwork(null)
+    syncArtUrlParam('')
+    scheduleAutoRotateResume()
+  }, [scheduleAutoRotateResume, syncArtUrlParam])
+
+  const navigatePresent = useCallback(
+    (nextIndex) => {
+      const art = presentationQueue[nextIndex]
+      if (!art) return
+      setPresentQueueIndex(nextIndex)
+      setPresentArtwork(art)
+      setActiveMarker(art)
+      focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
+      syncArtUrlParam(String(art.id ?? art.artwork_id ?? ''))
+    },
+    [cameraAltitude, focusOnArtwork, getZoomInAltitude, presentationQueue, syncArtUrlParam]
+  )
+
+  useEffect(() => {
+    if (dataLoading || allArtworksBase.length === 0) return
+    const artId = new URLSearchParams(window.location.search).get('art')
+    if (!artId || deepLinkHandledRef.current) return
+
+    const resolved = artworkById.get(artId)
+    if (resolved) {
+      deepLinkHandledRef.current = true
+      setActiveMarker(resolved)
+      focusOnArtwork(resolved, 1.1)
+      openPresent(resolved)
+      return
+    }
+
+    const fromSearch = searchRecords.find((row) => String(row.id) === artId)
+    if (fromSearch && !deepLinkLoadStartedRef.current) {
+      deepLinkLoadStartedRef.current = true
+      void handleGlobalSearchSelect(fromSearch)
+    }
+  }, [
+    allArtworksBase.length,
+    artworkById,
+    dataLoading,
+    focusOnArtwork,
+    handleGlobalSearchSelect,
+    openPresent,
+    searchRecords
+  ])
+
+  useEffect(() => {
+    if (!activeMarker && presentArtwork) {
+      setPresentArtwork(null)
+      syncArtUrlParam('')
+    }
+  }, [activeMarker, presentArtwork, syncArtUrlParam])
+
   const handlePointClick = useCallback(
     (point) => {
       if (!point) return
@@ -566,8 +679,17 @@ function App() {
     t,
     markerZoomBand,
     handlePointClick,
-    trackMarkerTelemetry
+    trackMarkerTelemetry,
+    thumbnailEpoch
   })
+
+  const loadingPhase = dataError
+    ? null
+    : dataLoading || allArtworksBase.length === 0
+      ? 'data'
+      : isBootstrapping
+        ? 'thumbs'
+        : null
 
   const periodFilterBottom = isMobileLayout ? 86 : 12
   const zoomBottom = isMobileLayout ? 156 : selectedItemForPanel ? 22 : 16
@@ -771,11 +893,30 @@ function App() {
       )}
       <DataLoadingBanner
         t={t}
-        loaded={allArtworksBase.length}
-        total={totalRecords || allArtworksBase.length}
+        phase={loadingPhase}
+        loaded={
+          loadingPhase === 'thumbs' ? thumbProgress.loaded : allArtworksBase.length
+        }
+        total={
+          loadingPhase === 'thumbs'
+            ? thumbProgress.total
+            : totalRecords || allArtworksBase.length
+        }
         error={dataError}
-        isLoading={dataLoading || allArtworksBase.length === 0}
       />
+      {isBootstrapping && (
+        <div
+          data-testid="globe-bootstrap-scrim"
+          aria-hidden="true"
+          style={{
+            position: 'fixed',
+            inset: 0,
+            zIndex: Z_BOOTSTRAP_SCRIM,
+            pointerEvents: 'all',
+            background: 'transparent'
+          }}
+        />
+      )}
       <OnboardingCoach t={t} />
       <GlobeZoomControls
         t={t}
@@ -805,11 +946,24 @@ function App() {
           }
           item={selectedItemForPanel}
           onClose={() => setActiveMarker(null)}
-          dataReady={!dataLoading && allArtworksBase.length > 0}
+          dataReady={dataReady}
+          onPresent={openPresent}
           onSelectArtwork={(art) => {
             setActiveMarker(art)
             focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
           }}
+          t={t}
+        />
+      )}
+      {presentArtwork && (
+        <PresentModeOverlay
+          artwork={presentArtwork}
+          queue={presentationQueue}
+          queueIndex={presentQueueIndex}
+          onClose={closePresent}
+          onNavigate={navigatePresent}
+          dataReady={dataReady}
+          isMobileLayout={isMobileLayout}
           t={t}
         />
       )}

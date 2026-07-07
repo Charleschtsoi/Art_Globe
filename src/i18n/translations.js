@@ -56,6 +56,24 @@ const EN = {
   'panel.location': 'Current Location',
   'panel.openArtworkAria': 'Open {{title}} by {{artist}}',
   'panel.unavailable': 'Details for this selection could not be loaded. Close and try again.',
+  'panel.present': 'Present',
+  'panel.presentAria': 'Open presentation view for classroom projection',
+  'panel.imageLoading': 'Loading artwork…',
+  'panel.imageUnavailable': 'Artwork image unavailable',
+
+  'present.exit': 'Exit',
+  'present.exitAria': 'Exit presentation mode',
+  'present.prev': '← Prev',
+  'present.next': 'Next →',
+  'present.prevAria': 'Previous artwork in presentation',
+  'present.nextAria': 'Next artwork in presentation',
+  'present.locationHeading': 'Current location',
+  'present.geoCue': 'Shown on globe at {{coords}}',
+  'present.openSource': 'Open source ↗',
+  'present.summaryWithPeriod':
+    '{{title}} ({{year}}) by {{artist}}, {{medium}}. Today it is held at {{location}}. It belongs to the {{period}} period—useful for discussing art and culture of its era.',
+  'present.summaryNoPeriod':
+    '{{title}} ({{year}}) by {{artist}}, {{medium}}. Today it is held at {{location}}.',
 
   'marker.clusterAria': '{{count}} artworks cluster',
   'marker.artworkAria': '{{title}} by {{artist}}',
@@ -153,6 +171,8 @@ const EN = {
 
   'loading.title': 'Loading artworks…',
   'loading.progress': '{{loaded}} of {{total}} loaded',
+  'loading.thumbsTitle': 'Loading preview images…',
+  'loading.thumbsProgress': '{{loaded}} of {{total}} preview images',
   'loading.errorTitle': 'Could not load artwork data',
   'loading.errorBody': 'Please refresh the page or try again later.',
 
@@ -280,6 +300,24 @@ const ZH_HANT = {
   'panel.location': '目前地點',
   'panel.openArtworkAria': '開啟 {{title}}，{{artist}}',
   'panel.unavailable': '無法載入此選項的詳情，請關閉後再試。',
+  'panel.present': '簡報',
+  'panel.presentAria': '開啟適合課堂投影的簡報檢視',
+  'panel.imageLoading': '正在載入作品圖片…',
+  'panel.imageUnavailable': '無法載入作品圖片',
+
+  'present.exit': '結束',
+  'present.exitAria': '結束簡報模式',
+  'present.prev': '← 上一件',
+  'present.next': '下一件 →',
+  'present.prevAria': '簡報中的上一件藝術品',
+  'present.nextAria': '簡報中的下一件藝術品',
+  'present.locationHeading': '目前地點',
+  'present.geoCue': '地球儀座標：{{coords}}',
+  'present.openSource': '開啟來源 ↗',
+  'present.summaryWithPeriod':
+    '《{{title}}》（{{year}}）為{{artist}}之作，媒材為{{medium}}。現藏於{{location}}。屬於{{period}}時期，適合討論該時代的藝術與文化。',
+  'present.summaryNoPeriod':
+    '《{{title}}》（{{year}}）為{{artist}}之作，媒材為{{medium}}。現藏於{{location}}。',
 
   'marker.clusterAria': '{{count}} 件藝術品叢集',
   'marker.artworkAria': '{{title}}，{{artist}}',
@@ -376,6 +414,8 @@ const ZH_HANT = {
 
   'loading.title': '正在載入藝術品…',
   'loading.progress': '已載入 {{loaded}} / {{total}}',
+  'loading.thumbsTitle': '正在載入預覽圖片…',
+  'loading.thumbsProgress': '已載入 {{loaded}} / {{total}} 張預覽圖',
   'loading.errorTitle': '無法載入藝術品資料',
   'loading.errorBody': '請重新整理頁面或稍後再試。',
 

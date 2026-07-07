@@ -5,27 +5,44 @@ test('globe loads artworks on /explore', async ({ page }) => {
 
   await expect(page.getByRole('button', { name: 'English' })).toBeVisible({ timeout: 15000 })
 
-  // Wait until initial data bootstrap finishes (loading banner disappears)
+  // Phase 1: artwork data
+  await expect(page.getByTestId('loading-banner-data')).toBeVisible({ timeout: 15000 })
   await expect(page.getByText('Loading artworks…')).toBeHidden({ timeout: 60000 })
 
-  // Wait until at least one artwork is loaded (stats show visible > 0)
+  // Phase 2: thumbnail bootstrap (may be brief or skipped if no remote URLs)
+  const thumbsBanner = page.getByTestId('loading-banner-thumbs')
+  if (await thumbsBanner.isVisible().catch(() => false)) {
+    await expect(thumbsBanner).toBeHidden({ timeout: 60000 })
+  }
+  await expect(page.getByTestId('globe-bootstrap-scrim')).toBeHidden({ timeout: 60000 })
+
   await expect(page.getByText(/Visible: [1-9]/)).toBeVisible({ timeout: 30000 })
 
-  // Markers use placeholders on initial render (no remote fetch storm)
   const markerImg = page.locator('.art-marker-pin--artwork img').first()
   await expect(markerImg).toBeVisible({ timeout: 15000 })
-  const initialSrc = await markerImg.getAttribute('src')
-  expect(initialSrc).not.toMatch(/^https:\/\//)
 
-  // Open an artwork panel by clicking a marker pin
-  await page.locator('.art-marker-pin--artwork').first().click({ timeout: 15000 })
-  await expect(page.getByRole('complementary')).toBeVisible({ timeout: 10000 })
-
-  // Remote image loads only after user selects an artwork
-  const panelImg = page.getByTestId('lazy-artwork-image')
+  // After bootstrap, some markers should show real HTTPS thumbs
   await expect
     .poll(
       async () => {
+        const src = await markerImg.getAttribute('src')
+        return Boolean(src && src.startsWith('https://'))
+      },
+      { timeout: 30000 }
+    )
+    .toBe(true)
+
+  await page.locator('.art-marker-pin--artwork').first().click({ timeout: 15000 })
+  await expect(page.getByRole('complementary')).toBeVisible({ timeout: 10000 })
+
+  const panelImg = page.getByTestId('lazy-artwork-image')
+  await expect(page.getByTestId('panel-image-loading')).toBeVisible({ timeout: 5000 })
+
+  await expect
+    .poll(
+      async () => {
+        const status = await panelImg.getAttribute('data-status')
+        if (status !== 'loaded') return false
         const src = await panelImg.getAttribute('src')
         if (!src || !src.startsWith('https://')) return false
         return panelImg.evaluate((img) => img.naturalWidth > 0)
@@ -34,12 +51,15 @@ test('globe loads artworks on /explore', async ({ page }) => {
     )
     .toBe(true)
 
+  await expect(page.getByTestId('panel-image-loading')).toBeHidden()
+  await expect(page.getByTestId('panel-image-unavailable')).toBeHidden()
+
   const loadedSrc = await panelImg.getAttribute('src')
   expect(loadedSrc).toMatch(/^https:\/\//)
 
-  // Image should stay loaded (no revert to placeholder during hydration)
   await page.waitForTimeout(2000)
   const srcAfterWait = await panelImg.getAttribute('src')
   expect(srcAfterWait).toMatch(/^https:\/\//)
   await expect(panelImg).toHaveAttribute('data-loading', 'false')
+  await expect(panelImg).toHaveAttribute('data-status', 'loaded')
 })

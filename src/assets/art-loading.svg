@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 220" role="img" aria-label="Loading artwork">
+  <defs>
+    <linearGradient id="loading-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#2a2418"/>
+      <stop offset="100%" stop-color="#1a120c"/>
+    </linearGradient>
+  </defs>
+  <rect width="320" height="220" fill="url(#loading-bg)"/>
+  <rect x="18" y="18" width="284" height="184" rx="14" fill="none" stroke="#d4a853" stroke-opacity=".45" stroke-width="3"/>
+  <circle cx="98" cy="86" r="14" fill="#d4a853" fill-opacity=".35"/>
+  <path d="M56 164l54-52 42 34 54-60 58 78H56z" fill="#d4a853" fill-opacity=".2"/>
+</svg>

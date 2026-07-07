@@ -28,11 +28,12 @@ const headerBarStyle = {
   zIndex: 1
 }
 
-export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataReady = true, t }) {
+export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, onPresent, dataReady = true, t }) {
   const panelRef = useRef(null)
   const [scale, setScale] = useState(1)
   const [selectedId, setSelectedId] = useState(null)
   const [imageEnabled, setImageEnabled] = useState(false)
+  const [imageLoadState, setImageLoadState] = useState('idle')
   const [query, setQuery] = useState('')
   const [clusterQuery, setClusterQuery] = useState('')
   const isClusterPicker = Boolean(item?.isClusterPicker && Array.isArray(item?.clusterArtworks))
@@ -80,18 +81,34 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataR
       if (event.key === 'Escape') {
         event.preventDefault()
         onClose()
+        return
+      }
+      if (
+        (event.key === 'p' || event.key === 'P') &&
+        selectedArtwork &&
+        onPresent &&
+        !isClusterPicker
+      ) {
+        event.preventDefault()
+        onPresent(selectedArtwork)
       }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [item, onClose])
+  }, [item, onClose, onPresent, selectedArtwork, isClusterPicker])
 
   useEffect(() => {
     setScale(1)
     setSelectedId(null)
+    setImageLoadState('idle')
     const canLoadImage = dataReady && !item?.isMuseumStack && !item?.isClusterPicker
     setImageEnabled(canLoadImage)
   }, [itemKey, item?.isClusterPicker, item?.isMuseumStack, dataReady])
+
+  useEffect(() => {
+    setImageLoadState('idle')
+    if (selectedArtwork && dataReady) setImageEnabled(true)
+  }, [selectedArtwork?.id, dataReady, selectedArtwork])
 
   if (!item) return null
 
@@ -360,21 +377,42 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataR
             ? `${item.museumName}${t('panel.collectionSuffix')}`
             : t('panel.detailsTitle')}
         </h2>
-        <button
-          type="button"
-          onClick={onClose}
-          aria-label={t('panel.closeAria')}
-          style={{
-            border: '1px solid rgba(212, 168, 83, 0.35)',
-            background: 'rgba(42, 28, 18, 0.9)',
-            color: '#f5e6c8',
-            borderRadius: 8,
-            padding: '6px 10px',
-            cursor: 'pointer'
-          }}
-        >
-          {t('panel.close')}
-        </button>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          {selectedArtwork && onPresent && !isClusterPicker ? (
+            <button
+              type="button"
+              onClick={() => onPresent(selectedArtwork)}
+              aria-label={t('panel.presentAria')}
+              data-testid="present-mode-open"
+              style={{
+                border: '1px solid rgba(212, 168, 83, 0.55)',
+                background: 'rgba(58, 36, 21, 0.9)',
+                color: '#f5e6c8',
+                borderRadius: 8,
+                padding: '6px 10px',
+                cursor: 'pointer',
+                fontWeight: 700
+              }}
+            >
+              {t('panel.present')}
+            </button>
+          ) : null}
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('panel.closeAria')}
+            style={{
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              background: 'rgba(42, 28, 18, 0.9)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '6px 10px',
+              cursor: 'pointer'
+            }}
+          >
+            {t('panel.close')}
+          </button>
+        </div>
       </div>
 
       <div
@@ -532,7 +570,8 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataR
             background: '#2a1c12',
             display: 'flex',
             alignItems: 'center',
-            justifyContent: 'center'
+            justifyContent: 'center',
+            position: 'relative'
           }}
         >
           <LazyArtworkImage
@@ -541,11 +580,62 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, dataR
             enabled={imageEnabled}
             alt={selectedArtwork.displayTitle ?? selectedArtwork.title}
             objectFit="contain"
+            onLoadStateChange={setImageLoadState}
             style={{
               transform: `scale(${scale})`,
               transition: 'transform 0.12s ease'
             }}
           />
+          {imageLoadState === 'loading' && (
+            <div
+              data-testid="panel-image-loading"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: 10,
+                background: 'rgba(26, 18, 12, 0.72)',
+                color: '#f5e6c8',
+                pointerEvents: 'none'
+              }}
+            >
+              <div
+                aria-hidden="true"
+                style={{
+                  width: 28,
+                  height: 28,
+                  borderRadius: '50%',
+                  border: '3px solid rgba(212, 168, 83, 0.25)',
+                  borderTopColor: '#d4a853',
+                  animation: 'panelImageSpin 0.9s linear infinite'
+                }}
+              />
+              <span style={{ fontSize: 13, fontWeight: 600 }}>{t('panel.imageLoading')}</span>
+            </div>
+          )}
+          {(imageLoadState === 'error' || imageLoadState === 'unavailable') && (
+            <div
+              data-testid="panel-image-unavailable"
+              style={{
+                position: 'absolute',
+                inset: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                padding: '0 16px',
+                background: 'rgba(26, 18, 12, 0.85)',
+                color: '#c4a882',
+                fontSize: 13,
+                textAlign: 'center',
+                pointerEvents: 'none'
+              }}
+            >
+              {t('panel.imageUnavailable')}
+            </div>
+          )}
         </div>
       </div>
 
