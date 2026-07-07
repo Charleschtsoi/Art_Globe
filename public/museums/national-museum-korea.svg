@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320">
+  <rect width="512" height="320" fill="#0f172a"/>
+  <rect x="120" y="104" width="272" height="116" rx="14" fill="#475569"/>
+  <rect x="142" y="126" width="228" height="14" rx="4" fill="#cbd5e1"/>
+  <rect x="142" y="150" width="228" height="58" rx="10" fill="#94a3b8"/>
+  <text x="256" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#f8fafc">National Museum of Korea</text>
+</svg>

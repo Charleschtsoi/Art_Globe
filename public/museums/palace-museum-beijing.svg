@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320">
+  <rect width="512" height="320" fill="#7f1d1d"/>
+  <rect x="102" y="98" width="308" height="28" rx="6" fill="#fecaca"/>
+  <rect x="128" y="134" width="256" height="86" rx="8" fill="#fca5a5"/>
+  <rect x="88" y="220" width="336" height="18" rx="6" fill="#fecaca"/>
+  <text x="256" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#fff1f2">Palace Museum, Beijing</text>
+</svg>

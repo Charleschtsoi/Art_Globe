@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0a0f1f"/>
+      <stop offset="55%" stop-color="#111a2d"/>
+      <stop offset="100%" stop-color="#1b2236"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#e7bf75" stop-opacity="0.95"/>
+      <stop offset="60%" stop-color="#b9863f" stop-opacity="0.45"/>
+      <stop offset="100%" stop-color="#9f6f30" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f4d7a3"/>
+      <stop offset="100%" stop-color="#b7833c"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="0" y="0" width="1200" height="630" fill="url(#bg)"/>
+
+  <g opacity="0.18" fill="#d8c08b">
+    <circle cx="86" cy="70" r="2"/>
+    <circle cx="210" cy="124" r="1.8"/>
+    <circle cx="356" cy="56" r="2"/>
+    <circle cx="484" cy="142" r="1.6"/>
+    <circle cx="624" cy="66" r="1.8"/>
+    <circle cx="742" cy="128" r="1.4"/>
+    <circle cx="920" cy="72" r="2"/>
+    <circle cx="1060" cy="126" r="1.6"/>
+    <circle cx="1120" cy="90" r="1.4"/>
+  </g>
+
+  <g transform="translate(96 120)">
+    <text x="0" y="0" fill="#f3e4c8" font-family="Georgia, 'Times New Roman', serif" font-size="84" font-weight="700">
+      Art Globe
+    </text>
+    <text x="4" y="64" fill="#d2b27b" font-family="Georgia, 'Times New Roman', serif" font-size="34">
+      Explore art across cities and museums
+    </text>
+  </g>
+
+  <g transform="translate(760 315)">
+    <circle cx="0" cy="0" r="170" fill="url(#glow)"/>
+    <circle cx="0" cy="0" r="148" fill="#1d304d" stroke="url(#ring)" stroke-width="6"/>
+    <path d="M-110 -8 C-78 -48 -20 -70 44 -66 C74 -44 98 -16 110 16 C86 38 48 56 4 58 C-44 52 -86 32 -110 -8 Z" fill="#2a5f72" opacity="0.9"/>
+    <path d="M-18 -86 C34 -84 86 -46 104 8 C82 2 64 -10 46 -22 C18 -40 -4 -58 -18 -86 Z" fill="#3f7f83" opacity="0.88"/>
+    <path d="M-124 22 C-86 14 -58 30 -38 48 C-10 74 26 84 70 80 C32 108 -26 120 -74 108 C-106 90 -126 62 -124 22 Z" fill="#3d6f58" opacity="0.88"/>
+    <ellipse cx="-58" cy="-26" rx="46" ry="18" fill="#f6efde" opacity="0.1"/>
+    <ellipse cx="44" cy="-58" rx="52" ry="20" fill="#f6efde" opacity="0.08"/>
+  </g>
+
+  <g stroke="#c8954d" stroke-width="2" opacity="0.42" fill="none">
+    <path d="M616 242 C684 214 724 230 774 262"/>
+    <path d="M612 344 C692 368 726 356 786 330"/>
+    <path d="M686 170 C748 142 820 152 906 210"/>
+  </g>
+
+  <g>
+    <rect x="566" y="200" width="86" height="112" rx="8" fill="#d6b27c" opacity="0.95"/>
+    <rect x="572" y="208" width="74" height="96" rx="6" fill="#253454"/>
+    <rect x="920" y="196" width="94" height="124" rx="8" fill="#d6b27c" opacity="0.95"/>
+    <rect x="926" y="204" width="82" height="108" rx="6" fill="#3b4f73"/>
+    <rect x="610" y="360" width="92" height="120" rx="8" fill="#d6b27c" opacity="0.95"/>
+    <rect x="616" y="368" width="80" height="104" rx="6" fill="#2f4f45"/>
+  </g>
+</svg>

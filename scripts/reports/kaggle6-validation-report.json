@@ -1,0 +1,203 @@
+{
+  "generatedAt": "2026-04-03T10:05:07.429Z",
+  "inputCount": 15000,
+  "acceptedCount": 13418,
+  "rejectedCount": 1582,
+  "reasonCounts": {
+    "missing_city": 607,
+    "low_confidence": 60,
+    "city_cap_exceeded": 910,
+    "duplicate_fingerprint": 5
+  },
+  "regionCounts": {
+    "Americas": 3186,
+    "Asia": 2191,
+    "East Asia": 220,
+    "Europe": 7473,
+    "Oceania": 100,
+    "Africa": 188,
+    "Other": 60
+  },
+  "sampleRejected": [
+    {
+      "candidateId": "kaggle6-2cc3a4d8c6ac1f03",
+      "artist": "Vasile Dobrian",
+      "title": "A Perfumed Gale Of The Autumn Is All That S Left In My Memory From The Autumn Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-b6857883ca28286c",
+      "artist": "Vasile Dobrian",
+      "title": "Dialogue 10 1993",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-d8d955c70bf3b621",
+      "artist": "Vasile Dobrian",
+      "title": "During Life Man Exhibits His Lucidity During Death Oblivion",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-dd58048eb849704f",
+      "artist": "Vasile Dobrian",
+      "title": "Get Yourselves Accustomed With The Dizzy Detachments From Earth From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-fdb5c27079fe0f5e",
+      "artist": "Vasile Dobrian",
+      "title": "Honesty Isn T Measured With The Meter But With Heartbeats From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-f2982722ef95c1a7",
+      "artist": "Vasile Dobrian",
+      "title": "Hourglass I 1973",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-843569ebe586e060",
+      "artist": "Vasile Dobrian",
+      "title": "Hypostasis 1986",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-80135918bfa13ad7",
+      "artist": "Vasile Dobrian",
+      "title": "I Have Tried",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-6b50553aef66e4de",
+      "artist": "Vasile Dobrian",
+      "title": "I Still Hear The Rustle Of Your Footsteps From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-4cc2501e6eaba6e6",
+      "artist": "Vasile Dobrian",
+      "title": "Look How The Moon Steps On The White Lonely Hills From The Autumn Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-eeafa2d2f3b80fd8",
+      "artist": "Vasile Dobrian",
+      "title": "Memories Are Kept In The Drawer Of Memory From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-87fe746fcb86317c",
+      "artist": "Vasile Dobrian",
+      "title": "Silence Grows Over Me Like A Plant From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-3761600b53716721",
+      "artist": "Vasile Dobrian",
+      "title": "The Fingers Were Running Wild On The Rib Piano From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-9f371d4ea40c8bd7",
+      "artist": "Vasile Dobrian",
+      "title": "The Waves Of Migrating Birds Have Darkened The Infinity From The Autumn Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-be75713b5847b7e3",
+      "artist": "Vasile Dobrian",
+      "title": "There Are Only Two Steps Until The Edge Of The Infinite From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-515d2e0cf4a77ae0",
+      "artist": "Vasile Dobrian",
+      "title": "We Were So Close That Nothing Used To Stand Between Us From The Autumn Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-a1cf4340e8c200f1",
+      "artist": "Vasile Dobrian",
+      "title": "Where The Autumn Has Passed It All Became Dust From The Autumn Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-2f1951aca64f5de8",
+      "artist": "Vasile Dobrian",
+      "title": "With A Hand Removed From Our Arm We Poke Our Way Through The Interstellar Dust From The",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-e1d4a64d1e2b1213",
+      "artist": "Vasile Dobrian",
+      "title": "With Smoke Footsteps I Got Closer To You From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-c25fd535e1382387",
+      "artist": "Vasile Dobrian",
+      "title": "With The Ferocity With Which The Man Is Eating His Shadow From The Archways Series",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-6706940c3355d346",
+      "artist": "Yayoi Kusama",
+      "title": "Beyond The End Of The Century 1987",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-c923006639e2b976",
+      "artist": "Yayoi Kusama",
+      "title": "Dots 2004",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-16cb049f477fdfa4",
+      "artist": "Yayoi Kusama",
+      "title": "Fields In Spring 1988",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-6a1687dc01350f3a",
+      "artist": "Yayoi Kusama",
+      "title": "Petals 1988",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-4f63a5de38fcec22",
+      "artist": "Yayoi Kusama",
+      "title": "Sea 2005",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-6060a83beb6620d6",
+      "artist": "Yayoi Kusama",
+      "title": "Waves 1953",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "kaggle6-768a63b732ea64e6",
+      "artist": "Andrei Ryabushkin",
+      "title": "A Young Man Breaking Into The Girls Dance And The Old Women Are In Panic",
+      "reason": "low_confidence"
+    },
+    {
+      "candidateId": "kaggle6-f1faf6428054da77",
+      "artist": "Andrei Ryabushkin",
+      "title": "Illustration For The Coronation Album",
+      "reason": "low_confidence"
+    },
+    {
+      "candidateId": "kaggle6-f2c51323e987d8bd",
+      "artist": "Andrei Ryabushkin",
+      "title": "Life For Tsar",
+      "reason": "low_confidence"
+    },
+    {
+      "candidateId": "kaggle6-5a20eeacd6c30e98",
+      "artist": "Andrei Ryabushkin",
+      "title": "Moscow Street Of Xvii Century",
+      "reason": "low_confidence"
+    }
+  ]
+}

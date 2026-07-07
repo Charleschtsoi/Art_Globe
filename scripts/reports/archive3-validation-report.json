@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-03-26T11:32:11.727Z",
+  "inputCount": 1494,
+  "acceptedCount": 1464,
+  "rejectedCount": 30,
+  "reasonCounts": {
+    "missing_city": 30
+  },
+  "regionCounts": {
+    "Europe": 1110,
+    "Asia": 180,
+    "Americas": 144,
+    "Africa": 30
+  },
+  "sampleRejected": [
+    {
+      "candidateId": "archive3-giotto-di-bondone-1",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #1",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-2",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #2",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-3",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #3",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-4",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #4",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-5",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #5",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-6",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #6",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-7",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #7",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-8",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #8",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-9",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #9",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-10",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #10",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-11",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #11",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-12",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #12",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-13",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #13",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-14",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #14",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-15",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #15",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-16",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #16",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-17",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #17",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-18",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #18",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-19",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #19",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-20",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #20",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-21",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #21",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-22",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #22",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-23",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #23",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-24",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #24",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-25",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #25",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-26",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #26",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-27",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #27",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-28",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #28",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-29",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #29",
+      "reason": "missing_city"
+    },
+    {
+      "candidateId": "archive3-giotto-di-bondone-30",
+      "artist": "Giotto di Bondone",
+      "title": "Giotto di Bondone work #30",
+      "reason": "missing_city"
+    }
+  ]
+}

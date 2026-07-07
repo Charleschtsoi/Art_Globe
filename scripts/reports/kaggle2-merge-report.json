@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-04-03T15:59:48.560Z",
+  "placeholderImageUrl": "/artworks/external/external-unavailable.svg",
+  "inputFile": "tmp/kaggle2-validated.json",
+  "incomingAccepted": 7703,
+  "qualityAccepted": 7703,
+  "qualityRejected": 0,
+  "importedCount": 3000,
+  "skippedCount": 4703,
+  "maxMergeTotal": 3000,
+  "maxPerArtist": 20,
+  "skippedReasonCounts": {
+    "max_merge_total": 4703
+  }
+}

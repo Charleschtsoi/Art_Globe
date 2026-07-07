@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="320" viewBox="0 0 512 320">
+  <rect width="512" height="320" fill="#0f766e"/>
+  <path d="M96 200 L256 96 L416 200 Z" fill="#99f6e4"/>
+  <rect x="122" y="200" width="268" height="34" rx="8" fill="#5eead4"/>
+  <text x="256" y="286" text-anchor="middle" font-family="Arial, sans-serif" font-size="22" fill="#f0fdfa">National Palace Museum</text>
+</svg>

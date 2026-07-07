@@ -1,0 +1,7 @@
+# Large raster artwork files should be served from R2/CDN, not uploaded with the repo build.
+# If present locally, exclude from Vercel’s build context to keep uploads small.
+public/artworks/**/*.webp
+public/artworks/**/*.jpg
+public/artworks/**/*.jpeg
+public/artworks/**/*.png
+public/artworks/**/*.gif
