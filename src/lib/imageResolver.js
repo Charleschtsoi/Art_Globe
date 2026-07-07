@@ -149,6 +149,56 @@ export function collectImageCandidates(art) {
 }
 
 /**
+ * @param {Record<string, unknown>} art
+ * @param {string} url
+ */
+function isProbeBrokenPrimary(art, url) {
+  const assets = /** @type {Record<string, unknown> | undefined} */ (art?.assets)
+  if (assets?.availability !== 'broken') return false
+  const norm = String(url).trim().replace(/^http:\/\//i, 'https://')
+  const fields = [assets.thumbnail_url, assets.high_res_url, art?.imageUrl, art?.canonicalImageUrl]
+  return fields.some((field) => {
+    if (typeof field !== 'string') return false
+    return field.trim().replace(/^http:\/\//i, 'https://') === norm
+  })
+}
+
+/**
+ * Prefer static Wikimedia CDN URLs over Special:FilePath redirects.
+ * @param {string} url
+ */
+function candidateSortRank(url) {
+  if (url.includes('upload.wikimedia.org')) return 0
+  if (url.includes('commons.wikimedia.org/wiki/Special:FilePath/')) return 1
+  return 2
+}
+
+/**
+ * Ordered remote image URLs for an artwork, skipping probe-broken primaries.
+ * @param {Record<string, unknown> | null | undefined} art
+ * @param {ImageSize} [size='thumb']
+ * @returns {string[]}
+ */
+export function resolveArtworkImageCandidates(art, size = 'thumb') {
+  if (!art || typeof art !== 'object') return []
+
+  const seen = new Set()
+  /** @type {string[]} */
+  const sized = []
+
+  for (const raw of collectImageCandidates(art)) {
+    if (isProbeBrokenPrimary(art, raw)) continue
+    const url = canonicalizeRemoteImageUrl(raw, size)
+    if (!url || seen.has(url)) continue
+    seen.add(url)
+    sized.push(url)
+  }
+
+  sized.sort((a, b) => candidateSortRank(a) - candidateSortRank(b))
+  return sized
+}
+
+/**
  * Resolve the best image URL for an artwork at the requested size.
  * @param {Record<string, unknown> | null | undefined} art
  * @param {{ size?: ImageSize }} [options]
@@ -156,29 +206,10 @@ export function collectImageCandidates(art) {
  */
 export function resolveArtworkImageUrl(art, options = {}) {
   const size = options.size ?? 'thumb'
+  const candidates = resolveArtworkImageCandidates(art, size)
+  if (candidates.length > 0) return candidates[0]
+
   if (!art || typeof art !== 'object') return ''
-
-  const assets = /** @type {Record<string, unknown> | undefined} */ (art.assets)
-  const probedThumb =
-    typeof assets?.thumbnail_url === 'string' && isHttpsImageUrl(assets.thumbnail_url)
-      ? assets.thumbnail_url.trim()
-      : ''
-  const probedHigh =
-    typeof assets?.high_res_url === 'string' && isHttpsImageUrl(assets.high_res_url)
-      ? assets.high_res_url.trim()
-      : ''
-
-  if (size === 'detail' && probedHigh) return canonicalizeRemoteImageUrl(probedHigh, 'detail')
-  if (size === 'thumb' && probedThumb) return canonicalizeRemoteImageUrl(probedThumb, 'thumb')
-
-  const primary =
-    typeof art.imageUrl === 'string' && isHttpsImageUrl(art.imageUrl) ? art.imageUrl.trim() : ''
-  if (primary && !isPlaceholderImageUrl(primary)) {
-    return canonicalizeRemoteImageUrl(primary, size)
-  }
-
-  const candidates = collectImageCandidates(art)
-  if (candidates.length > 0) return canonicalizeRemoteImageUrl(candidates[0], size)
 
   const local =
     typeof art.imageUrl === 'string' && isLocalArtworkPath(art.imageUrl) ? art.imageUrl.trim() : ''

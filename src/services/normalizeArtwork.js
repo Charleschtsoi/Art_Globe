@@ -82,6 +82,19 @@ export function applyImageAvailability(artwork, probeEntry) {
     next.canonicalImageUrl = winningUrl.replace(/^http:\/\//i, 'https://')
     next.assets.thumbnail_url = next.imageUrl
     next.assets.high_res_url = resizeImageUrl(winningUrl, 'detail')
+  } else if (availability === 'broken') {
+    if (isHttpsImageUrl(next.assets.thumbnail_url)) {
+      next.assets.thumbnail_url = ''
+    }
+    if (isHttpsImageUrl(next.assets.high_res_url)) {
+      next.assets.high_res_url = ''
+    }
+    if (isHttpsImageUrl(next.imageUrl)) {
+      next.imageUrl = ''
+    }
+    if (isHttpsImageUrl(next.canonicalImageUrl)) {
+      next.canonicalImageUrl = ''
+    }
   }
 
   next.assets.availability = availability

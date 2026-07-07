@@ -21,16 +21,23 @@ test('globe loads artworks on /explore', async ({ page }) => {
   const markerImg = page.locator('.art-marker-pin--artwork img').first()
   await expect(markerImg).toBeVisible({ timeout: 15000 })
 
-  // After bootstrap, some markers should show real HTTPS thumbs
+  // After bootstrap, a majority of visible artwork markers should show HTTPS thumbs
   await expect
     .poll(
       async () => {
-        const src = await markerImg.getAttribute('src')
-        return Boolean(src && src.startsWith('https://'))
+        const imgs = page.locator('.art-marker-pin--artwork img')
+        const count = await imgs.count()
+        if (count === 0) return 0
+        let https = 0
+        for (let i = 0; i < Math.min(count, 20); i++) {
+          const src = await imgs.nth(i).getAttribute('src')
+          if (src && src.startsWith('https://')) https += 1
+        }
+        return https / Math.min(count, 20)
       },
       { timeout: 30000 }
     )
-    .toBe(true)
+    .toBeGreaterThan(0.5)
 
   await page.locator('.art-marker-pin--artwork').first().click({ timeout: 15000 })
   await expect(page.getByRole('complementary')).toBeVisible({ timeout: 10000 })

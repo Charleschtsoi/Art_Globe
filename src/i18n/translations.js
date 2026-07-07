@@ -60,6 +60,11 @@ const EN = {
   'panel.presentAria': 'Open presentation view for classroom projection',
   'panel.imageLoading': 'Loading artwork…',
   'panel.imageUnavailable': 'Artwork image unavailable',
+  'panel.prev': '← Prev',
+  'panel.next': 'Next →',
+  'panel.prevAria': 'Previous artwork at this location',
+  'panel.nextAria': 'Next artwork at this location',
+  'panel.locationProgress': '{{index}} of {{total}} at this location',
 
   'present.exit': 'Exit',
   'present.exitAria': 'Exit presentation mode',
@@ -304,6 +309,11 @@ const ZH_HANT = {
   'panel.presentAria': '開啟適合課堂投影的簡報檢視',
   'panel.imageLoading': '正在載入作品圖片…',
   'panel.imageUnavailable': '無法載入作品圖片',
+  'panel.prev': '← 上一件',
+  'panel.next': '下一件 →',
+  'panel.prevAria': '同一地點的上一件藝術品',
+  'panel.nextAria': '同一地點的下一件藝術品',
+  'panel.locationProgress': '此地點第 {{index}} / {{total}} 件',
 
   'present.exit': '結束',
   'present.exitAria': '結束簡報模式',

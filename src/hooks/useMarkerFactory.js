@@ -1,13 +1,9 @@
 import { useCallback } from 'react'
 import artLoading from '../assets/art-loading.svg'
+import artNoPreview from '../assets/art-no-preview.svg'
 import artUnavailable from '../assets/art-unavailable.svg'
 import { getCachedImageResult, preloadImageUrl } from '../lib/imageRequestQueue.js'
-import {
-  isHttpsImageUrl,
-  isLocalArtworkPath,
-  isPlaceholderImageUrl,
-  resolveArtworkImageUrl
-} from '../lib/imageResolver.js'
+import { resolveMarkerThumbCandidates } from '../lib/markerThumbUrls.js'
 
 function escapeHtml(s) {
   return String(s)
@@ -17,11 +13,47 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;')
 }
 
-function resolveMarkerThumbUrl(art) {
-  const url = resolveArtworkImageUrl(art, { size: 'thumb' })
-  if (!url || isPlaceholderImageUrl(url) || isLocalArtworkPath(url)) return ''
-  if (isHttpsImageUrl(url)) return url
-  return ''
+function tryLoadThumbCandidates(candidates, image, pin, trackMarkerTelemetry) {
+  let index = 0
+
+  const tryNext = () => {
+    if (!image.isConnected) return
+
+    while (index < candidates.length) {
+      const url = candidates[index]
+      index += 1
+      const cached = getCachedImageResult(url)
+      if (cached === 'error') continue
+      if (cached === 'ok') {
+        image.src = url
+        image.dataset.fallbackTier = 'thumb'
+        pin.classList.remove('art-marker-pin--loading')
+        trackMarkerTelemetry('tierThumb')
+        return
+      }
+
+      pin.classList.add('art-marker-pin--loading')
+      preloadImageUrl(url).then((ok) => {
+        if (!image.isConnected) return
+        if (ok) {
+          image.src = url
+          image.dataset.fallbackTier = 'thumb'
+          pin.classList.remove('art-marker-pin--loading')
+          trackMarkerTelemetry('tierThumb')
+        } else {
+          tryNext()
+        }
+      })
+      return
+    }
+
+    image.src = artUnavailable
+    image.dataset.fallbackTier = 'error'
+    pin.classList.remove('art-marker-pin--loading')
+    trackMarkerTelemetry('thumbErrors')
+  }
+
+  tryNext()
 }
 
 export function useMarkerFactory({
@@ -78,36 +110,23 @@ export function useMarkerFactory({
       pin.className = art.isCluster ? 'art-marker-pin art-marker-pin--cluster' : 'art-marker-pin art-marker-pin--artwork'
 
       const image = document.createElement('img')
-      const thumbUrl = resolveMarkerThumbUrl(art)
-      const cached = thumbUrl ? getCachedImageResult(thumbUrl) : undefined
+      const candidates = resolveMarkerThumbCandidates(art)
 
-      if (cached === 'ok' && thumbUrl) {
-        image.src = thumbUrl
-        image.dataset.fallbackTier = 'thumb'
-        trackMarkerTelemetry('tierThumb')
-      } else if (cached === 'error') {
-        image.src = artUnavailable
-        image.dataset.fallbackTier = 'error'
+      if (candidates.length === 0) {
+        image.src = artNoPreview
+        image.dataset.fallbackTier = 'no-preview'
         trackMarkerTelemetry('tierPlaceholder')
       } else {
-        image.src = artLoading
-        image.dataset.fallbackTier = 'loading'
-        trackMarkerTelemetry('tierPlaceholder')
-        if (thumbUrl) {
-          pin.classList.add('art-marker-pin--loading')
-          preloadImageUrl(thumbUrl).then((ok) => {
-            if (ok) {
-              image.src = thumbUrl
-              image.dataset.fallbackTier = 'thumb'
-              pin.classList.remove('art-marker-pin--loading')
-              trackMarkerTelemetry('tierThumb')
-            } else {
-              image.src = artUnavailable
-              image.dataset.fallbackTier = 'error'
-              pin.classList.remove('art-marker-pin--loading')
-              trackMarkerTelemetry('thumbErrors')
-            }
-          })
+        const firstCached = candidates.find((url) => getCachedImageResult(url) === 'ok')
+        if (firstCached) {
+          image.src = firstCached
+          image.dataset.fallbackTier = 'thumb'
+          trackMarkerTelemetry('tierThumb')
+        } else {
+          image.src = artLoading
+          image.dataset.fallbackTier = 'loading'
+          trackMarkerTelemetry('tierPlaceholder')
+          tryLoadThumbCandidates(candidates, image, pin, trackMarkerTelemetry)
         }
       }
 

@@ -28,7 +28,76 @@ const headerBarStyle = {
   zIndex: 1
 }
 
-export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, onPresent, dataReady = true, t }) {
+export default function ArtworkSidePanel({
+  item,
+  onClose,
+  onSelectArtwork,
+  onPresent,
+  dataReady = true,
+  locationQueue = [],
+  locationIndex = 0,
+  onNavigateLocation,
+  presentModeOpen = false,
+  t
+}) {
+  const showLocationNav = locationQueue.length > 1
+  const canGoPrev = showLocationNav && locationIndex > 0
+  const canGoNext = showLocationNav && locationIndex < locationQueue.length - 1
+
+  const locationNavBar = showLocationNav ? (
+    <div
+      data-testid="panel-location-nav"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        gap: 8,
+        padding: '0 16px 10px 16px',
+        flexShrink: 0
+      }}
+    >
+      <button
+        type="button"
+        disabled={!canGoPrev}
+        onClick={() => canGoPrev && onNavigateLocation?.(-1)}
+        aria-label={t('panel.prevAria')}
+        data-testid="panel-location-prev"
+        style={{
+          border: '1px solid rgba(212, 168, 83, 0.35)',
+          background: 'rgba(42, 28, 18, 0.9)',
+          color: canGoPrev ? '#f5e6c8' : '#6a5848',
+          borderRadius: 8,
+          padding: '6px 10px',
+          cursor: canGoPrev ? 'pointer' : 'default',
+          opacity: canGoPrev ? 1 : 0.55
+        }}
+      >
+        {t('panel.prev')}
+      </button>
+      <span style={{ fontSize: 12, color: '#d4a853', textAlign: 'center', flex: 1 }}>
+        {t('panel.locationProgress', { index: locationIndex + 1, total: locationQueue.length })}
+      </span>
+      <button
+        type="button"
+        disabled={!canGoNext}
+        onClick={() => canGoNext && onNavigateLocation?.(1)}
+        aria-label={t('panel.nextAria')}
+        data-testid="panel-location-next"
+        style={{
+          border: '1px solid rgba(212, 168, 83, 0.35)',
+          background: 'rgba(42, 28, 18, 0.9)',
+          color: canGoNext ? '#f5e6c8' : '#6a5848',
+          borderRadius: 8,
+          padding: '6px 10px',
+          cursor: canGoNext ? 'pointer' : 'default',
+          opacity: canGoNext ? 1 : 0.55
+        }}
+      >
+        {t('panel.next')}
+      </button>
+    </div>
+  ) : null
+
   const panelRef = useRef(null)
   const [scale, setScale] = useState(1)
   const [selectedId, setSelectedId] = useState(null)
@@ -91,11 +160,21 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, onPre
       ) {
         event.preventDefault()
         onPresent(selectedArtwork)
+        return
+      }
+      if (!presentModeOpen && showLocationNav && onNavigateLocation) {
+        if (event.key === 'ArrowLeft' && canGoPrev) {
+          event.preventDefault()
+          onNavigateLocation(-1)
+        } else if (event.key === 'ArrowRight' && canGoNext) {
+          event.preventDefault()
+          onNavigateLocation(1)
+        }
       }
     }
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
-  }, [item, onClose, onPresent, selectedArtwork, isClusterPicker])
+  }, [item, onClose, onPresent, selectedArtwork, isClusterPicker, presentModeOpen, showLocationNav, onNavigateLocation, canGoPrev, canGoNext])
 
   useEffect(() => {
     setScale(1)
@@ -414,6 +493,8 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, onPre
           </button>
         </div>
       </div>
+
+      {locationNavBar}
 
       <div
         style={{

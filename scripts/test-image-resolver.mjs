@@ -4,6 +4,7 @@ import {
   collectImageCandidates,
   detectImageProvider,
   resizeImageUrl,
+  resolveArtworkImageCandidates,
   resolveArtworkImageUrl
 } from '../src/lib/imageResolver.js'
 
@@ -37,5 +38,30 @@ assert.ok(collectImageCandidates(art).includes(wiki.replace('width=640', 'width=
 const resolved = resolveArtworkImageUrl(art, { size: 'thumb' })
 assert.ok(resolved.startsWith('https://commons.wikimedia.org'))
 assert.ok(resolved.includes('width=256'))
+
+const brokenPrimary = {
+  id: 'broken-1',
+  assets: {
+    availability: 'broken',
+    thumbnail_url: 'https://commons.wikimedia.org/wiki/Special:FilePath/Broken.jpg',
+    sources: [
+      { url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bo/Alt.jpg/640px-Alt.jpg' }
+    ]
+  },
+  canonicalImageUrl: 'https://commons.wikimedia.org/wiki/Special:FilePath/Broken.jpg'
+}
+const brokenCandidates = resolveArtworkImageCandidates(brokenPrimary, 'thumb')
+assert.equal(brokenCandidates.length, 1)
+assert.ok(brokenCandidates[0].includes('upload.wikimedia.org'))
+assert.ok(!brokenCandidates[0].includes('Broken.jpg'))
+
+const preferUpload = {
+  assets: {
+    thumbnail_url: wiki,
+    sources: [{ url: uploadWiki }]
+  }
+}
+const uploadFirst = resolveArtworkImageCandidates(preferUpload, 'thumb')
+assert.ok(uploadFirst[0].includes('upload.wikimedia.org'))
 
 console.log('imageResolver tests passed')

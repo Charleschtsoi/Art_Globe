@@ -1,4 +1,4 @@
-import { isHttpsImageUrl, isLocalArtworkPath, isPlaceholderImageUrl, resolveArtworkImageUrl } from '../lib/imageResolver.js'
+import { isHttpsImageUrl, isLocalArtworkPath, isPlaceholderImageUrl, resolveArtworkImageCandidates, resolveArtworkImageUrl } from '../lib/imageResolver.js'
 
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
@@ -63,12 +63,24 @@ const pickRepresentative = (items) => {
 /** Prefer first usable URL on the representative row (HTTPS imageUrl, assets, resolver). */
 const resolveClusterThumbnailUrl = (item) => {
   if (!item) return ''
-  const resolved = resolveArtworkImageUrl(item, { size: 'thumb' })
-  if (resolved && !isPlaceholderImageUrl(resolved)) return resolved
+  const candidates = resolveArtworkImageCandidates(item, 'thumb')
+  if (candidates.length > 0) return candidates[0]
   if (isUsableMarkerThumbnailUrl(item.imageUrl)) return String(item.imageUrl).trim()
   if (isUsableMarkerThumbnailUrl(item?.assets?.thumbnail_url)) return String(item.assets.thumbnail_url).trim()
   if (isUsableMarkerThumbnailUrl(item?.canonicalImageUrl)) return String(item.canonicalImageUrl).trim()
   return typeof item.imageUrl === 'string' ? item.imageUrl.trim() : ''
+}
+
+function pickClusterThumbnailCandidates(items, limit = 3) {
+  for (const item of items) {
+    const candidates = resolveArtworkImageCandidates(item, 'thumb')
+    if (candidates.length > 0) return candidates.slice(0, limit)
+  }
+  return []
+}
+
+function pickClusterThumbnailUrl(items) {
+  return pickClusterThumbnailCandidates(items, 1)[0] ?? ''
 }
 
 const defaultClusterI18n = {
@@ -186,7 +198,8 @@ function buildClusters(artworks, cellSize, limit, clusterI18n = defaultClusterI1
       year: i18n.variousYears,
       lat,
       lng,
-      imageUrl: resolveClusterThumbnailUrl(representative),
+      imageUrl: pickClusterThumbnailUrl(sortedClusterItems),
+      clusterThumbCandidates: pickClusterThumbnailCandidates(sortedClusterItems, 3),
       description: i18n.zoomExplore(items.length),
       museumName: museumLabel,
       source: 'cluster',

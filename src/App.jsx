@@ -18,7 +18,7 @@ import { trackPageView } from './lib/analytics'
 import { getZoomBand, resolveHtmlMarkerData, resolveLodData } from './services/artLod'
 import { readStoredLocale, writeStoredLocale, translate } from './i18n/translations'
 import { localizeArtworkDisplay } from './i18n/localizeArtworkDisplay'
-import { buildPresentationQueue, indexInPresentationQueue } from './lib/presentationQueue.js'
+import { buildLocationQueue, indexInPresentationQueue } from './lib/presentationQueue.js'
 
 const MARKER_STYLE_TAG_ID = 'art-globe-marker-animations'
 
@@ -103,6 +103,11 @@ function App() {
   })
   const deepLinkHandledRef = useRef(false)
   const deepLinkLoadStartedRef = useRef(false)
+  const locationQueueRef = useRef(/** @type {Record<string, unknown>[] | null} */ (null))
+
+  const bumpThumbnailEpoch = useCallback(() => {
+    setThumbnailEpoch((n) => n + 1)
+  }, [])
 
   const t = useCallback((key, vars) => translate(locale, key, vars), [locale])
 
@@ -155,14 +160,15 @@ function App() {
   const dataReady = !dataLoading && allArtworksBase.length > 0
   const { isBootstrapping, thumbReady, thumbProgress } = useMarkerThumbnailBootstrap(
     htmlMarkerData,
-    dataReady
+    dataReady,
+    { onMarkersUpdated: bumpThumbnailEpoch }
   )
 
   useEffect(() => {
     if (thumbReady && thumbnailEpoch === 0) {
-      setThumbnailEpoch((n) => n + 1)
+      bumpThumbnailEpoch()
     }
-  }, [thumbReady, thumbnailEpoch])
+  }, [thumbReady, thumbnailEpoch, bumpThumbnailEpoch])
   const datasetStats = useMemo(() => {
     const periodCounts = new Map()
     for (const art of allArtworksBase) {
@@ -520,16 +526,39 @@ function App() {
     ]
   )
 
-  const presentationQueue = useMemo(() => {
-    if (!presentArtwork) return []
-    return buildPresentationQueue(
+  const panelArtwork = useMemo(() => {
+    if (!activeMarker || activeMarker.isCluster) return null
+    return artworkById.get(String(activeMarker.id ?? activeMarker.artwork_id ?? '')) ?? activeMarker
+  }, [activeMarker, artworkById])
+
+  const locationQueue = useMemo(() => {
+    if (!panelArtwork) return []
+    return buildLocationQueue(
       activeMarker,
       selectedItemForPanel,
       artworkById,
-      visibleArtworks,
-      presentArtwork
+      allArtworks,
+      panelArtwork,
+      locationQueueRef.current
     )
-  }, [presentArtwork, activeMarker, selectedItemForPanel, artworkById, visibleArtworks])
+  }, [panelArtwork, activeMarker, selectedItemForPanel, artworkById, allArtworks])
+
+  const locationIndex = useMemo(
+    () => indexInPresentationQueue(locationQueue, panelArtwork),
+    [locationQueue, panelArtwork]
+  )
+
+  const presentationQueue = useMemo(() => {
+    if (!presentArtwork) return []
+    return buildLocationQueue(
+      activeMarker,
+      selectedItemForPanel,
+      artworkById,
+      allArtworks,
+      presentArtwork,
+      locationQueueRef.current
+    )
+  }, [presentArtwork, activeMarker, selectedItemForPanel, artworkById, allArtworks])
 
   const syncArtUrlParam = useCallback((artId) => {
     const url = new URL(window.location.href)
@@ -543,19 +572,31 @@ function App() {
     (art) => {
       if (!art || art.isCluster || art.isClusterPicker) return
       const resolved = artworkById.get(String(art.id ?? art.artwork_id ?? '')) ?? art
-      const queue = buildPresentationQueue(
+      const queue = buildLocationQueue(
         activeMarker,
         selectedItemForPanel,
         artworkById,
-        visibleArtworks,
-        resolved
+        allArtworks,
+        resolved,
+        locationQueueRef.current
       )
       setPresentArtwork(resolved)
       setPresentQueueIndex(indexInPresentationQueue(queue, resolved))
       syncArtUrlParam(String(resolved.id ?? resolved.artwork_id ?? ''))
       pauseAutoRotate()
     },
-    [activeMarker, artworkById, pauseAutoRotate, selectedItemForPanel, syncArtUrlParam, visibleArtworks]
+    [activeMarker, artworkById, allArtworks, pauseAutoRotate, selectedItemForPanel, syncArtUrlParam]
+  )
+
+  const navigateLocation = useCallback(
+    (delta) => {
+      const idx = indexInPresentationQueue(locationQueue, panelArtwork)
+      const next = locationQueue[idx + delta]
+      if (!next) return
+      setActiveMarker(next)
+      focusOnArtwork(next, getZoomInAltitude(cameraAltitude))
+    },
+    [cameraAltitude, focusOnArtwork, getZoomInAltitude, locationQueue, panelArtwork]
   )
 
   const closePresent = useCallback(() => {
@@ -881,7 +922,10 @@ function App() {
         <div
           role="presentation"
           aria-hidden="true"
-          onClick={() => setActiveMarker(null)}
+          onClick={() => {
+            locationQueueRef.current = null
+            setActiveMarker(null)
+          }}
           style={{
             position: 'fixed',
             inset: 0,
@@ -945,10 +989,20 @@ function App() {
               : String(activeMarker.id ?? activeMarker.artwork_id ?? 'panel')
           }
           item={selectedItemForPanel}
-          onClose={() => setActiveMarker(null)}
+          onClose={() => {
+            locationQueueRef.current = null
+            setActiveMarker(null)
+          }}
           dataReady={dataReady}
           onPresent={openPresent}
+          locationQueue={locationQueue}
+          locationIndex={locationIndex}
+          onNavigateLocation={navigateLocation}
+          presentModeOpen={Boolean(presentArtwork)}
           onSelectArtwork={(art) => {
+            if (selectedItemForPanel?.isClusterPicker) {
+              locationQueueRef.current = selectedItemForPanel.clusterArtworks ?? null
+            }
             setActiveMarker(art)
             focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
           }}

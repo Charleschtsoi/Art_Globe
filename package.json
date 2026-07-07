@@ -47,6 +47,8 @@
     "data:probe-images": "node scripts/probe-image-urls.mjs",
     "data:backfill-wikidata-images": "node scripts/backfill-wikidata-image-urls.mjs",
     "test:unit:image-resolver": "node scripts/test-image-resolver.mjs",
+    "test:unit:presentation-queue": "node scripts/test-presentation-queue.mjs",
+    "test:unit": "npm run test:unit:image-resolver && npm run test:unit:presentation-queue",
     "test:integration": "playwright test",
     "check:data": "node scripts/check-art-data.mjs",
     "benchmark:data": "node scripts/benchmark-runtime-data.mjs",
