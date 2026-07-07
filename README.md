@@ -236,7 +236,42 @@ Here's the short version:
 
 ---
 
-## Going Live (Vercel + Cloudflare R2)
+## Going Live (Vercel + external image URLs)
+
+Production thumbnails are **not** bundled in the deploy. Artwork records point at public museum and Wikimedia URLs, validated at build time and loaded **lazily in the browser** when a user opens an artwork (globe markers use placeholders on first paint).
+
+```bash
+# 1. Backfill Wikidata image URLs for core dataset rows (one-time / when artData changes)
+npm run data:backfill-wikidata-images
+
+# 2. Probe external URLs and write availability cache (run locally or in CI — not on every Vercel build)
+npm run data:probe-images
+
+# 3. Rebuild runtime chunks + search index
+npm run data:runtime
+
+# 4. Production build (includes step 3 via build:production)
+npm run build:production
+```
+
+Use `PROBE_IMAGES_LIMIT=50` for a smoke probe. Commit `public/data/image-availability.json` and `public/data/chunks/` after probing.
+
+### Optional: self-hosted image mirror (Cloudflare R2)
+
+If you prefer hosting copies instead of hotlinking museums, see [docs/r2-production-setup.md](docs/r2-production-setup.md):
+
+```bash
+npm run upload:artworks:r2
+npm run data:rewrite-cdn-urls
+npm run data:runtime
+```
+
+---
+
+## Going Live (legacy R2 path)
+
+<details>
+<summary>Previous R2-first workflow (optional)</summary>
 
 When you build the app for production, all the artwork images in `public/artworks/` get copied into the final build — and that can easily top 1 GB. Vercel isn't built to host that many images, so we recommend serving them from Cloudflare R2 (or any similar CDN) instead.
 
@@ -262,6 +297,8 @@ npm run build:production
 This is already configured as the default build command in [`vercel.json`](vercel.json). If your Git repository includes this app in a subfolder (not at the repo root), set the Vercel **Root Directory** to that folder — for example `art-globe` in a monorepo. No R2 secrets are needed on Vercel — the CDN URLs are baked into the data files at build time.
 
 > **💡 Tip:** Don't run `data:rewrite-cdn-urls` on your main branch if you still want images to work locally. Use a separate `production` branch, or restore the original paths from git after rewriting.
+
+</details>
 
 ---
 

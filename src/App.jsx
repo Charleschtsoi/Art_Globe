@@ -2,7 +2,6 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import Globe from 'react-globe.gl'
 import * as THREE from 'three'
-import artPlaceholder from './assets/art-placeholder.svg'
 import ArtworkSidePanel from './components/ArtworkSidePanel'
 import SearchBar from './components/SearchBar'
 import { DataLoadingBanner } from './components/globe/DataLoadingBanner'
@@ -90,8 +89,6 @@ function App() {
     flyInTimer: null,
     initialized: false
   })
-  const brokenImageUrlsRef = useRef(new Set())
-  const loadedImageUrlsRef = useRef(new Set())
   const markerTelemetryRef = useRef({
     tierThumb: 0,
     tierPlaceholder: 0,
@@ -449,26 +446,6 @@ function App() {
     [scheduleAutoRotateResume]
   )
 
-  const getMarkerImageUrl = useCallback((url) => {
-    if (!url) return artPlaceholder
-    const httpsUrl = url.replace(/^http:\/\//i, 'https://')
-    if (httpsUrl.includes('/iiif/2/') && httpsUrl.includes('/full/')) {
-      return httpsUrl.replace(/\/full\/\d+,\/0\/default\.jpg$/i, '/full/256,/0/default.jpg')
-    }
-    if (httpsUrl.includes('commons.wikimedia.org/wiki/Special:FilePath/')) {
-      try {
-        const parsed = new URL(httpsUrl)
-        parsed.searchParams.set('width', '256')
-        return parsed.toString()
-      } catch {
-        return httpsUrl.includes('?')
-          ? httpsUrl.replace(/([?&])width=\d+/i, '$1width=256')
-          : `${httpsUrl}?width=256`
-      }
-    }
-    return httpsUrl.replace(/\/\d+px-/i, '/256px-')
-  }, [])
-
   const trackMarkerTelemetry = useCallback((key) => {
     if (!import.meta.env.DEV) return
     const counters = markerTelemetryRef.current
@@ -588,11 +565,8 @@ function App() {
   const { createArtworkElement } = useMarkerFactory({
     t,
     markerZoomBand,
-    getMarkerImageUrl,
     handlePointClick,
-    trackMarkerTelemetry,
-    brokenImageUrlsRef,
-    loadedImageUrlsRef
+    trackMarkerTelemetry
   })
 
   const periodFilterBottom = isMobileLayout ? 86 : 12
@@ -703,7 +677,6 @@ function App() {
           searchRecords={selectedPeriods.length ? null : searchRecords}
           onSelectArtwork={handleGlobalSearchSelect}
           onSearchFocus={loadSearchIndexLazy}
-          getThumbUrl={getMarkerImageUrl}
           t={t}
         />
         {isSupabaseConfigured() ? (
@@ -836,7 +809,6 @@ function App() {
             setActiveMarker(art)
             focusOnArtwork(art, getZoomInAltitude(cameraAltitude))
           }}
-          getThumbUrl={getMarkerImageUrl}
           t={t}
         />
       )}

@@ -1,0 +1,2513 @@
+{
+  "version": 1,
+  "generatedAt": "2026-07-07T03:15:04.704Z",
+  "totalEntries": 500,
+  "summary": {
+    "ok": 218,
+    "broken": 282,
+    "none": 0,
+    "unknown": 0
+  },
+  "entries": {
+    "1": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Mademoiselle_V._._._in_the_Costume_of_an_Espada_MET_DT859.jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.945Z"
+    },
+    "2": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.947Z"
+    },
+    "3": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "4": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Nighthawks_by_Edward_Hopper_1942.jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "5": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "6": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "7": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "8": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_M._and_Mme._Auguste_Manet_(1860)_-_Edouard_Manet_(Mus%C3%A9e_d'Orsay%2C_Paris).jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "9": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_M._and_Mme._Auguste_Manet_(1860)_-_Edouard_Manet_(Mus%C3%A9e_d'Orsay%2C_Paris).jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "10": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "11": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Still_Life_with_Beer_Mug_and_Fruit.jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "12": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Raffaello_Sanzio_-_La_Fornarina_(ca._1519-1520).jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "13": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "14": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "15": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "16": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "17": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "18": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "19": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "20": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:37.948Z"
+    },
+    "21": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:38.939Z"
+    },
+    "22": {
+      "availability": "ok",
+      "winningUrl": "https://commons.wikimedia.org/wiki/Special:FilePath/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg?width=640",
+      "checkedAt": "2026-07-07T03:14:38.956Z"
+    },
+    "23": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:38.958Z"
+    },
+    "24": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:38.973Z"
+    },
+    "25": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:39.158Z"
+    },
+    "26": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:39.187Z"
+    },
+    "27": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:41.568Z"
+    },
+    "28": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:41.910Z"
+    },
+    "29": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.169Z"
+    },
+    "30": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.237Z"
+    },
+    "31": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.268Z"
+    },
+    "32": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.276Z"
+    },
+    "33": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.305Z"
+    },
+    "34": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.325Z"
+    },
+    "35": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.325Z"
+    },
+    "36": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.388Z"
+    },
+    "37": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.394Z"
+    },
+    "38": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.402Z"
+    },
+    "39": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.404Z"
+    },
+    "40": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.410Z"
+    },
+    "41": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.445Z"
+    },
+    "42": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.457Z"
+    },
+    "43": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.493Z"
+    },
+    "44": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.808Z"
+    },
+    "45": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.871Z"
+    },
+    "46": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:42.872Z"
+    },
+    "47": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.005Z"
+    },
+    "48": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.228Z"
+    },
+    "49": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.254Z"
+    },
+    "50": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.330Z"
+    },
+    "51": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.403Z"
+    },
+    "52": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.445Z"
+    },
+    "53": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.459Z"
+    },
+    "54": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.466Z"
+    },
+    "55": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.503Z"
+    },
+    "56": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.520Z"
+    },
+    "57": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.629Z"
+    },
+    "58": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.635Z"
+    },
+    "59": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.658Z"
+    },
+    "60": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.735Z"
+    },
+    "61": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.761Z"
+    },
+    "62": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:43.832Z"
+    },
+    "63": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.083Z"
+    },
+    "64": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.128Z"
+    },
+    "65": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.161Z"
+    },
+    "66": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.163Z"
+    },
+    "67": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.467Z"
+    },
+    "68": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.507Z"
+    },
+    "69": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.531Z"
+    },
+    "70": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.542Z"
+    },
+    "71": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.552Z"
+    },
+    "72": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.615Z"
+    },
+    "73": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.620Z"
+    },
+    "74": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.649Z"
+    },
+    "75": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.655Z"
+    },
+    "76": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.655Z"
+    },
+    "77": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.824Z"
+    },
+    "78": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.862Z"
+    },
+    "79": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.893Z"
+    },
+    "80": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:44.922Z"
+    },
+    "81": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.040Z"
+    },
+    "82": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.047Z"
+    },
+    "83": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.080Z"
+    },
+    "84": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.259Z"
+    },
+    "85": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.328Z"
+    },
+    "86": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.424Z"
+    },
+    "87": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.656Z"
+    },
+    "88": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.700Z"
+    },
+    "89": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.809Z"
+    },
+    "90": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.809Z"
+    },
+    "91": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.810Z"
+    },
+    "92": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.905Z"
+    },
+    "93": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:45.969Z"
+    },
+    "94": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.010Z"
+    },
+    "95": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.048Z"
+    },
+    "96": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.049Z"
+    },
+    "97": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.169Z"
+    },
+    "98": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.229Z"
+    },
+    "e1": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.300Z"
+    },
+    "e2": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.349Z"
+    },
+    "e3": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.364Z"
+    },
+    "e4": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.615Z"
+    },
+    "e5": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.666Z"
+    },
+    "e6": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.733Z"
+    },
+    "e7": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.760Z"
+    },
+    "e8": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.803Z"
+    },
+    "e9": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.902Z"
+    },
+    "e10": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:46.936Z"
+    },
+    "e11": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.009Z"
+    },
+    "e12": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.061Z"
+    },
+    "e13": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.123Z"
+    },
+    "e14": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.141Z"
+    },
+    "e15": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.143Z"
+    },
+    "e16": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.190Z"
+    },
+    "e17": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.264Z"
+    },
+    "e18": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.284Z"
+    },
+    "e19": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.330Z"
+    },
+    "e20": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.541Z"
+    },
+    "colbase-0": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-4385/image/slideshow_s/H-4385_C0048287.jpg",
+      "checkedAt": "2026-07-07T03:14:47.642Z"
+    },
+    "colbase-1": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-60/image/slideshow_s/G-60_C0096551.jpg",
+      "checkedAt": "2026-07-07T03:14:47.645Z"
+    },
+    "colbase-2": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-12389/image/slideshow_s/A-12389_E0027923.jpg",
+      "checkedAt": "2026-07-07T03:14:47.688Z"
+    },
+    "colbase-3": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/G%E7%94%B2217/image/slideshow_s/2716_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:47.721Z"
+    },
+    "colbase-4": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/06266.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:47.808Z"
+    },
+    "colbase-5": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:47.851Z"
+    },
+    "colbase-6": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/08696_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.058Z"
+    },
+    "colbase-7": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-12462/image/slideshow_s/A-12462_E0087747.jpg",
+      "checkedAt": "2026-07-07T03:14:48.077Z"
+    },
+    "colbase-8": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/03781.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.143Z"
+    },
+    "colbase-9": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01098.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.206Z"
+    },
+    "colbase-10": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-1459/image/slideshow_s/A-1459_E0027550.jpg",
+      "checkedAt": "2026-07-07T03:14:48.208Z"
+    },
+    "colbase-11": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_13055_13055.jpg",
+      "checkedAt": "2026-07-07T03:14:48.234Z"
+    },
+    "colbase-12": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-4123/image/slideshow_s/I-4123_C0059505.jpg",
+      "checkedAt": "2026-07-07T03:14:48.238Z"
+    },
+    "colbase-13": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-690/image/slideshow_s/G-690_C0047595.jpg",
+      "checkedAt": "2026-07-07T03:14:48.240Z"
+    },
+    "colbase-14": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/N-102/image/slideshow_s/N-102_C0025634.jpg",
+      "checkedAt": "2026-07-07T03:14:48.242Z"
+    },
+    "colbase-15": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-9499/image/slideshow_s/A-9499_C0055151.jpg",
+      "checkedAt": "2026-07-07T03:14:48.244Z"
+    },
+    "colbase-16": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-229/image/slideshow_s/TG-229_C0083182.jpg",
+      "checkedAt": "2026-07-07T03:14:48.246Z"
+    },
+    "colbase-17": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/E%E7%94%B217-45/image/slideshow_s/41466_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:48.294Z"
+    },
+    "colbase-18": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01494.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.316Z"
+    },
+    "colbase-19": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/03806_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.351Z"
+    },
+    "colbase-20": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/04182.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.364Z"
+    },
+    "colbase-21": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/P14995/image/slideshow_s/70292.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:48.389Z"
+    },
+    "colbase-22": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-1112/image/slideshow_s/G-1112_C0057363.jpg",
+      "checkedAt": "2026-07-07T03:14:48.436Z"
+    },
+    "colbase-23": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-4531/image/slideshow_s/H-4531_C0049831.jpg",
+      "checkedAt": "2026-07-07T03:14:48.478Z"
+    },
+    "colbase-24": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/H%E4%B9%9997/image/slideshow_s/289228_difile1-L.jpg",
+      "checkedAt": "2026-07-07T03:14:48.492Z"
+    },
+    "colbase-25": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-2711/image/slideshow_s/TG-2711_C0062346.jpg",
+      "checkedAt": "2026-07-07T03:14:48.501Z"
+    },
+    "colbase-26": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/09658.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.575Z"
+    },
+    "colbase-27": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/04352.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.603Z"
+    },
+    "colbase-28": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_13073_13073.jpg",
+      "checkedAt": "2026-07-07T03:14:48.606Z"
+    },
+    "colbase-29": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TB-1176/image/slideshow_s/TB-1176_E0106961.jpg",
+      "checkedAt": "2026-07-07T03:14:48.608Z"
+    },
+    "colbase-30": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/03558.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.610Z"
+    },
+    "colbase-31": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B21013/image/slideshow_s/87413_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:48.613Z"
+    },
+    "colbase-32": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01354_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.614Z"
+    },
+    "colbase-33": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-11847/image/slideshow_s/A-11847_E0120672.jpg",
+      "checkedAt": "2026-07-07T03:14:48.615Z"
+    },
+    "colbase-34": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9334/media_files/large/1512.jpg",
+      "checkedAt": "2026-07-07T03:14:48.629Z"
+    },
+    "colbase-35": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/narahaku/1315-0/image/slideshow_s/D022823.jpg",
+      "checkedAt": "2026-07-07T03:14:48.757Z"
+    },
+    "colbase-36": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-3502/image/slideshow_s/H-3502_E0075051.jpg",
+      "checkedAt": "2026-07-07T03:14:48.771Z"
+    },
+    "colbase-37": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/B%E7%94%B233/image/slideshow_s/18651_difile1-L.jpg",
+      "checkedAt": "2026-07-07T03:14:48.775Z"
+    },
+    "colbase-38": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-4467/image/slideshow_s/G-4467_C0096922.jpg",
+      "checkedAt": "2026-07-07T03:14:48.785Z"
+    },
+    "colbase-39": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/B%E7%94%B210/image/slideshow_s/211837_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:48.786Z"
+    },
+    "colbase-40": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/E40/image/slideshow_s/73446.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:48.791Z"
+    },
+    "colbase-41": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/YA4/image/slideshow_s/110955.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:48.881Z"
+    },
+    "colbase-42": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-9165/image/slideshow_s/A-9165_E0037657.jpg",
+      "checkedAt": "2026-07-07T03:14:48.889Z"
+    },
+    "colbase-43": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/E-18003/image/slideshow_s/E-18003_C0084199.jpg",
+      "checkedAt": "2026-07-07T03:14:48.890Z"
+    },
+    "colbase-44": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/06200.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:48.900Z"
+    },
+    "colbase-45": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-335/image/slideshow_s/A-10569-335_C0048228.jpg",
+      "checkedAt": "2026-07-07T03:14:48.921Z"
+    },
+    "colbase-46": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-1175/image/slideshow_s/I-1175_C0101153.jpg",
+      "checkedAt": "2026-07-07T03:14:49.046Z"
+    },
+    "colbase-47": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/06598.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:49.050Z"
+    },
+    "colbase-48": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B21314/image/slideshow_s/68772_difile3-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.052Z"
+    },
+    "colbase-49": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/I%E7%94%B2570-15/image/slideshow_s/9583_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.071Z"
+    },
+    "colbase-50": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/B-2433/image/slideshow_s/B-2433_E0108674.jpg",
+      "checkedAt": "2026-07-07T03:14:49.133Z"
+    },
+    "colbase-51": {
+      "availability": "ok",
+      "winningUrl": "https://kenshi-archives.pref.aomori.lg.jp/il/cont/01/G0000004pic/000/852/000852489.jpg",
+      "checkedAt": "2026-07-07T03:14:49.165Z"
+    },
+    "colbase-52": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/04371.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:49.190Z"
+    },
+    "colbase-53": {
+      "availability": "ok",
+      "winningUrl": "https://museumcollection.tokyo/wp-content/uploads/2025/07/644306-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.227Z"
+    },
+    "colbase-54": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5899/media_files/large/7675.jpg",
+      "checkedAt": "2026-07-07T03:14:49.246Z"
+    },
+    "colbase-55": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/P14974/image/slideshow_s/92762.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:49.283Z"
+    },
+    "colbase-56": {
+      "availability": "ok",
+      "winningUrl": "https://d-archive.u-gakugei.ac.jp/iiif/2/library%2F10814088%2F00001.tif/full/220,/0/default.jpg",
+      "checkedAt": "2026-07-07T03:14:49.284Z"
+    },
+    "colbase-57": {
+      "availability": "ok",
+      "winningUrl": "https://d-archive.u-gakugei.ac.jp/iiif/2/library%2FEP20000341%2F00001.tif/full/220,/0/default.jpg",
+      "checkedAt": "2026-07-07T03:14:49.375Z"
+    },
+    "colbase-58": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/B-3144/image/slideshow_s/B-3144_C0064384.jpg",
+      "checkedAt": "2026-07-07T03:14:49.378Z"
+    },
+    "colbase-59": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/E-14980/image/slideshow_s/E-14980_E0069955.jpg",
+      "checkedAt": "2026-07-07T03:14:49.390Z"
+    },
+    "colbase-60": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-3301/image/slideshow_s/I-3301_C0019112.jpg",
+      "checkedAt": "2026-07-07T03:14:49.403Z"
+    },
+    "colbase-61": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/F-20153/image/slideshow_s/F-20153_E0022644.jpg",
+      "checkedAt": "2026-07-07T03:14:49.405Z"
+    },
+    "colbase-62": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-2666/image/slideshow_s/A-10569-2666_E0044665.jpg",
+      "checkedAt": "2026-07-07T03:14:49.410Z"
+    },
+    "colbase-63": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:49.423Z"
+    },
+    "colbase-64": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-3227/image/slideshow_s/A-10569-3227_E0177653.jpg",
+      "checkedAt": "2026-07-07T03:14:49.485Z"
+    },
+    "colbase-65": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/140542.jpg",
+      "checkedAt": "2026-07-07T03:14:49.542Z"
+    },
+    "colbase-66": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-4094/image/slideshow_s/I-4094_C0101047.jpg",
+      "checkedAt": "2026-07-07T03:14:49.613Z"
+    },
+    "colbase-67": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01158.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:49.771Z"
+    },
+    "colbase-68": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-5376/image/slideshow_s/G-5376_C0084649.jpg",
+      "checkedAt": "2026-07-07T03:14:49.774Z"
+    },
+    "colbase-69": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-79/image/slideshow_s/A-79_A-79-02.jpg",
+      "checkedAt": "2026-07-07T03:14:49.815Z"
+    },
+    "colbase-70": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B21015/image/slideshow_s/78524_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.818Z"
+    },
+    "colbase-71": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-12374/image/slideshow_s/A-12374_E0018425.jpg",
+      "checkedAt": "2026-07-07T03:14:49.825Z"
+    },
+    "colbase-72": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/C-217/image/slideshow_s/C-217_C0089861.jpg",
+      "checkedAt": "2026-07-07T03:14:49.891Z"
+    },
+    "colbase-73": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/E245/image/slideshow_s/96283.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:49.892Z"
+    },
+    "colbase-74": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/08588.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:49.894Z"
+    },
+    "colbase-75": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-1452/image/slideshow_s/H-1452_C0067570.jpg",
+      "checkedAt": "2026-07-07T03:14:49.904Z"
+    },
+    "colbase-76": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/narahaku/1306-0/image/slideshow_s/H050031.jpg",
+      "checkedAt": "2026-07-07T03:14:49.917Z"
+    },
+    "colbase-77": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-2827/image/slideshow_s/TG-2827_C0086915.jpg",
+      "checkedAt": "2026-07-07T03:14:49.918Z"
+    },
+    "colbase-78": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/08721_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:49.924Z"
+    },
+    "colbase-79": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B2387/image/slideshow_s/1712_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.928Z"
+    },
+    "colbase-80": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B2196/image/slideshow_s/39428_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:49.928Z"
+    },
+    "colbase-81": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_13004_13004.jpg",
+      "checkedAt": "2026-07-07T03:14:49.950Z"
+    },
+    "colbase-82": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/N-228/image/slideshow_s/N-228_E0066695.jpg",
+      "checkedAt": "2026-07-07T03:14:49.982Z"
+    },
+    "colbase-83": {
+      "availability": "ok",
+      "winningUrl": "https://www.dl.ndl.go.jp/api/iiif/2557475/R0000002/full/180,/0/default.jpg",
+      "checkedAt": "2026-07-07T03:14:49.984Z"
+    },
+    "colbase-84": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/J-797/image/slideshow_s/J-797_E0138016.jpg",
+      "checkedAt": "2026-07-07T03:14:50.075Z"
+    },
+    "colbase-85": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/B-2182/image/slideshow_s/B-2182_C0073850.jpg",
+      "checkedAt": "2026-07-07T03:14:50.107Z"
+    },
+    "colbase-86": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-775/image/slideshow_s/A-10569-775_C0088557.jpg",
+      "checkedAt": "2026-07-07T03:14:50.193Z"
+    },
+    "colbase-87": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:50.256Z"
+    },
+    "colbase-88": {
+      "availability": "ok",
+      "winningUrl": "https://api.ro-da.jp/v1/shinshu-dcommons/museum_history/03OD02M1502000/thumbnails/default.png",
+      "checkedAt": "2026-07-07T03:14:50.304Z"
+    },
+    "colbase-89": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5899/media_files/large/1860.jpg",
+      "checkedAt": "2026-07-07T03:14:50.333Z"
+    },
+    "colbase-90": {
+      "availability": "ok",
+      "winningUrl": "https://www.arc.ritsumei.ac.jp/archive01/theater/th_image/PB/nijl/200024801/200024801_00001.jpg",
+      "checkedAt": "2026-07-07T03:14:50.335Z"
+    },
+    "colbase-91": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-3030/image/slideshow_s/A-3030_E0093338.jpg",
+      "checkedAt": "2026-07-07T03:14:50.446Z"
+    },
+    "colbase-92": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/08597.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:50.451Z"
+    },
+    "colbase-93": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01105.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:50.455Z"
+    },
+    "colbase-94": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/I%E7%94%B2196/image/slideshow_s/44925_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:50.462Z"
+    },
+    "colbase-95": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5899/media_files/large/2532.jpg",
+      "checkedAt": "2026-07-07T03:14:50.473Z"
+    },
+    "colbase-96": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01492.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:50.485Z"
+    },
+    "colbase-97": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-448/image/slideshow_s/H-448_C0041562.jpg",
+      "checkedAt": "2026-07-07T03:14:50.606Z"
+    },
+    "colbase-98": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/C-698/image/slideshow_s/C-698_E0200064.jpg",
+      "checkedAt": "2026-07-07T03:14:50.607Z"
+    },
+    "colbase-99": {
+      "availability": "ok",
+      "winningUrl": "https://api.ro-da.jp/v1/shinshu-dcommons/museum_history/03OD0622205000/thumbnails/default.png",
+      "checkedAt": "2026-07-07T03:14:50.608Z"
+    },
+    "colbase-100": {
+      "availability": "ok",
+      "winningUrl": "https://photo-archive.jp/database/image/00040/00040-Frame/00040-00766-0001.jpg",
+      "checkedAt": "2026-07-07T03:14:50.610Z"
+    },
+    "colbase-101": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-1043/image/slideshow_s/G-1043_C0094551.jpg",
+      "checkedAt": "2026-07-07T03:14:50.629Z"
+    },
+    "colbase-102": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5899/media_files/large/5577.jpg",
+      "checkedAt": "2026-07-07T03:14:50.640Z"
+    },
+    "colbase-103": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/B-3281/image/slideshow_s/B-3281_E0026858.jpg",
+      "checkedAt": "2026-07-07T03:14:50.739Z"
+    },
+    "colbase-104": {
+      "availability": "ok",
+      "winningUrl": "https://museumcollection.tokyo/wp-content/uploads/2025/07/660570-L.jpg",
+      "checkedAt": "2026-07-07T03:14:50.757Z"
+    },
+    "colbase-105": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-4517/image/slideshow_s/G-4517_C0096573.jpg",
+      "checkedAt": "2026-07-07T03:14:50.761Z"
+    },
+    "colbase-106": {
+      "availability": "ok",
+      "winningUrl": "https://photo-archive.jp/database/image/00045/00045-Frame/00045-00092-0023.jpg",
+      "checkedAt": "2026-07-07T03:14:50.773Z"
+    },
+    "colbase-107": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-11966/image/slideshow_s/A-11966_A-11966-02.jpg",
+      "checkedAt": "2026-07-07T03:14:50.810Z"
+    },
+    "colbase-108": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-480/image/slideshow_s/A-10569-480_A-10569-480.jpg",
+      "checkedAt": "2026-07-07T03:14:50.846Z"
+    },
+    "colbase-109": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_14853_14853.jpg",
+      "checkedAt": "2026-07-07T03:14:50.868Z"
+    },
+    "colbase-110": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/00560_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:50.870Z"
+    },
+    "colbase-111": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/P-2803/image/slideshow_s/P-2803_E0112511.jpg",
+      "checkedAt": "2026-07-07T03:14:50.885Z"
+    },
+    "colbase-112": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5899/media_files/large/7774.jpg",
+      "checkedAt": "2026-07-07T03:14:50.897Z"
+    },
+    "colbase-113": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5164/media_files/large/439254.jpg",
+      "checkedAt": "2026-07-07T03:14:51.002Z"
+    },
+    "colbase-114": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-11152/image/slideshow_s/A-11152_C0061934.jpg",
+      "checkedAt": "2026-07-07T03:14:51.016Z"
+    },
+    "colbase-115": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-310/image/slideshow_s/H-310_C0059708.jpg",
+      "checkedAt": "2026-07-07T03:14:51.020Z"
+    },
+    "colbase-116": {
+      "availability": "ok",
+      "winningUrl": "https://enpaku.w.waseda.jp/enpaku/wp-content/uploads/2015/04/sadanjikyodai_ms_s.jpg",
+      "checkedAt": "2026-07-07T03:14:51.036Z"
+    },
+    "colbase-117": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/B-1742/image/slideshow_s/B-1742_E0043638.jpg",
+      "checkedAt": "2026-07-07T03:14:51.046Z"
+    },
+    "colbase-118": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-5532/image/slideshow_s/A-5532_E0042837.jpg",
+      "checkedAt": "2026-07-07T03:14:51.085Z"
+    },
+    "colbase-119": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_13854_13854.jpg",
+      "checkedAt": "2026-07-07T03:14:51.099Z"
+    },
+    "colbase-120": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-12184/image/slideshow_s/A-12184_C0073457.jpg",
+      "checkedAt": "2026-07-07T03:14:51.123Z"
+    },
+    "colbase-121": {
+      "availability": "ok",
+      "winningUrl": "https://photo-archive.jp/database/image/00040/00040-Frame/00040-00762-0003.jpg",
+      "checkedAt": "2026-07-07T03:14:51.135Z"
+    },
+    "colbase-122": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-3027/image/slideshow_s/TG-3027_E0090359.jpg",
+      "checkedAt": "2026-07-07T03:14:51.169Z"
+    },
+    "colbase-123": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/01269.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:51.217Z"
+    },
+    "colbase-124": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:51.227Z"
+    },
+    "colbase-125": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/8651.jpg",
+      "checkedAt": "2026-07-07T03:14:51.242Z"
+    },
+    "colbase-126": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/7917.jpg",
+      "checkedAt": "2026-07-07T03:14:51.248Z"
+    },
+    "colbase-127": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-1233/image/slideshow_s/TG-1233_E0059468.jpg",
+      "checkedAt": "2026-07-07T03:14:51.314Z"
+    },
+    "colbase-128": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:51.324Z"
+    },
+    "colbase-129": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/06610.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:51.349Z"
+    },
+    "colbase-130": {
+      "availability": "ok",
+      "winningUrl": "https://lapis.nichibun.ac.jp/image?did=14&pic=0&fid=00349v.jpg",
+      "checkedAt": "2026-07-07T03:14:51.383Z"
+    },
+    "colbase-131": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/137629.jpg",
+      "checkedAt": "2026-07-07T03:14:51.388Z"
+    },
+    "colbase-132": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-1828/image/slideshow_s/A-10569-1828_E0072775.jpg",
+      "checkedAt": "2026-07-07T03:14:51.389Z"
+    },
+    "colbase-133": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/narahaku/653-0/image/slideshow_s/D017572.jpg",
+      "checkedAt": "2026-07-07T03:14:51.389Z"
+    },
+    "colbase-134": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tobunken/02064/image/slideshow_s/G02064.jpg",
+      "checkedAt": "2026-07-07T03:14:51.394Z"
+    },
+    "colbase-135": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/P-1124/image/slideshow_s/P-1124_E0015250.jpg",
+      "checkedAt": "2026-07-07T03:14:51.399Z"
+    },
+    "colbase-136": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/7969.jpg",
+      "checkedAt": "2026-07-07T03:14:51.421Z"
+    },
+    "colbase-137": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/8148/media_files/large/10723.jpg",
+      "checkedAt": "2026-07-07T03:14:51.473Z"
+    },
+    "colbase-138": {
+      "availability": "ok",
+      "winningUrl": "https://museum.umic.jp/jps/content/johogura/2049064m.jpg",
+      "checkedAt": "2026-07-07T03:14:51.523Z"
+    },
+    "colbase-139": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/B%E7%94%B258/image/slideshow_s/119360_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:51.606Z"
+    },
+    "colbase-140": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/206110.jpg",
+      "checkedAt": "2026-07-07T03:14:51.700Z"
+    },
+    "colbase-141": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/8373.jpg",
+      "checkedAt": "2026-07-07T03:14:51.708Z"
+    },
+    "colbase-142": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/197835.jpg",
+      "checkedAt": "2026-07-07T03:14:51.712Z"
+    },
+    "colbase-143": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/290218.jpg",
+      "checkedAt": "2026-07-07T03:14:51.732Z"
+    },
+    "colbase-144": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TH-523/image/slideshow_s/TH-523_C0088253.jpg",
+      "checkedAt": "2026-07-07T03:14:51.738Z"
+    },
+    "colbase-145": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/86822.jpg",
+      "checkedAt": "2026-07-07T03:14:51.740Z"
+    },
+    "colbase-146": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyuhaku/P15011/image/slideshow_s/110953.LL.jpg",
+      "checkedAt": "2026-07-07T03:14:51.746Z"
+    },
+    "colbase-147": {
+      "availability": "ok",
+      "winningUrl": "https://www.dl.ndl.go.jp/api/iiif/2533016/R0000001/full/256,/0/default.jpg",
+      "checkedAt": "2026-07-07T03:14:51.790Z"
+    },
+    "colbase-148": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_15685_15685.jpg",
+      "checkedAt": "2026-07-07T03:14:51.829Z"
+    },
+    "colbase-149": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/08753_01.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:51.830Z"
+    },
+    "colbase-150": {
+      "availability": "ok",
+      "winningUrl": "https://search.artmuseums.go.jp/jpeg/small/momak/M00681.jpg",
+      "checkedAt": "2026-07-07T03:14:51.854Z"
+    },
+    "colbase-151": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/41533.jpg",
+      "checkedAt": "2026-07-07T03:14:51.859Z"
+    },
+    "colbase-152": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-3216/image/slideshow_s/I-3216_C0070657.jpg",
+      "checkedAt": "2026-07-07T03:14:51.878Z"
+    },
+    "colbase-153": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:51.897Z"
+    },
+    "colbase-154": {
+      "availability": "ok",
+      "winningUrl": "https://photo-archive.jp/database/image/00069/00069-Frame/00069-10488-0008.jpg",
+      "checkedAt": "2026-07-07T03:14:51.909Z"
+    },
+    "colbase-155": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/P-2971/image/slideshow_s/P-2971_E0135076.jpg",
+      "checkedAt": "2026-07-07T03:14:51.912Z"
+    },
+    "colbase-156": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/195653.jpg",
+      "checkedAt": "2026-07-07T03:14:51.933Z"
+    },
+    "colbase-157": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/C-308/image/slideshow_s/C-308_E0178350.jpg",
+      "checkedAt": "2026-07-07T03:14:51.937Z"
+    },
+    "colbase-158": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-1394/image/slideshow_s/A-1394_C0083315.jpg",
+      "checkedAt": "2026-07-07T03:14:51.967Z"
+    },
+    "colbase-159": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/288708.jpg",
+      "checkedAt": "2026-07-07T03:14:52.010Z"
+    },
+    "colbase-160": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/8148/media_files/large/6423.jpg",
+      "checkedAt": "2026-07-07T03:14:52.011Z"
+    },
+    "colbase-161": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:52.061Z"
+    },
+    "colbase-162": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/5164/media_files/large/400306.jpg",
+      "checkedAt": "2026-07-07T03:14:52.062Z"
+    },
+    "colbase-163": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TG-2372/image/slideshow_s/TG-2372_E0024873.jpg",
+      "checkedAt": "2026-07-07T03:14:52.067Z"
+    },
+    "colbase-164": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/I%E7%94%B2821-59/image/slideshow_s/25034_difile1-L.jpg",
+      "checkedAt": "2026-07-07T03:14:52.070Z"
+    },
+    "colbase-165": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/8148/media_files/large/6027.jpg",
+      "checkedAt": "2026-07-07T03:14:52.071Z"
+    },
+    "colbase-166": {
+      "availability": "ok",
+      "winningUrl": "https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Books/arcBK/arcBK01-0042/arcBK01-0042_18.jpg",
+      "checkedAt": "2026-07-07T03:14:52.095Z"
+    },
+    "colbase-167": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_15023_15023.jpg",
+      "checkedAt": "2026-07-07T03:14:52.110Z"
+    },
+    "colbase-168": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-2082/image/slideshow_s/I-2082_C0008818.jpg",
+      "checkedAt": "2026-07-07T03:14:52.139Z"
+    },
+    "colbase-169": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/nabunken/6AACVS15000175/image/slideshow_s/309%E3%80%80%E5%B9%B3%E5%9F%8E%E5%AE%AE2-2293%E3%80%80%E8%A1%A8%E3%80%80%E3%82%AB%E3%83%A9%E3%83%BC%E3%80%806AACVS150001751-C1.jpg",
+      "checkedAt": "2026-07-07T03:14:52.195Z"
+    },
+    "colbase-170": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:52.202Z"
+    },
+    "colbase-171": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-599/image/slideshow_s/A-10569-599_E0179061.jpg",
+      "checkedAt": "2026-07-07T03:14:52.217Z"
+    },
+    "colbase-172": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/197014.jpg",
+      "checkedAt": "2026-07-07T03:14:52.305Z"
+    },
+    "colbase-173": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_12468_12468.jpg",
+      "checkedAt": "2026-07-07T03:14:52.309Z"
+    },
+    "colbase-174": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/nabunken/6AABUS48001278/image/slideshow_s/242%E3%80%80%E5%B9%B3%E5%9F%8E%E5%AE%AE1-517%E3%80%80%E8%A1%A8%E8%A3%8F%E3%80%80%E3%82%AB%E3%83%A9%E3%83%BC%E3%80%806AABUS48001278-C1.jpg",
+      "checkedAt": "2026-07-07T03:14:52.310Z"
+    },
+    "colbase-175": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-643/image/slideshow_s/A-10569-643_E0173295.jpg",
+      "checkedAt": "2026-07-07T03:14:52.318Z"
+    },
+    "colbase-176": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-10569-7391/image/slideshow_s/A-10569-7391_E0177627.jpg",
+      "checkedAt": "2026-07-07T03:14:52.362Z"
+    },
+    "colbase-177": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:52.371Z"
+    },
+    "colbase-178": {
+      "availability": "ok",
+      "winningUrl": "https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP5899.jpg",
+      "checkedAt": "2026-07-07T03:14:52.374Z"
+    },
+    "colbase-179": {
+      "availability": "ok",
+      "winningUrl": "https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP6157.jpg",
+      "checkedAt": "2026-07-07T03:14:52.375Z"
+    },
+    "colbase-180": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/196040.jpg",
+      "checkedAt": "2026-07-07T03:14:52.376Z"
+    },
+    "colbase-181": {
+      "availability": "ok",
+      "winningUrl": "https://jomon-japan.jp/assets/main/A005a000008-main.png",
+      "checkedAt": "2026-07-07T03:14:52.377Z"
+    },
+    "colbase-182": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/J-20663/image/slideshow_s/J-20663_E0115036.jpg",
+      "checkedAt": "2026-07-07T03:14:52.421Z"
+    },
+    "colbase-183": {
+      "availability": "ok",
+      "winningUrl": "https://www.arc.ritsumei.ac.jp/archive01/theater/image/PB/arc/Prints/arcUP/arcUP3433.jpg",
+      "checkedAt": "2026-07-07T03:14:52.470Z"
+    },
+    "colbase-184": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/196901.jpg",
+      "checkedAt": "2026-07-07T03:14:52.471Z"
+    },
+    "colbase-185": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TA-321/image/slideshow_s/TA-321_N0070788.jpg",
+      "checkedAt": "2026-07-07T03:14:52.527Z"
+    },
+    "colbase-186": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/198060.jpg",
+      "checkedAt": "2026-07-07T03:14:52.583Z"
+    },
+    "colbase-187": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/107406.jpg",
+      "checkedAt": "2026-07-07T03:14:52.609Z"
+    },
+    "colbase-188": {
+      "availability": "ok",
+      "winningUrl": "https://file.objecthub.keio.ac.jp/image/thum_l_15923_15923.jpg",
+      "checkedAt": "2026-07-07T03:14:52.613Z"
+    },
+    "colbase-189": {
+      "availability": "ok",
+      "winningUrl": "https://www.fujibi.or.jp/webp/assets/images/artwork/source/00409.jpg.webp",
+      "checkedAt": "2026-07-07T03:14:52.655Z"
+    },
+    "colbase-190": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/290172.jpg",
+      "checkedAt": "2026-07-07T03:14:52.659Z"
+    },
+    "colbase-191": {
+      "availability": "ok",
+      "winningUrl": "https://archives.jiyu.ac.jp/newspaper/images/img3/4013-000.jpg",
+      "checkedAt": "2026-07-07T03:14:52.712Z"
+    },
+    "colbase-192": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/8148/media_files/large/10961.jpg",
+      "checkedAt": "2026-07-07T03:14:52.744Z"
+    },
+    "colbase-193": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/137838.jpg",
+      "checkedAt": "2026-07-07T03:14:52.777Z"
+    },
+    "colbase-194": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/H-144/image/slideshow_s/H-144_C0097539.jpg",
+      "checkedAt": "2026-07-07T03:14:52.781Z"
+    },
+    "colbase-195": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/198082.jpg",
+      "checkedAt": "2026-07-07T03:14:52.782Z"
+    },
+    "colbase-196": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/C-490/image/slideshow_s/C-490_C0048646.jpg",
+      "checkedAt": "2026-07-07T03:14:52.830Z"
+    },
+    "colbase-197": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/40507.jpg",
+      "checkedAt": "2026-07-07T03:14:52.832Z"
+    },
+    "colbase-198": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/A%E7%94%B2798-124/image/slideshow_s/11698_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:52.864Z"
+    },
+    "colbase-199": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tobunken/04838A/image/slideshow_s/G04838A.jpg",
+      "checkedAt": "2026-07-07T03:14:52.890Z"
+    },
+    "colbase-200": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/kyohaku/E%E7%94%B217-10/image/slideshow_s/41441_difile2-L.jpg",
+      "checkedAt": "2026-07-07T03:14:52.894Z"
+    },
+    "colbase-201": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/A-268/image/slideshow_s/A-268_C0012992.jpg",
+      "checkedAt": "2026-07-07T03:14:52.905Z"
+    },
+    "colbase-202": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/32127.jpg",
+      "checkedAt": "2026-07-07T03:14:52.920Z"
+    },
+    "colbase-203": {
+      "availability": "ok",
+      "winningUrl": "https://archives.jiyu.ac.jp/newspaper/images/img3/2102-000.jpg",
+      "checkedAt": "2026-07-07T03:14:52.953Z"
+    },
+    "colbase-204": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tobunken/19586/image/slideshow_s/G19586.jpg",
+      "checkedAt": "2026-07-07T03:14:52.956Z"
+    },
+    "colbase-205": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/I-2055/image/slideshow_s/I-2055_E0184856.jpg",
+      "checkedAt": "2026-07-07T03:14:52.987Z"
+    },
+    "colbase-206": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/176721.jpg",
+      "checkedAt": "2026-07-07T03:14:53.025Z"
+    },
+    "colbase-207": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/6321.jpg",
+      "checkedAt": "2026-07-07T03:14:53.025Z"
+    },
+    "colbase-208": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/8105.jpg",
+      "checkedAt": "2026-07-07T03:14:53.034Z"
+    },
+    "colbase-209": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/nabunken/6AABUS48000302/image/slideshow_s/260%E3%80%80%E5%B9%B3%E5%9F%8E%E5%AE%AE1-596%E3%80%80%E8%A1%A8%E8%A3%8F%E3%80%80%E3%82%AB%E3%83%A9%E3%83%BC%E3%80%806AABUS48000302-C1.jpg",
+      "checkedAt": "2026-07-07T03:14:53.035Z"
+    },
+    "colbase-210": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/33820.jpg",
+      "checkedAt": "2026-07-07T03:14:53.066Z"
+    },
+    "colbase-211": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TB-243/image/slideshow_s/TB-243_E0105597.jpg",
+      "checkedAt": "2026-07-07T03:14:53.079Z"
+    },
+    "colbase-212": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-4377/image/slideshow_s/G-4377_C0075311.jpg",
+      "checkedAt": "2026-07-07T03:14:53.137Z"
+    },
+    "colbase-213": {
+      "availability": "ok",
+      "winningUrl": "https://mfas3.s3.amazonaws.com/objects/SC163123.jpg",
+      "checkedAt": "2026-07-07T03:14:53.140Z"
+    },
+    "colbase-214": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/207061.jpg",
+      "checkedAt": "2026-07-07T03:14:53.142Z"
+    },
+    "colbase-215": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/K-27845/image/slideshow_s/K-27845_N0138850.jpg",
+      "checkedAt": "2026-07-07T03:14:53.185Z"
+    },
+    "colbase-216": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/188503.jpg",
+      "checkedAt": "2026-07-07T03:14:53.186Z"
+    },
+    "colbase-217": {
+      "availability": "ok",
+      "winningUrl": "https://ibmuseum.mapps.ne.jp/files/9722/media_files/large/41536.jpg",
+      "checkedAt": "2026-07-07T03:14:53.266Z"
+    },
+    "colbase-218": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/TC-155/image/slideshow_s/TC-155_E0077310.jpg",
+      "checkedAt": "2026-07-07T03:14:53.267Z"
+    },
+    "colbase-219": {
+      "availability": "ok",
+      "winningUrl": "https://colbase.nich.go.jp/media/tnm/G-1336/image/slideshow_s/G-1336_C0098518.jpg",
+      "checkedAt": "2026-07-07T03:14:53.272Z"
+    },
+    "oceania-seasia-0": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.275Z"
+    },
+    "oceania-seasia-1": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.280Z"
+    },
+    "oceania-seasia-2": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.286Z"
+    },
+    "oceania-seasia-3": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.378Z"
+    },
+    "oceania-seasia-4": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.387Z"
+    },
+    "oceania-seasia-5": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.396Z"
+    },
+    "oceania-seasia-6": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.407Z"
+    },
+    "oceania-seasia-7": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.467Z"
+    },
+    "oceania-seasia-8": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.480Z"
+    },
+    "oceania-seasia-9": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.482Z"
+    },
+    "oceania-seasia-10": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.495Z"
+    },
+    "oceania-seasia-11": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.518Z"
+    },
+    "oceania-seasia-12": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.521Z"
+    },
+    "oceania-seasia-13": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.656Z"
+    },
+    "oceania-seasia-14": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.771Z"
+    },
+    "oceania-seasia-15": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.828Z"
+    },
+    "oceania-seasia-16": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.867Z"
+    },
+    "oceania-seasia-17": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.926Z"
+    },
+    "oceania-seasia-18": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:53.997Z"
+    },
+    "oceania-seasia-19": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.270Z"
+    },
+    "oceania-seasia-20": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.272Z"
+    },
+    "oceania-seasia-21": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.332Z"
+    },
+    "oceania-seasia-22": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.369Z"
+    },
+    "oceania-seasia-23": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.405Z"
+    },
+    "oceania-seasia-24": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.413Z"
+    },
+    "oceania-seasia-25": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.439Z"
+    },
+    "oceania-seasia-26": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.442Z"
+    },
+    "oceania-seasia-27": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.443Z"
+    },
+    "oceania-seasia-28": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.457Z"
+    },
+    "oceania-seasia-29": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.668Z"
+    },
+    "oceania-seasia-30": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:54.751Z"
+    },
+    "oceania-seasia-31": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.129Z"
+    },
+    "oceania-seasia-32": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.150Z"
+    },
+    "oceania-seasia-33": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.151Z"
+    },
+    "oceania-seasia-34": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.189Z"
+    },
+    "oceania-seasia-35": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.224Z"
+    },
+    "oceania-seasia-36": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.226Z"
+    },
+    "oceania-seasia-37": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.259Z"
+    },
+    "oceania-seasia-38": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.263Z"
+    },
+    "oceania-seasia-39": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.422Z"
+    },
+    "oceania-seasia-40": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.503Z"
+    },
+    "oceania-seasia-41": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.507Z"
+    },
+    "oceania-seasia-42": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.529Z"
+    },
+    "oceania-seasia-43": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.574Z"
+    },
+    "oceania-seasia-44": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.580Z"
+    },
+    "oceania-seasia-45": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.624Z"
+    },
+    "oceania-seasia-46": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.643Z"
+    },
+    "oceania-seasia-47": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.650Z"
+    },
+    "oceania-seasia-48": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.725Z"
+    },
+    "oceania-seasia-49": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.918Z"
+    },
+    "oceania-seasia-50": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:55.952Z"
+    },
+    "oceania-seasia-51": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.164Z"
+    },
+    "oceania-seasia-52": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.237Z"
+    },
+    "oceania-seasia-53": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.371Z"
+    },
+    "oceania-seasia-54": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.399Z"
+    },
+    "oceania-seasia-55": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.447Z"
+    },
+    "oceania-seasia-56": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.451Z"
+    },
+    "oceania-seasia-57": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.566Z"
+    },
+    "oceania-seasia-58": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.616Z"
+    },
+    "oceania-seasia-59": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.698Z"
+    },
+    "oceania-seasia-60": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.713Z"
+    },
+    "oceania-seasia-61": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.745Z"
+    },
+    "oceania-seasia-62": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.784Z"
+    },
+    "oceania-seasia-63": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.786Z"
+    },
+    "oceania-seasia-64": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.789Z"
+    },
+    "oceania-seasia-65": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.837Z"
+    },
+    "oceania-seasia-66": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:56.860Z"
+    },
+    "oceania-seasia-67": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.100Z"
+    },
+    "oceania-seasia-68": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.113Z"
+    },
+    "oceania-seasia-69": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.393Z"
+    },
+    "oceania-seasia-70": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.407Z"
+    },
+    "oceania-seasia-71": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.428Z"
+    },
+    "oceania-seasia-72": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.433Z"
+    },
+    "oceania-seasia-73": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.493Z"
+    },
+    "oceania-seasia-74": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.560Z"
+    },
+    "oceania-seasia-75": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.642Z"
+    },
+    "oceania-seasia-76": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.747Z"
+    },
+    "oceania-seasia-77": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.757Z"
+    },
+    "oceania-seasia-78": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.757Z"
+    },
+    "oceania-seasia-79": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.791Z"
+    },
+    "oceania-seasia-80": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.853Z"
+    },
+    "oceania-seasia-81": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.867Z"
+    },
+    "oceania-seasia-82": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.887Z"
+    },
+    "oceania-seasia-83": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:57.914Z"
+    },
+    "oceania-seasia-84": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.242Z"
+    },
+    "oceania-seasia-85": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.310Z"
+    },
+    "oceania-seasia-86": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.378Z"
+    },
+    "oceania-seasia-87": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.379Z"
+    },
+    "oceania-seasia-88": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.400Z"
+    },
+    "oceania-seasia-89": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.690Z"
+    },
+    "oceania-seasia-90": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.692Z"
+    },
+    "oceania-seasia-91": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.695Z"
+    },
+    "oceania-seasia-92": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.704Z"
+    },
+    "oceania-seasia-93": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.741Z"
+    },
+    "oceania-seasia-94": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.755Z"
+    },
+    "oceania-seasia-95": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.794Z"
+    },
+    "oceania-seasia-96": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.795Z"
+    },
+    "oceania-seasia-97": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:58.945Z"
+    },
+    "oceania-seasia-98": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.038Z"
+    },
+    "oceania-seasia-99": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.119Z"
+    },
+    "oceania-seasia-100": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.192Z"
+    },
+    "oceania-seasia-101": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.318Z"
+    },
+    "oceania-seasia-102": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.360Z"
+    },
+    "oceania-seasia-103": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.392Z"
+    },
+    "oceania-seasia-104": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.518Z"
+    },
+    "oceania-seasia-105": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.547Z"
+    },
+    "oceania-seasia-106": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.677Z"
+    },
+    "oceania-seasia-107": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.687Z"
+    },
+    "oceania-seasia-108": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.695Z"
+    },
+    "oceania-seasia-109": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.763Z"
+    },
+    "oceania-seasia-110": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.810Z"
+    },
+    "oceania-seasia-111": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.832Z"
+    },
+    "oceania-seasia-112": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.856Z"
+    },
+    "oceania-seasia-113": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:14:59.976Z"
+    },
+    "oceania-seasia-114": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.007Z"
+    },
+    "oceania-seasia-115": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.240Z"
+    },
+    "oceania-seasia-116": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.297Z"
+    },
+    "oceania-seasia-117": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.356Z"
+    },
+    "oceania-seasia-118": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.421Z"
+    },
+    "oceania-seasia-119": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.461Z"
+    },
+    "oceania-seasia-120": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.509Z"
+    },
+    "oceania-seasia-121": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.553Z"
+    },
+    "oceania-seasia-122": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.599Z"
+    },
+    "oceania-seasia-123": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.697Z"
+    },
+    "oceania-seasia-124": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.699Z"
+    },
+    "oceania-seasia-125": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.701Z"
+    },
+    "oceania-seasia-126": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.805Z"
+    },
+    "oceania-seasia-127": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.836Z"
+    },
+    "oceania-seasia-128": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.955Z"
+    },
+    "oceania-seasia-129": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.957Z"
+    },
+    "oceania-seasia-130": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.958Z"
+    },
+    "oceania-seasia-131": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:00.996Z"
+    },
+    "oceania-seasia-132": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.063Z"
+    },
+    "oceania-seasia-133": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.314Z"
+    },
+    "oceania-seasia-134": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.336Z"
+    },
+    "oceania-seasia-135": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.343Z"
+    },
+    "oceania-seasia-136": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.390Z"
+    },
+    "oceania-seasia-137": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.424Z"
+    },
+    "oceania-seasia-138": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.628Z"
+    },
+    "oceania-seasia-139": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.724Z"
+    },
+    "oceania-seasia-140": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.741Z"
+    },
+    "oceania-seasia-141": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.813Z"
+    },
+    "oceania-seasia-142": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.855Z"
+    },
+    "oceania-seasia-143": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.877Z"
+    },
+    "oceania-seasia-144": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:01.923Z"
+    },
+    "oceania-seasia-145": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.005Z"
+    },
+    "oceania-seasia-146": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.019Z"
+    },
+    "oceania-seasia-147": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.115Z"
+    },
+    "oceania-seasia-148": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.224Z"
+    },
+    "oceania-seasia-149": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.258Z"
+    },
+    "oceania-seasia-150": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.350Z"
+    },
+    "oceania-seasia-151": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.430Z"
+    },
+    "oceania-seasia-152": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.464Z"
+    },
+    "oceania-seasia-153": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.621Z"
+    },
+    "oceania-seasia-154": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.627Z"
+    },
+    "oceania-seasia-155": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.872Z"
+    },
+    "oceania-seasia-156": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.874Z"
+    },
+    "oceania-seasia-157": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.953Z"
+    },
+    "oceania-seasia-158": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:02.988Z"
+    },
+    "oceania-seasia-159": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:03.010Z"
+    },
+    "oceania-seasia-160": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:03.029Z"
+    },
+    "oceania-seasia-161": {
+      "availability": "broken",
+      "winningUrl": "",
+      "checkedAt": "2026-07-07T03:15:03.032Z"
+    }
+  }
+}

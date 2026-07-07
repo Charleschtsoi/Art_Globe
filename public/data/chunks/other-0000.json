@@ -18,7 +18,10 @@
       },
       "assets": {
         "thumbnail_url": "/artworks/external/external-unavailable.svg",
-        "high_res_url": "/artworks/external/external-unavailable.svg"
+        "high_res_url": "/artworks/external/external-unavailable.svg",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Brussels Art Museum poster for an Icelandic art exhibition is a notable work by Nina Tryggvadottir. Historical background will be expanded in future dataset updates.",
       "id": "kaggle2-5674f87715df7e04",
@@ -47,8 +50,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-c595bdca742a4509.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-c595bdca742a4509.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Kiddi Og Jeg 1950 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-0b78edb467d17b2a",
@@ -57,8 +63,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Kiddi Og Jeg 1950 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-c595bdca742a4509.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-c595bdca742a4509.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -77,8 +83,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-34cfb1dd7a16fc3f.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-34cfb1dd7a16fc3f.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Chinese Man At The Guggenheim New York 1976 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-1b00a0e1bb60c880",
@@ -87,8 +96,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Chinese Man At The Guggenheim New York 1976 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-34cfb1dd7a16fc3f.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-34cfb1dd7a16fc3f.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -107,8 +116,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-795d902eb9f4af87.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-795d902eb9f4af87.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Flowers 1956 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-1d1777dd73a2e420",
@@ -117,8 +129,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Flowers 1956 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-795d902eb9f4af87.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-795d902eb9f4af87.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -137,8 +149,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-b656ff50e53badd5.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-b656ff50e53badd5.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Amazon Woman Of The Mountain 1961 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-1f6ccea61441585e",
@@ -147,8 +162,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Amazon Woman Of The Mountain 1961 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-b656ff50e53badd5.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-b656ff50e53badd5.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -167,8 +182,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-8fb1b22553a1dd0e.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-8fb1b22553a1dd0e.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Lava Gorge At Thingvellir Autumn 1947 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-2bea68e2db675720",
@@ -177,8 +195,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Lava Gorge At Thingvellir Autumn 1947 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-8fb1b22553a1dd0e.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-8fb1b22553a1dd0e.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -197,8 +215,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-a961649cd915dd65.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-a961649cd915dd65.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "From H Safell Mt Str Tur West Iceland 1945 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-2d37b53f61fab760",
@@ -207,8 +228,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "From H Safell Mt Str Tur West Iceland 1945 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-a961649cd915dd65.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-a961649cd915dd65.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -227,8 +248,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d25f7c474572aa5d.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d25f7c474572aa5d.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Indiferen A 2003 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-3a097ff6520fa8af",
@@ -237,8 +261,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Indiferen A 2003 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d25f7c474572aa5d.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d25f7c474572aa5d.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -257,8 +281,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-f2edb2d1ac51c3fa.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-f2edb2d1ac51c3fa.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Facing The Wild Cats 1987 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-3ae90464f0eec02c",
@@ -267,8 +294,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Facing The Wild Cats 1987 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-f2edb2d1ac51c3fa.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-f2edb2d1ac51c3fa.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -287,8 +314,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-976d9ac42fc8b49e.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-976d9ac42fc8b49e.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Thj Rs River Mt Hekla In The Evening Sun 1918 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-5d594960f5645904",
@@ -297,8 +327,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Thj Rs River Mt Hekla In The Evening Sun 1918 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-976d9ac42fc8b49e.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-976d9ac42fc8b49e.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -317,8 +347,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-1d35191c850d1a87.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-1d35191c850d1a87.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Formations Jeune Et Rose 1963 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-5da6f0bfb650b37a",
@@ -327,8 +360,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Formations Jeune Et Rose 1963 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-1d35191c850d1a87.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-1d35191c850d1a87.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -347,8 +380,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d28c82ba20bc510b.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d28c82ba20bc510b.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Composition 1963 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-6e6654afc011bc69",
@@ -357,8 +393,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Composition 1963 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d28c82ba20bc510b.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d28c82ba20bc510b.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -377,8 +413,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-79f9337173d70516.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-79f9337173d70516.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Sv Nahraun Lava Field is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-7cafdd72363daece",
@@ -387,8 +426,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Sv Nahraun Lava Field is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-79f9337173d70516.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-79f9337173d70516.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -407,8 +446,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-ae27d3bf5888ef2e.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-ae27d3bf5888ef2e.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Forest Palace 1918 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-8afb10c79b48ea8a",
@@ -417,8 +459,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Forest Palace 1918 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-ae27d3bf5888ef2e.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-ae27d3bf5888ef2e.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -437,8 +479,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-ebd9e95fd4b03189.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-ebd9e95fd4b03189.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Birth Without Pain 1960 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-09c00d9dac12d8ed",
@@ -447,8 +492,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Birth Without Pain 1960 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-ebd9e95fd4b03189.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-ebd9e95fd4b03189.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -467,8 +512,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-2b1061abbab29f9b.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-2b1061abbab29f9b.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Fantasia 1940 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-13adb8878d7d03c3",
@@ -477,8 +525,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Fantasia 1940 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-2b1061abbab29f9b.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-2b1061abbab29f9b.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -497,8 +545,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-2b20233b0423ea4f.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-2b20233b0423ea4f.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Hvitasunnudagr 1919 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-20ae0f897c9d9a31",
@@ -507,8 +558,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Hvitasunnudagr 1919 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-2b20233b0423ea4f.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-2b20233b0423ea4f.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -527,8 +578,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-9896863225cb7486.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-9896863225cb7486.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "The Final Selection 1961 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-26b6e7a2b825ac46",
@@ -537,8 +591,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "The Final Selection 1961 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-9896863225cb7486.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-9896863225cb7486.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -557,8 +611,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-9f0a05991ca72cac.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-9f0a05991ca72cac.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Palmiers 1975 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-28bd1ebba9f21d8d",
@@ -567,8 +624,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Palmiers 1975 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-9f0a05991ca72cac.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-9f0a05991ca72cac.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -587,8 +644,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-5061341ffbafd650.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-5061341ffbafd650.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Land And Air 1965 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-53d23bc9e346f794",
@@ -597,8 +657,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Land And Air 1965 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-5061341ffbafd650.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-5061341ffbafd650.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -617,8 +677,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-10eaaddca2319467.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-10eaaddca2319467.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mem Rias Dum Circo 1991 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-90efb103b638810c",
@@ -627,8 +690,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Mem Rias Dum Circo 1991 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-10eaaddca2319467.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-10eaaddca2319467.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -647,8 +710,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-37d29d4b64bb7234.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-37d29d4b64bb7234.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Untitled Composition 1964 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-97b0c34548adee5c",
@@ -657,8 +723,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Untitled Composition 1964 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-37d29d4b64bb7234.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-37d29d4b64bb7234.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -677,8 +743,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-a985d1b65992cbe2.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-a985d1b65992cbe2.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mt Esja Seen From The Building Vinaminni 1910 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-98eac3c5a76e7fed",
@@ -687,8 +756,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Mt Esja Seen From The Building Vinaminni 1910 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-a985d1b65992cbe2.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-a985d1b65992cbe2.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -707,8 +776,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-053a7de18fd65701.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-053a7de18fd65701.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Unknown Title 1 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-494df5352bcab8d6",
@@ -717,8 +789,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Unknown Title 1 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-053a7de18fd65701.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-053a7de18fd65701.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -737,8 +809,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-9dd791e577255155.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-9dd791e577255155.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Bleikdalsa 1967 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-812d68b86e9ac24a",
@@ -747,8 +822,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Bleikdalsa 1967 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-9dd791e577255155.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-9dd791e577255155.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -767,8 +842,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-801f74e0e604d00b.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-801f74e0e604d00b.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Projet Con U is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-858adea53f0f8ca7",
@@ -777,8 +855,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Projet Con U is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-801f74e0e604d00b.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-801f74e0e604d00b.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -797,8 +875,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-72dc780c76558065.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-72dc780c76558065.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Otto E Mezzo 1970 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-926cce787fa3082e",
@@ -807,8 +888,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Otto E Mezzo 1970 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-72dc780c76558065.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-72dc780c76558065.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -827,8 +908,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-06e73195bcf272f1.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-06e73195bcf272f1.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Skjaldbrei Ur is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-942d442613a1db73",
@@ -837,8 +921,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "Skjaldbrei Ur is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-06e73195bcf272f1.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-06e73195bcf272f1.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -857,8 +941,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-ed7e9b810a3f451f.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-ed7e9b810a3f451f.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Fragments is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-974f1f80575a2200",
@@ -867,8 +954,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Fragments is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-ed7e9b810a3f451f.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-ed7e9b810a3f451f.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -887,8 +974,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-9e94e4b094df1cd1.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-9e94e4b094df1cd1.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Franz Liszt 1980 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-2023c7c596259cfd",
@@ -897,8 +987,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Franz Liszt 1980 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-9e94e4b094df1cd1.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-9e94e4b094df1cd1.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -917,8 +1007,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-a571a6d5928a953d.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-a571a6d5928a953d.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Hommage L Ger 1985 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-117882bbe1ff2a54",
@@ -927,8 +1020,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Hommage L Ger 1985 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-a571a6d5928a953d.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-a571a6d5928a953d.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -947,8 +1040,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-87c76ba754dc28ad.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-87c76ba754dc28ad.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Pop Queen 1967 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-807196b6d322f340",
@@ -957,8 +1053,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Pop Queen 1967 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-87c76ba754dc28ad.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-87c76ba754dc28ad.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -977,8 +1073,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-578affda8bee6abc.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-578affda8bee6abc.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Baby Rockefeller 1963 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-5866295ecdcc1617",
@@ -987,8 +1086,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Baby Rockefeller 1963 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-578affda8bee6abc.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-578affda8bee6abc.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -1007,8 +1106,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-71e784c66b863e9e.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-71e784c66b863e9e.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Winter Sun In Hafnarfj R Ur 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-446593022a0647b5",
@@ -1017,8 +1119,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Winter Sun In Hafnarfj R Ur 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-71e784c66b863e9e.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-71e784c66b863e9e.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1037,8 +1139,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-bf00b89832dff1cd.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-bf00b89832dff1cd.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "View Of Elli A Rvogur Reykjav K 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-9992316812facbb0",
@@ -1047,8 +1152,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "View Of Elli A Rvogur Reykjav K 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-bf00b89832dff1cd.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-bf00b89832dff1cd.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1067,8 +1172,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-c286c27c8e616284.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-c286c27c8e616284.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Collage For Planescape 1972 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-35296006586f428f",
@@ -1077,8 +1185,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Collage For Planescape 1972 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-c286c27c8e616284.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-c286c27c8e616284.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -1097,8 +1205,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-9b4e5413fa339a3c.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-9b4e5413fa339a3c.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "O Diabo A Paraquedista Etc 1997 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-a4c07ae514337bf5",
@@ -1107,8 +1218,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "O Diabo A Paraquedista Etc 1997 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-9b4e5413fa339a3c.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-9b4e5413fa339a3c.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1127,8 +1238,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d5b35a1c0d041757.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d5b35a1c0d041757.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mt Str Tur And Eir Ksj Kull Glacier West Iceland 1948 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-a17d4801854b70dd",
@@ -1137,8 +1251,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Mt Str Tur And Eir Ksj Kull Glacier West Iceland 1948 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d5b35a1c0d041757.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d5b35a1c0d041757.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1157,8 +1271,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-98f8ac423af96ee8.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-98f8ac423af96ee8.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Arc En Ciel 1971 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-a30e4f787e5851f4",
@@ -1167,8 +1284,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Arc En Ciel 1971 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-98f8ac423af96ee8.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-98f8ac423af96ee8.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1187,8 +1304,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-837c4937ff44e0c3.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-837c4937ff44e0c3.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Infografismo E21 2001 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-a257222b5458082f",
@@ -1197,8 +1317,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Infografismo E21 2001 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-837c4937ff44e0c3.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-837c4937ff44e0c3.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1217,8 +1337,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-234f1a8e7c45d56f.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-234f1a8e7c45d56f.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Children At Play 1920 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-beebede3005b6612",
@@ -1227,8 +1350,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Children At Play 1920 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-234f1a8e7c45d56f.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-234f1a8e7c45d56f.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1247,8 +1370,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-4f978632ebaf2eda.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-4f978632ebaf2eda.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "high_res_url": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "From Thingvellir 1957 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-c545b096f6dc5b0b",
@@ -1257,8 +1383,8 @@
       "lng": -19,
       "museumName": "Johannes Sveinsson Kjarval Birthplace Collection",
       "description": "From Thingvellir 1957 is a notable work by Johannes Sveinsson Kjarval. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-4f978632ebaf2eda.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-4f978632ebaf2eda.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/J%C3%B3hannes_Sveinsson_Kjarval"
     },
@@ -1277,8 +1403,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-6384a7123cabbb5e.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-6384a7123cabbb5e.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mt Hekla 1927 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-c6567fcb30bee47b",
@@ -1287,8 +1416,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Mt Hekla 1927 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-6384a7123cabbb5e.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-6384a7123cabbb5e.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1307,8 +1436,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-f685aa5fd46a9319.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-f685aa5fd46a9319.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Scene From M Vatnssveit In North Iceland 1953 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-c19820d819507a9a",
@@ -1317,8 +1449,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Scene From M Vatnssveit In North Iceland 1953 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-f685aa5fd46a9319.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-f685aa5fd46a9319.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1337,8 +1469,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-585199df5c7e2b2a.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-585199df5c7e2b2a.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Azulejo is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-c380908a3e9d7215",
@@ -1347,8 +1482,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Azulejo is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-585199df5c7e2b2a.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-585199df5c7e2b2a.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1367,8 +1502,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d518cc3e805940a5.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d518cc3e805940a5.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mt Skjaldbrei Ur 1922 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-d4ea3197f5df8e0a",
@@ -1377,8 +1515,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Mt Skjaldbrei Ur 1922 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d518cc3e805940a5.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d518cc3e805940a5.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1397,8 +1535,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-7127094cc26bc7d8.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-7127094cc26bc7d8.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Life Gauguin 1978 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-d504b1e0a042946a",
@@ -1407,8 +1548,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Life Gauguin 1978 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-7127094cc26bc7d8.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-7127094cc26bc7d8.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -1427,8 +1568,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-931c80a26bedb49a.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-931c80a26bedb49a.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Infografismo E16 2001 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-de232957f68f9f77",
@@ -1437,8 +1581,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Infografismo E16 2001 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-931c80a26bedb49a.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-931c80a26bedb49a.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1457,8 +1601,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-0ffee7e50daef080.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-0ffee7e50daef080.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "The Terrorist 1985 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-df9a2f1eb09380a6",
@@ -1467,8 +1614,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "The Terrorist 1985 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-0ffee7e50daef080.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-0ffee7e50daef080.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -1487,8 +1634,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d243baf91a108fb6.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d243baf91a108fb6.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "From H Safell West Iceland 1950 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-e2c9fe326918c49d",
@@ -1497,8 +1647,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "From H Safell West Iceland 1950 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d243baf91a108fb6.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d243baf91a108fb6.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1517,8 +1667,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-406edf155666cb44.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-406edf155666cb44.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Deux Nuages 1967 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-e4c11f6a95924616",
@@ -1527,8 +1680,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Deux Nuages 1967 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-406edf155666cb44.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-406edf155666cb44.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1547,8 +1700,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-34fe1ba087b8f5b4.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-34fe1ba087b8f5b4.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "The Farm M Lakot In Flj Tshl South Iceland 1913 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-e71dc958d735f0f4",
@@ -1557,8 +1713,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "The Farm M Lakot In Flj Tshl South Iceland 1913 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-34fe1ba087b8f5b4.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-34fe1ba087b8f5b4.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1577,8 +1733,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-0742ab3d7fc06ab5.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-0742ab3d7fc06ab5.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Mt Hafursfell And The Wood At H Safell West Iceland 1945 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-e80e88b7682e4fa8",
@@ -1587,8 +1746,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Mt Hafursfell And The Wood At H Safell West Iceland 1945 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-0742ab3d7fc06ab5.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-0742ab3d7fc06ab5.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1607,8 +1766,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-4b97409affea44f9.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-4b97409affea44f9.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Thingv Llum 1905 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-ecb76029f89090f5",
@@ -1617,8 +1779,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Thingv Llum 1905 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-4b97409affea44f9.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-4b97409affea44f9.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1637,8 +1799,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-1101eb2a3481d9f7.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-1101eb2a3481d9f7.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Untitled 1976 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-f1a849572f60209c",
@@ -1647,8 +1812,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Untitled 1976 is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-1101eb2a3481d9f7.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-1101eb2a3481d9f7.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1667,8 +1832,11 @@
         "lng": -23.710833333333
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-fed1cb478d997472.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-fed1cb478d997472.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "high_res_url": "https://en.wikipedia.org/wiki/Err%C3%B3",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Chinese Petroleum 1978 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-f2ca21e09b161102",
@@ -1677,8 +1845,8 @@
       "lng": -23.710833333333,
       "museumName": "Erro Birthplace Collection",
       "description": "Chinese Petroleum 1978 is a notable work by Erro. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-fed1cb478d997472.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-fed1cb478d997472.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Err%C3%B3",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Err%C3%B3"
     },
@@ -1697,8 +1865,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-d3d685d99705c9e9.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-d3d685d99705c9e9.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Scene From Flj Tsdalsh Ra In East Iceland 1951 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-f7a98de577993365",
@@ -1707,8 +1878,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Scene From Flj Tsdalsh Ra In East Iceland 1951 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-d3d685d99705c9e9.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-d3d685d99705c9e9.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1727,8 +1898,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-29770a116816d15d.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-29770a116816d15d.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Autumn Sunlight Skjuhl 1920 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-f479ac1ccd7fd07a",
@@ -1737,8 +1911,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Autumn Sunlight Skjuhl 1920 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-29770a116816d15d.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-29770a116816d15d.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1757,8 +1931,11 @@
         "lng": -27.215277777778
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-98ff8545064132f6.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-98ff8545064132f6.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "high_res_url": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Sculptures Dans La Chambre is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-f7369c64f93872bc",
@@ -1767,8 +1944,8 @@
       "lng": -27.215277777778,
       "museumName": "Rene Bertholo Birthplace Collection",
       "description": "Sculptures Dans La Chambre is a notable work by Rene Bertholo. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-98ff8545064132f6.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-98ff8545064132f6.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/Ant%C3%B3nio_Dacosta"
     },
@@ -1787,8 +1964,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-0de6ac2f3b610de7.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-0de6ac2f3b610de7.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Moonlight Reykjav K 1909 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-fc885cf8d755e80d",
@@ -1797,8 +1977,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Moonlight Reykjav K 1909 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-0de6ac2f3b610de7.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-0de6ac2f3b610de7.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     },
@@ -1817,8 +1997,11 @@
         "lng": -19
       },
       "assets": {
-        "thumbnail_url": "/artworks/kaggle6/kaggle6-b7a6ce98c50454fe.webp",
-        "high_res_url": "/artworks/kaggle6/kaggle6-b7a6ce98c50454fe.webp"
+        "thumbnail_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "high_res_url": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+        "sources": [],
+        "availability": "unknown",
+        "checkedAt": ""
       },
       "historical_text": "Hafnarfj R Ur Town 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
       "id": "kaggle6-febe7930b7907c2b",
@@ -1827,8 +2010,8 @@
       "lng": -19,
       "museumName": "Asgrimur Jonsson Birthplace Collection",
       "description": "Hafnarfj R Ur Town 1930 is a notable work by Asgrimur Jonsson. Historical background will be expanded in future dataset updates.",
-      "imageUrl": "/artworks/kaggle6/kaggle6-b7a6ce98c50454fe.webp",
-      "canonicalImageUrl": "/artworks/kaggle6/kaggle6-b7a6ce98c50454fe.webp",
+      "imageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
+      "canonicalImageUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson",
       "source": "kaggle6",
       "sourceUrl": "https://en.wikipedia.org/wiki/%C3%81sgr%C3%ADmur_J%C3%B3nsson"
     }

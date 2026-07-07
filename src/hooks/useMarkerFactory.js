@@ -12,11 +12,8 @@ function escapeHtml(s) {
 export function useMarkerFactory({
   t,
   markerZoomBand,
-  getMarkerImageUrl,
   handlePointClick,
-  trackMarkerTelemetry,
-  brokenImageUrlsRef,
-  loadedImageUrlsRef
+  trackMarkerTelemetry
 }) {
   const createArtworkElement = useCallback(
     (art) => {
@@ -25,7 +22,6 @@ export function useMarkerFactory({
       const cardMuseum = art.displayMuseumName ?? art.museumName ?? ''
       const cityName = art.isCluster ? '' : (art.displayCity ?? art.current_location?.city ?? '')
       const cardTitle = art.isCluster ? artworkTitle : (cityName || artworkTitle)
-      const rawImageUrl = typeof art?.imageUrl === 'string' ? art.imageUrl.trim() : ''
       const size = markerZoomBand === 'far' ? 26 : markerZoomBand === 'mid' ? 34 : 40
       const wrapper = document.createElement('div')
       wrapper.dataset.artId = String(art.id ?? '')
@@ -66,62 +62,14 @@ export function useMarkerFactory({
       pin.className = art.isCluster ? 'art-marker-pin art-marker-pin--cluster' : 'art-marker-pin art-marker-pin--artwork'
 
       const image = document.createElement('img')
-      image.crossOrigin = 'anonymous'
-      const canonicalImageUrl = typeof art?.canonicalImageUrl === 'string' ? art.canonicalImageUrl.trim() : ''
-      const resolvedSource = canonicalImageUrl || rawImageUrl
-      const thumbSrc = getMarkerImageUrl(resolvedSource)
-      const isKnownBroken = Boolean(
-        rawImageUrl && (brokenImageUrlsRef.current.has(rawImageUrl) || brokenImageUrlsRef.current.has(thumbSrc))
-      )
-      const isKnownLoaded = Boolean(thumbSrc && loadedImageUrlsRef.current.has(thumbSrc))
-      const setLoadingState = (state) => {
-        if (state === 'loading') pin.classList.add('art-marker-pin--loading')
-        else pin.classList.remove('art-marker-pin--loading')
-      }
-
-      const setImageTier = (tier, nextSrc) => {
-        image.dataset.fallbackTier = tier
-        image.src = nextSrc
-        if (tier === 'thumb') trackMarkerTelemetry('tierThumb')
-        else if (tier === 'placeholder') trackMarkerTelemetry('tierPlaceholder')
-      }
+      image.dataset.fallbackTier = 'placeholder'
+      image.src = artPlaceholder
+      trackMarkerTelemetry('tierPlaceholder')
       image.alt = t('marker.artworkAria', { title: artworkTitle, artist: cardArtist })
       image.style.width = '100%'
       image.style.height = '100%'
       image.style.objectFit = 'cover'
-      image.style.opacity = '0'
-      image.style.transition = 'opacity 0.18s ease'
-
-      if (isKnownBroken || !thumbSrc) {
-        setLoadingState('failed')
-        setImageTier('placeholder', artPlaceholder)
-        image.style.opacity = '1'
-      } else if (isKnownLoaded) {
-        setLoadingState('loaded')
-        setImageTier('thumb', thumbSrc)
-        image.style.opacity = '1'
-      } else {
-        setLoadingState('loading')
-        setImageTier('thumb', thumbSrc)
-      }
-
-      image.onload = () => {
-        if (image.dataset.fallbackTier === 'thumb') {
-          loadedImageUrlsRef.current.add(thumbSrc)
-          setLoadingState('loaded')
-        }
-        image.style.opacity = '1'
-      }
-      image.onerror = () => {
-        trackMarkerTelemetry('thumbErrors')
-        if (rawImageUrl) brokenImageUrlsRef.current.add(rawImageUrl)
-        if (thumbSrc) brokenImageUrlsRef.current.add(thumbSrc)
-        image.onerror = null
-        image.onload = null
-        setLoadingState('failed')
-        setImageTier('placeholder', artPlaceholder)
-        image.style.opacity = '1'
-      }
+      image.style.opacity = '1'
       pin.appendChild(image)
       wrapper.appendChild(pin)
 
@@ -187,7 +135,7 @@ export function useMarkerFactory({
       miniCard.addEventListener('click', triggerOpen)
       return wrapper
     },
-    [getMarkerImageUrl, handlePointClick, markerZoomBand, trackMarkerTelemetry, t, brokenImageUrlsRef, loadedImageUrlsRef]
+    [handlePointClick, markerZoomBand, trackMarkerTelemetry, t]
   )
 
   return { createArtworkElement }

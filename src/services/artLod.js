@@ -1,3 +1,5 @@
+import { isHttpsImageUrl, isLocalArtworkPath, isPlaceholderImageUrl, resolveArtworkImageUrl } from '../lib/imageResolver.js'
+
 const clamp = (value, min, max) => Math.min(max, Math.max(min, value))
 
 export function getZoomBand(altitude) {
@@ -44,11 +46,9 @@ const rankByPriority = (a, b, focusPoint) => {
 const isUsableMarkerThumbnailUrl = (url) => {
   if (typeof url !== 'string') return false
   const s = url.trim()
-  if (!s) return false
-  const low = s.toLowerCase()
-  if (low.includes('external-unavailable')) return false
-  if (low.includes('art-placeholder')) return false
-  return true
+  if (!s || isPlaceholderImageUrl(s)) return false
+  if (isLocalArtworkPath(s)) return false
+  return isHttpsImageUrl(s) || s.startsWith('/')
 }
 
 const pickRepresentative = (items) => {
@@ -60,9 +60,11 @@ const pickRepresentative = (items) => {
   return withRenderableThumb ?? items[0]
 }
 
-/** Prefer first usable URL on the representative row (imageUrl, assets, then canonical). */
+/** Prefer first usable URL on the representative row (HTTPS imageUrl, assets, resolver). */
 const resolveClusterThumbnailUrl = (item) => {
   if (!item) return ''
+  const resolved = resolveArtworkImageUrl(item, { size: 'thumb' })
+  if (resolved && !isPlaceholderImageUrl(resolved)) return resolved
   if (isUsableMarkerThumbnailUrl(item.imageUrl)) return String(item.imageUrl).trim()
   if (isUsableMarkerThumbnailUrl(item?.assets?.thumbnail_url)) return String(item.assets.thumbnail_url).trim()
   if (isUsableMarkerThumbnailUrl(item?.canonicalImageUrl)) return String(item.canonicalImageUrl).trim()

@@ -1,5 +1,13 @@
 import { deriveTimePeriodKey, toPeriodKey } from '../constants/periods.js'
 import { getCityForMuseum } from '../constants/museumCities.js'
+import {
+  collectImageCandidates,
+  detectImageProvider,
+  isHttpsImageUrl,
+  isLocalArtworkPath,
+  isPlaceholderImageUrl,
+  resizeImageUrl
+} from '../lib/imageResolver.js'
 
 const toNumber = (value) => {
   const num = Number(value)
@@ -13,6 +21,74 @@ const toString = (value, fallback = '') => {
 
 export function deriveTimePeriod(yearLike) {
   return deriveTimePeriodKey(yearLike)
+}
+
+function buildSourcesFromRaw(raw, candidates) {
+  const existing = Array.isArray(raw?.assets?.sources) ? raw.assets.sources : []
+  if (existing.length > 0) {
+    return existing
+      .filter((s) => s && typeof s.url === 'string' && isHttpsImageUrl(s.url))
+      .map((s, idx) => ({
+        provider: s.provider || detectImageProvider(s.url),
+        url: s.url.trim().replace(/^http:\/\//i, 'https://'),
+        role: s.role || (idx === 0 ? 'primary' : 'fallback')
+      }))
+  }
+
+  return candidates.map((url, idx) => ({
+    provider: detectImageProvider(url),
+    url,
+    role: idx === 0 ? 'primary' : 'fallback'
+  }))
+}
+
+function pickPrimaryExternalUrl(raw, candidates) {
+  const canonical = toString(raw?.canonicalImageUrl)
+  if (isHttpsImageUrl(canonical) && !isPlaceholderImageUrl(canonical)) {
+    return canonical.replace(/^http:\/\//i, 'https://')
+  }
+  if (candidates.length > 0) return candidates[0]
+  return ''
+}
+
+function pickLocalFallback(raw) {
+  const fields = [
+    raw?.imageUrl,
+    raw?.assets?.thumbnail_url,
+    raw?.assets?.high_res_url
+  ]
+  for (const field of fields) {
+    if (typeof field === 'string' && isLocalArtworkPath(field)) return field.trim()
+  }
+  return ''
+}
+
+/**
+ * Merge probe cache entry into normalized artwork image fields.
+ * @param {Record<string, unknown>} artwork
+ * @param {Record<string, unknown> | undefined} probeEntry
+ */
+export function applyImageAvailability(artwork, probeEntry) {
+  if (!probeEntry || typeof probeEntry !== 'object') return artwork
+
+  const availability = toString(probeEntry.availability, 'unknown')
+  const winningUrl = toString(probeEntry.winningUrl)
+  const checkedAt = toString(probeEntry.checkedAt)
+
+  const next = { ...artwork, assets: { ...(artwork.assets ?? {}) } }
+
+  if (availability === 'ok' && winningUrl) {
+    next.imageUrl = resizeImageUrl(winningUrl, 'thumb')
+    next.canonicalImageUrl = winningUrl.replace(/^http:\/\//i, 'https://')
+    next.assets.thumbnail_url = next.imageUrl
+    next.assets.high_res_url = resizeImageUrl(winningUrl, 'detail')
+  }
+
+  next.assets.availability = availability
+  if (checkedAt) next.assets.checkedAt = checkedAt
+  if (winningUrl) next.assets.probedUrl = winningUrl
+
+  return next
 }
 
 export function normalizeArtwork(raw, index = 0) {
@@ -29,13 +105,41 @@ export function normalizeArtwork(raw, index = 0) {
     ? toString(raw?.current_location?.city, mappedCityEn)
     : mappedCityEn
   const country = isPrdShape ? toString(raw?.current_location?.country) : ''
-  const imageUrl = isPrdShape
-    ? toString(raw?.assets?.thumbnail_url ?? raw?.assets?.high_res_url)
-    : toString(raw?.imageUrl)
-  const canonicalImageUrl = isPrdShape
-    ? toString(raw?.assets?.high_res_url ?? raw?.assets?.thumbnail_url)
-    : toString(raw?.canonicalImageUrl ?? raw?.imageUrl)
-  if (!imageUrl) return null
+
+  const draft = {
+    ...raw,
+    imageUrl: isPrdShape
+      ? toString(raw?.assets?.thumbnail_url ?? raw?.assets?.high_res_url ?? raw?.imageUrl)
+      : toString(raw?.imageUrl),
+    canonicalImageUrl: isPrdShape
+      ? toString(raw?.assets?.high_res_url ?? raw?.canonicalImageUrl ?? raw?.imageUrl)
+      : toString(raw?.canonicalImageUrl ?? raw?.imageUrl),
+    assets: raw?.assets ?? {}
+  }
+
+  const candidates = collectImageCandidates(draft)
+  const localFallback = pickLocalFallback(raw)
+  const primaryExternal = pickPrimaryExternalUrl(raw, candidates)
+  const sources = buildSourcesFromRaw(raw, candidates)
+
+  let imageUrl = ''
+  let canonicalImageUrl = ''
+
+  if (primaryExternal) {
+    canonicalImageUrl = primaryExternal
+    imageUrl = resizeImageUrl(primaryExternal, 'thumb')
+  } else if (localFallback) {
+    imageUrl = localFallback
+    canonicalImageUrl = toString(raw?.canonicalImageUrl) || localFallback
+  } else if (isHttpsImageUrl(draft.imageUrl)) {
+    imageUrl = resizeImageUrl(draft.imageUrl, 'thumb')
+    canonicalImageUrl = draft.canonicalImageUrl || draft.imageUrl
+  } else {
+    imageUrl = toString(draft.imageUrl)
+    canonicalImageUrl = toString(draft.canonicalImageUrl)
+  }
+
+  if (!imageUrl && !primaryExternal && !localFallback) return null
 
   const creationYear = isPrdShape ? toString(raw?.creation_year) : toString(raw?.year)
   const title = toString(raw?.title, 'Untitled')
@@ -49,6 +153,12 @@ export function normalizeArtwork(raw, index = 0) {
   const artworkId = String(raw?.artwork_id ?? raw?.id ?? `${title}-${index}`)
 
   const fallbackProse = `${title} is a notable work by ${artist}. Historical background will be expanded in future dataset updates.`
+
+  const highResUrl = primaryExternal
+    ? resizeImageUrl(primaryExternal, 'detail')
+    : isHttpsImageUrl(canonicalImageUrl)
+      ? resizeImageUrl(canonicalImageUrl, 'detail')
+      : imageUrl
 
   return {
     artwork_id: artworkId,
@@ -66,13 +176,13 @@ export function normalizeArtwork(raw, index = 0) {
     },
     assets: {
       thumbnail_url: imageUrl,
-      high_res_url: isPrdShape
-        ? toString(raw?.assets?.high_res_url || imageUrl)
-        : imageUrl
+      high_res_url: highResUrl,
+      sources,
+      availability: toString(raw?.assets?.availability, candidates.length > 0 || localFallback ? 'unknown' : 'none'),
+      checkedAt: toString(raw?.assets?.checkedAt)
     },
     historical_text: historicalText || fallbackProse,
 
-    // Backward-compatible fields for existing rendering code
     id: artworkId,
     year: creationYear || 'Unknown',
     lat,
@@ -80,7 +190,7 @@ export function normalizeArtwork(raw, index = 0) {
     museumName: museum,
     description: historicalText || fallbackProse,
     imageUrl,
-    canonicalImageUrl,
+    canonicalImageUrl: canonicalImageUrl || imageUrl,
     source: raw?.source ?? 'local',
     sourceUrl: raw?.sourceUrl ?? ''
   }

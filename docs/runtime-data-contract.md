@@ -62,7 +62,16 @@ Path: `public/data/search-index.json`
       "lat": 35.67,
       "lng": 139.65,
       "imageUrl": "https://...",
-      "canonicalImageUrl": "https://..."
+      "canonicalImageUrl": "https://...",
+      "assets": {
+        "thumbnail_url": "https://...",
+        "high_res_url": "https://...",
+        "sources": [
+          { "provider": "wikimedia", "url": "https://...", "role": "primary" }
+        ],
+        "availability": "ok",
+        "checkedAt": "ISO-8601"
+      }
     }
   ]
 }
@@ -70,4 +79,4 @@ Path: `public/data/search-index.json`
 
 ## Build step
 
-Run `npm run data:runtime` whenever source datasets change.
+Run `npm run data:probe-images` to validate external image URLs (writes `public/data/image-availability.json`), then `npm run data:runtime` whenever source datasets change.

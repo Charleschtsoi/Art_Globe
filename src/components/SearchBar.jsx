@@ -21,17 +21,12 @@ const inputStyle = {
   fontSize: 13
 }
 
-function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, onSearchFocus, getThumbUrl, t }) {
+function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, onSearchFocus, t }) {
   const rootRef = useRef(null)
   const [query, setQuery] = useState('')
   const [debouncedQuery, setDebouncedQuery] = useState('')
   const [isOpen, setIsOpen] = useState(false)
   const [activeIndex, setActiveIndex] = useState(0)
-
-  const resolvedThumbUrl =
-    typeof getThumbUrl === 'function'
-      ? getThumbUrl
-      : () => ''
 
   useEffect(() => {
     const handle = window.setTimeout(() => setDebouncedQuery(query), 300)
@@ -184,10 +179,6 @@ function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, onSea
               const artist = art?.displayArtist ?? art?.artist ?? ''
               const museum = art?.displayMuseumName ?? art?.museumName ?? art?.museum ?? ''
               const city = art?.displayCity ?? art?.current_location?.city ?? ''
-              const thumbSrc = resolvedThumbUrl(
-                art?.canonicalImageUrl ?? art?.imageUrl ?? ''
-              )
-
               return (
                 <button
                   key={String(art?.id ?? art?.artwork_id ?? idx)}
@@ -199,10 +190,7 @@ function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, onSea
                   style={{
                     width: '100%',
                     textAlign: 'left',
-                    display: 'grid',
-                    gridTemplateColumns: '42px 1fr',
-                    gap: 10,
-                    alignItems: 'center',
+                    display: 'block',
                     padding: '8px 10px',
                     border: 'none',
                     background:
@@ -211,27 +199,14 @@ function SearchBar({ artworks = [], searchRecords = null, onSelectArtwork, onSea
                     color: '#f5e6c8'
                   }}
                 >
-                  <img
-                    src={thumbSrc}
-                    alt=""
-                    style={{
-                      width: 42,
-                      height: 42,
-                      borderRadius: 8,
-                      objectFit: 'cover',
-                      border: '1px solid rgba(212, 168, 83, 0.18)'
-                    }}
-                  />
-                  <div>
-                    <div style={{ fontSize: 13, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {title}
-                    </div>
-                    <div style={{ fontSize: 12, color: '#c4a882', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {artist}
-                    </div>
-                    <div style={{ fontSize: 12, color: '#d4a853', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
-                      {[city || art?.displayCity, museum].filter(Boolean).join(' · ')}
-                    </div>
+                  <div style={{ fontSize: 13, fontWeight: 700, whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {title}
+                  </div>
+                  <div style={{ fontSize: 12, color: '#c4a882', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {artist}
+                  </div>
+                  <div style={{ fontSize: 12, color: '#d4a853', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
+                    {[city || art?.displayCity, museum].filter(Boolean).join(' · ')}
                   </div>
                 </button>
               )

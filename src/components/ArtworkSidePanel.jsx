@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
-import artPlaceholder from '../assets/art-placeholder.svg'
+import LazyArtworkImage from './LazyArtworkImage.jsx'
 
 const panelStyle = {
   position: 'fixed',
@@ -28,16 +28,13 @@ const headerBarStyle = {
   zIndex: 1
 }
 
-export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getThumbUrl, t }) {
+export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, t }) {
   const panelRef = useRef(null)
   const [scale, setScale] = useState(1)
   const [selectedId, setSelectedId] = useState(null)
+  const [imageEnabled, setImageEnabled] = useState(false)
   const [query, setQuery] = useState('')
   const [clusterQuery, setClusterQuery] = useState('')
-  const resolveThumb = useMemo(() => {
-    if (typeof getThumbUrl === 'function') return getThumbUrl
-    return (url) => (url ? url : artPlaceholder)
-  }, [getThumbUrl])
   const isClusterPicker = Boolean(item?.isClusterPicker && Array.isArray(item?.clusterArtworks))
   const isMuseumStack = Boolean(item?.isMuseumStack && Array.isArray(item?.artworks))
   const filteredMuseumArtworks = useMemo(() => {
@@ -67,9 +64,8 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
   const selectedArtwork = useMemo(() => {
     if (isClusterPicker) return null
     if (!isMuseumStack) return item
-    const first = filteredMuseumArtworks[0] ?? item.artworks[0] ?? null
-    if (!selectedId) return first
-    return filteredMuseumArtworks.find((art) => String(art.id) === String(selectedId)) ?? first
+    if (!selectedId) return null
+    return filteredMuseumArtworks.find((art) => String(art.id) === String(selectedId)) ?? null
   }, [filteredMuseumArtworks, isClusterPicker, isMuseumStack, item, selectedId])
   const itemKey = String(
     item?.isClusterPicker ? `cluster-${item.clusterId ?? item.clusterCount}` : item?.artwork_id ?? item?.id ?? 'x'
@@ -89,6 +85,12 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
     window.addEventListener('keydown', onKeyDown)
     return () => window.removeEventListener('keydown', onKeyDown)
   }, [item, onClose])
+
+  useEffect(() => {
+    setScale(1)
+    setSelectedId(null)
+    setImageEnabled(!item?.isMuseumStack && !item?.isClusterPicker)
+  }, [itemKey, item?.isClusterPicker, item?.isMuseumStack])
 
   if (!item) return null
 
@@ -157,8 +159,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
             aria-label={t('panel.clusterListAria')}
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(2, minmax(0, 1fr))',
-              gap: 10,
+              gap: 8,
               overflow: 'auto',
               paddingRight: 4,
               alignContent: 'start',
@@ -166,9 +167,7 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
             }}
           >
             {filteredClusterArtworks.map((art) => {
-              const raw = typeof art?.canonicalImageUrl === 'string' ? art.canonicalImageUrl.trim() : ''
-              const rawImg = typeof art?.imageUrl === 'string' ? art.imageUrl.trim() : ''
-              const thumbSrc = resolveThumb(raw || rawImg)
+              const museum = art.displayMuseumName ?? art.museumName ?? art.current_location?.museum ?? ''
               return (
                 <button
                   key={String(art.id)}
@@ -183,8 +182,8 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'stretch',
-                    gap: 6,
-                    padding: '8px',
+                    gap: 4,
+                    padding: '10px 12px',
                     borderRadius: 10,
                     border: '1px solid rgba(212, 168, 83, 0.3)',
                     background: 'rgba(42, 28, 18, 0.85)',
@@ -193,41 +192,15 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
                     color: '#f5e6c8'
                   }}
                 >
-                  <div
-                    style={{
-                      width: '100%',
-                      aspectRatio: '1',
-                      borderRadius: 8,
-                      overflow: 'hidden',
-                      background: '#2a1c12',
-                      border: '1px solid rgba(212, 168, 83, 0.2)'
-                    }}
-                  >
-                    <img
-                      src={thumbSrc || artPlaceholder}
-                      alt=""
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                      onError={(e) => {
-                        e.currentTarget.src = artPlaceholder
-                      }}
-                    />
-                  </div>
-                  <span
-                    style={{
-                      fontSize: 11,
-                      fontWeight: 700,
-                      lineHeight: 1.25,
-                      display: '-webkit-box',
-                      WebkitLineClamp: 2,
-                      WebkitBoxOrient: 'vertical',
-                      overflow: 'hidden'
-                    }}
-                  >
+                  <span style={{ fontSize: 13, fontWeight: 700, lineHeight: 1.3 }}>
                     {art.displayTitle ?? art.title}
                   </span>
-                  <span style={{ fontSize: 10, color: '#c4a882', lineHeight: 1.2 }}>
+                  <span style={{ fontSize: 12, color: '#c4a882', lineHeight: 1.25 }}>
                     {art.displayArtist ?? art.artist}
                   </span>
+                  {museum ? (
+                    <span style={{ fontSize: 11, color: '#d4a853', lineHeight: 1.25 }}>{museum}</span>
+                  ) : null}
                 </button>
               )
             })}
@@ -236,6 +209,97 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
                 {t('panel.noSearchResults')}
               </div>
             )}
+          </div>
+        </div>
+      </aside>
+    )
+  }
+
+  if (!selectedArtwork && isMuseumStack) {
+    return (
+      <aside
+        key={itemKey}
+        ref={panelRef}
+        tabIndex={-1}
+        role="complementary"
+        aria-labelledby={titleId}
+        style={panelStyle}
+      >
+        <div style={headerBarStyle}>
+          <h2 id={titleId} style={{ margin: 0, fontSize: 18, color: '#f5e6c8' }}>
+            {`${item.museumName}${t('panel.collectionSuffix')}`}
+          </h2>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label={t('panel.closeAria')}
+            style={{
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              background: 'rgba(42, 28, 18, 0.9)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '6px 10px',
+              cursor: 'pointer'
+            }}
+          >
+            {t('panel.close')}
+          </button>
+        </div>
+        <div style={{ padding: '0 16px 16px', minHeight: 0, display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+          <p style={{ margin: '0 0 8px 0', color: '#d4a853', fontSize: 12 }}>
+            {t('panel.museumCount', { count: item.stackCount })}
+          </p>
+          <input
+            type="search"
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            placeholder={t('panel.museumSearchPlaceholder')}
+            aria-label={t('panel.museumSearchAria')}
+            style={{
+              width: '100%',
+              marginBottom: 8,
+              background: 'rgba(42, 28, 18, 0.75)',
+              border: '1px solid rgba(212, 168, 83, 0.35)',
+              color: '#f5e6c8',
+              borderRadius: 8,
+              padding: '7px 9px'
+            }}
+          />
+          <div
+            role="listbox"
+            aria-label={t('panel.museumListAria')}
+            style={{ display: 'grid', gap: 6, overflow: 'auto', minHeight: 0, flex: 1 }}
+          >
+            {filteredMuseumArtworks.map((art) => (
+              <button
+                key={art.id}
+                type="button"
+                role="option"
+                onClick={() => {
+                  setSelectedId(art.id)
+                  setImageEnabled(true)
+                }}
+                style={{
+                  textAlign: 'left',
+                  padding: '8px 10px',
+                  borderRadius: 8,
+                  border: '1px solid rgba(212, 168, 83, 0.25)',
+                  background: 'rgba(42, 28, 18, 0.75)',
+                  color: '#f5e6c8',
+                  cursor: 'pointer'
+                }}
+              >
+                <span style={{ display: 'block', fontSize: 13, fontWeight: 700 }}>
+                  {art.displayTitle ?? art.title}
+                </span>
+                <span style={{ display: 'block', fontSize: 12, color: '#c4a882' }}>
+                  {art.displayArtist ?? art.artist}
+                </span>
+                <span style={{ display: 'block', fontSize: 11, color: '#d4a853' }}>
+                  {art.displayMuseumName ?? art.museumName ?? item.museumName}
+                </span>
+              </button>
+            ))}
           </div>
         </div>
       </aside>
@@ -378,7 +442,10 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
                   type="button"
                   role="option"
                   aria-selected={isActive}
-                  onClick={() => setSelectedId(art.id)}
+                  onClick={() => {
+                    setSelectedId(art.id)
+                    setImageEnabled(true)
+                  }}
                   style={{
                     textAlign: 'left',
                     padding: '6px 8px',
@@ -467,13 +534,13 @@ export default function ArtworkSidePanel({ item, onClose, onSelectArtwork, getTh
             justifyContent: 'center'
           }}
         >
-          <img
-            src={selectedArtwork.assets?.high_res_url || selectedArtwork.imageUrl}
+          <LazyArtworkImage
+            artwork={selectedArtwork}
+            size="detail"
+            enabled={imageEnabled}
             alt={selectedArtwork.displayTitle ?? selectedArtwork.title}
+            objectFit="contain"
             style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'contain',
               transform: `scale(${scale})`,
               transition: 'transform 0.12s ease'
             }}

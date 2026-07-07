@@ -2,16 +2,18 @@
 import fs from 'node:fs/promises'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { normalizeArtworks } from '../src/services/normalizeArtwork.js'
+import { normalizeArtworks, applyImageAvailability } from '../src/services/normalizeArtwork.js'
 import { artworks, easternArtData } from '../src/artData.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 const projectRoot = path.resolve(__dirname, '..')
 const externalPath = path.resolve(projectRoot, 'src/data/externalArtData.json')
+const overridesPath = path.resolve(projectRoot, 'src/data/wikidata-image-overrides.json')
 const outDir = path.resolve(projectRoot, 'public/data/chunks')
 const searchIndexPath = path.resolve(projectRoot, 'public/data/search-index.json')
 const manifestPath = path.resolve(outDir, 'manifest.json')
+const availabilityPath = path.resolve(projectRoot, 'public/data/image-availability.json')
 const chunkSize = Number(process.env.ART_DATA_CHUNK_SIZE ?? 300)
 
 const REGION_RULES = [
@@ -59,10 +61,47 @@ function summarizeChunk(chunkId, region, records, relPath) {
   }
 }
 
+async function loadAvailabilityEntries() {
+  try {
+    const raw = await fs.readFile(availabilityPath, 'utf8')
+    const parsed = JSON.parse(raw)
+    return parsed?.entries && typeof parsed.entries === 'object' ? parsed.entries : {}
+  } catch {
+    return {}
+  }
+}
+
+async function loadWikidataOverrides() {
+  try {
+    const raw = await fs.readFile(overridesPath, 'utf8')
+    const parsed = JSON.parse(raw)
+    return parsed && typeof parsed === 'object' ? parsed : {}
+  } catch {
+    return {}
+  }
+}
+
+function applyWikidataOverrides(items, overrides) {
+  if (!overrides || Object.keys(overrides).length === 0) return items
+  return items.map((art) => {
+    const url = overrides[String(art.id ?? '')]
+    if (!url) return art
+    return { ...art, canonicalImageUrl: url, imageUrl: url }
+  })
+}
+
 async function main() {
   const externalRaw = await fs.readFile(externalPath, 'utf8')
   const externalArtData = JSON.parse(externalRaw)
-  const normalized = normalizeArtworks([...(artworks ?? []), ...(easternArtData ?? []), ...(externalArtData ?? [])])
+  const wikidataOverrides = await loadWikidataOverrides()
+  const availabilityEntries = await loadAvailabilityEntries()
+  const mergedSources = applyWikidataOverrides(
+    [...(artworks ?? []), ...(easternArtData ?? [])],
+    wikidataOverrides
+  )
+  const normalized = normalizeArtworks([...mergedSources, ...(externalArtData ?? [])]).map(
+    (art) => applyImageAvailability(art, availabilityEntries[String(art.id ?? '')])
+  )
 
   const byRegion = new Map()
   for (const item of normalized) {

@@ -15,6 +15,7 @@ const USER_AGENT = 'ArtGlobeFetcher/1.0 (educational project; contact: local-dev
 const MIN_DELAY_MS = Number(process.env.FETCH_ARTWORKS_MIN_DELAY_MS ?? 180)
 const MAX_DELAY_MS = Number(process.env.FETCH_ARTWORKS_MAX_DELAY_MS ?? 520)
 const MAX_ATTEMPTS = Number(process.env.FETCH_ARTWORKS_MAX_ATTEMPTS ?? 6)
+const REMOTE_ONLY = String(process.env.FETCH_ARTWORKS_REMOTE_ONLY ?? '').toLowerCase() === '1'
 
 const buildSparqlQuery = (limit) => `
 SELECT ?item ?itemLabel ?artistLabel ?image ?year ?museumLabel ?coord WHERE {
@@ -180,6 +181,29 @@ async function buildDataset() {
 
     const fileName = `art-${fileIndex}.jpg`
     const filePath = path.join(OUTPUT_DIR, fileName)
+
+    if (REMOTE_ONLY) {
+      seenEntityIds.add(entityUrl)
+      const region = classifyRegion(coords.lat, coords.lng)
+      harvested.push({
+        id: fileIndex,
+        title: safeString(row.itemLabel?.value, 'Untitled'),
+        artist: safeString(row.artistLabel?.value, 'Unknown'),
+        year: row.year?.value ? Number(row.year.value) || row.year.value : 'Unknown',
+        lat: coords.lat,
+        lng: coords.lng,
+        imageUrl: remoteImageUrl,
+        canonicalImageUrl: remoteImageUrl,
+        description: `Located at ${safeString(row.museumLabel?.value, 'Unknown Museum')}.`,
+        museumName: safeString(row.museumLabel?.value, 'Unknown Museum'),
+        source: 'wikidata',
+        sourceUrl: safeString(row.item?.value, 'https://www.wikidata.org'),
+        region
+      })
+      fileIndex += 1
+      await sleep(randInt(MIN_DELAY_MS, MAX_DELAY_MS))
+      continue
+    }
 
     try {
       const imageBuffer = await downloadImageWithRetry(remoteImageUrl, filePath, MAX_ATTEMPTS)
